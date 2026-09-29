@@ -1,0 +1,33 @@
+{
+ "meta": {
+  "id": "6.S087_january-iap_2024",
+  "readable_id": "6.S087+january-iap_2024",
+  "title": "Foundation Models and Generative AI",
+  "url": "https://ocw.mit.edu/courses/6-s087-foundation-models-and-generative-ai-january-iap-2024/",
+  "course_numbers": [
+   "6.S087"
+  ],
+  "departments": [
+   "Electrical Engineering and Computer Science"
+  ],
+  "level": [
+   "Undergraduate"
+  ],
+  "semester": "January IAP",
+  "year": 2024,
+  "description": "ChatGPT, Copilot, CLIP, Dall-E, Stable-Diffusion, AlphaFold, self-driving cars—is now the time that artificial intelligence (AI) lives up to all its hype? What’s the secret sauce behind these recent breakthroughs within AI? They’re called foundation models and generative AI, and it is changing everything. With the help of it, some believe that artificial general intelligence (AGI) has already been achieved. In this non-technical series of lectures, we will start with a short history of AI, then move on to with what supervised learning and reinforcement learning is missing, and conclude with the deep practical and foundational implications foundation models and how we arrive at them via self-supervised learning. We cover applications in both science and business. All backgrounds are welcome.",
+  "full_description": "",
+  "ocw_topics": [
+   "Artificial Intelligence",
+   "Computer Science",
+   "Engineering"
+  ],
+  "found_by_query": "reinforcement learning",
+  "license": "CC BY-NC-SA 4.0 (MIT OpenCourseWare)"
+ },
+ "pages": {
+  "syllabus": "",
+  "calendar": "",
+  "lecture-notes": ""
+ }
+}

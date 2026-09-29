@@ -1,0 +1,38 @@
+{
+ "meta": {
+  "id": "HST.953_fall_2020",
+  "readable_id": "HST.953+fall_2020",
+  "title": "Collaborative Data Science for Healthcare",
+  "url": "https://ocw.mit.edu/courses/hst-953-collaborative-data-science-for-healthcare-fall-2020/",
+  "course_numbers": [
+   "HST.953"
+  ],
+  "departments": [
+   "Health Sciences and Technology"
+  ],
+  "level": [
+   "Graduate"
+  ],
+  "semester": "Fall",
+  "year": 2020,
+  "description": "<p>This course provides an introductory survey of data science tools in healthcare.&nbsp;It was created by members of MIT Critical Data, a global consortium consisting of healthcare practitioners, computer scientists, and engineers from academia, industry, and government, that seeks to place data and research at the front and center of healthcare operations.</p>\n<p>The most daunting global health issues right now are the result of interconnected crises. In this course, we highlight the importance of a multidisciplinary approach to health data science. It is intended for front-line clinicians and public health practitioners, as well as computer scientists, engineers, and social scientists, whose goal is to understand health and disease better using digital data captured in the process of care.</p>\n<p>What you’ll learn:</p>\n<ul>\n<li>Principles of data science as applied to health</li>\n<li>Analysis of electronic health records</li>\n<li>Artificial intelligence and machine learning in healthcare</li>\n</ul>\n<p>This course is part of the Open Learning Library, which is free to use. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.</p>\n",
+  "full_description": "",
+  "ocw_topics": [
+   "Artificial Intelligence",
+   "Business",
+   "Computer Science",
+   "Data Mining",
+   "Engineering",
+   "Health Care Management",
+   "Health and Medicine",
+   "Public Health"
+  ],
+  "found_by_query": "data science",
+  "license": "CC BY-NC-SA 4.0 (MIT OpenCourseWare)"
+ },
+ "pages": {
+  "syllabus": "<main id=\"course-content-section\"></main>",
+  "calendar": "",
+  "lecture-notes": ""
+ }
+}

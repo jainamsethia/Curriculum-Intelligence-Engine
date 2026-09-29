@@ -1,0 +1,352 @@
+course_a,course_b,title_a,title_b,silver_score,silver_label,tfidf_cosine,jaccard,tfidf_pred
+18.650__formerly_18.443__fall_2006,18.650__formerly_18.443__spring_2015,Statistics for Applications,Statistics for Applications,1.0,1,0.5761,0.2739,1
+6.006_fall_2011,6.006_spring_2020,Introduction to Algorithms,Introduction to Algorithms,1.0,1,0.4174,0.2083,1
+10.34_fall_2005,10.34_fall_2015,Numerical Methods Applied to Chemical Engineering,Numerical Methods Applied to Chemical Engineering,1.0,1,0.4014,0.1506,1
+1.017_fall_2003,18.650__formerly_18.443__fall_2006,Computing and Data Analysis for Environmental Applications,Statistics for Applications,0.0669,0,0.4007,0.1472,1
+18.440_spring_2014,6.436J_fall_2018,Probability and Random Variables,Fundamentals of Probability,0.2643,0,0.3879,0.1724,1
+18.650__formerly_18.443__spring_2015,ESD.86_spring_2007,Statistics for Applications,"Models, Data and Inference for Socio-Technical Systems",0.0648,0,0.339,0.1453,1
+1.017_fall_2003,18.650__formerly_18.443__spring_2015,Computing and Data Analysis for Environmental Applications,Statistics for Applications,0.0669,0,0.3332,0.1314,1
+14.385_fall_2007,18.650__formerly_18.443__spring_2015,Nonlinear Econometric Analysis,Statistics for Applications,0.0567,0,0.3228,0.1186,1
+6.8300_spring_2025,6.S980_fall_2022,Advances in Computer Vision,Machine Learning for Inverse Graphics,0.4267,1,0.3125,0.131,1
+18.650__formerly_18.443__spring_2015,18.655_spring_2016,Statistics for Applications,Mathematical Statistics,0.0944,0,0.3095,0.1486,1
+1.017_fall_2003,18.440_spring_2014,Computing and Data Analysis for Environmental Applications,Probability and Random Variables,0.077,0,0.3015,0.1299,1
+14.385_fall_2007,18.655_spring_2016,Nonlinear Econometric Analysis,Mathematical Statistics,0.0564,0,0.2884,0.1089,1
+8.044_spring_2013,RES.8-010_summer_2018,Statistical Physics I,Introduction to Statistical Physics,0.3299,1,0.2748,0.1042,1
+1.017_fall_2003,18.655_spring_2016,Computing and Data Analysis for Environmental Applications,Mathematical Statistics,0.0664,0,0.2635,0.0982,1
+14.385_fall_2007,14.387_fall_2014,Nonlinear Econometric Analysis,Applied Econometrics: Mostly Harmless Big Data,0.437,1,0.2633,0.1122,1
+14.385_fall_2007,15.450_fall_2010,Nonlinear Econometric Analysis,Analytics of Finance,0.3109,1,0.2599,0.1205,1
+18.650__formerly_18.443__fall_2006,ESD.86_spring_2007,Statistics for Applications,"Models, Data and Inference for Socio-Technical Systems",0.0648,0,0.2566,0.1107,1
+1.017_fall_2003,ESD.86_spring_2007,Computing and Data Analysis for Environmental Applications,"Models, Data and Inference for Socio-Technical Systems",0.2712,0,0.2534,0.1232,1
+18.650__formerly_18.443__fall_2006,18.655_spring_2016,Statistics for Applications,Mathematical Statistics,0.0944,0,0.2468,0.1679,1
+10.34_fall_2005,14.385_fall_2007,Numerical Methods Applied to Chemical Engineering,Nonlinear Econometric Analysis,0.034,0,0.2386,0.1307,1
+15.450_fall_2010,18.642_fall_2024,Analytics of Finance,Topics in Mathematics with Applications in Finance,0.2781,0,0.2381,0.1276,1
+15.450_fall_2010,18.650__formerly_18.443__spring_2015,Analytics of Finance,Statistics for Applications,0.0455,0,0.2301,0.1421,1
+1.017_fall_2003,6.436J_fall_2018,Computing and Data Analysis for Environmental Applications,Fundamentals of Probability,0.098,0,0.2272,0.0909,1
+6.438_fall_2014,6.864_fall_2005,Algorithms for Inference,Advanced Natural Language Processing,0.0397,0,0.2266,0.1381,1
+18.440_spring_2014,8.044_spring_2013,Probability and Random Variables,Statistical Physics I,0.0828,0,0.2116,0.0931,1
+14.385_fall_2007,18.650__formerly_18.443__fall_2006,Nonlinear Econometric Analysis,Statistics for Applications,0.0567,0,0.2108,0.1043,1
+6.436J_fall_2018,6.438_fall_2014,Fundamentals of Probability,Algorithms for Inference,0.1275,0,0.2065,0.102,1
+18.642_fall_2024,6.864_fall_2005,Topics in Mathematics with Applications in Finance,Advanced Natural Language Processing,0.0,0,0.2057,0.0973,1
+1.017_fall_2003,14.385_fall_2007,Computing and Data Analysis for Environmental Applications,Nonlinear Econometric Analysis,0.0453,0,0.2013,0.0941,1
+1.017_fall_2003,8.044_spring_2013,Computing and Data Analysis for Environmental Applications,Statistical Physics I,0.0541,0,0.2007,0.0692,1
+11.126J_spring_2007,15.450_fall_2010,Economics of Education,Analytics of Finance,0.2139,0,0.1988,0.0991,0
+10.34_fall_2015,18.642_fall_2024,Numerical Methods Applied to Chemical Engineering,Topics in Mathematics with Applications in Finance,0.0897,0,0.1974,0.0736,0
+10.34_fall_2015,15.450_fall_2010,Numerical Methods Applied to Chemical Engineering,Analytics of Finance,0.0,0,0.1973,0.1038,0
+11.126J_spring_2007,14.387_fall_2014,Economics of Education,Applied Econometrics: Mostly Harmless Big Data,0.278,0,0.1961,0.0671,0
+10.34_fall_2005,15.450_fall_2010,Numerical Methods Applied to Chemical Engineering,Analytics of Finance,0.0297,0,0.1913,0.0977,0
+1.017_fall_2003,10.34_fall_2005,Computing and Data Analysis for Environmental Applications,Numerical Methods Applied to Chemical Engineering,0.1917,0,0.1902,0.1114,0
+11.126J_spring_2007,14.385_fall_2007,Economics of Education,Nonlinear Econometric Analysis,0.2519,0,0.1897,0.0639,0
+1.017_fall_2003,14.387_fall_2014,Computing and Data Analysis for Environmental Applications,Applied Econometrics: Mostly Harmless Big Data,0.2726,0,0.1826,0.084,0
+6.436J_fall_2018,ESD.86_spring_2007,Fundamentals of Probability,"Models, Data and Inference for Socio-Technical Systems",0.0936,0,0.1784,0.0874,0
+18.655_spring_2016,ESD.86_spring_2007,Mathematical Statistics,"Models, Data and Inference for Socio-Technical Systems",0.0644,0,0.178,0.0818,0
+15.062_spring_2003,ESD.86_spring_2007,Data Mining,"Models, Data and Inference for Socio-Technical Systems",0.1821,0,0.1776,0.0784,0
+14.385_fall_2007,ESD.86_spring_2007,Nonlinear Econometric Analysis,"Models, Data and Inference for Socio-Technical Systems",0.0443,0,0.1756,0.0724,0
+10.34_fall_2005,18.650__formerly_18.443__spring_2015,Numerical Methods Applied to Chemical Engineering,Statistics for Applications,0.1459,0,0.1755,0.1083,0
+18.440_spring_2014,18.650__formerly_18.443__fall_2006,Probability and Random Variables,Statistics for Applications,0.659,1,0.1735,0.1207,0
+10.34_fall_2005,6.438_fall_2014,Numerical Methods Applied to Chemical Engineering,Algorithms for Inference,0.0814,0,0.1732,0.0944,0
+18.642_fall_2024,RES.8-010_summer_2018,Topics in Mathematics with Applications in Finance,Introduction to Statistical Physics,0.0588,0,0.1728,0.0954,0
+1.017_fall_2003,18.642_fall_2024,Computing and Data Analysis for Environmental Applications,Topics in Mathematics with Applications in Finance,0.0606,0,0.1726,0.0885,0
+6.006_spring_2020,RES.8-010_summer_2018,Introduction to Algorithms,Introduction to Statistical Physics,0.0,0,0.1725,0.0762,0
+6.438_fall_2014,6.S980_fall_2022,Algorithms for Inference,Machine Learning for Inverse Graphics,0.4737,1,0.1719,0.0674,0
+18.642_fall_2024,18.650__formerly_18.443__spring_2015,Topics in Mathematics with Applications in Finance,Statistics for Applications,0.2936,0,0.1702,0.0909,0
+6.438_fall_2014,ESD.86_spring_2007,Algorithms for Inference,"Models, Data and Inference for Socio-Technical Systems",0.1147,0,0.1678,0.0739,0
+18.655_spring_2016,6.438_fall_2014,Mathematical Statistics,Algorithms for Inference,0.0787,0,0.1674,0.1128,0
+1.017_fall_2003,RES.8-010_summer_2018,Computing and Data Analysis for Environmental Applications,Introduction to Statistical Physics,0.0502,0,0.1666,0.0938,0
+14.387_fall_2014,18.655_spring_2016,Applied Econometrics: Mostly Harmless Big Data,Mathematical Statistics,0.0647,0,0.1643,0.0705,0
+18.642_fall_2024,6.436J_fall_2018,Topics in Mathematics with Applications in Finance,Fundamentals of Probability,0.1371,0,0.1641,0.0891,0
+6.438_fall_2014,6.8300_spring_2025,Algorithms for Inference,Advances in Computer Vision,0.0937,0,0.1622,0.0663,0
+15.450_fall_2010,6.438_fall_2014,Analytics of Finance,Algorithms for Inference,0.0415,0,0.1609,0.0968,0
+6.436J_fall_2018,8.044_spring_2013,Fundamentals of Probability,Statistical Physics I,0.1076,0,0.1606,0.0766,0
+1.017_fall_2003,15.450_fall_2010,Computing and Data Analysis for Environmental Applications,Analytics of Finance,0.0378,0,0.16,0.0985,0
+14.387_fall_2014,18.650__formerly_18.443__spring_2015,Applied Econometrics: Mostly Harmless Big Data,Statistics for Applications,0.0652,0,0.1598,0.0802,0
+6.006_spring_2020,6.864_fall_2005,Introduction to Algorithms,Advanced Natural Language Processing,0.2256,0,0.1582,0.0776,0
+18.642_fall_2024,ESD.86_spring_2007,Topics in Mathematics with Applications in Finance,"Models, Data and Inference for Socio-Technical Systems",0.0589,0,0.1574,0.0718,0
+10.34_fall_2015,14.385_fall_2007,Numerical Methods Applied to Chemical Engineering,Nonlinear Econometric Analysis,0.0,0,0.1557,0.0706,0
+18.655_spring_2016,6.436J_fall_2018,Mathematical Statistics,Fundamentals of Probability,0.1708,0,0.1555,0.0872,0
+10.34_fall_2005,18.642_fall_2024,Numerical Methods Applied to Chemical Engineering,Topics in Mathematics with Applications in Finance,0.1355,0,0.1554,0.092,0
+6.006_spring_2020,ESD.86_spring_2007,Introduction to Algorithms,"Models, Data and Inference for Socio-Technical Systems",0.0446,0,0.1536,0.0854,0
+10.34_fall_2015,RES.8-010_summer_2018,Numerical Methods Applied to Chemical Engineering,Introduction to Statistical Physics,0.0,0,0.1533,0.0804,0
+6.864_fall_2005,ESD.86_spring_2007,Advanced Natural Language Processing,"Models, Data and Inference for Socio-Technical Systems",0.0353,0,0.1532,0.0745,0
+14.387_fall_2014,ESD.86_spring_2007,Applied Econometrics: Mostly Harmless Big Data,"Models, Data and Inference for Socio-Technical Systems",0.2649,0,0.1513,0.0688,0
+18.655_spring_2016,6.864_fall_2005,Mathematical Statistics,Advanced Natural Language Processing,0.0,0,0.1507,0.0947,0
+6.006_fall_2011,ESD.86_spring_2007,Introduction to Algorithms,"Models, Data and Inference for Socio-Technical Systems",0.0701,0,0.1499,0.0725,0
+15.450_fall_2010,RES.8-010_summer_2018,Analytics of Finance,Introduction to Statistical Physics,0.0371,0,0.1491,0.0788,0
+14.387_fall_2014,18.650__formerly_18.443__fall_2006,Applied Econometrics: Mostly Harmless Big Data,Statistics for Applications,0.0652,0,0.1487,0.0791,0
+ESD.86_spring_2007,RES.8-010_summer_2018,"Models, Data and Inference for Socio-Technical Systems",Introduction to Statistical Physics,0.049,0,0.1483,0.0685,0
+15.450_fall_2010,6.006_spring_2020,Analytics of Finance,Introduction to Algorithms,0.0,0,0.1478,0.0823,0
+10.34_fall_2005,RES.8-010_summer_2018,Numerical Methods Applied to Chemical Engineering,Introduction to Statistical Physics,0.0368,0,0.1459,0.0854,0
+14.387_fall_2014,15.450_fall_2010,Applied Econometrics: Mostly Harmless Big Data,Analytics of Finance,0.3454,1,0.1446,0.053,0
+18.650__formerly_18.443__spring_2015,6.438_fall_2014,Statistics for Applications,Algorithms for Inference,0.0794,0,0.1442,0.089,0
+10.34_fall_2015,6.079_fall_2009,Numerical Methods Applied to Chemical Engineering,Introduction to Convex Optimization,0.1846,0,0.1441,0.0882,0
+16.412J_spring_2016,6.864_fall_2005,Cognitive Robotics,Advanced Natural Language Processing,0.1202,0,0.1438,0.0943,0
+6.864_fall_2005,RES.8-010_summer_2018,Advanced Natural Language Processing,Introduction to Statistical Physics,0.0,0,0.1437,0.0788,0
+18.S190_spring_2020,6.864_fall_2005,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Advanced Natural Language Processing,0.0273,0,0.1433,0.0769,0
+18.642_fall_2024,6.006_spring_2020,Topics in Mathematics with Applications in Finance,Introduction to Algorithms,0.0,0,0.1429,0.0698,0
+10.34_fall_2005,ESD.86_spring_2007,Numerical Methods Applied to Chemical Engineering,"Models, Data and Inference for Socio-Technical Systems",0.6106,1,0.1425,0.081,0
+15.450_fall_2010,16.412J_spring_2016,Analytics of Finance,Cognitive Robotics,0.0,0,0.1416,0.0595,0
+18.465_spring_2007,6.864_fall_2005,Topics in Statistics: Statistical Learning Theory,Advanced Natural Language Processing,0.3226,1,0.1415,0.106,0
+18.440_spring_2014,18.655_spring_2016,Probability and Random Variables,Mathematical Statistics,0.1157,0,0.1396,0.0927,0
+16.412J_spring_2016,6.8300_spring_2025,Cognitive Robotics,Advances in Computer Vision,0.2845,0,0.1375,0.0681,0
+15.450_fall_2010,18.655_spring_2016,Analytics of Finance,Mathematical Statistics,0.0453,0,0.1352,0.0882,0
+18.642_fall_2024,18.650__formerly_18.443__fall_2006,Topics in Mathematics with Applications in Finance,Statistics for Applications,0.2936,0,0.1349,0.0824,0
+8.044_spring_2013,ESD.86_spring_2007,Statistical Physics I,"Models, Data and Inference for Socio-Technical Systems",0.0527,0,0.1347,0.0449,0
+15.062_spring_2003,6.864_fall_2005,Data Mining,Advanced Natural Language Processing,0.0339,0,0.1343,0.0655,0
+11.126J_spring_2007,RES.8-010_summer_2018,Economics of Education,Introduction to Statistical Physics,0.0,0,0.1337,0.0598,0
+6.006_fall_2011,6.438_fall_2014,Introduction to Algorithms,Algorithms for Inference,0.404,1,0.1325,0.0819,0
+6.438_fall_2014,RES.8-010_summer_2018,Algorithms for Inference,Introduction to Statistical Physics,0.057,0,0.1321,0.0946,0
+15.450_fall_2010,ESD.86_spring_2007,Analytics of Finance,"Models, Data and Inference for Socio-Technical Systems",0.0372,0,0.132,0.0679,0
+6.006_fall_2011,6.864_fall_2005,Introduction to Algorithms,Advanced Natural Language Processing,0.05,0,0.1312,0.0696,0
+18.642_fall_2024,6.079_fall_2009,Topics in Mathematics with Applications in Finance,Introduction to Convex Optimization,0.123,0,0.131,0.0859,0
+6.079_fall_2009,6.864_fall_2005,Introduction to Convex Optimization,Advanced Natural Language Processing,0.0,0,0.1307,0.0914,0
+6.864_fall_2005,6.S980_fall_2022,Advanced Natural Language Processing,Machine Learning for Inverse Graphics,0.1399,0,0.1298,0.0822,0
+15.450_fall_2010,6.436J_fall_2018,Analytics of Finance,Fundamentals of Probability,0.0581,0,0.1297,0.0855,0
+14.385_fall_2007,18.642_fall_2024,Nonlinear Econometric Analysis,Topics in Mathematics with Applications in Finance,0.0521,0,0.129,0.0702,0
+16.412J_spring_2016,ESD.86_spring_2007,Cognitive Robotics,"Models, Data and Inference for Socio-Technical Systems",0.0468,0,0.1288,0.0688,0
+15.062_spring_2003,18.642_fall_2024,Data Mining,Topics in Mathematics with Applications in Finance,0.0,0,0.1282,0.0674,0
+1.017_fall_2003,6.006_spring_2020,Computing and Data Analysis for Environmental Applications,Introduction to Algorithms,0.0456,0,0.128,0.0769,0
+10.34_fall_2005,18.650__formerly_18.443__fall_2006,Numerical Methods Applied to Chemical Engineering,Statistics for Applications,0.1459,0,0.1266,0.1034,0
+18.650__formerly_18.443__spring_2015,6.436J_fall_2018,Statistics for Applications,Fundamentals of Probability,0.1742,0,0.1263,0.0863,0
+16.412J_spring_2016,6.006_fall_2011,Cognitive Robotics,Introduction to Algorithms,0.0763,0,0.1252,0.0673,0
+10.34_fall_2005,6.079_fall_2009,Numerical Methods Applied to Chemical Engineering,Introduction to Convex Optimization,0.1769,0,0.1251,0.0741,0
+11.126J_spring_2007,16.412J_spring_2016,Economics of Education,Cognitive Robotics,0.0,0,0.125,0.0545,0
+1.017_fall_2003,6.006_fall_2011,Computing and Data Analysis for Environmental Applications,Introduction to Algorithms,0.0728,0,0.1244,0.0713,0
+18.440_spring_2014,ESD.86_spring_2007,Probability and Random Variables,"Models, Data and Inference for Socio-Technical Systems",0.0743,0,0.1236,0.0619,0
+6.436J_fall_2018,RES.8-010_summer_2018,Fundamentals of Probability,Introduction to Statistical Physics,0.0934,0,0.1231,0.0731,0
+1.017_fall_2003,6.438_fall_2014,Computing and Data Analysis for Environmental Applications,Algorithms for Inference,0.1181,0,0.1228,0.084,0
+18.440_spring_2014,18.465_spring_2007,Probability and Random Variables,Topics in Statistics: Statistical Learning Theory,0.0818,0,0.1224,0.0945,0
+18.S190_spring_2020,6.006_fall_2011,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Introduction to Algorithms,0.1734,0,0.1224,0.0544,0
+18.642_fall_2024,8.044_spring_2013,Topics in Mathematics with Applications in Finance,Statistical Physics I,0.0641,0,0.1215,0.0611,0
+18.650__formerly_18.443__spring_2015,8.044_spring_2013,Statistics for Applications,Statistical Physics I,0.0712,0,0.1215,0.0806,0
+10.34_fall_2005,6.006_fall_2011,Numerical Methods Applied to Chemical Engineering,Introduction to Algorithms,0.0459,0,0.1203,0.0706,0
+10.34_fall_2015,6.438_fall_2014,Numerical Methods Applied to Chemical Engineering,Algorithms for Inference,0.0387,0,0.1203,0.0769,0
+11.126J_spring_2007,ESD.86_spring_2007,Economics of Education,"Models, Data and Inference for Socio-Technical Systems",0.0,0,0.1201,0.0671,0
+18.440_spring_2014,18.650__formerly_18.443__spring_2015,Probability and Random Variables,Statistics for Applications,0.659,1,0.1199,0.0904,0
+18.650__formerly_18.443__fall_2006,6.436J_fall_2018,Statistics for Applications,Fundamentals of Probability,0.1742,0,0.1196,0.0766,0
+15.450_fall_2010,18.650__formerly_18.443__fall_2006,Analytics of Finance,Statistics for Applications,0.0455,0,0.1195,0.0969,0
+6.006_fall_2011,6.436J_fall_2018,Introduction to Algorithms,Fundamentals of Probability,0.0,0,0.1193,0.0833,0
+18.642_fall_2024,18.S190_spring_2020,Topics in Mathematics with Applications in Finance,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0829,0,0.1182,0.057,0
+6.006_fall_2011,RES.8-010_summer_2018,Introduction to Algorithms,Introduction to Statistical Physics,0.0,0,0.1179,0.0727,0
+10.34_fall_2015,ESD.86_spring_2007,Numerical Methods Applied to Chemical Engineering,"Models, Data and Inference for Socio-Technical Systems",0.5534,1,0.1177,0.0692,0
+16.412J_spring_2016,6.438_fall_2014,Cognitive Robotics,Algorithms for Inference,0.0548,0,0.116,0.0755,0
+18.642_fall_2024,6.438_fall_2014,Topics in Mathematics with Applications in Finance,Algorithms for Inference,0.0707,0,0.1158,0.0781,0
+14.385_fall_2007,RES.8-010_summer_2018,Nonlinear Econometric Analysis,Introduction to Statistical Physics,0.0442,0,0.1156,0.0727,0
+18.650__formerly_18.443__fall_2006,RES.8-010_summer_2018,Statistics for Applications,Introduction to Statistical Physics,0.0647,0,0.1148,0.0584,0
+18.465_spring_2007,6.436J_fall_2018,Topics in Statistics: Statistical Learning Theory,Fundamentals of Probability,0.1059,0,0.1147,0.0855,0
+6.006_spring_2020,6.438_fall_2014,Introduction to Algorithms,Algorithms for Inference,0.2078,0,0.1136,0.0846,0
+6.436J_fall_2018,6.864_fall_2005,Fundamentals of Probability,Advanced Natural Language Processing,0.0,0,0.1125,0.0775,0
+14.385_fall_2007,6.864_fall_2005,Nonlinear Econometric Analysis,Advanced Natural Language Processing,0.0,0,0.1121,0.0649,0
+14.387_fall_2014,6.438_fall_2014,Applied Econometrics: Mostly Harmless Big Data,Algorithms for Inference,0.1153,0,0.1117,0.0476,0
+11.126J_spring_2007,6.079_fall_2009,Economics of Education,Introduction to Convex Optimization,0.0,0,0.1113,0.0656,0
+14.387_fall_2014,18.440_spring_2014,Applied Econometrics: Mostly Harmless Big Data,Probability and Random Variables,0.0747,0,0.1107,0.053,0
+15.062_spring_2003,18.650__formerly_18.443__spring_2015,Data Mining,Statistics for Applications,0.0,0,0.1103,0.0611,0
+15.062_spring_2003,6.438_fall_2014,Data Mining,Algorithms for Inference,0.0485,0,0.1099,0.0586,0
+18.465_spring_2007,6.079_fall_2009,Topics in Statistics: Statistical Learning Theory,Introduction to Convex Optimization,0.0,0,0.1095,0.0914,0
+18.S190_spring_2020,6.S980_fall_2022,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Machine Learning for Inverse Graphics,0.0381,0,0.1091,0.0588,0
+18.642_fall_2024,6.006_fall_2011,Topics in Mathematics with Applications in Finance,Introduction to Algorithms,0.0,0,0.1091,0.0599,0
+18.650__formerly_18.443__spring_2015,RES.8-010_summer_2018,Statistics for Applications,Introduction to Statistical Physics,0.0647,0,0.1088,0.0714,0
+18.S190_spring_2020,6.438_fall_2014,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Algorithms for Inference,0.1381,0,0.1085,0.0568,0
+18.650__formerly_18.443__spring_2015,6.864_fall_2005,Statistics for Applications,Advanced Natural Language Processing,0.0,0,0.1084,0.087,0
+14.387_fall_2014,18.465_spring_2007,Applied Econometrics: Mostly Harmless Big Data,Topics in Statistics: Statistical Learning Theory,0.1052,0,0.1081,0.053,0
+1.017_fall_2003,15.062_spring_2003,Computing and Data Analysis for Environmental Applications,Data Mining,0.1868,0,0.1081,0.0605,0
+10.34_fall_2005,6.864_fall_2005,Numerical Methods Applied to Chemical Engineering,Advanced Natural Language Processing,0.0279,0,0.1074,0.0891,0
+11.126J_spring_2007,18.465_spring_2007,Economics of Education,Topics in Statistics: Statistical Learning Theory,0.0,0,0.1074,0.0702,0
+16.412J_spring_2016,6.006_spring_2020,Cognitive Robotics,Introduction to Algorithms,0.047,0,0.1065,0.0654,0
+16.412J_spring_2016,18.642_fall_2024,Cognitive Robotics,Topics in Mathematics with Applications in Finance,0.0,0,0.1059,0.0663,0
+14.385_fall_2007,6.438_fall_2014,Nonlinear Econometric Analysis,Algorithms for Inference,0.0507,0,0.1051,0.0724,0
+14.387_fall_2014,6.436J_fall_2018,Applied Econometrics: Mostly Harmless Big Data,Fundamentals of Probability,0.0943,0,0.1051,0.0574,0
+15.450_fall_2010,6.864_fall_2005,Analytics of Finance,Advanced Natural Language Processing,0.0,0,0.1044,0.0811,0
+15.062_spring_2003,6.006_spring_2020,Data Mining,Introduction to Algorithms,0.0423,0,0.1037,0.0557,0
+10.34_fall_2015,6.006_spring_2020,Numerical Methods Applied to Chemical Engineering,Introduction to Algorithms,0.0347,0,0.1036,0.0749,0
+18.650__formerly_18.443__fall_2006,8.044_spring_2013,Statistics for Applications,Statistical Physics I,0.0712,0,0.1034,0.0686,0
+18.465_spring_2007,RES.8-010_summer_2018,Topics in Statistics: Statistical Learning Theory,Introduction to Statistical Physics,0.0522,0,0.1026,0.0678,0
+14.387_fall_2014,15.062_spring_2003,Applied Econometrics: Mostly Harmless Big Data,Data Mining,0.1829,0,0.1025,0.0385,0
+15.450_fall_2010,6.006_fall_2011,Analytics of Finance,Introduction to Algorithms,0.0,0,0.1015,0.0662,0
+18.440_spring_2014,RES.8-010_summer_2018,Probability and Random Variables,Introduction to Statistical Physics,0.0741,0,0.1008,0.0727,0
+15.062_spring_2003,18.465_spring_2007,Data Mining,Topics in Statistics: Statistical Learning Theory,0.0447,0,0.1006,0.0616,0
+18.650__formerly_18.443__fall_2006,6.438_fall_2014,Statistics for Applications,Algorithms for Inference,0.0794,0,0.1005,0.0881,0
+6.079_fall_2009,6.438_fall_2014,Introduction to Convex Optimization,Algorithms for Inference,0.0,0,0.1001,0.0878,0
+16.412J_spring_2016,6.S980_fall_2022,Cognitive Robotics,Machine Learning for Inverse Graphics,0.2058,0,0.1,0.0511,0
+14.385_fall_2007,6.079_fall_2009,Nonlinear Econometric Analysis,Introduction to Convex Optimization,0.0,0,0.0997,0.0748,0
+18.465_spring_2007,ESD.86_spring_2007,Topics in Statistics: Statistical Learning Theory,"Models, Data and Inference for Socio-Technical Systems",0.1047,0,0.0997,0.0613,0
+10.34_fall_2005,6.436J_fall_2018,Numerical Methods Applied to Chemical Engineering,Fundamentals of Probability,0.0572,0,0.0982,0.0639,0
+18.650__formerly_18.443__spring_2015,6.006_fall_2011,Statistics for Applications,Introduction to Algorithms,0.0,0,0.0982,0.0695,0
+6.079_fall_2009,ESD.86_spring_2007,Introduction to Convex Optimization,"Models, Data and Inference for Socio-Technical Systems",0.1191,0,0.098,0.0495,0
+6.8300_spring_2025,6.864_fall_2005,Advances in Computer Vision,Advanced Natural Language Processing,0.1722,0,0.0978,0.0663,0
+18.465_spring_2007,18.642_fall_2024,Topics in Statistics: Statistical Learning Theory,Topics in Mathematics with Applications in Finance,0.0636,0,0.0977,0.0828,0
+18.642_fall_2024,18.655_spring_2016,Topics in Mathematics with Applications in Finance,Mathematical Statistics,0.0823,0,0.0972,0.0751,0
+11.126J_spring_2007,18.642_fall_2024,Economics of Education,Topics in Mathematics with Applications in Finance,0.0,0,0.0961,0.0609,0
+6.006_fall_2011,6.079_fall_2009,Introduction to Algorithms,Introduction to Convex Optimization,0.0,0,0.0961,0.0664,0
+14.385_fall_2007,6.8300_spring_2025,Nonlinear Econometric Analysis,Advances in Computer Vision,0.0,0,0.0953,0.0588,0
+18.S190_spring_2020,6.006_spring_2020,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Introduction to Algorithms,0.2972,0,0.095,0.0719,0
+10.34_fall_2005,8.044_spring_2013,Numerical Methods Applied to Chemical Engineering,Statistical Physics I,0.0388,0,0.0947,0.0558,0
+10.34_fall_2005,18.655_spring_2016,Numerical Methods Applied to Chemical Engineering,Mathematical Statistics,0.0447,0,0.0942,0.0813,0
+18.465_spring_2007,18.655_spring_2016,Topics in Statistics: Statistical Learning Theory,Mathematical Statistics,0.07,0,0.0935,0.0756,0
+11.126J_spring_2007,15.062_spring_2003,Economics of Education,Data Mining,0.0,0,0.0926,0.0569,0
+10.34_fall_2015,6.006_fall_2011,Numerical Methods Applied to Chemical Engineering,Introduction to Algorithms,0.0483,0,0.0921,0.0641,0
+10.34_fall_2015,16.412J_spring_2016,Numerical Methods Applied to Chemical Engineering,Cognitive Robotics,0.036,0,0.0919,0.061,0
+15.450_fall_2010,6.079_fall_2009,Analytics of Finance,Introduction to Convex Optimization,0.0,0,0.0917,0.0791,0
+1.017_fall_2003,18.S190_spring_2020,Computing and Data Analysis for Environmental Applications,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0329,0,0.0912,0.0444,0
+10.34_fall_2005,16.412J_spring_2016,Numerical Methods Applied to Chemical Engineering,Cognitive Robotics,0.0346,0,0.0912,0.0441,0
+15.062_spring_2003,18.655_spring_2016,Data Mining,Mathematical Statistics,0.0,0,0.0912,0.0439,0
+16.412J_spring_2016,18.465_spring_2007,Cognitive Robotics,Topics in Statistics: Statistical Learning Theory,0.1676,0,0.0909,0.0637,0
+1.017_fall_2003,6.079_fall_2009,Computing and Data Analysis for Environmental Applications,Introduction to Convex Optimization,0.0,0,0.0907,0.0705,0
+16.412J_spring_2016,RES.8-010_summer_2018,Cognitive Robotics,Introduction to Statistical Physics,0.0,0,0.0901,0.0491,0
+14.387_fall_2014,16.412J_spring_2016,Applied Econometrics: Mostly Harmless Big Data,Cognitive Robotics,0.047,0,0.0895,0.045,0
+18.465_spring_2007,6.006_fall_2011,Topics in Statistics: Statistical Learning Theory,Introduction to Algorithms,0.3357,1,0.0892,0.0596,0
+15.062_spring_2003,18.S190_spring_2020,Data Mining,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0311,0,0.0887,0.035,0
+15.062_spring_2003,6.006_fall_2011,Data Mining,Introduction to Algorithms,0.0647,0,0.0874,0.0511,0
+10.34_fall_2005,6.006_spring_2020,Numerical Methods Applied to Chemical Engineering,Introduction to Algorithms,0.0334,0,0.087,0.0699,0
+14.385_fall_2007,6.436J_fall_2018,Nonlinear Econometric Analysis,Fundamentals of Probability,0.0776,0,0.0864,0.0541,0
+10.34_fall_2015,6.864_fall_2005,Numerical Methods Applied to Chemical Engineering,Advanced Natural Language Processing,0.0288,0,0.0862,0.0588,0
+14.385_fall_2007,18.465_spring_2007,Nonlinear Econometric Analysis,Topics in Statistics: Statistical Learning Theory,0.0469,0,0.085,0.069,0
+15.062_spring_2003,18.650__formerly_18.443__fall_2006,Data Mining,Statistics for Applications,0.0,0,0.0847,0.0635,0
+1.017_fall_2003,6.864_fall_2005,Computing and Data Analysis for Environmental Applications,Advanced Natural Language Processing,0.036,0,0.0844,0.0575,0
+15.062_spring_2003,6.S980_fall_2022,Data Mining,Machine Learning for Inverse Graphics,0.0525,0,0.0843,0.0293,0
+18.465_spring_2007,6.S980_fall_2022,Topics in Statistics: Statistical Learning Theory,Machine Learning for Inverse Graphics,0.2086,0,0.0841,0.0464,0
+18.465_spring_2007,6.438_fall_2014,Topics in Statistics: Statistical Learning Theory,Algorithms for Inference,0.3179,1,0.084,0.0794,0
+11.126J_spring_2007,6.006_fall_2011,Economics of Education,Introduction to Algorithms,0.0,0,0.0837,0.0459,0
+18.655_spring_2016,RES.8-010_summer_2018,Mathematical Statistics,Introduction to Statistical Physics,0.0642,0,0.0832,0.0569,0
+1.017_fall_2003,10.34_fall_2015,Computing and Data Analysis for Environmental Applications,Numerical Methods Applied to Chemical Engineering,0.1487,0,0.0827,0.0647,0
+14.387_fall_2014,6.864_fall_2005,Applied Econometrics: Mostly Harmless Big Data,Advanced Natural Language Processing,0.0355,0,0.0824,0.0456,0
+10.34_fall_2005,18.S190_spring_2020,Numerical Methods Applied to Chemical Engineering,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0871,0,0.0805,0.0541,0
+10.34_fall_2015,6.436J_fall_2018,Numerical Methods Applied to Chemical Engineering,Fundamentals of Probability,0.0,0,0.0804,0.0632,0
+6.S980_fall_2022,RES.8-010_summer_2018,Machine Learning for Inverse Graphics,Introduction to Statistical Physics,0.0,0,0.0801,0.0356,0
+15.062_spring_2003,6.079_fall_2009,Data Mining,Introduction to Convex Optimization,0.0,0,0.0799,0.0427,0
+18.650__formerly_18.443__fall_2006,6.864_fall_2005,Statistics for Applications,Advanced Natural Language Processing,0.0,0,0.0793,0.0804,0
+14.385_fall_2007,16.412J_spring_2016,Nonlinear Econometric Analysis,Cognitive Robotics,0.0,0,0.0783,0.0373,0
+14.387_fall_2014,18.642_fall_2024,Applied Econometrics: Mostly Harmless Big Data,Topics in Mathematics with Applications in Finance,0.0592,0,0.0782,0.0434,0
+6.079_fall_2009,RES.8-010_summer_2018,Introduction to Convex Optimization,Introduction to Statistical Physics,0.0,0,0.0771,0.0683,0
+10.34_fall_2005,14.387_fall_2014,Numerical Methods Applied to Chemical Engineering,Applied Econometrics: Mostly Harmless Big Data,0.1885,0,0.0768,0.0528,0
+1.017_fall_2003,11.126J_spring_2007,Computing and Data Analysis for Environmental Applications,Economics of Education,0.0,0,0.0765,0.0598,0
+10.34_fall_2005,18.465_spring_2007,Numerical Methods Applied to Chemical Engineering,Topics in Statistics: Statistical Learning Theory,0.0762,0,0.0764,0.0808,0
+18.650__formerly_18.443__spring_2015,6.079_fall_2009,Statistics for Applications,Introduction to Convex Optimization,0.1363,0,0.0764,0.0732,0
+18.S190_spring_2020,RES.8-010_summer_2018,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Introduction to Statistical Physics,0.0,0,0.0762,0.0457,0
+18.440_spring_2014,18.642_fall_2024,Probability and Random Variables,Topics in Mathematics with Applications in Finance,0.0992,0,0.0757,0.0734,0
+11.126J_spring_2007,6.438_fall_2014,Economics of Education,Algorithms for Inference,0.0,0,0.0749,0.0656,0
+11.126J_spring_2007,6.864_fall_2005,Economics of Education,Advanced Natural Language Processing,0.0,0,0.0745,0.0517,0
+6.8300_spring_2025,ESD.86_spring_2007,Advances in Computer Vision,"Models, Data and Inference for Socio-Technical Systems",0.0725,0,0.0744,0.0404,0
+15.062_spring_2003,16.412J_spring_2016,Data Mining,Cognitive Robotics,0.0443,0,0.0743,0.0458,0
+15.450_fall_2010,18.465_spring_2007,Analytics of Finance,Topics in Statistics: Statistical Learning Theory,0.039,0,0.074,0.0762,0
+15.450_fall_2010,6.S980_fall_2022,Analytics of Finance,Machine Learning for Inverse Graphics,0.0,0,0.0738,0.0395,0
+14.385_fall_2007,18.440_spring_2014,Nonlinear Econometric Analysis,Probability and Random Variables,0.0638,0,0.0734,0.0486,0
+14.385_fall_2007,6.006_fall_2011,Nonlinear Econometric Analysis,Introduction to Algorithms,0.0,0,0.0733,0.0472,0
+18.465_spring_2007,6.006_spring_2020,Topics in Statistics: Statistical Learning Theory,Introduction to Algorithms,0.1881,0,0.0732,0.0549,0
+18.655_spring_2016,6.006_fall_2011,Mathematical Statistics,Introduction to Algorithms,0.0,0,0.0719,0.0366,0
+14.385_fall_2007,18.S190_spring_2020,Nonlinear Econometric Analysis,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0,0,0.0712,0.0376,0
+11.126J_spring_2007,6.006_spring_2020,Economics of Education,Introduction to Algorithms,0.0,0,0.0707,0.0539,0
+6.006_spring_2020,6.079_fall_2009,Introduction to Algorithms,Introduction to Convex Optimization,0.0,0,0.0705,0.0635,0
+16.412J_spring_2016,18.650__formerly_18.443__spring_2015,Cognitive Robotics,Statistics for Applications,0.0,0,0.0689,0.0588,0
+14.387_fall_2014,6.079_fall_2009,Applied Econometrics: Mostly Harmless Big Data,Introduction to Convex Optimization,0.0,0,0.0688,0.0375,0
+16.412J_spring_2016,6.436J_fall_2018,Cognitive Robotics,Fundamentals of Probability,0.0,0,0.0687,0.0633,0
+6.079_fall_2009,6.8300_spring_2025,Introduction to Convex Optimization,Advances in Computer Vision,0.0,0,0.0687,0.0579,0
+18.465_spring_2007,8.044_spring_2013,Topics in Statistics: Statistical Learning Theory,Statistical Physics I,0.0564,0,0.0686,0.0519,0
+1.017_fall_2003,18.465_spring_2007,Computing and Data Analysis for Environmental Applications,Topics in Statistics: Statistical Learning Theory,0.1075,0,0.0683,0.0544,0
+10.34_fall_2005,6.8300_spring_2025,Numerical Methods Applied to Chemical Engineering,Advances in Computer Vision,0.0469,0,0.0683,0.0481,0
+11.126J_spring_2007,18.655_spring_2016,Economics of Education,Mathematical Statistics,0.0,0,0.0681,0.05,0
+1.017_fall_2003,16.412J_spring_2016,Computing and Data Analysis for Environmental Applications,Cognitive Robotics,0.0479,0,0.0681,0.0477,0
+15.062_spring_2003,15.450_fall_2010,Data Mining,Analytics of Finance,0.0,0,0.0673,0.0464,0
+16.412J_spring_2016,8.044_spring_2013,Cognitive Robotics,Statistical Physics I,0.0,0,0.0661,0.0588,0
+10.34_fall_2015,8.044_spring_2013,Numerical Methods Applied to Chemical Engineering,Statistical Physics I,0.0,0,0.066,0.0395,0
+14.387_fall_2014,6.006_fall_2011,Applied Econometrics: Mostly Harmless Big Data,Introduction to Algorithms,0.0705,0,0.066,0.0339,0
+6.438_fall_2014,8.044_spring_2013,Algorithms for Inference,Statistical Physics I,0.0619,0,0.0652,0.0456,0
+10.34_fall_2015,15.062_spring_2003,Numerical Methods Applied to Chemical Engineering,Data Mining,0.1394,0,0.0652,0.0513,0
+16.412J_spring_2016,6.079_fall_2009,Cognitive Robotics,Introduction to Convex Optimization,0.169,0,0.0638,0.0481,0
+18.650__formerly_18.443__fall_2006,6.006_fall_2011,Statistics for Applications,Introduction to Algorithms,0.0,0,0.0637,0.0503,0
+6.079_fall_2009,6.436J_fall_2018,Introduction to Convex Optimization,Fundamentals of Probability,0.0,0,0.0637,0.0611,0
+18.655_spring_2016,8.044_spring_2013,Mathematical Statistics,Statistical Physics I,0.0707,0,0.0635,0.0387,0
+14.387_fall_2014,6.006_spring_2020,Applied Econometrics: Mostly Harmless Big Data,Introduction to Algorithms,0.0448,0,0.063,0.0476,0
+18.655_spring_2016,6.8300_spring_2025,Mathematical Statistics,Advances in Computer Vision,0.0,0,0.0629,0.0517,0
+14.385_fall_2007,15.062_spring_2003,Nonlinear Econometric Analysis,Data Mining,0.0,0,0.0623,0.0279,0
+14.387_fall_2014,8.044_spring_2013,Applied Econometrics: Mostly Harmless Big Data,Statistical Physics I,0.0529,0,0.0623,0.0344,0
+6.006_spring_2020,6.436J_fall_2018,Introduction to Algorithms,Fundamentals of Probability,0.0,0,0.0613,0.0709,0
+1.017_fall_2003,6.S980_fall_2022,Computing and Data Analysis for Environmental Applications,Machine Learning for Inverse Graphics,0.0577,0,0.0609,0.0251,0
+18.S190_spring_2020,6.079_fall_2009,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Introduction to Convex Optimization,0.0728,0,0.0608,0.0714,0
+11.126J_spring_2007,18.650__formerly_18.443__spring_2015,Economics of Education,Statistics for Applications,0.0,0,0.0599,0.0409,0
+11.126J_spring_2007,6.8300_spring_2025,Economics of Education,Advances in Computer Vision,0.0,0,0.059,0.0284,0
+18.650__formerly_18.443__spring_2015,6.006_spring_2020,Statistics for Applications,Introduction to Algorithms,0.0,0,0.0587,0.0633,0
+18.650__formerly_18.443__spring_2015,6.8300_spring_2025,Statistics for Applications,Advances in Computer Vision,0.0,0,0.057,0.0658,0
+18.440_spring_2014,6.438_fall_2014,Probability and Random Variables,Algorithms for Inference,0.0941,0,0.0569,0.0413,0
+15.450_fall_2010,18.440_spring_2014,Analytics of Finance,Probability and Random Variables,0.05,0,0.0567,0.0784,0
+14.387_fall_2014,RES.8-010_summer_2018,Applied Econometrics: Mostly Harmless Big Data,Introduction to Statistical Physics,0.0492,0,0.0562,0.0419,0
+18.650__formerly_18.443__fall_2006,6.079_fall_2009,Statistics for Applications,Introduction to Convex Optimization,0.1363,0,0.0555,0.0641,0
+14.385_fall_2007,6.006_spring_2020,Nonlinear Econometric Analysis,Introduction to Algorithms,0.0,0,0.0555,0.0471,0
+6.436J_fall_2018,6.S980_fall_2022,Fundamentals of Probability,Machine Learning for Inverse Graphics,0.0,0,0.0549,0.0294,0
+10.34_fall_2005,18.440_spring_2014,Numerical Methods Applied to Chemical Engineering,Probability and Random Variables,0.0493,0,0.0545,0.0524,0
+10.34_fall_2015,18.655_spring_2016,Numerical Methods Applied to Chemical Engineering,Mathematical Statistics,0.0,0,0.054,0.0529,0
+18.642_fall_2024,6.S980_fall_2022,Topics in Mathematics with Applications in Finance,Machine Learning for Inverse Graphics,0.0,0,0.0539,0.0294,0
+18.655_spring_2016,18.S190_spring_2020,Mathematical Statistics,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0,0,0.053,0.0645,0
+15.062_spring_2003,6.8300_spring_2025,Data Mining,Advances in Computer Vision,0.0668,0,0.0528,0.0268,0
+15.450_fall_2010,6.8300_spring_2025,Analytics of Finance,Advances in Computer Vision,0.0,0,0.0524,0.0473,0
+18.650__formerly_18.443__spring_2015,6.S980_fall_2022,Statistics for Applications,Machine Learning for Inverse Graphics,0.0,0,0.0523,0.0362,0
+15.062_spring_2003,RES.8-010_summer_2018,Data Mining,Introduction to Statistical Physics,0.0,0,0.0521,0.0366,0
+10.34_fall_2015,18.650__formerly_18.443__spring_2015,Numerical Methods Applied to Chemical Engineering,Statistics for Applications,0.0966,0,0.0517,0.0529,0
+11.126J_spring_2007,18.650__formerly_18.443__fall_2006,Economics of Education,Statistics for Applications,0.0,0,0.0516,0.0529,0
+14.387_fall_2014,6.8300_spring_2025,Applied Econometrics: Mostly Harmless Big Data,Advances in Computer Vision,0.073,0,0.0513,0.0307,0
+11.126J_spring_2007,8.044_spring_2013,Economics of Education,Statistical Physics I,0.0,0,0.0511,0.0511,0
+18.S190_spring_2020,6.436J_fall_2018,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Fundamentals of Probability,0.0,0,0.051,0.0404,0
+18.465_spring_2007,18.650__formerly_18.443__fall_2006,Topics in Statistics: Statistical Learning Theory,Statistics for Applications,0.0705,0,0.0508,0.0804,0
+16.412J_spring_2016,18.S190_spring_2020,Cognitive Robotics,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0336,0,0.0506,0.0402,0
+10.34_fall_2015,18.650__formerly_18.443__fall_2006,Numerical Methods Applied to Chemical Engineering,Statistics for Applications,0.0966,0,0.0503,0.0663,0
+15.450_fall_2010,8.044_spring_2013,Analytics of Finance,Statistical Physics I,0.0392,0,0.0495,0.0474,0
+15.450_fall_2010,18.S190_spring_2020,Analytics of Finance,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0,0,0.049,0.0405,0
+16.412J_spring_2016,18.655_spring_2016,Cognitive Robotics,Mathematical Statistics,0.0,0,0.0485,0.0291,0
+10.34_fall_2005,15.062_spring_2003,Numerical Methods Applied to Chemical Engineering,Data Mining,0.134,0,0.0477,0.0341,0
+18.465_spring_2007,18.650__formerly_18.443__spring_2015,Topics in Statistics: Statistical Learning Theory,Statistics for Applications,0.0705,0,0.0466,0.0664,0
+18.650__formerly_18.443__spring_2015,18.S190_spring_2020,Statistics for Applications,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0887,0,0.0461,0.053,0
+18.465_spring_2007,6.8300_spring_2025,Topics in Statistics: Statistical Learning Theory,Advances in Computer Vision,0.2899,0,0.046,0.0412,0
+1.017_fall_2003,6.8300_spring_2025,Computing and Data Analysis for Environmental Applications,Advances in Computer Vision,0.0754,0,0.0459,0.0339,0
+18.655_spring_2016,6.006_spring_2020,Mathematical Statistics,Introduction to Algorithms,0.0,0,0.0451,0.0541,0
+16.412J_spring_2016,18.650__formerly_18.443__fall_2006,Cognitive Robotics,Statistics for Applications,0.0,0,0.045,0.0614,0
+6.006_fall_2011,6.S980_fall_2022,Introduction to Algorithms,Machine Learning for Inverse Graphics,0.1045,0,0.0446,0.0323,0
+14.385_fall_2007,8.044_spring_2013,Nonlinear Econometric Analysis,Statistical Physics I,0.0472,0,0.0434,0.0292,0
+18.S190_spring_2020,ESD.86_spring_2007,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic","Models, Data and Inference for Socio-Technical Systems",0.0323,0,0.0432,0.0277,0
+10.34_fall_2015,14.387_fall_2014,Numerical Methods Applied to Chemical Engineering,Applied Econometrics: Mostly Harmless Big Data,0.1462,0,0.0429,0.0318,0
+18.650__formerly_18.443__fall_2006,18.S190_spring_2020,Statistics for Applications,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0887,0,0.0427,0.0488,0
+10.34_fall_2015,11.126J_spring_2007,Numerical Methods Applied to Chemical Engineering,Economics of Education,0.0,0,0.0424,0.0393,0
+16.412J_spring_2016,18.440_spring_2014,Cognitive Robotics,Probability and Random Variables,0.0,0,0.0413,0.0378,0
+18.650__formerly_18.443__fall_2006,6.8300_spring_2025,Statistics for Applications,Advances in Computer Vision,0.0,0,0.0403,0.0556,0
+18.650__formerly_18.443__fall_2006,6.006_spring_2020,Statistics for Applications,Introduction to Algorithms,0.0,0,0.0402,0.0613,0
+15.062_spring_2003,6.436J_fall_2018,Data Mining,Fundamentals of Probability,0.0,0,0.0396,0.0423,0
+6.006_fall_2011,6.8300_spring_2025,Introduction to Algorithms,Advances in Computer Vision,0.1814,0,0.0388,0.0261,0
+6.S980_fall_2022,ESD.86_spring_2007,Machine Learning for Inverse Graphics,"Models, Data and Inference for Socio-Technical Systems",0.056,0,0.0383,0.0154,0
+18.440_spring_2014,6.006_fall_2011,Probability and Random Variables,Introduction to Algorithms,0.0,0,0.0381,0.0426,0
+10.34_fall_2005,6.S980_fall_2022,Numerical Methods Applied to Chemical Engineering,Machine Learning for Inverse Graphics,0.0394,0,0.0379,0.0311,0
+6.8300_spring_2025,RES.8-010_summer_2018,Advances in Computer Vision,Introduction to Statistical Physics,0.0,0,0.0379,0.0286,0
+18.S190_spring_2020,6.8300_spring_2025,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Advances in Computer Vision,0.0451,0,0.0378,0.0341,0
+10.34_fall_2015,18.465_spring_2007,Numerical Methods Applied to Chemical Engineering,Topics in Statistics: Statistical Learning Theory,0.0362,0,0.0372,0.0446,0
+11.126J_spring_2007,6.S980_fall_2022,Economics of Education,Machine Learning for Inverse Graphics,0.0,0,0.0364,0.0253,0
+6.006_spring_2020,6.S980_fall_2022,Introduction to Algorithms,Machine Learning for Inverse Graphics,0.0564,0,0.0355,0.0244,0
+6.864_fall_2005,8.044_spring_2013,Advanced Natural Language Processing,Statistical Physics I,0.0,0,0.0353,0.0429,0
+10.34_fall_2015,18.S190_spring_2020,Numerical Methods Applied to Chemical Engineering,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0898,0,0.0353,0.0278,0
+10.34_fall_2015,6.8300_spring_2025,Numerical Methods Applied to Chemical Engineering,Advances in Computer Vision,0.0495,0,0.0351,0.0301,0
+6.436J_fall_2018,6.8300_spring_2025,Fundamentals of Probability,Advances in Computer Vision,0.0,0,0.0343,0.0315,0
+11.126J_spring_2007,18.440_spring_2014,Economics of Education,Probability and Random Variables,0.0,0,0.0342,0.037,0
+18.440_spring_2014,6.006_spring_2020,Probability and Random Variables,Introduction to Algorithms,0.0,0,0.0342,0.0455,0
+6.079_fall_2009,6.S980_fall_2022,Introduction to Convex Optimization,Machine Learning for Inverse Graphics,0.0,0,0.0316,0.0283,0
+15.062_spring_2003,8.044_spring_2013,Data Mining,Statistical Physics I,0.0,0,0.0311,0.0172,0
+18.642_fall_2024,6.8300_spring_2025,Topics in Mathematics with Applications in Finance,Advances in Computer Vision,0.0,0,0.0291,0.0312,0
+6.006_fall_2011,8.044_spring_2013,Introduction to Algorithms,Statistical Physics I,0.0,0,0.0287,0.0271,0
+11.126J_spring_2007,6.436J_fall_2018,Economics of Education,Fundamentals of Probability,0.0,0,0.0279,0.0386,0
+10.34_fall_2005,11.126J_spring_2007,Numerical Methods Applied to Chemical Engineering,Economics of Education,0.0,0,0.0276,0.0252,0
+18.440_spring_2014,6.079_fall_2009,Probability and Random Variables,Introduction to Convex Optimization,0.0,0,0.0265,0.0427,0
+14.387_fall_2014,18.S190_spring_2020,Applied Econometrics: Mostly Harmless Big Data,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0324,0,0.0259,0.0242,0
+6.006_spring_2020,6.8300_spring_2025,Introduction to Algorithms,Advances in Computer Vision,0.0731,0,0.0256,0.0219,0
+18.440_spring_2014,18.S190_spring_2020,Probability and Random Variables,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0,0,0.0253,0.0229,0
+14.387_fall_2014,6.S980_fall_2022,Applied Econometrics: Mostly Harmless Big Data,Machine Learning for Inverse Graphics,0.0563,0,0.0249,0.0141,0
+18.655_spring_2016,6.079_fall_2009,Mathematical Statistics,Introduction to Convex Optimization,0.0,0,0.0238,0.0303,0
+6.079_fall_2009,8.044_spring_2013,Introduction to Convex Optimization,Statistical Physics I,0.0,0,0.0225,0.0374,0
+14.385_fall_2007,6.S980_fall_2022,Nonlinear Econometric Analysis,Machine Learning for Inverse Graphics,0.0,0,0.0212,0.0155,0
+18.440_spring_2014,6.S980_fall_2022,Probability and Random Variables,Machine Learning for Inverse Graphics,0.0,0,0.0199,0.0222,0
+6.8300_spring_2025,8.044_spring_2013,Advances in Computer Vision,Statistical Physics I,0.0,0,0.0196,0.0286,0
+6.S980_fall_2022,8.044_spring_2013,Machine Learning for Inverse Graphics,Statistical Physics I,0.0,0,0.0184,0.0255,0
+6.006_spring_2020,8.044_spring_2013,Introduction to Algorithms,Statistical Physics I,0.0,0,0.0177,0.0285,0
+18.465_spring_2007,18.S190_spring_2020,Topics in Statistics: Statistical Learning Theory,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.1291,0,0.0175,0.0267,0
+18.440_spring_2014,6.8300_spring_2025,Probability and Random Variables,Advances in Computer Vision,0.0,0,0.0174,0.0261,0
+18.S190_spring_2020,8.044_spring_2013,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Statistical Physics I,0.0,0,0.0171,0.0261,0
+10.34_fall_2015,6.S980_fall_2022,Numerical Methods Applied to Chemical Engineering,Machine Learning for Inverse Graphics,0.0412,0,0.0149,0.0201,0
+18.440_spring_2014,6.864_fall_2005,Probability and Random Variables,Advanced Natural Language Processing,0.0,0,0.0147,0.028,0
+15.062_spring_2003,18.440_spring_2014,Data Mining,Probability and Random Variables,0.0,0,0.0143,0.0149,0
+10.34_fall_2015,18.440_spring_2014,Numerical Methods Applied to Chemical Engineering,Probability and Random Variables,0.0,0,0.0134,0.0239,0
+18.650__formerly_18.443__fall_2006,6.S980_fall_2022,Statistics for Applications,Machine Learning for Inverse Graphics,0.0,0,0.0097,0.0231,0
+11.126J_spring_2007,18.S190_spring_2020,Economics of Education,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",0.0,0,0.0086,0.026,0
+18.655_spring_2016,6.S980_fall_2022,Mathematical Statistics,Machine Learning for Inverse Graphics,0.0,0,0.0086,0.0198,0

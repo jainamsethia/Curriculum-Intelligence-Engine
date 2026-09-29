@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "id": "18.S190_spring_2020",
+  "readable_id": "18.S190+spring_2020",
+  "title": "Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",
+  "url": "https://ocw.mit.edu/courses/18-s190-introduction-to-computational-thinking-with-julia-with-applications-to-modeling-the-covid-19-pandemic-spring-2020/",
+  "course_numbers": [
+   "18.S190",
+   "6.S083"
+  ],
+  "departments": [
+   "Electrical Engineering and Computer Science",
+   "Mathematics"
+  ],
+  "level": [
+   "Undergraduate"
+  ],
+  "semester": "Spring",
+  "year": 2020,
+  "description": "<p>This half-semester course introduces computational thinking through applications of data science, artificial intelligence, and mathematical models using the Julia programming language. This Spring 2020 version is a fast-tracked curriculum adaptation to focus on applications to COVID-19 responses.</p>\n<p>See the MIT News article Computational Thinking Class Enables Students to Engage in Covid-19 Response</p>\n",
+  "full_description": "",
+  "ocw_topics": [
+   "Algorithms and Data Structures",
+   "Applied Mathematics",
+   "Computation",
+   "Computer Design and Engineering",
+   "Computer Networks",
+   "Computer Science",
+   "Engineering",
+   "Mathematics"
+  ],
+  "found_by_query": "data science",
+  "license": "CC BY-NC-SA 4.0 (MIT OpenCourseWare)"
+ },
+ "pages": {
+  "syllabus": "<main id=\"course-content-section\">\n<h3 id=\"course-meeting-times\">Course Meeting Times</h3>\n<p>Lectures: 2 sessions / week, 1.5 hours / session</p>\n<h3 id=\"prerequisites\">Prerequisites</h3>\n<p>There are no prerequisites.</p>\n<h3 id=\"course-description\">Course Description</h3>\n<p>This half-semester course introduces computational thinking through applications of data science, artificial intelligence, and mathematical models using the Julia programming language. This Spring 2020 version is a fast-tracked curriculum adaptation to focus on applications to COVID-19 responses.</p>\n<h3 id=\"format\">Format</h3>\n<p>This course was offered entirely online while the MIT campus was shut down due to the Covid-19 pandemic. Lectures were mostly delivered live (via Zoom). The instructors used the Piazza platform to host class Q&amp;A.</p>\n<h3 id=\"technical-requirements\">Technical Requirements</h3>\n<p>Student need to install the Julia programming language, as well as other tools and packages. Complete instructions are listed on the <a aria-label=\"GitHub course page (opens in a new tab)\" class=\"external-link\" href=\"https://github.com/mitmath/6S083\" target=\"_blank\">GitHub course page</a>.</p>\n<h3 id=\"problem-sets--exams\">Problem Sets &amp; Exams</h3>\n<p>There are five problem sets and no exams.</p>\n<h3 id=\"grading-policy\">Grading Policy</h3>\n<p>The lowest score of the 5 problem sets will be dropped. The grade is based upon 25% for each of the other 4 problem sets.</p>\n</main>",
+  "calendar": "",
+  "lecture-notes": ""
+ }
+}

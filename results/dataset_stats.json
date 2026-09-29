@@ -1,0 +1,63 @@
+{
+  "raw_documents": 87,
+  "after_cleaning": 87,
+  "dropped_short_or_duplicate": 0,
+  "split_sizes": {
+    "train": 60,
+    "test": 27
+  },
+  "departments": {
+    "Electrical Engineering and Computer Science": 34,
+    "Mathematics": 18,
+    "Economics": 7,
+    "Sloan School of Management": 7,
+    "Civil and Environmental Engineering": 5,
+    "Physics": 4,
+    "Chemical Engineering": 2,
+    "Mechanical Engineering": 2,
+    "Brain and Cognitive Sciences": 2,
+    "Institute for Data, Systems, and Society": 1,
+    "Aeronautics and Astronautics": 1,
+    "Music": 1,
+    "Experimental Study Group": 1,
+    "Engineering Systems Division": 1,
+    "Health Sciences and Technology": 1
+  },
+  "words_per_doc": {
+    "mean": 399.3,
+    "min": 74,
+    "max": 1225
+  },
+  "vocab_size_after_preprocessing": 3503,
+  "coverage": {
+    "description": 87,
+    "prerequisites_text": 63,
+    "outcomes": 18,
+    "lecture_topics": 59
+  },
+  "classification_labels": {
+    "Algorithms and Data Structures": 15,
+    "Applied Mathematics": 19,
+    "Artificial Intelligence": 21,
+    "Computer Science": 43,
+    "Data Mining": 12,
+    "Discrete Mathematics": 10,
+    "Econometrics": 8,
+    "Economics": 8,
+    "Electrical Engineering": 9,
+    "Linear Algebra": 9,
+    "Probability and Statistics": 40,
+    "Systems Engineering": 15
+  },
+  "pairs": {
+    "cross": 1620,
+    "test": 351,
+    "train": 1770
+  },
+  "positive_pairs": {
+    "cross": 94,
+    "train": 98,
+    "test": 17
+  },
+  "gold_pairs": 41
+}

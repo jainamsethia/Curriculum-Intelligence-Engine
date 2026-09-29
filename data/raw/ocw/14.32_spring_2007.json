@@ -1,0 +1,35 @@
+{
+ "meta": {
+  "id": "14.32_spring_2007",
+  "readable_id": "14.32+spring_2007",
+  "title": "Econometrics",
+  "url": "https://ocw.mit.edu/courses/14-32-econometrics-spring-2007/",
+  "course_numbers": [
+   "14.32"
+  ],
+  "departments": [
+   "Economics"
+  ],
+  "level": [
+   "Undergraduate"
+  ],
+  "semester": "Spring",
+  "year": 2007,
+  "description": "Introduction to econometric models and techniques, simultaneous equations, program evaluation, emphasizing regression. Advanced topics include instrumental variables, panel data methods, measurement error, and limited dependent variable models. May not count toward HASS requirement.",
+  "full_description": "",
+  "ocw_topics": [
+   "Econometrics",
+   "Economics",
+   "Mathematics",
+   "Probability and Statistics",
+   "Social Science"
+  ],
+  "found_by_query": "econometrics",
+  "license": "CC BY-NC-SA 4.0 (MIT OpenCourseWare)"
+ },
+ "pages": {
+  "syllabus": "<main id=\"course-content-section\">\n<h3 id=\"course-meeting-times\">Course Meeting Times</h3>\n<p>Lectures: 2 sessions / week, 1.5 hours / session</p>\n<p>Recitations: 1 session / week, 1 hour / session</p>\n<h3 id=\"description\">Description</h3>\n<p>This course covers the statistical tools needed to understand empirical economic research and to plan and execute independent research projects. Topics include statistical inference, regression, generalized least squares, instrumental variables, simultaneous equations models, and evaluation of government policies and programs.</p>\n<h3 id=\"prerequisites\">Prerequisites</h3>\n<p>The prerequisite courses include Introduction to Statistical Methods in Economics (14.30) or equivalent. Students should be familiar with basic concepts in probability theory and statistical inference. The course includes a brief statistics review.</p>\n<h3 id=\"course-requirements\">Course Requirements</h3>\n<p>Each week there are two lectures and a weekly recitation.</p>\n<p>In addition to the readings, there are 6 graded problem sets and ungraded review problem sets at the beginning and end of the course. The problem sets have both analytical and computer-exercise components. The statistical analysis will be done using Stata or SAS on PCs or MIT workstations. Help for new Stata users will be given in recitation.</p>\n<h3 id=\"texts\">Texts</h3>\n<p>Wooldridge, Jeffrey M. <em>Introductory Econometrics: A Modern Approach</em>. 3rd ed. Mason, OH: Thomson/South-Western, 2006. ISBN: 9780324289787.</p>\n<p>Goldberger, Arthur S. <em>A Course in Econometrics</em>. Cambridge, MA: Harvard University Press, 1991. ISBN: 9780674175440.</p>\n<p>DeGroot, Morris H., and Mark J. Schervish. <em>Probability and Statistics</em>. 3rd ed. Boston, MA: Addison-Wesley, 2001. ISBN: 9780201524888.</p>\n<p>Wooldridge is the main text. The material in Goldberger is more advanced and optional. DeGroot and Schervish is a recommended text for statistics review. Each unit also has <a href=\"/courses/14-32-econometrics-spring-2007/pages/readings/\">readings</a> from published journal articles.</p>\n<h3 id=\"grading\">Grading</h3>\n<p><table>\n<thead>\n<tr>\n<th>\n\nACTIVITIES\n</th>\n<th>\n\nPERCENTAGES\n</th>\n</tr></thead></table></p>\n\n<p>\n<tr>\n<td>\n\nProblem sets (5% each)\n</td>\n<td>\n\n30%\n</td>\n</tr></p>\n<p>\n<tr>\n<td>\n\nMidterm exam\n</td>\n<td>\n\n30%\n</td>\n</tr></p>\n<p>\n<tr>\n<td>\n\nFinal exam\n</td>\n<td>\n\n40%\n</td>\n</tr></p>\n\n\n<p>Each review problem set is worth 1 bonus percentage point.</p>\n<p>Graded problem sets are mandatory and solutions should be submitted on time to receive credit. Stata or SAS logs should be submitted with solution sets. A grade of 50% or better on at least 5 problem sets is required in order to be eligible to take the final. Consult with classmates on problem sets if you get stuck, but written solution sets should be your own work.</p>\n<h3 id=\"course-outline\">Course Outline</h3>\n<h4 id=\"part-i\">Part I</h4>\n<ul>\n<li>A. Review of probability and statistics\n<ul>\n<li>1. Probability and distribution</li>\n<li>2. Expectation and moments</li>\n</ul>\n</li>\n<li>B. Review of statistical inference\n<ul>\n<li>3. Sampling distributions and inference</li>\n<li>4. The Central Limit theorem (Asymptotic distribution of the sample mean)</li>\n<li>5. Confidence intervals</li>\n</ul>\n</li>\n<li>C. Regression basics\n<ul>\n<li>6. Conditional expectation functions, bivariate regression</li>\n<li>7. Sampling distribution of regression estimates; Gauss-Markov theorem</li>\n<li>8. How classical assumptions are used; asymptotic distribution of the sample slope</li>\n<li>9. Residuals, fitted values, and goodness of fit</li>\n</ul>\n</li>\n</ul>\n<h4 id=\"part-ii\">Part II</h4>\n<ul>\n<li>D. Multivariate regression\n<ul>\n<li>10. Regression, causality, and control; anatomy of multivariate regression coefficients</li>\n<li>11. Omitted variables formula, short vs. long regressions</li>\n<li>12a. Dummy variables and interactions; testing linear restrictions using F-tests</li>\n<li>12b. Regression analysis of natural experiments, differences-in-differences</li>\n</ul>\n</li>\n<li>E. Inference problems - heteroscedasticity and autocorrelation\n<ul>\n<li>13a. Heteroscedasticity, consequences of; weighted least squares; the linear probability model</li>\n<li>13b. Serial correlation in time series, consequences of; quasi-differencing; common-factor restriction; Durbin-Watson test for serial correlation</li>\n</ul>\n</li>\n<li>F. Instrumental variables, simultaneous equations models, measurement error\n<ul>\n<li>14a. Using IV to solve omitted-variables problems</li>\n<li>14b. Measurement error (Time-permitting)</li>\n<li>14c. Regression-discontinuity designs (Time-permitting)</li>\n</ul>\n</li>\n<li>G. Simultaneous equation models\n<ul>\n<li>15. Simultaneous equations models I\n<ul>\n<li>a. The use of structural models</li>\n<li>b. Simultaneous equations bias</li>\n<li>c. The identification problem</li>\n<li>d. The structure and the reduced form</li>\n<li>e. Indirect least squares</li>\n</ul>\n</li>\n<li>16. Simultaneous equations models II\n<ul>\n<li>a. IV for the SEM</li>\n<li>b. Two-stage least squares</li>\n<li>c. Sampling variance of 2SLS estimates</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</main>",
+  "calendar": "",
+  "lecture-notes": ""
+ }
+}

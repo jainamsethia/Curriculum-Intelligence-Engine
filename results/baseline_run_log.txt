@@ -1,0 +1,100 @@
+{
+  "overlap_scoring": {
+    "n_test_pairs": 351,
+    "n_test_positive": 17,
+    "chance_avg_precision": 0.048,
+    "jaccard": {
+      "spearman_vs_silver_score": 0.396,
+      "roc_auc": 0.823,
+      "avg_precision": 0.323,
+      "threshold_from_train": 0.128,
+      "precision": 0.286,
+      "recall": 0.235,
+      "f1": 0.258,
+      "accuracy": 0.934
+    },
+    "tfidf_cosine": {
+      "spearman_vs_silver_score": 0.446,
+      "roc_auc": 0.826,
+      "avg_precision": 0.351,
+      "threshold_from_train": 0.2,
+      "precision": 0.233,
+      "recall": 0.412,
+      "f1": 0.298,
+      "accuracy": 0.906
+    },
+    "manual_gold": {
+      "n_pairs": 41,
+      "n_gold_overlap": 19,
+      "label_counts": {
+        "0": 22,
+        "1": 15,
+        "2": 4
+      },
+      "annotator": [
+        "LLM (Claude Opus 5.5)"
+      ],
+      "note": "single annotator; pairs are stratified by silver score, not a random sample",
+      "tfidf_cosine": {
+        "spearman_vs_gold": 0.636,
+        "roc_auc": 0.83,
+        "avg_precision": 0.828,
+        "precision": 1.0,
+        "recall": 0.316,
+        "f1": 0.48
+      },
+      "jaccard": {
+        "spearman_vs_gold": 0.542,
+        "roc_auc": 0.768,
+        "avg_precision": 0.784
+      },
+      "silver_score": {
+        "spearman_vs_gold": 0.611,
+        "roc_auc": 0.821,
+        "avg_precision": 0.826,
+        "precision": 0.769,
+        "recall": 0.526,
+        "f1": 0.625
+      }
+    }
+  },
+  "rule_based_extraction": {
+    "lexicon_topics": 46,
+    "avg_topics_per_course": 6.16,
+    "courses_with_>=3_topics": 76,
+    "courses_with_prerequisites_found": 63,
+    "courses_with_prereq_course_refs": 57,
+    "courses_with_outcomes_found": 18
+  }
+}
+{
+  "labels": [
+    "Algorithms and Data Structures",
+    "Applied Mathematics",
+    "Artificial Intelligence",
+    "Computer Science",
+    "Data Mining",
+    "Discrete Mathematics",
+    "Econometrics",
+    "Economics",
+    "Electrical Engineering",
+    "Linear Algebra",
+    "Probability and Statistics",
+    "Systems Engineering"
+  ],
+  "n_train": 60,
+  "n_test": 27,
+  "chosen_C (3-fold grouped CV on train)": 1,
+  "always_top2_frequent_labels": {
+    "micro_f1": 0.496,
+    "macro_f1": 0.133,
+    "samples_f1": 0.499,
+    "hamming_loss": 0.194
+  },
+  "tfidf_logreg": {
+    "micro_f1": 0.561,
+    "macro_f1": 0.302,
+    "samples_f1": 0.604,
+    "hamming_loss": 0.145
+  }
+}

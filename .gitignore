@@ -1,0 +1,11 @@
+# derived / bulky / regenerable
+data/interim/
+data/raw/nmims_zip/
+__pycache__/
+*.pyc
+*.zip
+
+# tool folders (nothing from an assistant's working folders goes to the repo)
+.claude/
+CLAUDE.md
+.vscode/

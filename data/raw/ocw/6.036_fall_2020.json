@@ -1,0 +1,34 @@
+{
+ "meta": {
+  "id": "6.036_fall_2020",
+  "readable_id": "6.036+fall_2020",
+  "title": "Introduction to Machine Learning",
+  "url": "https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/",
+  "course_numbers": [
+   "6.036"
+  ],
+  "departments": [
+   "Electrical Engineering and Computer Science"
+  ],
+  "level": [
+   "Undergraduate"
+  ],
+  "semester": "Fall",
+  "year": 2020,
+  "description": "<p>This course introduces principles, algorithms, and applications of machine learning from the point of view of modeling and prediction. It includes formulation of learning problems and concepts of representation, over-fitting, and generalization. These concepts are exercised in supervised learning and reinforcement learning, with applications to images and to temporal sequences.</p>\n<p>This course is part of the Open Learning Library, which is free to use.&nbsp;You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.</p>\n",
+  "full_description": "",
+  "ocw_topics": [
+   "Algorithms and Data Structures",
+   "Artificial Intelligence",
+   "Computer Science",
+   "Engineering"
+  ],
+  "found_by_query": "reinforcement learning",
+  "license": "CC BY-NC-SA 4.0 (MIT OpenCourseWare)"
+ },
+ "pages": {
+  "syllabus": "",
+  "calendar": "",
+  "lecture-notes": ""
+ }
+}

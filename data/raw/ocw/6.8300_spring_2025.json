@@ -1,0 +1,33 @@
+{
+ "meta": {
+  "id": "6.8300_spring_2025",
+  "readable_id": "6.8300+spring_2025",
+  "title": "Advances in Computer Vision",
+  "url": "https://ocw.mit.edu/courses/6-8300-advances-in-computer-vision-spring-2025/",
+  "course_numbers": [
+   "6.8300"
+  ],
+  "departments": [
+   "Electrical Engineering and Computer Science"
+  ],
+  "level": [
+   "Graduate"
+  ],
+  "semester": "Spring",
+  "year": 2025,
+  "description": "<p>This course dives into advanced concepts in computer vision. A first focus is geometry in computer vision, including image formation, representation theory for vision, classic multi-view geometry, multi-view geometry in the age of deep learning, differentiable rendering, neural scene representations, correspondence estimation, optical flow computation, and point tracking.</p>\n<p>Next, we explore generative modeling and representation learning including image and video generation, guidance in diffusion models, and conditional probabilistic models, as well as representation learning in the form of contrastive and masking-based methods.</p>\n<p>Finally, we will explore the intersection of robotics and computer vision with “vision for embodied agents,” investigating the role of vision for decision-making, planning and control.</p>\n",
+  "full_description": "",
+  "ocw_topics": [
+   "Artificial Intelligence",
+   "Computer Science",
+   "Engineering"
+  ],
+  "found_by_query": "deep learning",
+  "license": "CC BY-NC-SA 4.0 (MIT OpenCourseWare)"
+ },
+ "pages": {
+  "syllabus": "",
+  "calendar": "",
+  "lecture-notes": ""
+ }
+}

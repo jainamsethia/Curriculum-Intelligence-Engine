@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "id": "6.4210_fall_2022",
+  "readable_id": "6.4210+fall_2022",
+  "title": "Robotic Manipulation",
+  "url": "https://ocw.mit.edu/courses/6-4210-robotic-manipulation-fall-2022/",
+  "course_numbers": [
+   "6.4210",
+   "6.4212"
+  ],
+  "departments": [
+   "Electrical Engineering and Computer Science"
+  ],
+  "level": [
+   "Undergraduate",
+   "Graduate"
+  ],
+  "semester": "Fall",
+  "year": 2022,
+  "description": "<p>Introduces the fundamental algorithmic approaches for creating robot systems that can autonomously manipulate physical objects in unstructured environments such as homes and restaurants. Topics include perception (including approaches based on deep learning and approaches based on 3D geometry), planning (robot kinematics and trajectory generation, collision-free motion planning, task-and-motion planning, and planning under uncertainty), as well as dynamics and control (both model-based and learning-based).</p>\n<p>Homework assignments will guide students through building a software stack that will enable a robotic arm to autonomously manipulation objects in cluttered scenes (like a kitchen). A final project will allow students to dig deeper into a specific aspect of their choosing. The class has hardware available for ambitious final projects, but will also make heavy use of simulation using cloud resources.</p>\n",
+  "full_description": "",
+  "ocw_topics": [
+   "Artificial Intelligence",
+   "Computer Science",
+   "Electrical Engineering",
+   "Engineering",
+   "Robotics and Control Systems"
+  ],
+  "found_by_query": "deep learning",
+  "license": "CC BY-NC-SA 4.0 (MIT OpenCourseWare)"
+ },
+ "pages": {
+  "syllabus": "",
+  "calendar": "",
+  "lecture-notes": ""
+ }
+}

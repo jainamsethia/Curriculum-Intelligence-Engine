@@ -1,0 +1,378 @@
+[
+  {
+    "course_a": "6.036 Introduction to Machine Learning (fall_2020)",
+    "course_b": "15.773 Hands-On Deep Learning (spring_2024)",
+    "overlap_score": 0.088,
+    "overlap_percent": "9%",
+    "redundancy_warning": false,
+    "common_topics": [
+      {
+        "topic": "Algorithms & Complexity",
+        "mentions_a": 1,
+        "mentions_b": 1
+      }
+    ],
+    "unique_to_a": [
+      "Reinforcement Learning",
+      "Learning Theory"
+    ],
+    "unique_to_b": [
+      "Neural Networks",
+      "Deep Learning",
+      "Transformers & LLMs",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Data Analysis & Analytics",
+      "Programming Tools (Python/R/Julia/MATLAB)"
+    ],
+    "prerequisites": {
+      "a": {
+        "text": "",
+        "course_refs": []
+      },
+      "b": {
+        "text": "Familiarity with Python at this level Familiarity with fundamental machine learning concepts such as training/validation/testing, overfitting/underfitting, and regularization If you have taken 15.071 The Analytics Edge , 15.072 Advanced Analytics Edge (or will be taking one of these concurrently), o",
+        "course_refs": [
+          "15.071",
+          "15.072"
+        ]
+      }
+    },
+    "missing_prerequisites": [
+      {
+        "course": "Hands-On Deep Learning",
+        "assumes": "Data Analysis & Analytics",
+        "not_taught_in": "Introduction to Machine Learning"
+      },
+      {
+        "course": "Hands-On Deep Learning",
+        "assumes": "Programming Tools (Python/R/Julia/MATLAB)",
+        "not_taught_in": "Introduction to Machine Learning"
+      }
+    ],
+    "a_is_listed_prerequisite_of_b": false,
+    "b_is_listed_prerequisite_of_a": false,
+    "method": "baseline: TF-IDF cosine + topic lexicon + regex prerequisites"
+  },
+  {
+    "course_a": "18.650 (formerly 18.443) Statistics for Applications (fall_2006)",
+    "course_b": "18.650 (formerly 18.443) Statistics for Applications (spring_2015)",
+    "overlap_score": 0.576,
+    "overlap_percent": "58%",
+    "redundancy_warning": true,
+    "common_topics": [
+      {
+        "topic": "Probability",
+        "mentions_a": 3,
+        "mentions_b": 3
+      },
+      {
+        "topic": "Statistical Inference",
+        "mentions_a": 9,
+        "mentions_b": 10
+      },
+      {
+        "topic": "Hypothesis Testing",
+        "mentions_a": 1,
+        "mentions_b": 4
+      },
+      {
+        "topic": "Bayesian Methods",
+        "mentions_a": 2,
+        "mentions_b": 3
+      },
+      {
+        "topic": "Regression",
+        "mentions_a": 5,
+        "mentions_b": 4
+      }
+    ],
+    "unique_to_a": [
+      "Classification",
+      "Algorithms & Complexity",
+      "Programming Tools (Python/R/Julia/MATLAB)"
+    ],
+    "unique_to_b": [
+      "Calculus & Differential Equations"
+    ],
+    "prerequisites": {
+      "a": {
+        "text": "Probability and Random Variables (18.440 ) or Probabilistic Systems Analysis (6.041)",
+        "course_refs": [
+          "18.440",
+          "6.041"
+        ]
+      },
+      "b": {
+        "text": "Probability and Random Variables (18.440) or Probabilistic Systems Analysis (6.041) or the equivalent (one semester of calculus-based probability). The prerequisite material is also covered in the required textbook (see below), Chapters 1â5.",
+        "course_refs": [
+          "18.440",
+          "6.041"
+        ]
+      }
+    },
+    "missing_prerequisites": [
+      {
+        "course": "Statistics for Applications",
+        "assumes": "Calculus & Differential Equations",
+        "not_taught_in": "Statistics for Applications"
+      }
+    ],
+    "a_is_listed_prerequisite_of_b": false,
+    "b_is_listed_prerequisite_of_a": false,
+    "method": "baseline: TF-IDF cosine + topic lexicon + regex prerequisites"
+  },
+  {
+    "course_a": "6.006 Introduction to Algorithms (fall_2011)",
+    "course_b": "6.006 Introduction to Algorithms (spring_2020)",
+    "overlap_score": 0.417,
+    "overlap_percent": "42%",
+    "redundancy_warning": true,
+    "common_topics": [
+      {
+        "topic": "Algorithms & Complexity",
+        "mentions_a": 14,
+        "mentions_b": 13
+      },
+      {
+        "topic": "Data Structures",
+        "mentions_a": 10,
+        "mentions_b": 9
+      },
+      {
+        "topic": "Graph Algorithms",
+        "mentions_a": 2,
+        "mentions_b": 1
+      },
+      {
+        "topic": "Discrete Mathematics",
+        "mentions_a": 1,
+        "mentions_b": 3
+      },
+      {
+        "topic": "Programming Tools (Python/R/Julia/MATLAB)",
+        "mentions_a": 3,
+        "mentions_b": 2
+      }
+    ],
+    "unique_to_a": [],
+    "unique_to_b": [
+      "Probability",
+      "Dynamic Programming"
+    ],
+    "prerequisites": {
+      "a": {
+        "text": "A firm grasp of Python and a solid background in discrete mathematics are necessary prerequisites to this course. You are expected to have mastered the material presented in 6.01 Introduction to EECS I and 6.042J Mathematics for Computer Science . If you have not taken and been successful in each of",
+        "course_refs": [
+          "6.01",
+          "6.042J",
+          "6.046"
+        ]
+      },
+      "b": {
+        "text": "6.0001 Introduction to Computer Science and Programming in Python :Â Basic experience programming in Python 3. 6.042J Mathematics for Computer Science : Basic knowledge of discrete mathematics: set theory, relations and logic, combinatorics, proofs, recursion, number theory, graph theory, and probab",
+        "course_refs": [
+          "6.0001",
+          "6.042J"
+        ]
+      }
+    },
+    "missing_prerequisites": [
+      {
+        "course": "Introduction to Algorithms",
+        "assumes": "Probability",
+        "not_taught_in": "Introduction to Algorithms"
+      }
+    ],
+    "a_is_listed_prerequisite_of_b": false,
+    "b_is_listed_prerequisite_of_a": false,
+    "method": "baseline: TF-IDF cosine + topic lexicon + regex prerequisites"
+  },
+  {
+    "course_a": "10.34 Numerical Methods Applied to Chemical Engineering (fall_2005)",
+    "course_b": "10.34 Numerical Methods Applied to Chemical Engineering (fall_2015)",
+    "overlap_score": 0.401,
+    "overlap_percent": "40%",
+    "redundancy_warning": true,
+    "common_topics": [
+      {
+        "topic": "Probability",
+        "mentions_a": 4,
+        "mentions_b": 2
+      },
+      {
+        "topic": "Monte Carlo & Simulation",
+        "mentions_a": 6,
+        "mentions_b": 4
+      },
+      {
+        "topic": "Linear Algebra",
+        "mentions_a": 16,
+        "mentions_b": 8
+      },
+      {
+        "topic": "Calculus & Differential Equations",
+        "mentions_a": 5,
+        "mentions_b": 5
+      },
+      {
+        "topic": "Optimization",
+        "mentions_a": 6,
+        "mentions_b": 5
+      },
+      {
+        "topic": "Numerical Methods",
+        "mentions_a": 4,
+        "mentions_b": 5
+      },
+      {
+        "topic": "Algorithms & Complexity",
+        "mentions_a": 1,
+        "mentions_b": 2
+      },
+      {
+        "topic": "Programming Tools (Python/R/Julia/MATLAB)",
+        "mentions_a": 48,
+        "mentions_b": 2
+      }
+    ],
+    "unique_to_a": [
+      "Statistical Inference",
+      "Bayesian Methods",
+      "Regression",
+      "Kernel Methods & SVM",
+      "Markov Chains & Stochastic Processes"
+    ],
+    "unique_to_b": [],
+    "prerequisites": {
+      "a": {
+        "text": "",
+        "course_refs": []
+      },
+      "b": {
+        "text": "",
+        "course_refs": []
+      }
+    },
+    "missing_prerequisites": [],
+    "a_is_listed_prerequisite_of_b": false,
+    "b_is_listed_prerequisite_of_a": false,
+    "method": "baseline: TF-IDF cosine + topic lexicon + regex prerequisites"
+  },
+  {
+    "course_a": "11.126J Economics of Education (spring_2007)",
+    "course_b": "18.642 Topics in Mathematics with Applications in Finance (fall_2024)",
+    "overlap_score": 0.096,
+    "overlap_percent": "10%",
+    "redundancy_warning": false,
+    "common_topics": [
+      {
+        "topic": "Regression",
+        "mentions_a": 1,
+        "mentions_b": 3
+      },
+      {
+        "topic": "Finance",
+        "mentions_a": 1,
+        "mentions_b": 19
+      }
+    ],
+    "unique_to_a": [
+      "Econometrics & Causal Inference"
+    ],
+    "unique_to_b": [
+      "Probability",
+      "Dimensionality Reduction",
+      "Markov Chains & Stochastic Processes",
+      "Linear Algebra",
+      "Calculus & Differential Equations",
+      "Optimization",
+      "Numerical Methods",
+      "Time Series",
+      "Data Analysis & Analytics",
+      "Search & Planning"
+    ],
+    "prerequisites": {
+      "a": {
+        "text": "14.01 or its equivalent is required and 14.30 or its equivalent is recommended. Students who have no experience with basic econometrics can fill in their background in the first section meetings (see above).",
+        "course_refs": [
+          "14.01",
+          "14.30"
+        ]
+      },
+      "b": {
+        "text": "18.03 Differential Equations (or approval of instructor), 18.05 Introduction to Probability and Statistics or 18.600 Probability and Random Variables , and 18.06 Linear Algebra Broad familiarity with linear algebra, statistics, stochastic processes and partial differential equations will be helpful ",
+        "course_refs": [
+          "18.03",
+          "18.05",
+          "18.06",
+          "18.600"
+        ]
+      }
+    },
+    "missing_prerequisites": [
+      {
+        "course": "Topics in Mathematics with Applications in Finance",
+        "assumes": "Probability",
+        "not_taught_in": "Economics of Education"
+      },
+      {
+        "course": "Topics in Mathematics with Applications in Finance",
+        "assumes": "Markov Chains & Stochastic Processes",
+        "not_taught_in": "Economics of Education"
+      },
+      {
+        "course": "Topics in Mathematics with Applications in Finance",
+        "assumes": "Linear Algebra",
+        "not_taught_in": "Economics of Education"
+      },
+      {
+        "course": "Topics in Mathematics with Applications in Finance",
+        "assumes": "Calculus & Differential Equations",
+        "not_taught_in": "Economics of Education"
+      },
+      {
+        "course": "Economics of Education",
+        "assumes": "Econometrics & Causal Inference",
+        "not_taught_in": "Topics in Mathematics with Applications in Finance"
+      }
+    ],
+    "a_is_listed_prerequisite_of_b": false,
+    "b_is_listed_prerequisite_of_a": false,
+    "method": "baseline: TF-IDF cosine + topic lexicon + regex prerequisites"
+  },
+  {
+    "course_a": "18.655 Mathematical Statistics (spring_2016)",
+    "course_b": "6.S980 Machine Learning for Inverse Graphics (fall_2022)",
+    "overlap_score": 0.009,
+    "overlap_percent": "1%",
+    "redundancy_warning": false,
+    "common_topics": [],
+    "unique_to_a": [
+      "Probability",
+      "Statistical Inference",
+      "Hypothesis Testing",
+      "Bayesian Methods",
+      "Algorithms & Complexity"
+    ],
+    "unique_to_b": [
+      "Deep Learning",
+      "Computer Vision",
+      "Learning Theory"
+    ],
+    "prerequisites": {
+      "a": {
+        "text": "There are no official prerequisites for this course, but permission of the instructor is required.",
+        "course_refs": []
+      },
+      "b": {
+        "text": "",
+        "course_refs": []
+      }
+    },
+    "missing_prerequisites": [],
+    "a_is_listed_prerequisite_of_b": false,
+    "b_is_listed_prerequisite_of_a": false,
+    "method": "baseline: TF-IDF cosine + topic lexicon + regex prerequisites"
+  }
+]

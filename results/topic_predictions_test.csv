@@ -1,0 +1,28 @@
+id,title,gold_labels,predicted_labels
+1.017_fall_2003,Computing and Data Analysis for Environmental Applications,Computer Science; Data Mining; Probability and Statistics,Probability and Statistics
+10.34_fall_2005,Numerical Methods Applied to Chemical Engineering,Applied Mathematics; Computer Science; Data Mining; Probability and Statistics; Systems Engineering,Linear Algebra
+10.34_fall_2015,Numerical Methods Applied to Chemical Engineering,Applied Mathematics; Computer Science; Data Mining; Systems Engineering,Applied Mathematics; Linear Algebra
+11.126J_spring_2007,Economics of Education,Econometrics; Economics,Probability and Statistics
+14.385_fall_2007,Nonlinear Econometric Analysis,Econometrics; Economics; Probability and Statistics,Probability and Statistics
+14.387_fall_2014,Applied Econometrics: Mostly Harmless Big Data,Computer Science; Data Mining; Econometrics; Economics; Probability and Statistics,Probability and Statistics
+15.062_spring_2003,Data Mining,Computer Science; Data Mining,Computer Science
+15.450_fall_2010,Analytics of Finance,Econometrics; Economics; Probability and Statistics,Probability and Statistics
+16.412J_spring_2016,Cognitive Robotics,Artificial Intelligence; Computer Science; Electrical Engineering,Computer Science
+18.440_spring_2014,Probability and Random Variables,Discrete Mathematics; Probability and Statistics,Discrete Mathematics; Probability and Statistics
+18.465_spring_2007,Topics in Statistics: Statistical Learning Theory,Algorithms and Data Structures; Artificial Intelligence; Computer Science; Probability and Statistics,Computer Science; Probability and Statistics
+18.642_fall_2024,Topics in Mathematics with Applications in Finance,Applied Mathematics; Probability and Statistics,Probability and Statistics
+18.650__formerly_18.443__fall_2006,Statistics for Applications,Applied Mathematics; Discrete Mathematics; Probability and Statistics,Probability and Statistics
+18.650__formerly_18.443__spring_2015,Statistics for Applications,Applied Mathematics; Discrete Mathematics; Probability and Statistics,Probability and Statistics
+18.655_spring_2016,Mathematical Statistics,Probability and Statistics,Probability and Statistics
+18.S190_spring_2020,"Introduction to Computational Thinking with Julia, with Applications to Modeling the COVID-19 Pandemic",Algorithms and Data Structures; Applied Mathematics; Computer Science,Artificial Intelligence; Computer Science
+6.006_fall_2011,Introduction to Algorithms,Algorithms and Data Structures; Computer Science,Algorithms and Data Structures; Computer Science
+6.006_spring_2020,Introduction to Algorithms,Algorithms and Data Structures; Computer Science,Computer Science
+6.079_fall_2009,Introduction to Convex Optimization,Applied Mathematics; Electrical Engineering; Systems Engineering,Computer Science
+6.436J_fall_2018,Fundamentals of Probability,Probability and Statistics,Discrete Mathematics; Probability and Statistics
+6.438_fall_2014,Algorithms for Inference,Algorithms and Data Structures; Computer Science; Probability and Statistics,Computer Science
+6.8300_spring_2025,Advances in Computer Vision,Artificial Intelligence; Computer Science,Artificial Intelligence; Computer Science
+6.864_fall_2005,Advanced Natural Language Processing,Artificial Intelligence; Computer Science,Artificial Intelligence; Computer Science
+6.S980_fall_2022,Machine Learning for Inverse Graphics,Artificial Intelligence; Computer Science,Artificial Intelligence; Computer Science
+8.044_spring_2013,Statistical Physics I,Probability and Statistics,Probability and Statistics
+ESD.86_spring_2007,"Models, Data and Inference for Socio-Technical Systems",Computer Science; Data Mining; Probability and Statistics; Systems Engineering,Probability and Statistics
+RES.8-010_summer_2018,Introduction to Statistical Physics,Probability and Statistics,Probability and Statistics

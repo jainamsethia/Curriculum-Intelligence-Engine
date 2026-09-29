@@ -1,0 +1,34 @@
+{
+ "meta": {
+  "id": "RES.6-012_spring_2018",
+  "readable_id": "RES.6-012+spring_2018",
+  "title": "Introduction to Probability",
+  "url": "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/",
+  "course_numbers": [
+   "RES.6-012"
+  ],
+  "departments": [
+   "Electrical Engineering and Computer Science"
+  ],
+  "level": [
+   "Undergraduate"
+  ],
+  "semester": "Spring",
+  "year": 2018,
+  "description": "<p>The tools of probability theory, and of the related field of statistical inference, are the keys for being able to analyze and make sense of data. These tools underlie important advances in many fields, from the basic sciences to engineering and management.</p>\n<p>This resource is a companion site to 6.041SC Probabilistic Systems Analysis and Applied Probability. It covers the same content, using videos developed for an edX version of the course.</p>\n",
+  "full_description": "",
+  "ocw_topics": [
+   "Engineering",
+   "Mathematics",
+   "Probability and Statistics",
+   "Systems Engineering"
+  ],
+  "found_by_query": "statistical inference",
+  "license": "CC BY-NC-SA 4.0 (MIT OpenCourseWare)"
+ },
+ "pages": {
+  "syllabus": "",
+  "calendar": "",
+  "lecture-notes": "<main id=\"course-content-section\"></main>"
+ }
+}
