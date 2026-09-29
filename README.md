@@ -37,11 +37,12 @@ python src/pipeline.py outcomes --course nm7677637d               # Bloom level 
 python src/pipeline.py search "transformers and large language models" -k 5
 ```
 `parse_nmims.py` caches page text in `data/interim/` (git-ignored), so re-running after a parser change takes about 30 seconds.
+The first `pipeline.py` call embeds the course catalogue (a few minutes on CPU, cached in `data/interim/` afterwards).
 `make_gold_sample.py` regenerates the annotation samples; it is not needed to reproduce the results.
 
 ### Data
 The source archive (`B TECH.zip`, 9,359 PDFs, 16 GB) is **not** in this repository: it is too large, and about 6,900 of the files
-are past exam papers. Only text-layer PDFs can be read (531 syllabus booklets, academic years 2020-21 to 2026-27); scanned PDFs
+are past exam papers. Only text-layer PDFs can be read (531 of them, mostly semester syllabus booklets, academic years 2020-21 to 2026-27); scanned PDFs
 (all exam papers, most pre-2020 syllabi) need OCR, which is not set up.
 
 | | |
