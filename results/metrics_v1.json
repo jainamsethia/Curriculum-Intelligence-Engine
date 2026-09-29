@@ -1,0 +1,356 @@
+{
+  "split": {
+    "train_courses": 458,
+    "test_courses": 197
+  },
+  "tau_unit": 0.725,
+  "A_retrieval": {
+    "records": 1229,
+    "queries": 222,
+    "heavily_revised_queries": 25,
+    "results": {
+      "TF-IDF cosine (Week 2 baseline)": {
+        "MRR": 0.927,
+        "Recall@1": 0.896,
+        "Recall@5": 0.964,
+        "MAP": 0.883,
+        "MRR_heavily_revised": 0.568,
+        "Recall@1_heavily_revised": 0.48
+      },
+      "Embedding, truncated concatenation": {
+        "MRR": 0.92,
+        "Recall@1": 0.878,
+        "Recall@5": 0.973,
+        "MAP": 0.868,
+        "MRR_heavily_revised": 0.587,
+        "Recall@1_heavily_revised": 0.48
+      },
+      "Embedding, mean of chunks": {
+        "MRR": 0.929,
+        "Recall@1": 0.892,
+        "Recall@5": 0.973,
+        "MAP": 0.887,
+        "MRR_heavily_revised": 0.565,
+        "Recall@1_heavily_revised": 0.4
+      },
+      "Unit alignment, soft coverage": {
+        "MRR": 0.914,
+        "Recall@1": 0.883,
+        "Recall@5": 0.955,
+        "MAP": 0.871,
+        "MRR_heavily_revised": 0.512,
+        "Recall@1_heavily_revised": 0.4
+      },
+      "Unit alignment, overlap fraction": {
+        "MRR": 0.901,
+        "Recall@1": 0.865,
+        "Recall@5": 0.95,
+        "MAP": 0.851,
+        "MRR_heavily_revised": 0.455,
+        "Recall@1_heavily_revised": 0.36
+      }
+    }
+  },
+  "B_gold_pairs": {
+    "n_pairs": 113,
+    "label_counts": {
+      "0": 68,
+      "1": 2,
+      "2": 43
+    },
+    "positive_rate": 0.398,
+    "chance_avg_precision": 0.398,
+    "results": {
+      "TF-IDF cosine (Week 2 baseline)": {
+        "spearman": 0.851,
+        "roc_auc": 1.0,
+        "avg_precision": 1.0
+      },
+      "Embedding doc cosine (mean of chunks)": {
+        "spearman": 0.848,
+        "roc_auc": 1.0,
+        "avg_precision": 1.0
+      },
+      "Unit alignment, soft coverage": {
+        "spearman": 0.849,
+        "roc_auc": 1.0,
+        "avg_precision": 1.0
+      },
+      "Unit alignment, overlap fraction": {
+        "spearman": 0.964,
+        "roc_auc": 1.0,
+        "avg_precision": 1.0
+      },
+      "Calibrated, embedding features only (5-fold CV)": {
+        "spearman": 0.85,
+        "roc_auc": 1.0,
+        "avg_precision": 1.0,
+        "precision@0.5": 1.0,
+        "recall@0.5": 1.0,
+        "f1@0.5": 1.0
+      },
+      "Calibrated, TF-IDF + embedding features (5-fold CV)": {
+        "spearman": 0.85,
+        "roc_auc": 1.0,
+        "avg_precision": 1.0,
+        "precision@0.5": 1.0,
+        "recall@0.5": 1.0,
+        "f1@0.5": 1.0
+      }
+    },
+    "highest_scoring_gold_negatives": [
+      {
+        "a": "Information Security and Privacy",
+        "b": "Technical Paper Reading and Writing Skills",
+        "tfidf": 0.006,
+        "embedding": 0.535,
+        "gold": 0
+      },
+      {
+        "a": "Modelling and Simulation",
+        "b": "Intelligent Systems - I",
+        "tfidf": 0.004,
+        "embedding": 0.506,
+        "gold": 0
+      },
+      {
+        "a": "CAD/CAM/CIM",
+        "b": "Project Methodology",
+        "tfidf": 0.018,
+        "embedding": 0.497,
+        "gold": 0
+      },
+      {
+        "a": "Smart System Communication",
+        "b": "NX Line Designer",
+        "tfidf": 0.002,
+        "embedding": 0.491,
+        "gold": 0
+      },
+      {
+        "a": "Applied Thermodynamics",
+        "b": "Department Elective I - Sustainable Energy Systems",
+        "tfidf": 0.046,
+        "embedding": 0.491,
+        "gold": 0
+      },
+      {
+        "a": "Introduction to Innovation, IP Management & Entrepreneurship",
+        "b": "Corporate Finance",
+        "tfidf": 0.051,
+        "embedding": 0.49,
+        "gold": 0
+      }
+    ],
+    "annotator_agreement": {
+      "n_annotators": 3,
+      "exact_all_agree": 0.982,
+      "pairwise_weighted_kappa": [
+        0.981,
+        0.991,
+        0.991
+      ]
+    }
+  },
+  "C_unit_alignment": {
+    "version_pairs": 156,
+    "aligned_units": 733,
+    "units_with_revised_text": 199,
+    "chance_MRR_approx": 0.15,
+    "revised_units_top1_paired": {
+      "emb_right_tfidf_right": 189,
+      "emb_wrong_tfidf_wrong": 4,
+      "emb_right_tfidf_wrong": 6
+    },
+    "mcnemar_exact_p": 0.031,
+    "results": {
+      "TF-IDF": {
+        "top1_all": 0.986,
+        "MRR_all": 0.993,
+        "top1_revised_units": 0.95,
+        "MRR_revised_units": 0.973
+      },
+      "Embedding": {
+        "top1_all": 0.995,
+        "MRR_all": 0.997,
+        "top1_revised_units": 0.98,
+        "MRR_revised_units": 0.987
+      }
+    }
+  },
+  "D_bloom": {
+    "train_outcomes": 228,
+    "test_outcomes": 98,
+    "test_label_distribution": {
+      "1": 7,
+      "2": 17,
+      "3": 40,
+      "4": 20,
+      "5": 6,
+      "6": 8
+    },
+    "lookup_order_chosen_by_train_cv": [
+      "lexicon",
+      "learned"
+    ],
+    "train_cv_evidence": {
+      "outcomes_where_both_lookups_apply": 159,
+      "learned_correct": 118,
+      "lexicon_correct": 119
+    },
+    "pipeline_method_usage_on_test": {
+      "verb lexicon": 93,
+      "embedding classifier": 5
+    },
+    "pipeline_errors": {
+      "n_errors": 30,
+      "by_level_distance": {
+        "1": 11,
+        "2": 10,
+        "3": 9
+      },
+      "most_common_confusions": [
+        {
+          "faculty_tag": "Apply",
+          "predicted": "Create",
+          "count": 6
+        },
+        {
+          "faculty_tag": "Analyze",
+          "predicted": "Understand",
+          "count": 5
+        },
+        {
+          "faculty_tag": "Remember",
+          "predicted": "Understand",
+          "count": 3
+        }
+      ]
+    },
+    "results": {
+      "Majority class": {
+        "accuracy": 0.408,
+        "accuracy_95ci": [
+          0.316,
+          0.5
+        ],
+        "within_1_level": 0.786,
+        "macro_f1": 0.097
+      },
+      "Hand-written verb lexicon": {
+        "accuracy": 0.704,
+        "accuracy_95ci": [
+          0.612,
+          0.796
+        ],
+        "within_1_level": 0.827,
+        "macro_f1": 0.675
+      },
+      "Learned verb map only (train majority level per verb)": {
+        "accuracy": 0.622,
+        "accuracy_95ci": [
+          0.52,
+          0.724
+        ],
+        "within_1_level": 0.878,
+        "macro_f1": 0.544
+      },
+      "TF-IDF + logistic regression": {
+        "accuracy": 0.633,
+        "accuracy_95ci": [
+          0.541,
+          0.725
+        ],
+        "within_1_level": 0.867,
+        "macro_f1": 0.502
+      },
+      "Embedding + logistic regression": {
+        "accuracy": 0.51,
+        "accuracy_95ci": [
+          0.408,
+          0.612
+        ],
+        "within_1_level": 0.786,
+        "macro_f1": 0.417
+      },
+      "Pipeline v1 (verb look-ups, embedding fallback)": {
+        "accuracy": 0.694,
+        "accuracy_95ci": [
+          0.602,
+          0.786
+        ],
+        "within_1_level": 0.806,
+        "macro_f1": 0.643
+      }
+    }
+  },
+  "E_prerequisites": {
+    "extraction": {
+      "courses": 2366,
+      "no_prerequisite_listed": 639,
+      "courses_with_prerequisites": 1727,
+      "phrases": 3683,
+      "resolved_to_a_course": 2742,
+      "schedule_ok": 800,
+      "schedule_violation": 77
+    },
+    "panel_audit": {
+      "n_items": 88,
+      "verdicts": {
+        "acceptable": 18,
+        "correct": 44,
+        "wrong": 26
+      },
+      "graders_agree": 0.875,
+      "precision_all_candidates_at_0.5": 0.705,
+      "precision_at_chosen_threshold": {
+        "threshold": 0.75,
+        "n": 54,
+        "precision": 0.87
+      },
+      "by_similarity_band": {
+        "0-0.6": {
+          "n": 14,
+          "precision_correct_or_acceptable": 0.143,
+          "correct": 1
+        },
+        "0.6-0.75": {
+          "n": 20,
+          "precision_correct_or_acceptable": 0.65,
+          "correct": 4
+        },
+        "0.75-0.9": {
+          "n": 34,
+          "precision_correct_or_acceptable": 0.794,
+          "correct": 19
+        },
+        "0.9-1": {
+          "n": 20,
+          "precision_correct_or_acceptable": 1.0,
+          "correct": 20
+        }
+      },
+      "note": "threshold chosen from this audit, so the precision at the chosen threshold is optimistic"
+    }
+  },
+  "F_mit_continuity": {
+    "n_pairs": 41,
+    "results": {
+      "TF-IDF cosine (Week 2 baseline)": {
+        "spearman": 0.636,
+        "roc_auc": 0.83,
+        "avg_precision": 0.828
+      },
+      "Embedding doc cosine": {
+        "spearman": 0.603,
+        "roc_auc": 0.811,
+        "avg_precision": 0.825
+      },
+      "Unit alignment, soft coverage": {
+        "spearman": 0.592,
+        "roc_auc": 0.801,
+        "avg_precision": 0.815
+      }
+    }
+  }
+}

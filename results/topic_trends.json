@@ -1,0 +1,168 @@
+{
+ "units_clustered": 6776,
+ "clusters": 40,
+ "early": [
+  "2021-22",
+  "2022-23"
+ ],
+ "late": [
+  "2025-26",
+  "2026-27"
+ ],
+ "units_per_year": {
+  "2021-22": 1327,
+  "2022-23": 1195,
+  "2023-24": 1257,
+  "2024-25": 1324,
+  "2025-26": 1077,
+  "2026-27": 596
+ },
+ "growing": [
+  {
+   "topic": 38,
+   "label": "neural, deep, neural networks, deep learning, learning",
+   "units_total": 233,
+   "share_early_pct": 2.09,
+   "share_late_pct": 5.01,
+   "change_pct_points": 2.91,
+   "example_courses": "Neural Networks and Deep Learning; Deep Learning; Advanced Computer Vision"
+  },
+  {
+   "topic": 11,
+   "label": "learning, trees, machine, machine learning, support vector",
+   "units_total": 227,
+   "share_early_pct": 2.29,
+   "share_late_pct": 4.21,
+   "change_pct_points": 1.92,
+   "example_courses": "Advanced Machine Learning; Foundations of Machine Learning; MLOps"
+  },
+  {
+   "topic": 14,
+   "label": "search, agents, evolutionary, algorithm, heuristic",
+   "units_total": 145,
+   "share_early_pct": 1.33,
+   "share_late_pct": 2.99,
+   "change_pct_points": 1.66,
+   "example_courses": "Nature Inspired Algorithms; Evolutionary Computing; Intelligent Systems - I"
+  },
+  {
+   "topic": 4,
+   "label": "clustering, mining, data mining, unsupervised, learning",
+   "units_total": 160,
+   "share_early_pct": 1.68,
+   "share_late_pct": 2.82,
+   "change_pct_points": 1.14,
+   "example_courses": "Recommendation Systems; Data Driven Program Analysis; Computational Statistics"
+  },
+  {
+   "topic": 12,
+   "label": "text, language, word, semantics, writing",
+   "units_total": 133,
+   "share_early_pct": 1.54,
+   "share_late_pct": 2.62,
+   "change_pct_points": 1.08,
+   "example_courses": "Speech and Natural Language Processing; Natural Language Processing; Generative AI"
+  },
+  {
+   "topic": 18,
+   "label": "cloud, cloud computing, virtualization, devops, infrastructure",
+   "units_total": 192,
+   "share_early_pct": 2.5,
+   "share_late_pct": 3.55,
+   "change_pct_points": 1.06,
+   "example_courses": "DevOps; Virtualization and Cloud Computing; Cloud Computing"
+  },
+  {
+   "topic": 0,
+   "label": "security, privacy, access, access control, threats",
+   "units_total": 245,
+   "share_early_pct": 3.11,
+   "share_late_pct": 4.09,
+   "change_pct_points": 0.98,
+   "example_courses": "Cyber Physical Systems Security; Information Security and Privacy; Information Security"
+  },
+  {
+   "topic": 30,
+   "label": "cyber, ethical, forensics, legal, professional",
+   "units_total": 129,
+   "share_early_pct": 1.55,
+   "share_late_pct": 2.31,
+   "change_pct_points": 0.76,
+   "example_courses": "Human and Legal Aspects of Cybersecurity; Digital Forensics and Incident Response; Human Centered Cybersecurity"
+  }
+ ],
+ "shrinking": [
+  {
+   "topic": 2,
+   "label": "regular, languages, automata, class, turing",
+   "units_total": 309,
+   "share_early_pct": 5.29,
+   "share_late_pct": 3.09,
+   "change_pct_points": -2.2,
+   "example_courses": "Compiler Design; Theoretical Computer Science; Object Oriented Programming"
+  },
+  {
+   "topic": 19,
+   "label": "communication, diversity, culture, organizational, test",
+   "units_total": 299,
+   "share_early_pct": 4.87,
+   "share_late_pct": 2.98,
+   "change_pct_points": -1.9,
+   "example_courses": "Fundamentals of Management; Human Resource Management; Industrial Psychology"
+  },
+  {
+   "topic": 36,
+   "label": "demand, curve, supply, money, market",
+   "units_total": 106,
+   "share_early_pct": 2.33,
+   "share_late_pct": 0.44,
+   "change_pct_points": -1.89,
+   "example_courses": "Introduction to International Business; Marketing Management; Behavioral Economics"
+  },
+  {
+   "topic": 5,
+   "label": "blockchain, policy, india, trade, international",
+   "units_total": 130,
+   "share_early_pct": 2.71,
+   "share_late_pct": 0.86,
+   "change_pct_points": -1.85,
+   "example_courses": "Blockchain Technology; Metaverse; Introduction to International Business"
+  },
+  {
+   "topic": 3,
+   "label": "planning, project, cost, risk, inventory",
+   "units_total": 266,
+   "share_early_pct": 4.34,
+   "share_late_pct": 2.87,
+   "change_pct_points": -1.47,
+   "example_courses": "Operations and Supply Chain Management; IT Project Management; Cybersecurity Risk Management"
+  },
+  {
+   "topic": 9,
+   "label": "accounting, financial, capital, cash, prepare",
+   "units_total": 160,
+   "share_early_pct": 2.66,
+   "share_late_pct": 1.22,
+   "change_pct_points": -1.44,
+   "example_courses": "Financial Management; Financial & Cost Accounting; Corporate Finance"
+  },
+  {
+   "topic": 26,
+   "label": "entrepreneurship, design thinking, thinking, innovation, metaverse",
+   "units_total": 126,
+   "share_early_pct": 2.34,
+   "share_late_pct": 1.15,
+   "change_pct_points": -1.19,
+   "example_courses": "Introduction to Innovation, IP Management & Entrepreneurship; Mobile Application Development; Business Strategy"
+  },
+  {
+   "topic": 20,
+   "label": "transform, equation, series, signal, periodic",
+   "units_total": 197,
+   "share_early_pct": 3.8,
+   "share_late_pct": 2.61,
+   "change_pct_points": -1.19,
+   "example_courses": "Complex Variables and Transforms; Signals and Systems; Introduction to Data and Signal Analysis"
+  }
+ ]
+}

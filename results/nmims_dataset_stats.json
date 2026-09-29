@@ -1,0 +1,31 @@
+{
+  "pdfs_considered": 2413,
+  "scanned_pdf_skipped": 1882,
+  "text_pdf": 531,
+  "blocks_seen": 3928,
+  "exact_duplicates": 1511,
+  "dropped_legacy_or_unknown_year": 46,
+  "blocks_unparsed": 5,
+  "courses": 2366,
+  "distinct_course_names": 655,
+  "names_in_>=2_versions": 472,
+  "by_academic_year": {
+    "2020-21": 67,
+    "2021-22": 557,
+    "2022-23": 296,
+    "2023-24": 400,
+    "2024-25": 424,
+    "2025-26": 412,
+    "2026-27": 210
+  },
+  "with_prerequisites_text": 2327,
+  "with_objectives": 2363,
+  "with_outcomes": 2356,
+  "outcomes_total": 8650,
+  "outcomes_with_k_level": 546,
+  "units_total": 14747,
+  "units_with_title": 12805,
+  "units_with_hours": 14493,
+  "with_code": 2154,
+  "with_credits": 2198
+}

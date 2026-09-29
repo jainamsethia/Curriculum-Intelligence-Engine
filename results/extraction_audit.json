@@ -1,0 +1,195 @@
+{
+ "method": "Independent LLM auditors compared the raw PDF text of each sampled course block with the parsed record, field by field (ok / minor = cosmetic / wrong). Each round used a new random sample stratified by academic year and department; fixes made after rounds 1 and 2 were general (footer removal, section headings, unit numbering), not per-record.",
+ "auditors": "12 agents x ~4 records per round",
+ "rounds": [
+  {
+   "round": "round 1: first parser (before fixes)",
+   "sample_seed": 11,
+   "records_audited": 48,
+   "field_verdicts": {
+    "course_name": {
+     "ok": 46,
+     "minor": 1,
+     "wrong": 1
+    },
+    "code": {
+     "ok": 0,
+     "minor": 4,
+     "wrong": 44
+    },
+    "semester": {
+     "ok": 45,
+     "minor": 1,
+     "wrong": 2
+    },
+    "prerequisites": {
+     "ok": 46,
+     "minor": 1,
+     "wrong": 1
+    },
+    "objectives": {
+     "ok": 45,
+     "minor": 2,
+     "wrong": 1
+    },
+    "outcomes": {
+     "ok": 41,
+     "minor": 0,
+     "wrong": 7
+    },
+    "units": {
+     "ok": 9,
+     "minor": 9,
+     "wrong": 30
+    },
+    "books": {
+     "ok": 24,
+     "minor": 5,
+     "wrong": 19
+    }
+   },
+   "records_with_leaked_noise": 37,
+   "wrong_fields": 105
+  },
+  {
+   "round": "round 2: after the rewrite (fresh sample)",
+   "sample_seed": 23,
+   "records_audited": 45,
+   "field_verdicts": {
+    "course_name": {
+     "ok": 45,
+     "minor": 0,
+     "wrong": 0
+    },
+    "code": {
+     "ok": 45,
+     "minor": 0,
+     "wrong": 0
+    },
+    "semester": {
+     "ok": 45,
+     "minor": 0,
+     "wrong": 0
+    },
+    "prerequisites": {
+     "ok": 45,
+     "minor": 0,
+     "wrong": 0
+    },
+    "objectives": {
+     "ok": 43,
+     "minor": 2,
+     "wrong": 0
+    },
+    "outcomes": {
+     "ok": 42,
+     "minor": 1,
+     "wrong": 2
+    },
+    "units": {
+     "ok": 23,
+     "minor": 17,
+     "wrong": 5
+    },
+    "books": {
+     "ok": 32,
+     "minor": 9,
+     "wrong": 4
+    }
+   },
+   "records_with_leaked_noise": 20,
+   "wrong_fields": 11
+  },
+  {
+   "round": "round 3: final parser (fresh sample)",
+   "sample_seed": 47,
+   "records_audited": 45,
+   "field_verdicts": {
+    "course_name": {
+     "ok": 45,
+     "minor": 0,
+     "wrong": 0
+    },
+    "code": {
+     "ok": 45,
+     "minor": 0,
+     "wrong": 0
+    },
+    "semester": {
+     "ok": 44,
+     "minor": 0,
+     "wrong": 1
+    },
+    "prerequisites": {
+     "ok": 44,
+     "minor": 1,
+     "wrong": 0
+    },
+    "objectives": {
+     "ok": 41,
+     "minor": 4,
+     "wrong": 0
+    },
+    "outcomes": {
+     "ok": 43,
+     "minor": 1,
+     "wrong": 1
+    },
+    "units": {
+     "ok": 26,
+     "minor": 14,
+     "wrong": 5
+    },
+    "books": {
+     "ok": 40,
+     "minor": 4,
+     "wrong": 1
+    }
+   },
+   "records_with_leaked_noise": 5,
+   "wrong_fields": [
+    {
+     "id": "nm70bb0ea8",
+     "field": "units",
+     "note": "Raw has 4 units (12, 10, 13, and 10 hours; unit numbered '5' with Optimum Design; total 45). Parsed has only 3. Optimum Design and Johnson's method are merged into the hoisting/belt conveyor unit: 'idler pulley Optimum Design: Objectives of optimum design...'."
+    },
+    {
+     "id": "nm9e4bb8d0",
+     "field": "units",
+     "note": "The raw text holds two syllabi. The capstone has no unit table, only a 'Syllabus' paragraph, which is missing. The 3 units are Design of Transmission Systems units: 'Design of Flexible Elements', 'Spur Gears and Parallel Axis Helical Gears'."
+    },
+    {
+     "id": "nm9e4bb8d0",
+     "field": "books",
+     "note": "The capstone lists no books. Parsed books come from the second course: 'J. F. Shigley, Mechanical Engineering Design' and 'M. F. Spotts, Design of Machine Elements'. lab_work is also that course's."
+    },
+    {
+     "id": "nmc6249f24",
+     "field": "units",
+     "note": "Raw has 9 unit rows (1-8, 10) but the parser gives 8. The last unit merges unit 8 and unit 10: 'Attention Mechanism Generative Adversarial Networks Deep Convolutional GANs'. GANs' own 5 hours are lost, so hours sum to 25, not 30. Units 6 and the merged one hav"
+    },
+    {
+     "id": "nm1c6d7b25",
+     "field": "units",
+     "note": "Raw has 8 units, each split over two rows of 2 h (unit 1, 2, 3 ... 7 = 4 h, unit 8 = 2 h, total 30). Parsed unit 1 is only the first EER row with hours null. Parsed unit 2 merges unit 1's second row with all of unit 2: 'Subclasses, super classes... Procedural "
+    },
+    {
+     "id": "nm2bb7cc60",
+     "field": "units",
+     "note": "Raw table has 4 unit rows (1, 2, 3, and one numbered '5.' Docker and Kubernetes Security, 5 hrs); parsed has only 3. Unit 3 'DevSecOps Tools' text merges the next unit: '...Alerts and monitoring 5. Docker and Kubernetes Security Principles and best practices.."
+    },
+    {
+     "id": "nm4a3736ae",
+     "field": "semester",
+     "note": "semester is empty; raw has 'Semester :' followed on the next line by 'VIII', so the value was missed"
+    },
+    {
+     "id": "nm4a3736ae",
+     "field": "outcomes",
+     "note": "Raw has 5 outcomes; the fifth, 'Summarize the topic into a technical report.', has no number in the PDF and was merged into item 4: 'Work efficiently in a team environment. Summarize the topic into a technical report.'"
+    }
+   ]
+  }
+ ],
+ "note_ids": "ids are content-derived (nm + 8 hex); ids in wrong_fields were remapped from the order-based ids used while auditing"
+}

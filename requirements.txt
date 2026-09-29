@@ -1,0 +1,9 @@
+requests>=2.32
+beautifulsoup4>=4.13
+spacy>=3.8          # Week 2 only; then: python -m spacy download en_core_web_sm
+scikit-learn>=1.6
+scipy>=1.13
+numpy>=1.26
+matplotlib>=3.9
+pymupdf>=1.24       # reads the syllabus PDFs
+sentence-transformers>=3.0   # Week 3 embeddings (downloads all-MiniLM-L6-v2 on first use; pulls in torch)

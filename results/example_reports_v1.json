@@ -1,0 +1,622 @@
+{
+  "comparisons": {
+    "same course, two syllabus versions (2021-22 vs 2025-26)": {
+      "course_a": {
+        "id": "nm59a8f694",
+        "course_name": "Probability and Statistics",
+        "code": "702BS0C034",
+        "program": "B Tech Computer Science and Engineering (Cybersecurity)",
+        "semester": "IV",
+        "academic_year": "2021-22"
+      },
+      "course_b": {
+        "id": "nm7677637d",
+        "course_name": "Probability and Statistics",
+        "code": "702BS0C076",
+        "program": "B Tech /MBA Tech (Except Data Science)",
+        "semester": "III / IV",
+        "academic_year": "2025-26"
+      },
+      "overlap": {
+        "score": 1.0,
+        "percent": "100%",
+        "confidence": 0.999,
+        "similarity": {
+          "tfidf_cosine": 0.978,
+          "doc_cosine": 0.993,
+          "unit_overlap": 1.0,
+          "soft_coverage": 0.986
+        },
+        "coverage_of_a_in_b": 1.0,
+        "coverage_of_b_in_a": 1.0,
+        "redundancy_warning": true
+      },
+      "common_topics": [
+        {
+          "topic_a": "Basic Probability",
+          "topic_b": "Basic Probability",
+          "similarity": 1.0
+        },
+        {
+          "topic_a": "Basic Statistics",
+          "topic_b": "Basic Statistics",
+          "similarity": 1.0
+        },
+        {
+          "topic_a": "Bivariate Distributions",
+          "topic_b": "Bivariate Distributions",
+          "similarity": 0.999
+        },
+        {
+          "topic_a": "Linear Statistical Models",
+          "topic_b": "Linear Statistical Models",
+          "similarity": 0.984
+        },
+        {
+          "topic_a": "Random variables and Probability Distributions",
+          "topic_b": "Random variables and Probability Distributions",
+          "similarity": 0.981
+        },
+        {
+          "topic_a": "Testing of hypothesis",
+          "topic_b": "Testing of hypothesis",
+          "similarity": 0.954
+        }
+      ],
+      "unique_to_a": [],
+      "unique_to_b": [],
+      "prerequisites": {
+        "a": [],
+        "b": [
+          {
+            "phrase": "algebra",
+            "resolved_course": null,
+            "similarity": 0.591
+          },
+          {
+            "phrase": "calculus",
+            "resolved_course": "Calculus",
+            "similarity": 1.0,
+            "offered_before": null
+          },
+          {
+            "phrase": "fundamental statistical concepts",
+            "resolved_course": null,
+            "similarity": 0.741
+          }
+        ]
+      },
+      "missing_prerequisites": [
+        {
+          "course": "Probability and Statistics",
+          "prerequisite": "algebra",
+          "best_match_in_other": 0.191,
+          "reason": "not taught in the other course and not confidently matched to a course in the catalogue"
+        }
+      ],
+      "sequencing_warnings": [],
+      "outcome_bloom": {
+        "a": [
+          {
+            "outcome": "solve problems involving random variables, probability distributions and testing of hypothesis, correlation and regression",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "identify suitable probability distribution and testing techniques to solve related problems",
+            "level": 1,
+            "name": "Remember",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "apply knowledge of random variables, probability distributions, measures of central tendency, correlation and regression to solve real life problems",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "analyse data samples using statistical methods.",
+            "level": 4,
+            "name": "Analyze",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          }
+        ],
+        "b": [
+          {
+            "outcome": "Understand the basic concepts of probability theory and statistics.",
+            "level": 2,
+            "name": "Understand",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              2
+            ]
+          },
+          {
+            "outcome": "Solve problems involving random variables, probability distributions and testing of hypothesis, correlation, and regression.",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              3
+            ]
+          },
+          {
+            "outcome": "Identify suitable probability distribution and testing techniques to solve problems.",
+            "level": 1,
+            "name": "Remember",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              2
+            ]
+          },
+          {
+            "outcome": "Apply knowledge of random variables, probability distributions, measures of central tendency, correlation and regression to solve real life problems.",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              3
+            ]
+          },
+          {
+            "outcome": "Analyse data samples using statistical methods.",
+            "level": 4,
+            "name": "Analyze",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              3
+            ]
+          }
+        ]
+      },
+      "method": "sentence-transformers/all-MiniLM-L6-v2 unit alignment (tau=0.72) + TF-IDF, logistic calibration"
+    },
+    "related but distinct courses": {
+      "course_a": {
+        "id": "nm34f6baa4",
+        "course_name": "Machine Learning",
+        "code": "702DB0C049",
+        "program": "B. Tech Computer Science and Engineering (Data Science) – 311 (VT)",
+        "semester": "V",
+        "academic_year": "2026-27"
+      },
+      "course_b": {
+        "id": "nmecfce319",
+        "course_name": "Deep Learning",
+        "code": "702AI0C008",
+        "program": "B Tech [Computer Engineering, Information Technology, Electronics & Telecommunication Engineering, CSE (DS) 311 (VT)] / MBA Tech (Computer Engineering, Information Technology)/ B Tech Integrated (Computer Engineering, Information Technology)",
+        "semester": "VII/VIII/XI",
+        "academic_year": "2026-27"
+      },
+      "overlap": {
+        "score": 0.0,
+        "percent": "0%",
+        "confidence": 0.106,
+        "similarity": {
+          "tfidf_cosine": 0.063,
+          "doc_cosine": 0.609,
+          "unit_overlap": 0.0,
+          "soft_coverage": 0.449
+        },
+        "coverage_of_a_in_b": 0.0,
+        "coverage_of_b_in_a": 0.0,
+        "redundancy_warning": false
+      },
+      "common_topics": [],
+      "unique_to_a": [
+        "Introduction",
+        "Linear Model Selection and Regularization",
+        "Moving Beyond Linearity",
+        "Machine Learning System Design",
+        "Tree-Based Methods",
+        "Support Vector Machines",
+        "Unsupervised Learning"
+      ],
+      "unique_to_b": [
+        "Introduction to Deep Learning",
+        "Neural Networks",
+        "Optimization and Regularization for Deep Learning",
+        "Convolutional Neural Networks",
+        "Recurrent Neural Networks"
+      ],
+      "prerequisites": {
+        "a": [
+          {
+            "phrase": "Statistical Methods I",
+            "resolved_course": "Statistical Methods",
+            "similarity": 0.941,
+            "offered_before": null
+          }
+        ],
+        "b": [
+          {
+            "phrase": "Machine Learning",
+            "resolved_course": "Machine Learning",
+            "similarity": 1.0,
+            "offered_before": null
+          },
+          {
+            "phrase": "Statistical Methods",
+            "resolved_course": "Statistical Methods",
+            "similarity": 1.0,
+            "offered_before": null
+          }
+        ]
+      },
+      "missing_prerequisites": [],
+      "sequencing_warnings": [],
+      "outcome_bloom": {
+        "a": [
+          {
+            "outcome": "Describe requirements of machine learning algorithms",
+            "level": 2,
+            "name": "Understand",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "Select and regularize linear and nonlinear models",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "Design machine learning system",
+            "level": 6,
+            "name": "Create",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "Apply classification and clustering approaches to extract insight from given dataset",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          }
+        ],
+        "b": [
+          {
+            "outcome": "Explain the fundamentals of deep learning",
+            "level": 2,
+            "name": "Understand",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "Apply optimization and regularization for tuning the parameters of deep neural networks",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "Build convolutional neural networks architectures for various applications",
+            "level": 6,
+            "name": "Create",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "Apply recurrent neural networks architectures for various applications",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          }
+        ]
+      },
+      "method": "sentence-transformers/all-MiniLM-L6-v2 unit alignment (tau=0.72) + TF-IDF, logistic calibration"
+    },
+    "course and its prerequisite": {
+      "course_a": {
+        "id": "nm6ca1a874",
+        "course_name": "Operating Systems",
+        "code": "702CO0C078",
+        "program": "B Tech (CE, CSBS, AIDS, AIML, IT, CSECS, CS) MBA Tech (CE, IT)",
+        "semester": "III/IV",
+        "academic_year": "2026-27"
+      },
+      "course_b": {
+        "id": "nm1b91daec",
+        "course_name": "Distributed Computing",
+        "code": "702CO0C034",
+        "program": "B Tech & MBA Tech (Information Technology, Artificial Intelligence), B Tech (AIML) BTI ( Computer Engineering, IT)",
+        "semester": "VII /XI",
+        "academic_year": "2026-27"
+      },
+      "overlap": {
+        "score": 0.0,
+        "percent": "0%",
+        "confidence": 0.122,
+        "similarity": {
+          "tfidf_cosine": 0.093,
+          "doc_cosine": 0.649,
+          "unit_overlap": 0.0,
+          "soft_coverage": 0.422
+        },
+        "coverage_of_a_in_b": 0.0,
+        "coverage_of_b_in_a": 0.0,
+        "redundancy_warning": false
+      },
+      "common_topics": [],
+      "unique_to_a": [
+        "Introduction to Operating system",
+        "Process and Process Scheduling",
+        "Process Concurrency",
+        "Deadlock",
+        "Memory Management",
+        "I/O Management and Disc Scheduling",
+        "File Management",
+        "Case study"
+      ],
+      "unique_to_b": [
+        "Introduction to Distributed System",
+        "Communication",
+        "Synchronization",
+        "Fault Tolerance",
+        "Naming"
+      ],
+      "prerequisites": {
+        "a": [
+          {
+            "phrase": "Programming",
+            "resolved_course": null,
+            "similarity": 0.74
+          },
+          {
+            "phrase": "Computer Organization",
+            "resolved_course": "Computer Organization and Architecture",
+            "similarity": 0.844,
+            "offered_before": null
+          },
+          {
+            "phrase": "Architecture",
+            "resolved_course": "Software Architecture",
+            "similarity": 0.787,
+            "offered_before": null
+          }
+        ],
+        "b": [
+          {
+            "phrase": "Operating Systems",
+            "resolved_course": "Operating Systems",
+            "similarity": 1.0,
+            "offered_before": null
+          }
+        ]
+      },
+      "missing_prerequisites": [
+        {
+          "course": "Operating Systems",
+          "prerequisite": "Programming",
+          "best_match_in_other": 0.408,
+          "reason": "not taught in the other course and not confidently matched to a course in the catalogue"
+        }
+      ],
+      "sequencing_warnings": [],
+      "outcome_bloom": {
+        "a": [
+          {
+            "outcome": "Explain the fundamental concepts of operating systems.",
+            "level": 2,
+            "name": "Understand",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              2
+            ]
+          },
+          {
+            "outcome": "Analyze the various process management techniques and concurrency mechanisms.",
+            "level": 4,
+            "name": "Analyze",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              4
+            ]
+          },
+          {
+            "outcome": "Explain synchronization, deadlock handling, and resource allocation methods for efficient process execution.",
+            "level": 2,
+            "name": "Understand",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              2
+            ]
+          },
+          {
+            "outcome": "Apply knowledge of memory management techniques and page replacement algorithms to optimize system performance.",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              3
+            ]
+          },
+          {
+            "outcome": "Implement I/O management strategies and disk scheduling algorithms for system performance improvement.",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              3
+            ]
+          },
+          {
+            "outcome": "Utilize case studies to understand the architecture, file system and security mechanisms of operating system.",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon",
+            "faculty_tag": [
+              2
+            ]
+          }
+        ],
+        "b": [
+          {
+            "outcome": "Explain the basic concepts of distributed computing",
+            "level": 2,
+            "name": "Understand",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "Apply the concepts of distributed computing to implement various mechanisms of communication",
+            "level": 3,
+            "name": "Apply",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "Analyze various approaches of synchronization, mutual exclusion, election algorithms and fault tolerant services",
+            "level": 4,
+            "name": "Analyze",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          },
+          {
+            "outcome": "Recognize different kinds of naming and their implementation",
+            "level": 1,
+            "name": "Remember",
+            "confidence": 0.5,
+            "method": "verb lexicon"
+          }
+        ]
+      },
+      "method": "sentence-transformers/all-MiniLM-L6-v2 unit alignment (tau=0.72) + TF-IDF, logistic calibration"
+    }
+  },
+  "outcome_bloom_mapping": {
+    "course": "Deep Learning",
+    "outcomes": [
+      {
+        "outcome": "Explain the fundamentals of deep learning",
+        "level": 2,
+        "name": "Understand",
+        "confidence": 0.5,
+        "method": "verb lexicon"
+      },
+      {
+        "outcome": "Apply optimization and regularization for tuning the parameters of deep neural networks",
+        "level": 3,
+        "name": "Apply",
+        "confidence": 0.5,
+        "method": "verb lexicon"
+      },
+      {
+        "outcome": "Build convolutional neural networks architectures for various applications",
+        "level": 6,
+        "name": "Create",
+        "confidence": 0.5,
+        "method": "verb lexicon"
+      },
+      {
+        "outcome": "Apply recurrent neural networks architectures for various applications",
+        "level": 3,
+        "name": "Apply",
+        "confidence": 0.5,
+        "method": "verb lexicon"
+      }
+    ]
+  },
+  "semantic_search": {
+    "transformers and large language models": [
+      {
+        "course": "Generative AI",
+        "similarity": 0.53,
+        "example_id": "nm134342b2"
+      },
+      {
+        "course": "Speech and Natural Language Processing",
+        "similarity": 0.512,
+        "example_id": "nm45f0efc6"
+      },
+      {
+        "course": "Formal Language and Automata Theory",
+        "similarity": 0.503,
+        "example_id": "nm87e65bdb"
+      },
+      {
+        "course": "Theoretical Computer Science",
+        "similarity": 0.477,
+        "example_id": "nm5bcd67ff"
+      },
+      {
+        "course": "Compiler Design",
+        "similarity": 0.416,
+        "example_id": "nma5065943"
+      }
+    ],
+    "blockchain and smart contracts": [
+      {
+        "course": "Blockchain Technology",
+        "similarity": 0.708,
+        "example_id": "nm0e5033b7"
+      },
+      {
+        "course": "Introduction to Blockchain",
+        "similarity": 0.664,
+        "example_id": "nm89ef493a"
+      },
+      {
+        "course": "Fundamentals of Blockchain",
+        "similarity": 0.664,
+        "example_id": "nmea36fbdf"
+      },
+      {
+        "course": "Block Chain",
+        "similarity": 0.609,
+        "example_id": "nm37f663c9"
+      },
+      {
+        "course": "Blockchain Security and Forensics",
+        "similarity": 0.599,
+        "example_id": "nme7ae7927"
+      }
+    ],
+    "cloud computing and DevOps": [
+      {
+        "course": "Cloud, Microservices & Application",
+        "similarity": 0.716,
+        "example_id": "nmff4c6e64"
+      },
+      {
+        "course": "DevOps",
+        "similarity": 0.713,
+        "example_id": "nm444f0fae"
+      },
+      {
+        "course": "Cloud Technology",
+        "similarity": 0.68,
+        "example_id": "nmb31f9bee"
+      },
+      {
+        "course": "DevSecOps",
+        "similarity": 0.634,
+        "example_id": "nm30159097"
+      },
+      {
+        "course": "Virtualization and Cloud Computing",
+        "similarity": 0.616,
+        "example_id": "nmd3f77fb0"
+      }
+    ]
+  }
+}

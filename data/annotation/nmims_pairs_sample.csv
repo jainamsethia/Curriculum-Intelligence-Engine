@@ -1,0 +1,114 @@
+pair_id,id_a,id_b,course_a,course_b,stratum
+p000,nm95464ae5,nm4a8e89da,Data Structure and Algorithm,Data Structures and Algorithm,top_embedding
+p001,nm30d94cc2,nm92de428e,Construction Technology,Project Phase-I,emb_high_tfidf_low
+p002,nme316ac0a,nm93403567,Repairs and Restoration of Structures,Professional Elective Course - II Repairs and Restoration of Structures),top_embedding
+p003,nmfe80a959,nmddeb752d,Risk Management,Cybersecurity Risk Management,top_embedding
+p004,nmbdcfbe0d,nm55550612,Communication Skills-II,Internet of Things Analytics,tfidf_high_emb_low
+p005,nmc8309c33,nma5e43288,Elective I- Project Management,Engineering Graphics and Design,same_dept_random
+p006,nm11a03725,nm45f75ed9,Project Management,Microprocessor and Microcontroller,same_dept_random
+p007,nm2f0a3b97,nm5a6d4d60,Modern Day Robotics and Its Industrial Applications,Fundamentals of Climate Change,tfidf_high_emb_low
+p008,nm01ca09a3,nm7271db71,Integral Transforms,Transforms and Series,top_tfidf
+p009,nm87a9f872,nmfc3b7565,Computational Statistics,Business Calculus,random
+p010,nm8ba70d49,nm329813fc,"Introduction to Innovation, IP Management & Entrepreneurship",Corporate Finance,random
+p011,nmc3ca1e90,nmba0b932b,CAD/CAM/CIM,Project Phase-II,emb_high_tfidf_low
+p012,nm556b28f7,nm27e2839f,Additive Manufacturing,Elements of Project Management,same_dept_random
+p013,nm78439ba3,nm6ee26e89,Open Elective - I (BSC) - Polymers in Engineering,Smart Antennas,tfidf_high_emb_low
+p014,nmbd7e913b,nmd07181aa,Applied Thermodynamics,Department Elective I - Sustainable Energy Systems,same_dept_random
+p015,nm23694359,nm363a5ab2,Data Wrangling,Object Oriented Programming Lab,random
+p016,nmba0afc10,nmca5525cc,Marketing Analytics,Introduction to Forensic Science,tfidf_high_emb_low
+p017,nm1f157dcf,nm23694359,Data Gathering and Cleaning - ETL process,Data Wrangling,top_embedding
+p018,nm65c9fa32,nmaa0722da,Theoretical Computer Science,Data Mining and Analytics,same_dept_random
+p019,nm7536253b,nmb1a95e04,Machine Shop-I,Design of Machine Elements - II,emb_high_tfidf_low
+p020,nmc4d6ebbe,nm3750a0e0,Elective I - Dynamic System Modeling and Analysis,Dynamic System Modeling and Analysis,top_embedding
+p021,nm2f8e9411,nm042db637,Refrigeration and Air Conditioning,Department Elective II - Refrigeration and Air Conditioning,top_tfidf
+p022,nm90f0144f,nmc5b8a4a1,Research Methodology,IoT Security,same_dept_random
+p023,nm14449afe,nma2698ced,Applications of Power Electronics in Power Systems,Wireless Sensor Networks,tfidf_high_emb_low
+p024,nmc8309c33,nm574805d9,Elective I- Project Management,Department Elective III - Project Management,top_tfidf
+p025,nmce8964df,nm48c6dd41,Fundamentals of Fuels and Lubricants,Open Elective - I (BSC) - Fundamentals of Fuels and Lubricants,top_embedding
+p026,nm671e6be6,nmf0b7369a,Open Channel Flow,Engineering Graphics,random
+p027,nmb88364b0,nmfdbf78ee,– Bio-Mimicry,Recommendation Systems,tfidf_high_emb_low
+p028,nm0bc2227e,nm2fd57c39,Course: Elements of Biology,Industrial Waste Management,same_dept_random
+p029,nmc4ba84df,nm88cbb784,Department Elective II - Additive Manufacturing,Open Elective II- 3-D Printing Technology,top_tfidf
+p030,nmed347122,nmd98262e6,Environmental Science,Environmental Sciences,top_embedding
+p031,nm1629e65a,nmd01427c6,Department Elective I - Advanced Manufacturing Processes,Department Elective III - Operations Research,same_dept_random
+p032,nm6cdd1e95,nm87596f2c,Design an Art for Consumers,Design for Consumers,top_tfidf
+p033,nm0f86adea,nm9e21c918,Digital Electronics,Digital Logic Design,top_embedding
+p034,nma5e43288,nmf0b7369a,Engineering Graphics and Design,Engineering Graphics,top_tfidf
+p035,nmfb87dfa7,nm307d818b,Management Accounting for Engineers,Minor Project,emb_high_tfidf_low
+p036,nmba0b932b,nmf228b343,Project Phase-II,Production Management,emb_high_tfidf_low
+p037,nmd249a6fc,nme267f686,Ethical Hacking,Vulnerability Assessment and Penetration Testing,top_embedding
+p038,nmf40c9a07,nm7368a209,Quantum Computation & Quantum Information,Industrial Psychology,tfidf_high_emb_low
+p039,nm8971db3c,nmf8001d4e,Python for Data Analysis,Contemporary Short Fiction,tfidf_high_emb_low
+p040,nm411864d8,nm17c3dea6,Logic Design and Computer Organization,Digital Circuits and Computer Architecture,top_embedding
+p041,nmc9b13c91,nm52ced7a4,Big Data,Big Data and Hadoop,top_tfidf
+p042,nm7840652d,nmfee0ec0d,Machine Shop–II,Project Part – I,emb_high_tfidf_low
+p043,nm024126ff,nm89ef493a,Fundamentals of Blockchain,Introduction to Blockchain,top_tfidf
+p044,nm4cc25deb,nm678c93bc,Analog and Digital Communication,Marketing Strategy and Analytics,random
+p045,nm05b5b247,nm7a8760af,Internet of Things,IoT and Applications,top_embedding
+p046,nm0e0dfc2f,nm3c22ae40,Product Design and Development,Automation in Manufacturing,same_dept_random
+p047,nm54b9e545,nm065fc545,Mobile Game Development,Hydrogeology and Groundwater Modelling,random
+p048,nm624491c4,nm9d8c41ec,Operations and Supply Chain Management,Open Elective I - Logistics and Supply Chain Management,top_embedding
+p049,nm1bb9e98b,nmfd5b41a1,Principles of Economics and Management,Microeconomics,top_tfidf
+p050,nm48af830b,nmb48b228d,Department Elective IV - Supply Chain Analytics,Supply Chain Analytics,top_tfidf
+p051,nm0e4a0b82,nm01ca09a3,Mathematics -III,Integral Transforms,top_embedding
+p052,nm9fe240f5,nm5091cda4,UI and UX Design,AI and ML for Cybersecurity,same_dept_random
+p053,nmf2f15b4a,nm02912afd,Department Elective IV - Robotics,Robotics,top_embedding
+p054,nm65a88046,nmd7ff8cfb,Heat Transfer,Design of Machine Elements,same_dept_random
+p055,nme00b6811,nma54755ad,Geology,Introduction to Earth Sciences,top_embedding
+p056,nmebac980b,nm65a88046,Thermodynamics and Heat Transfer,Heat Transfer,top_tfidf
+p057,nm010f942b,nmae8bbb2b,Interpersonal Skills,Digital Image and Video Forensics,tfidf_high_emb_low
+p058,nm53c19514,nm72ea9fdf,Android Application Development,Computer Vision and Applications,same_dept_random
+p059,nm3832534a,nmbb13da38,Business Visualization,Business Information Visualization and Analysis,top_embedding
+p060,nm53709667,nm2f0a3b97,Ground Improvement Techniques,Modern Day Robotics and Its Industrial Applications,tfidf_high_emb_low
+p061,nme6287566,nmb94332d1,Fluid Mechanics & Machinery,Fluid Mechanics,top_tfidf
+p062,nmcce7ac03,nmaebe1af8,Compiler Design,Cognitive Science & Analytics,same_dept_random
+p063,nm5658987e,nmb6c5abfe,Smart Cities,Financial Derivatives,tfidf_high_emb_low
+p064,nm7a79a2ff,nm0f86adea,Digital System Design,Digital Electronics,top_embedding
+p065,nm363a5ab2,nm5b9c9129,Object Oriented Programming Lab,Website Designing and Development,same_dept_random
+p066,nm4f951545,nmc34d9fcf,Department Elective III - Nanotechnology,Introduction to Nanotechnology,top_embedding
+p067,nm1b2c9595,nm67f4b721,Elective I - Renewable Energy Sources,Open Elective I - Renewable Energy Sources,top_tfidf
+p068,nm1c7cc0fb,nm04b5f761,Smart System Communication,NX Line Designer,emb_high_tfidf_low
+p069,nma2698ced,nmfd5b41a1,Wireless Sensor Networks,Microeconomics,random
+p070,nm459a8419,nm87e2b40a,Modelling and Simulation,Intelligent Systems - I,emb_high_tfidf_low
+p071,nmdc703949,nm065fc545,Formal Language and Automata Theory,Hydrogeology and Groundwater Modelling,tfidf_high_emb_low
+p072,nm1feb63f3,nmae8bbb2b,Network Analytics,Digital Image and Video Forensics,tfidf_high_emb_low
+p073,nmfee0ec0d,nm7cc2ba78,Project Part – I,Electro-Mechanical Workshop,emb_high_tfidf_low
+p074,nm6a8b4f26,nm3dcdb837,Optimization for Decision Making,Open Elective - I (BSC) - Optimization for Decision Making,top_embedding
+p075,nmef1f0a88,nm4f951545,Elective I – Introduction to Nano-Technology,Department Elective III - Nanotechnology,top_tfidf
+p076,nm4db80749,nmf8001d4e,Circuit and Network Theory,Contemporary Short Fiction,tfidf_high_emb_low
+p077,nmc51dfba6,nme2303eb1,Project – I,Human Machine Interface,emb_high_tfidf_low
+p078,nm5c8a41f7,nmcf9c24a3,Web Programming,Computational Methods in Engineering,random
+p079,nm4db80749,nmc9945359,Circuit and Network Theory,Embedded System Design,same_dept_random
+p080,nm556b28f7,nmfb7eb40c,Additive Manufacturing,3D Printing,top_embedding
+p081,nmc3ca1e90,nme44cea58,CAD/CAM/CIM,Project Methodology,random
+p082,nm4f8e5516,nm2328234d,Embedded Systems,Computer Graphics,same_dept_random
+p083,nmcb27bab3,nmca42753c,Indian Constitution,Project Evaluation– II,emb_high_tfidf_low
+p084,nm8971f693,nm792ac656,Manufacturing Processes-I,Open Elective I - Manufacturing Engineering,top_tfidf
+p085,nm02c1b10e,nmd2e88aa5,Cybersecurity Fundamentals,Information Systems Security,top_embedding
+p086,nm97551ffd,nmab6927e6,Data Analytics,Advanced Computer Vision,same_dept_random
+p087,nm7a79a2ff,nm9e21c918,Digital System Design,Digital Logic Design,top_tfidf
+p088,nm4b668fb0,nm5fcc1fec,Design of Heat Exchangers,Business Communication,random
+p089,nme1f8fdda,nmb4fb7b04,Introduction to International Business,Computational Neuroscience,tfidf_high_emb_low
+p090,nme8e5f43c,nm4cc25deb,Communication Theory and Systems,Analog and Digital Communication,top_embedding
+p091,nm48c6dd41,nmf5883555,Open Elective - I (BSC) - Fundamentals of Fuels and Lubricants,Essence of Indian Traditional Knowledge,same_dept_random
+p092,nm3a199891,nm02c1b10e,Introduction to Cybersecurity,Cybersecurity Fundamentals,top_embedding
+p093,nmba0b932b,nm0ff04d85,Project Phase-II,Environment Management,emb_high_tfidf_low
+p094,nm4756fd83,nmfd39b42d,Information Security and Privacy,Technical Paper Reading and Writing Skills,emb_high_tfidf_low
+p095,nm9d8c41ec,nm48af830b,Open Elective I - Logistics and Supply Chain Management,Department Elective IV - Supply Chain Analytics,top_embedding
+p096,nm02912afd,nmb4358445,Robotics,Robotic Systems Design,top_tfidf
+p097,nm0b861062,nm71ec58e7,Applied Mathematics – IV,Advanced Construction Techniques,random
+p098,nmba0b932b,nmce33e75b,Project Phase-II,- Human Machine Interface & Data Acquisition,emb_high_tfidf_low
+p099,nmf58f1a6e,nme8e5f43c,Control System Engineering,Communication Theory and Systems,same_dept_random
+p100,nm6ca1a874,nmdf178d12,Operating Systems,Fundamentals of Operating Systems,top_tfidf
+p101,nm0d1db0f0,nm9e4bb8d0,Critical Thinking,Capstone Project,emb_high_tfidf_low
+p102,nm8fe2f0e0,nm18df2d3b,Design and Analysis of Algorithms,Introduction to Programming in Python,same_dept_random
+p103,nma3673374,nm8b216b85,Cryptography and Network Security,Generative AI,tfidf_high_emb_low
+p104,nm2f8e9411,nmfee0ec0d,Refrigeration and Air Conditioning,Project Part – I,same_dept_random
+p105,nmb1610e23,nm0f2d3399,Engineering Workshop,Digital Manufacturing Laboratory,top_tfidf
+p106,nm95aa0687,nm29b947cb,Electrical System Design,Elliptic Curve Cryptography,random
+p107,nm5dd17de1,nma47d073e,Supply chain and Analytics,Applied Artificial Intelligence and Agentic System,same_dept_random
+p108,nm74f7735c,nm88f4eee7,Fundamentals of Control Systems,Classical Control Systems,top_embedding
+p109,nm4a39798b,nmfba65d75,Dynamic Systems Modelling,Dynamic Systems Modeling,top_embedding
+p110,nmc4d6ebbe,nm1ac78ced,Elective I - Dynamic System Modeling and Analysis,Department Elective IV - Design of Mechanical Systems,same_dept_random
+p111,nme44cea58,nm1f7dc76c,Project Methodology,PLCs and Instrumentation,same_dept_random
+p112,nmca42753c,nm0ff04d85,Project Evaluation– II,Environment Management,emb_high_tfidf_low

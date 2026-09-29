@@ -1,0 +1,41 @@
+topic,label,units_total,share_early_pct,share_late_pct,change_pct_points,example_courses
+38,"neural, deep, neural networks, deep learning, learning",233,2.09,5.01,2.91,Neural Networks and Deep Learning; Deep Learning; Advanced Computer Vision
+11,"learning, trees, machine, machine learning, support vector",227,2.29,4.21,1.92,Advanced Machine Learning; Foundations of Machine Learning; MLOps
+14,"search, agents, evolutionary, algorithm, heuristic",145,1.33,2.99,1.66,Nature Inspired Algorithms; Evolutionary Computing; Intelligent Systems - I
+4,"clustering, mining, data mining, unsupervised, learning",160,1.68,2.82,1.14,Recommendation Systems; Data Driven Program Analysis; Computational Statistics
+12,"text, language, word, semantics, writing",133,1.54,2.62,1.08,Speech and Natural Language Processing; Natural Language Processing; Generative AI
+18,"cloud, cloud computing, virtualization, devops, infrastructure",192,2.5,3.55,1.06,DevOps; Virtualization and Cloud Computing; Cloud Computing
+0,"security, privacy, access, access control, threats",245,3.11,4.09,0.98,Cyber Physical Systems Security; Information Security and Privacy; Information Security
+30,"cyber, ethical, forensics, legal, professional",129,1.55,2.31,0.76,Human and Legal Aspects of Cybersecurity; Digital Forensics and Incident Response; Human Centered Cybersecurity
+21,"web, xml, architecture, microservices, patterns",112,1.44,2.15,0.71,Service Oriented Architecture; Microservices and Architecture; Web Development
+31,"user, interface, metaverse, designing, app",150,2.25,2.95,0.7,Human Computer Interaction; UI and UX Design; Design for Consumers
+17,"key, cryptography, quantum, encryption, hash",152,1.89,2.59,0.69,Cryptography and Network Security; Quantum Machine Learning; Introduction to Cryptography
+8,"pricing, options, variance, choice, markov",166,1.93,2.56,0.63,Reinforcement Learning; Behavioral Economics; Computational Finance and Modeling
+32,"marketing, strategy, strategic, customer, strategies",124,1.72,2.34,0.62,Marketing Management; Marketing Strategy and Analytics; Business Strategy
+24,"iot, protocols, cloud, smart, internet things",111,1.41,2.02,0.61,IoT and Applications; Internet of Things Analytics; Internet of Things (IoT)
+16,"image, detection, video, segmentation, processing",236,3.28,3.82,0.53,Image and Video Processing; Computer Vision; Computer Vision and Applications
+10,"routing, layer, ip, protocol, transmission",219,3.16,3.58,0.42,Computer Networks; Network Design; Cloud Computing
+7,"authentication, recognition, multimodal, identification, false",50,0.56,0.88,0.32,Biometrics; Robotics; Information Security
+28,"security, program, vulnerabilities, secure, threats",118,1.53,1.85,0.32,Ethical Hacking; Reverse Engineering and Malware Analysis; Information Security
+23,"time series, forecasting, series, moving, average",68,0.93,1.18,0.25,Applied Time Series Analysis; Simulation Modelling and Analysis; Algorithmic Trading
+39,"business, information systems, enterprise, commerce, electronic",147,2.32,2.56,0.24,Management Information Systems; Information Systems Audit; Enterprise Systems
+35,"analytics, visual, visualization, descriptive, graphs",173,2.42,2.54,0.12,Visual Analytics; Business Information Visualization and Analysis; Data Visualization
+1,"database, databases, distributed, data models, recovery",153,2.25,2.28,0.03,Advanced Database Management Systems; Database Administration; Database Management System
+25,"architecture, serial, embedded, scheduling, synchronization",223,3.82,3.74,-0.08,Embedded Systems; Computer Architecture; Computer Organization and Architecture
+13,"data sets, sets, missing, data analysis, analytical",263,4.01,3.86,-0.15,Data Handling and Visualization; Data Wrangling; Data Extraction and Processing
+33,"memory, file, disk, mapping, file systems",149,2.57,2.31,-0.26,Fundamentals of Operating Systems; Operating Systems; Big Data Analytics
+22,"list, tree, data structure, linked, array",124,2.05,1.74,-0.31,Data Structures and Algorithms; Computer Architecture; Advanced Data Structures
+29,"js, javascript, events, handling, validation",114,1.78,1.45,-0.33,Advanced Web Programming; Web Programming; Introduction to Modern Application Development
+37,"regression, linear regression, linear, multiple, multivariate",101,1.62,1.15,-0.46,Predictive Analysis; Computational Statistics; Statistical Structures in Data and Inference
+34,"logic, relational, sql, er, algebra",121,2.02,1.48,-0.54,Database Management System; Database Management Systems; Advanced Database Management Systems
+27,"formulation, linear programming, transportation, np, assignment",167,2.55,1.89,-0.66,Design and Analysis of Algorithms; Operations Research; Optimization Methods
+15,"random, probability, distribution, variables, distributions",198,3.28,2.47,-0.8,Managing Uncertainty; Simulation Modelling and Analysis; Stochastic processes and Applications
+6,"quality, diagram, metrics, uml, agile",280,4.8,3.81,-0.98,Software Engineering; Software Testing; Software Quality Assurance
+20,"transform, equation, series, signal, periodic",197,3.8,2.61,-1.19,Complex Variables and Transforms; Signals and Systems; Introduction to Data and Signal Analysis
+26,"entrepreneurship, design thinking, thinking, innovation, metaverse",126,2.34,1.15,-1.19,"Introduction to Innovation, IP Management & Entrepreneurship; Mobile Application Development; Business Strategy"
+9,"accounting, financial, capital, cash, prepare",160,2.66,1.22,-1.44,Financial Management; Financial & Cost Accounting; Corporate Finance
+3,"planning, project, cost, risk, inventory",266,4.34,2.87,-1.47,Operations and Supply Chain Management; IT Project Management; Cybersecurity Risk Management
+5,"blockchain, policy, india, trade, international",130,2.71,0.86,-1.85,Blockchain Technology; Metaverse; Introduction to International Business
+36,"demand, curve, supply, money, market",106,2.33,0.44,-1.89,Introduction to International Business; Marketing Management; Behavioral Economics
+19,"communication, diversity, culture, organizational, test",299,4.87,2.98,-1.9,Fundamentals of Management; Human Resource Management; Industrial Psychology
+2,"regular, languages, automata, class, turing",309,5.29,3.09,-2.2,Compiler Design; Theoretical Computer Science; Object Oriented Programming
