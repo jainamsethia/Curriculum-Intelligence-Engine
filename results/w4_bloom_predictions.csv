@@ -1,0 +1,327 @@
+outcome,course,faculty_level,Majority class,Rule-based verb lexicon (Week 3),Week 3 pipeline classifier,TF-IDF + logistic regression,Fine-tuned transformer (text),Fine-tuned transformer (text + rule hint),Phi-3 zero-shot,Phi-3 few-shot (12 examples)
+Describe the fundamental properties of semiconductors and elucidate the operational principles of semiconductor devices.,physics,2,3,2,2,1,2,2,2,2
+Apply interference and diffraction principles to analyze optical phenomena and diffraction grating applications.,physics,3,3,3,3,3,3,3,4,4
+"Explain the working principles of LASER technology and fiber optics, and apply them to real-world communication and engineering problems.",physics,3,3,2,2,2,2,2,2,2
+"Interpret the concepts of gradient, divergence, and curl in scalar and vector fields, and recognize their applications in basic engineering problems related to electromagnetism.",physics,2,3,2,2,2,2,2,2,4
+"Explore the properties and applications of modern engineering materials like nanomaterials, superconductors, and dielectrics.",physics,3,3,3,5,3,2,2,5,2
+"Gauge theoretical principles through laboratory experimentation, enhancing problem- solving abilities and technical proficiency in modern physics applications.",physics,3,3,3,5,3,3,3,5,3
+"Comprehend problem statements, build logic and draw flowchart",computationalthinkingforproblemsolving,2,3,2,2,3,2,2,3,2
+Develop complex logic using control structures ,computationalthinkingforproblemsolving,3,3,6,3,4,3,6,6,0
+Solve problems using arrays and functions ,computationalthinkingforproblemsolving,3,3,3,3,3,3,3,3,0
+Solve problems using pointers and structures ,computationalthinkingforproblemsolving,3,3,3,3,3,3,3,3,0
+Solve problems related to data handling with files .,computationalthinkingforproblemsolving,3,3,3,3,3,3,3,3,3
+Describe the Fundamental Concepts of Ethics and Philosophy of Engineering.,engineeringethics,1,3,2,2,2,2,2,2,2
+Explain the Importance of Codes of Ethics and Analyze Situations related to Ethical Dilemmas.,engineeringethics,2,3,2,2,2,2,2,2,5
+Summarize Key Ethical Issues from Historical Case Studies and Discuss their Impact on Engineering Practice.,engineeringethics,2,3,2,2,2,2,2,2,2
+Apply Ethical Decision-Making Models to Resolve Hypothetical Engineering Dilemmas.,engineeringethics,3,3,3,3,3,3,3,3,5
+Define and relate Indian Knowledge System & Human values with modern development.,indianknowledgesystem,1,3,1,1,3,2,1,2,1
+"Demonstrate the ability to understand, ancient Indian concepts of Number Systems and Units of Measurement, mathematical logic and mathematical proof techniques.",indianknowledgesystem,2,3,3,3,2,2,2,2,1
+"Establish understanding of the applications of ancient engineering, technology, and architecture in the contemporary society",indianknowledgesystem,2,3,3,3,1,2,2,2,2
+"Explain the basic concepts of polymers, their types, and applications",chemistry,2,3,2,2,2,2,2,2,1
+Apply knowledge of lubrication properties and numerical problem-solving,chemistry,3,3,3,3,3,3,3,3,3
+Evaluate combustion processes and the characteristics of different types of fuels by solving related numerical problems,chemistry,3,3,5,5,5,4,5,3,3
+"Assess the chemistry of water hardness, and softening methods, and solve related numerical problems",chemistry,3,3,5,5,5,3,5,5,3
+"Investigate the properties and applications of engineering materials, composites, and nanomaterials",chemistry,3,3,4,4,3,3,4,4,2
+"Identify the principles of biomimicry and explain their applications in engineering and sustainable design, demonstrating an understanding of biologically inspired solutions.",elementsofbiology,1,3,1,1,2,2,1,2,3
+"Classify the fundamental building blocks of life (carbohydrates, proteins, lipids, and nucleic acids) and describe their structural and functional roles in cellular processes and metabolism.",elementsofbiology,2,3,2,2,2,2,2,2,2
+"Explain the molecular basis of genetic information transfer, including DNA replication, transcription, and translation, and interpret Mendel's laws and their significance in genetics.",elementsofbiology,2,3,2,2,2,2,2,2,4
+"Describe the mechanisms of enzyme action, enzyme-substrate interactions, and enzyme inhibition, and discuss their industrial and biological applications.",elementsofbiology,2,3,2,2,2,2,2,2,2
+"Explain the principles of metabolism and energy transactions, and categorize microorganisms based on their characteristics, growth kinetics, and applications in biotechnology and drug discovery.",elementsofbiology,1,3,2,2,2,2,2,2,2
+Apply critical thinking techniques to problem-solving and decision-making.,transformingideastoinnovation,3,3,3,3,3,3,3,3,3
+"Recognize and analyze arguments, biases, and cognitive errors.",transformingideastoinnovation,4,3,1,1,4,4,2,4,5
+Use design-thinking principles to develop human-centered innovations.,transformingideastoinnovation,3,3,3,2,3,3,2,6,3
+Transform abstract ideas into prototypes and innovative solutions.,transformingideastoinnovation,3,3,3,5,3,3,3,6,6
+"Understand the fundamental concepts of differential calculus for functions of one variable, including limits, derivatives, Mean Value Theorems, Taylor and Maclaurin series, and LHospital’s rule.",calculus,2,3,2,2,2,2,2,2,2
+"Solve problems involving functions of several variables using partial differentiation, Taylor series expansion, and techniques for finding maxima and minima, including Lagrange’s method of undetermined multipliers.",calculus,3,3,3,3,3,3,3,3,4
+Use Beta and Gamma functions to solve problems in single-variable calculus.,calculus,2,3,3,3,3,3,3,3,5
+"Compute and interpret double and triple integrals, including change of variables and coordinate transformations, and apply them to determine areas and volumes.",calculus,3,3,3,3,3,3,3,3,3
+"Examine vector functions using gradient, divergence, curl, and scalar potential and apply fundamental vector calculus theorems such as Green’s, Stokes’, and Gauss’ theorems to evaluate integrals.",calculus,3,3,4,4,3,3,4,4,0
+"Integrate concepts from differential, integral, and vector calculus to formulate and solve real- world problems in physics, engineering, and applied sciences.",calculus,3,3,6,6,5,3,6,3,4
+"Recall the historical evolution of India’s democratic values, emphasizing the foundational principles of justice, equality, and liberty as enshrined in the Preamble of the Constitution.",constitutionofindia,1,3,1,1,2,2,1,2,1
+"Understand the fundamental rights enshrined in the Constitution, their permissible restrictions, and how these rights are balanced with duties, to grasp their application within societal and professional frameworks.",constitutionofindia,2,3,2,2,2,2,2,2,5
+Apply the knowledge of the structure of India's polity and the role of the Judiciary in maintaining the basic structure of the Constitution in real-world professional contexts.,constitutionofindia,3,3,3,3,2,3,3,3,5
+"Translate different number systems and binary codes, including weighted and non-weighted codes.",digitallogicdesign,2,3,2,2,2,3,2,3,2
+"Simplify Boolean expressions using De Morgan’s Theorem, SOP, POS, and Karnaugh maps.",digitallogicdesign,4,3,3,5,3,3,3,3,3
+"Build combinational logic circuits such as adders, multiplexers, decoders, and encoders. .",digitallogicdesign,3,3,6,5,3,4,6,6,3
+"Analyze sequential circuits, including flip-flops, registers, and counters.",digitallogicdesign,4,3,4,4,4,4,4,4,4
+Make use of VHDL for realizing basic digital logic circuits in different modeling styles.,digitallogicdesign,3,3,3,3,2,3,3,3,3
+"Solve systems of linear equations using the matrix method and understand linear algebra concepts, including vector spaces, subspaces, basis, and dimension .",linearalgebraanddifferentialequations,3,3,3,3,2,3,3,3,3
+"Analyze linear transformations by understanding their matrices, kernels, ranges and compute Eigenvalues and Eigenvectors of matrices and apply them to solve problems related to diagonalization .",linearalgebraanddifferentialequations,3,3,4,4,3,4,4,4,4
+Solve first-order ordinary differential equations using standard techniques for exact and linear equations .,linearalgebraanddifferentialequations,3,3,3,3,3,3,3,3,3
+Utilize the operator method and the method variation of parameters to find solutions of higher-order linear differential equations and the Euler-Cauchy equation .,linearalgebraanddifferentialequations,3,3,3,3,3,3,3,3,3
+Form partial differential equations and employ direct integration and separation of variables techniques to find solutions .,linearalgebraanddifferentialequations,3,3,3,3,3,3,3,3,4
+"Apply concepts from linear algebra and differential equations to model and address real- world problems in engineering, physics, and applied sciences .",linearalgebraanddifferentialequations,3,3,3,3,3,3,3,3,3
+"Implement basic programs using classes, objects ",objectorientedprogramming,3,3,3,3,3,3,3,3,3
+"Design solutions with class diagrams and implementing polymorphism, and inheritance ",objectorientedprogramming,3,3,6,6,6,3,6,6,4
+Implement programs using exception handling and files ,objectorientedprogramming,3,3,3,3,3,3,3,3,3
+"Implement programs using abstract classes, and interfaces ",objectorientedprogramming,3,3,3,3,3,3,3,3,3
+Design solutions using generics programming and design patterns for real-world problems .,objectorientedprogramming,3,3,6,6,6,4,6,6,3
+Implement programs using basic control and data structures ,programmingwithpython,3,3,3,3,3,3,3,3,3
+Implement programs using functions and files ,programmingwithpython,3,3,3,3,3,3,3,3,3
+Develop programs using arrays and DataFrame,programmingwithpython,3,3,6,6,3,3,6,6,6
+Understand the need for Quantum mechanics,quantumphysics,2,3,2,2,2,2,2,2,2
+Explain the basic laws related to quantum mechanics and apply them to solve related problems.,quantumphysics,3,3,2,2,3,2,2,2,5
+Apply the concept of quantum mechanics to real-life instrumentation and applications.,quantumphysics,3,3,3,3,3,3,3,3,0
+Understand the requirement of quantum computation and its various aspects.,quantumphysics,2,3,2,2,2,2,2,2,2
+"Gauge the theoretical principles through laboratory experimentation, enhancing problem- solving abilities and technical proficiency in modern physics applications.",quantumphysics,3,3,3,3,3,3,3,3,4
+"Understand fundamental concepts of discrete mathematics, including set theory, relations, functions, logic, and proof techniques.",discretemathematics,2,3,2,2,2,2,2,2,2
+"Apply mathematical logic, predicate calculus, and proof techniques, including mathematical induction, to establish the validity of statements and theorems.",discretemathematics,3,3,3,3,3,3,3,3,4
+"Analyse problems involving combinatorics, recurrence relations, generating functions, and the pigeonhole principle to model discrete structures.",discretemathematics,4,3,4,4,3,3,4,4,4
+"Formulate concepts from abstract algebra, including groups, rings, and fields, to construct mathematical models and solve real-world problems.",discretemathematics,5,3,6,6,3,3,3,6,4
+Demonstrate fundamental knowledge of data visualization concepts and the tools used to create them.,datavisualization,3,3,3,2,3,2,2,2,2
+Apply data visualization skills to produce interactive dashboards.,datavisualization,3,3,3,3,3,3,3,3,3
+Evaluate data visualizations for effectiveness and apply best practices in data storytelling,datavisualization,3,3,5,5,5,4,5,5,5
+Understand the basic concepts of probability theory and statistics.,probabilityandstatistics,2,3,2,2,2,2,2,2,2
+"Solve problems involving random variables, probability distributions and testing of hypothesis, correlation, and regression.",probabilityandstatistics,3,3,3,3,3,3,3,3,3
+Identify suitable probability distribution and testing techniques to solve problems.,probabilityandstatistics,2,3,1,1,3,3,1,2,3
+"Apply knowledge of random variables, probability distributions, measures of central tendency, correlation and regression to solve real life problems.",probabilityandstatistics,3,3,3,3,3,3,3,3,3
+Analyse data samples using statistical methods.,probabilityandstatistics,3,3,4,4,3,4,4,4,4
+Apply fundamental data structure concepts and computational complexity,datastructuresandalgorithms,3,3,3,3,3,3,3,3,0
+Distinguish between iterative and recursive approaches to problem-solving and implement algorithms using both techniques,datastructuresandalgorithms,4,3,2,2,3,2,4,4,3
+Apply linear data structure and its operations for the given application,datastructuresandalgorithms,3,3,3,3,3,3,3,3,0
+Apply non-linear data structure and its operations for the given application,datastructuresandalgorithms,3,3,3,3,3,3,3,3,0
+Apply the concept of hashing and hashing functions to create efficient data retrieval mechanisms,datastructuresandalgorithms,3,3,3,3,6,3,3,3,3
+Analyze various sorting algorithms,datastructuresandalgorithms,4,3,4,4,4,4,4,4,4
+Implement and analyze programs using array for the given problem,datastructuresandalgorithmslab,4,3,3,3,3,3,3,3,3
+Implement various searching and sorting algorithms,datastructuresandalgorithmslab,3,3,3,3,4,3,3,3,3
+Implement recursive programs for the given problem,datastructuresandalgorithmslab,3,3,3,3,3,3,3,3,3
+Implement appropriate linear data structure for the given problem,datastructuresandalgorithmslab,3,3,3,3,3,3,3,3,3
+Implement appropriate non-linear data structure for the given problem,datastructuresandalgorithmslab,3,3,3,3,3,3,3,3,3
+Analyze existing literature and industry trends to identify research gaps or practical issues and formulate a well-defined problem statement that addresses both academic and industry needs.,project,4,3,4,4,4,4,4,4,4
+Apply theoretical knowledge and engineering principles to develop feasible design models ensuring both innovation and real word applicability.,project,3,3,3,3,3,3,3,6,6
+Create prototype/ proof-of-concept to test and validate the solutions through real-word data analysis.,project,6,3,6,6,6,4,6,6,6
+"Demonstrate the ability to work collaboratively in multidisciplinary teams, showing leadership, communication, and project management skills.",project,2,3,3,3,2,2,2,3,6
+"Compile finding into detail technical report and present result effectively to both academic and industry stakeholders, showcasing the impact and practical applicability of the project.",project,6,3,3,5,2,4,4,6,6
+"Identify key properties of complex variables, Laplace Transforms, Fourier series, and Fourier Transforms.",complexvariablesandtransforms,1,3,1,1,3,2,1,2,4
+"Demonstrate understanding of the concepts of Complex variables, Laplace Transforms, Fourier series, and Fourier Transforms.",complexvariablesandtransforms,2,3,3,2,2,2,3,2,4
+"Solve mathematical problems using concepts of complex variables, Laplace transforms, Fourier series, and Fourier transforms.",complexvariablesandtransforms,3,3,3,3,3,3,3,3,3
+Analyze the concept of complex variables in conformal mapping and evaluation of complex integrals.,complexvariablesandtransforms,4,3,4,4,4,4,4,4,4
+"Find solutions to differential equations using Laplace Transforms, Fourier series, and Fourier Transforms.",complexvariablesandtransforms,3,3,3,3,3,3,3,3,3
+"Apply the techniques of Complex variables, Laplace Transforms, Fourier series and Fourier Transforms to solve engineering problems.",complexvariablesandtransforms,3,3,3,3,3,3,3,3,3
+Identify internal forces and stresses produced in the deformable bodies,strengthofmaterials,3,3,1,1,2,2,1,2,4
+"Construct axial force, shear force and bending moment diagrams for beams and rigid frames",strengthofmaterials,3,3,6,3,3,3,3,3,4
+"Analyze members subjected to flexure, shear and torsion",strengthofmaterials,4,3,4,4,4,3,4,4,4
+Develop principal stresses and strains using stress transformation equations and Mohr’s Circle,strengthofmaterials,3,3,6,3,3,3,3,6,3
+Solve deflections of beams using analytical methods,strengthofmaterials,3,3,3,3,3,3,3,3,3
+Understand the fundamentals of surveying instruments with their suitability,surveying,2,3,2,2,2,2,2,2,2
+Make use of levelling instruments and methods for obtaining levels,surveying,3,3,3,3,2,3,3,3,3
+Perform angular and distance measurements using theodolite and tacheometry methods,surveying,3,3,3,3,3,3,3,3,3
+Construct the curves using surveying instruments,surveying,3,3,6,3,6,3,6,6,1
+Use modern surveying instruments and GIS technologies for data collection and analysis,surveying,3,3,3,2,3,3,3,3,3
+Explain the number systems and Boolean algebra concepts in Digital Systems.,digitalcircuitsandcomputerarchitecture,2,3,2,2,2,2,2,2,1
+Apply concepts of Combinational and Sequential logic for designing Circuits.,digitalcircuitsandcomputerarchitecture,3,3,3,3,3,3,3,3,3
+"Describe the fundamental structure and functioning of a computer, as well as arithmetic operations, and Central Processing Unit.",digitalcircuitsandcomputerarchitecture,2,3,2,2,1,2,2,2,2
+Compare different memory organization techniques.,digitalcircuitsandcomputerarchitecture,4,3,2,2,2,4,2,4,4
+Demonstrate various I/O data transfer techniques.,digitalcircuitsandcomputerarchitecture,3,3,3,3,2,2,2,3,3
+Understand the fundamental concepts of web development.,websitedesigninganddevelopment,1,3,2,2,2,2,2,2,2
+Create the structure and styling of web pages with HTML and CSS.,websitedesigninganddevelopment,6,3,6,6,1,3,6,6,6
+Apply JavaScript to create interactive and dynamic web applications.,websitedesigninganddevelopment,3,3,3,3,6,3,3,3,3
+Implement server-side API’s using Node.js,websitedesigninganddevelopment,3,3,3,3,3,3,3,3,3
+Evaluate performance metrics of web applications.,websitedesigninganddevelopment,5,3,5,5,5,4,5,5,5
+Explain the characteristics of various process models used in the development of a software project,softwareengineering,1,3,2,2,2,2,2,2,2
+Demonstrate various Analysis and Design models that provide a basis for the software development,softwareengineering,2,3,3,2,6,3,2,4,4
+Apply UML concepts for modeling software functionality for a given scenario,softwareengineering,3,3,3,3,3,3,3,3,3
+Compare architectural design for real world problems,softwareengineering,4,3,2,4,4,4,4,4,4
+"Evaluate different project estimation techniques such as Lines of Code (LOC), Function Point (FP), Use Case-based Estimation",softwareengineering,5,3,5,5,5,4,5,5,5
+"Develop test strategies for conventional and object-oriented software, including validation and system testing",softwareengineering,3,3,6,3,6,3,6,6,3
+"Illustrate the fundamental concepts of signals and systems, including classification and operations on signals.",signalsandsystems,2,3,2,2,1,2,2,4,2
+Explain the properties of Linear Time-Invariant (LTI) systems and apply convolution techniques.,signalsandsystems,2,3,2,2,2,2,2,2,2
+"Illustrate the Fourier series representation of periodic signals, analyze their magnitude, and phase spectra.",signalsandsystems,2,3,2,2,4,2,2,4,2
+"Utilize Fourier and Laplace transforms, their properties for system analysis applications.",signalsandsystems,3,3,3,3,3,3,3,3,3
+Apply Z-transform in solving difference equations for discrete-time systems.,signalsandsystems,3,3,3,3,3,3,3,3,3
+Understand Computer Architecture & Bus Interconnection,computerorganizationandarchitecture,1,3,2,2,2,2,2,2,2
+Analyze Memory Organization & Hierarchy,computerorganizationandarchitecture,3,3,4,4,4,4,4,4,4
+Apply Concepts of Data Representation & Arithmetic Operations,computerorganizationandarchitecture,3,3,3,3,3,3,3,3,3
+Evaluate the Functionality of the Central Processing Unit (CPU),computerorganizationandarchitecture,4,3,5,5,5,4,5,5,5
+Examine Control Unit & Multiprocessing Concepts,computerorganizationandarchitecture,4,3,4,3,3,3,4,4,4
+Explore Advanced Processor Architectures & Case Studies,computerorganizationandarchitecture,2,3,3,6,2,3,3,5,4
+"Explain the fundamentals of digital images, including distance measures, and file formats.",imageandvideoprocessing,2,3,2,2,2,2,2,2,2
+"Apply image enhancement techniques such as point processing, spatial filtering, and histogram equalization for image improvement and image transforms for analyzing and compressing images.",imageandvideoprocessing,3,3,3,3,3,3,3,3,3
+Analyze morphological image processing techniques and edge detection methods for feature extraction.,imageandvideoprocessing,4,3,4,4,4,4,4,4,4
+"Compare different image segmentation methods, including thresholding, region-based segmentation, and the Otsu method.",imageandvideoprocessing,4,3,2,4,4,4,4,4,4
+Explain video representation concepts and motion estimation techniques used in digital video compression.,imageandvideoprocessing,2,3,2,2,1,2,2,2,2
+Explain the fundamental concepts of operating systems.,operatingsystems,2,3,2,2,2,2,2,2,2
+Analyze the various process management techniques and concurrency mechanisms.,operatingsystems,4,3,4,4,4,4,4,4,4
+"Explain synchronization, deadlock handling, and resource allocation methods for efficient process execution.",operatingsystems,2,3,2,2,4,2,2,2,4
+Apply knowledge of memory management techniques and page replacement algorithms to optimize system performance.,operatingsystems,3,3,3,3,3,3,3,3,3
+Implement I/O management strategies and disk scheduling algorithms for system performance improvement.,operatingsystems,3,3,3,3,4,3,3,3,3
+"Utilize case studies to understand the architecture, file system and security mechanisms of operating system.",operatingsystems,2,3,3,3,2,3,3,3,3
+Explain the fundamental concepts of Computer Networks.,computernetworks,2,3,2,2,1,2,2,2,2
+Analyze and Implement Data Link Layer Protocols to ensure reliable transmission.,computernetworks,4,3,4,4,4,4,4,4,4
+Apply and evaluate network layer functions and routing algorithms,computernetworks,3,3,3,5,5,3,3,3,3
+Describe and differentiate various Transport and Application Layer Mechanisms,computernetworks,2,3,2,2,2,2,2,4,2
+Explain the concepts of future Networking Technologies,computernetworks,2,3,2,2,2,2,2,2,2
+"Recall fundamental concepts of qualitative and quantitative data, types of distributions, and basic statistical terms.",managinguncertainty,1,3,1,1,1,2,2,1,1
+"Apply descriptive statistical techniques and visualize data distributions using Python libraries such as Pandas, Numpy, Matplotlib, and Seaborn.",managinguncertainty,3,3,3,3,3,3,3,3,3
+"Examine multivariate relationships through covariance and correlation analysis, and visualize them using appropriate graphical methods.",managinguncertainty,4,3,4,4,4,4,4,4,4
+"Create Python simulations to demonstrate inferential statistical methods, including the Central Limit Theorem and hypothesis testing for data-driven decision-making.",managinguncertainty,5,3,6,6,3,3,6,6,3
+"Assess and perform hypothesis testing using Z-tests, t-tests",managinguncertainty,5,3,5,5,5,3,5,5,3
+Discuss the importance of tidy data and data wrangling techniques.,datawrangling,2,3,2,2,2,2,2,2,2
+"Apply basic statistical and analytical tools to clean, structure, and manipulate datasets for analysis and decision-making.",datawrangling,3,3,3,3,3,3,3,3,3
+"Demonstrate the use of programming constructs (vectors, arrays, data frames, etc.) and scripting techniques for data cleaning and transformation.",datawrangling,3,3,3,2,3,3,3,3,3
+Describe the architecture and components of a Data Warehouse system.,datawrangling,2,3,2,2,1,2,2,2,2
+"Explain ETL processes for data extraction, transformation, and loading",datawrangling,3,3,2,2,3,2,2,2,2
+"Explain the fundamental principles of security including confidentiality, authentication, integrity, and non-repudiation, and describe basic network security models.",informationsecurityandprivacy,2,3,2,2,2,2,2,2,2
+"Apply symmetric and asymmetric cipher techniques such as DES, AES, Diffie-Hellman, and RSA to ensure secure communication.",informationsecurityandprivacy,3,3,3,3,4,3,3,3,3
+"Analyze the functions of OSI model layers, intrusion detection systems (IDS), firewall configurations, cookies management, and digital certificate verification.",informationsecurityandprivacy,4,3,4,4,4,4,4,4,4
+"Evaluate the importance of data privacy and security compliance, including good documentation practices and the Payment Card Industry Data Security Standard (PCI DSS).",informationsecurityandprivacy,5,3,5,5,3,4,5,5,5
+Use optimization techniques in Data Analytics and related areas.,optimizationmethods,2,3,3,3,3,3,3,3,3
+Apply optimization techniques to business problems.,optimizationmethods,3,3,3,3,3,3,3,3,3
+Develop and implement basic optimization techniques.,optimizationmethods,3,3,6,6,4,3,6,6,3
+Analyze and interpret optimization results to support decision-making processes.,optimizationmethods,4,3,4,4,4,4,4,4,5
+Analyze real-world problems and construct suitable optimization models.,optimizationmethods,4,3,4,4,4,4,4,4,4
+Apply optimization methods using modern computational tools.,optimizationmethods,3,3,3,3,3,3,3,3,3
+Formulate statistical inferences by designing hypothesis tests to validate assumptions and draw conclusions from sample data.,managinguncertainty,6,3,6,5,3,3,6,6,3
+Describe the fundamental concepts of data communication and perform mathematical operations on signals,introductiontodataandsignalanalysis,1,3,2,2,2,2,2,2,2
+Explain convolution techniques & Z-transforms and apply them in analysing discrete-time signals,introductiontodataandsignalanalysis,2,3,2,2,3,2,2,2,4
+Apply the Nyquist Sampling Theorem to determine the optimal sampling rate,introductiontodataandsignalanalysis,3,3,3,3,3,3,3,3,3
+Analyse signals using series and transforms to interpret and solve signal processing problems,introductiontodataandsignalanalysis,3,3,4,4,3,4,4,4,4
+Explain the fundamental principles of information security,informationsecurityandprivacy,2,3,2,2,2,2,2,2,2
+Apply cryptographic techniques such as substitution and transposition ciphers to secure data,informationsecurityandprivacy,3,3,3,3,3,3,3,3,3
+Implement algorithms like RSA and Diffie-Hellman for secure key exchange,informationsecurityandprivacy,3,3,3,3,3,3,3,3,3
+Describe the fundamental concepts of Firewall and data privacy,informationsecurityandprivacy,2,3,2,2,2,2,2,2,2
+Explain the structure and components of data systems and basic architectural concepts used in data-driven applications,introductiontodataengineering,1,3,2,2,2,2,2,2,2
+Describe different data sources and ingestion mechanisms involved in moving data into a data system,introductiontodataengineering,2,3,2,2,2,2,2,2,2
+Apply data structuring and preparation techniques to organize datasets for processing across multiple stages,introductiontodataengineering,3,3,3,3,3,3,3,3,3
+"Analyze datasets to ensure data quality, consistency, and reliability during data preparation and integration",introductiontodataengineering,4,3,4,4,4,4,4,4,4
+Explain the basic structure and features of spreadsheet software and manage worksheets and datasets effectively,spreadsheetbaseddataanalysis,1,3,2,2,2,2,2,2,2
+Apply formulas and built-in functions to perform calculations and basic data analysis tasks,spreadsheetbaseddataanalysis,3,3,3,3,3,3,3,3,3
+"Organize, clean, and validate datasets using spreadsheet tools and best practices",spreadsheetbaseddataanalysis,3,3,4,4,6,4,4,3,2
+"Analyze and present data using charts, summaries, and basic dashboards for effective communication",spreadsheetbaseddataanalysis,4,3,4,4,4,4,4,4,2
+"Recall fundamental concepts of confidence intervals, hypothesis testing, and maximum likelihood estimation (MLE)",statisticalstructuresindataandinference,1,3,1,1,1,2,2,1,2
+"Interpret generalized linear models (GLMs) such as logistic regression for binary outcomes, including log-odds interpretation and model diagnostics.",statisticalstructuresindataandinference,2,3,2,2,3,2,2,5,3
+Perform and interpret Ridge and Lasso regression for feature selection with Python implementations and visualizations,statisticalstructuresindataandinference,4,3,3,3,3,4,3,3,3
+Model finite impulse and infinite impulse response filters.,introductiontodatasignalandimageanalysis,3,3,4,4,6,4,4,4,3
+Analyze time and frequency domain properties of signals using Fourier and Laplace Transforms,introductiontodatasignalandimageanalysis,4,3,4,4,4,4,4,4,4
+"Illustrate the small-signal and large-signal models of BJTs and JFETs, including their high- frequency behavior and hybrid-π model.",analogcircuitsanalysisanddesign,2,3,2,2,2,2,2,4,3
+"Design of single-stage and multistage amplifiers using BJT and FET transistor considering temperature drift, midpoint biasing.",analogcircuitsanalysisanddesign,6,3,6,3,6,4,6,6,3
+Design Power Supply Circuit Analysis and Design.,analogcircuitsanalysisanddesign,6,3,6,3,6,3,6,6,3
+Analyze the effects of negative feedback on amplifier circuits and oscillator circuits.,analogcircuitsanalysisanddesign,4,3,4,4,4,4,4,4,4
+"Demonstrate the design and working of linear and non-linear op-amp circuits, including inverting, non-inverting, summing, differentiator, integrator, Schmitt trigger, and waveform generators.",analogcircuitsanalysisanddesign,2,3,3,2,3,3,3,6,3
+"Explain the principles, classifications, and performance parameters of power amplifiers (Class A, B, AB, and C) along with their circuit topologies.",analogcircuitsanalysisanddesign,2,3,2,2,2,2,2,2,2
+Identify the methods of mesh and node analysis for circuits with independent and dependent AC and DC sources.,circuitandnetworktheory,1,3,1,1,4,2,1,2,3
+"Explain the use of network theorems, including Thevenin’s, Norton’s, and superposition theorems, in analyzing electrical circuits.",circuitandnetworktheory,2,3,2,2,2,2,2,2,2
+"Apply graph theory principles, including trees, cut sets, and tie sets, to model and analyze electrical networks.",circuitandnetworktheory,3,3,3,3,4,3,3,3,4
+Solve first- and second-order differential equations to evaluate transient and steady-state responses in electrical circuits.,circuitandnetworktheory,3,3,3,3,3,3,3,3,3
+"Determine the parameters and functions of two-port networks, including Z, Y, ABCD, and hybrid parameters, for analyzing circuit behavior.",circuitandnetworktheory,5,3,3,3,2,2,2,5,3
+"Describe the fundamentals of big‑data platforms, Hadoop architecture, and the Hadoop ecosystem.",bigdataanalytics,2,3,2,2,2,2,2,2,2
+Design and manage distributed storage solutions using HDFS and related data‑ingest tools.,bigdataanalytics,3,3,6,6,3,4,6,6,6
+Develop and optimize MapReduce jobs for large‑scale data processing.,bigdataanalytics,4,3,6,6,3,4,6,6,6
+"Identify fundamental concepts of computer networks, network topologies, and OSI & TCP/IP models.",computernetworks,3,3,1,1,1,2,2,2,2
+Explain error detection and correction techniques along with multiple access protocols used in the data link layer.,computernetworks,2,3,2,2,2,2,2,2,3
+"Classify IPv4 & IPv6 addressing, subnetting, and routing algorithms for efficient network design.",computernetworks,4,3,2,2,3,4,4,2,3
+"Compare transport layer protocols such as TCP and UDP, including congestion control mechanisms.",computernetworks,4,3,2,4,4,4,2,4,4
+"Demonstrate the functionalities of application layer protocols such as HTTP, DNS, FTP, and SMTP for network communication.",computernetworks,2,3,3,2,2,2,2,3,3
+Identify the basic concepts of cloud computing and its benefits.,cloudcomputing,1,3,1,1,1,2,2,2,1
+Explain the role and significance of each layer in the cloud reference model.,cloudcomputing,2,3,2,2,2,2,2,2,2
+Analyze the security risks and service management processes in a cloud environment.,cloudcomputing,4,3,4,4,4,4,4,4,4
+Develop a comprehensive understanding of container orchestration by analyzing Docker containerization and Kubernetes Pods.,cloudcomputing,4,3,6,3,2,4,6,4,3
+"Apply, Deploy, and Manage the applications efficiently while evaluating and integrating best practices in real-world scenarios.",cloudcomputing,6,3,3,3,3,4,3,3,3
+Explain fundamental image processing techniques required for computer vision.,computervision,2,3,2,2,2,2,2,2,2
+Apply feature extraction and image segmentation techniques.,computervision,3,3,3,3,3,3,3,3,3
+Understand the concept of image classification and image recognition.,computervision,2,3,2,2,2,2,2,2,2
+Analyze applications of computer vision techniques in real-time scenarios.,computervision,4,3,4,4,4,4,4,4,4
+Implement computer vision techniques using appropriate tools and frameworks.,computervision,3,3,3,3,3,3,3,3,3
+"Explain the fundamentals of digital images, including pixel relationships, resolution, distance measures, and file formats.",imageandvideoprocessing,2,3,2,2,2,2,2,2,2
+"Apply image enhancement techniques such as point processing, spatial filtering, and histogram equalization for image improvement.",imageandvideoprocessing,3,3,3,3,3,3,3,3,3
+"Apply Python and Django—covering models, views, templates, and REST APIs—to construct functional back‑end services and integrate machine‑learning models.",introductiontomodernapplicationdevelopment,3,3,3,3,3,3,3,3,3
+"Design data‑driven applications that use PostgreSQL and MongoDB, and deploy them on cloud IaaS platforms such as AWS S3 or DigitalOcean.",introductiontomodernapplicationdevelopment,4,3,6,6,6,3,6,6,6
+"Develop interactive single‑page applications in React JS by implementing JSX, hooks, the Context API, and secure API connectivity.",introductiontomodernapplicationdevelopment,3,3,6,6,6,3,6,6,6
+Implement end‑to‑end DevOps practices by containerizing full‑stack projects with Docker and automating their deployment to solve real‑world problems.,introductiontomodernapplicationdevelopment,5,3,3,3,5,3,3,3,6
+Solve the uncertainty & optimization problems using the AI methods.,appliedartificialintelligence,3,3,3,3,3,3,3,3,3
+Apply knowledge representation and inference techniques to reason under logical and probabilistic frameworks.,appliedartificialintelligence,4,3,3,3,3,3,3,3,4
+Evaluate and compare different learning algorithms to select the appropriate method for a given task.,appliedartificialintelligence,5,3,5,5,4,4,5,5,5
+Design intelligent systems of their own,appliedartificialintelligence,6,3,6,6,2,3,3,6,6
+"Recall and define key concepts of machine learning, including types of learning, model evaluation metrics, and essential terminology.",foundationsofmachinelearning,1,3,1,1,1,2,1,1,1
+"Explain the fundamental differences between supervised vs. unsupervised learning, classification vs. regression, and concepts like bias-variance.",foundationsofmachinelearning,2,3,2,2,2,2,2,2,2
+"Apply foundational machine learning techniques to both supervised and unsupervised learning problems, including regression, classification, and dimensionality reduction.",foundationsofmachinelearning,3,3,3,3,4,3,3,3,3
+"Assess and interpret model performance using key evaluation metrics, understand the bias-variance trade-off, and distinguish quality of fit in various settings.",foundationsofmachinelearning,5,3,5,3,2,2,5,5,5
+"Perform and interpret dimensionality reduction techniques, such as Principal Component Analysis (PCA) and Fisher Discriminant Analysis, and apply support vector machines for classification with kernel methods and geometric interpretations.",foundationsofmachinelearning,4,3,3,3,5,3,3,3,5
+"Understand and classify the structure of programming environments, including libraries, diagrams, and data sources within SAS Enterprise Miner.",predictiveanalysis,2,3,2,2,3,2,2,2,2
+Apply decision trees and regression models to perform predictive analysis and optimize model complexity using SAS tools.,predictiveanalysis,3,3,3,3,3,3,3,3,3
+Evaluate statistical measures and model fit statistics to assess and design supervised and unsupervised models effectively.,predictiveanalysis,5,3,5,5,5,4,5,5,5
+Analyze and implement advanced predictive models using neural networks and additional modeling tools to solve real-world data problems.,predictiveanalysis,4,3,4,4,4,4,4,4,6
+Apply unsupervised learning techniques such as clustering and market basket analysis for pattern discovery in large datasets.,predictiveanalysis,4,3,3,3,3,3,3,3,3
+"Understand the fundamentals of system modeling and simulation techniques, including deterministic/stochastic systems, discrete event simulation, continuous simulation, and Monte Carlo methods.",simulationmodellingandanalysis,2,3,2,2,2,2,2,2,3
+Apply discrete event simulation techniques using time-advance mechanisms and event-driven approaches to model systems such as single-server queues.,simulationmodellingandanalysis,3,3,3,3,3,3,3,3,3
+"Develop and simulate real-world systems using GPSS by utilizing blocks, transactions, user- defined functions, and logic switches.",simulationmodellingandanalysis,4,3,6,3,3,4,6,6,3
+"analyze random numbers and variates using statistical tests (chi-square, runs test), and select appropriate probability distributions for simulation input modeling.",simulationmodellingandanalysis,4,3,4,4,4,4,4,4,4
+"Evaluate simulation results using statistical techniques such as confidence intervals, variance reduction methods, and experimental design to compare system alternatives.",simulationmodellingandanalysis,5,3,5,5,5,4,5,5,5
+"Describe the foundational concepts of computer networks and cloud computing, including network architectures, models, protocols, and cloud service/deployment models.",virtualizationandcloudcomputing,1,3,2,2,2,2,2,2,2
+"Demonstrate the use of virtualization technologies and container tools such as hypervisors, Docker, and Kubernetes for cloud infrastructure.",virtualizationandcloudcomputing,3,3,3,2,3,3,3,3,3
+"Implement and configure core AWS services including EC2, IAM, and S3 for secure and scalable cloud deployments.",virtualizationandcloudcomputing,3,3,3,3,4,3,3,3,3
+"Analyze resource management techniques such as load balancing, auto scaling, and provisioning in distributed cloud systems.",virtualizationandcloudcomputing,4,3,4,4,4,4,4,4,4
+"Develop and deploy cloud-based applications using advanced AWS tools like Lambda, CloudFormation, SageMaker, and monitoring services.",virtualizationandcloudcomputing,6,3,6,3,6,4,6,6,3
+"Define and describe key AI concepts, including search algorithms, knowledge representation, and intelligent agents",appliedartificialintelligenceandagenticsystem,1,3,1,1,1,2,1,2,2
+"Explain the theoretical principles of AI techniques such as heuristic search, inference mechanisms, and probabilistic reasoning",appliedartificialintelligenceandagenticsystem,2,3,2,2,2,2,2,2,4
+"Utilize AI methods to solve problems involving uncertainty, classification and optimization",appliedartificialintelligenceandagenticsystem,3,3,3,3,3,3,3,3,5
+Compare and evaluate various AI learning models,appliedartificialintelligenceandagenticsystem,4,3,2,2,5,4,2,4,5
+Analyze AI-driven applications using neural network,appliedartificialintelligenceandagenticsystem,4,3,4,4,4,4,4,4,4
+Describe computer‑vision basics and set up OpenCV for simple image tasks.,computervisionandapplications,1,3,2,2,2,2,2,2,2
+Analyze image formation and perform pixel‑level operations such as masking and geometric transforms.,computervisionandapplications,4,3,4,4,4,4,4,4,3
+"Apply filtering, color‑space conversion, and smoothing to enhance images.",computervisionandapplications,3,3,3,3,3,3,3,3,3
+"Detect and match features for edge extraction, template matching, and object tracking.",computervisionandapplications,4,3,3,5,3,4,3,3,3
+"Deploy ML/DL models (SVM, CNN) for face recognition, pedestrian and lane detection, and motion analysis.",computervisionandapplications,6,3,3,5,4,4,4,3,3
+Apply various classification and regression algorithms to categorize multivariate data and find relationships between variables.,applicationsofmachinelearning,3,3,3,3,3,3,3,3,3
+Analyze reinforcement-learning algorithms to evaluate the performance of complex systems.,applicationsofmachinelearning,4,3,4,4,5,4,4,4,5
+Evaluate different computational learning methods and interpret results using scientific reporting techniques.,applicationsofmachinelearning,5,3,5,5,5,4,5,5,5
+Construct machine-learning workflows using pipelines and ensemble techniques for optimization of performance.,applicationsofmachinelearning,6,3,6,6,3,3,6,6,6
+Distinguish between supervised and unsupervised learning approaches to appropriately model real-world datasets.,applicationsofmachinelearning,4,3,2,2,4,4,4,4,4
+Describe the concept of data structures and their computational complexity in terms of time and space.,advancedatastructureforanalytics,2,3,2,2,2,2,2,2,2
+Design and implement appropriate data structures for the given problem.,advancedatastructureforanalytics,3,3,6,6,3,3,3,6,3
+Analyze and differentiate various searching algorithms.,advancedatastructureforanalytics,4,3,4,4,4,4,4,4,4
+Analyze and differentiate various sorting algorithms.,advancedatastructureforanalytics,4,3,4,4,4,4,4,4,4
+"Implement and analyze advanced data structures like Union-Find, balanced trees, and hash tables.",advancedatastructureforanalytics,5,3,3,3,3,4,3,3,3
+"Understand and explain the role of marketing analytics, qualitative investigations, and consumer behavior studies in marketing decision-making.",marketingstrategyandanalytics,2,3,2,2,2,2,2,2,2
+"Apply marketing concepts, segmenting, targeting techniques, and cluster analysis to identify high-potential market segments.",marketingstrategyandanalytics,3,3,3,3,3,3,3,3,2
+"Analyze product positioning strategies using experimental analytics, conjoint analysis, and factor analysis for product development and pricing decisions.",marketingstrategyandanalytics,4,3,4,4,4,4,4,4,4
+"Create and implement marketing strategies for new market entries, competitive growth, and managing mature and declining markets.",marketingstrategyandanalytics,6,3,6,6,3,3,6,6,6
+"Apply advanced marketing analytics techniques such as logit modeling, demand models, and predictive modeling to understand consumer behavior and value customers.",marketingstrategyandanalytics,3,3,3,3,4,3,3,3,3
+"Understand the foundational concepts of non-parametric inference, such as empirical quantile functions, order statistics, and their asymptotic distributions.",nonparametricstatisticalinference,2,3,2,2,2,2,2,2,4
+"Apply goodness-of-fit and independence tests, including Chi-squared and Fisher’s exact tests, to categorical data.",nonparametricstatisticalinference,3,3,3,3,3,3,3,3,3
+Analyze and interpret results using linear rank statistics for problems involving scale differences.,nonparametricstatisticalinference,4,3,4,4,4,4,4,4,4
+Evaluate bivariate associations using Kendall’s Tau and Spearman’s Rank and analyze count data using McNemar’s and Fisher’s tests.,nonparametricstatisticalinference,5,3,5,5,4,4,5,5,5
+"Analyze the frequency response, pole-zero plots, and phase distortion of LTI systems to determine system characteristics.",discretetimesignalprocessing,4,3,4,4,4,4,4,4,4
+Apply Discrete Fourier and Fast Fourier Transform their properties for system analysis applications.,discretetimesignalprocessing,3,3,3,3,3,3,3,3,3
+"Design FIR and IIR filters using appropriate techniques such as windowing, bilinear transformation, and frequency transformation for various applications.",discretetimesignalprocessing,6,3,6,6,3,3,6,6,3
+"Evaluate the computational complexity of DFT and FFT algorithms, comparing their efficiency in signal processing applications.",discretetimesignalprocessing,5,3,5,5,2,4,5,5,5
+"Implement FIR and IIR digital filters using different structures (Direct Form, Cascade, and Parallel) to achieve desired frequency response.",discretetimesignalprocessing,3,3,3,3,3,3,3,3,3
+"Examine the impact of finite word-length effects such as quantization, truncation, and round- off noise on digital filter performance.",discretetimesignalprocessing,4,3,4,3,2,3,4,4,4
+"Explain stationarity, ergodicity, and correlation functions in random processes.",stochasticprocesses,2,3,2,2,2,2,2,2,4
+Compute the power spectral density and autocorrelation functions for given stochastic processes.,stochasticprocesses,3,3,3,3,3,3,3,3,3
+Analyze the response of linear systems to random inputs using autocorrelation and spectral properties.,stochasticprocesses,4,3,4,4,4,4,4,4,4
+Apply probability models to solve queueing theory problems such as M/G/1 and G/M/1 systems.,stochasticprocesses,3,3,3,3,3,3,3,3,3
+"Define the fundamental concepts of microwaves, including frequency bands, applications, and radiation hazards.",microwaveandantennatheory,1,3,1,1,1,2,2,2,1
+"Explain the principles of microwave transmission lines, including modes of propagation, impedance matching, and waveguide characteristics.",microwaveandantennatheory,2,3,2,2,1,2,2,2,2
+"Compare different passive and active microwave devices such as directional couplers, circulators, and microwave tubes.",microwaveandantennatheory,2,3,2,4,4,4,2,4,4
+"Compute antenna parameters such as directivity, gain, beamwidth, and input impedance for various antenna types.",microwaveandantennatheory,3,3,3,3,3,3,3,3,3
+"Understand fundamental wireless network concepts, ITU-T & TRAI regulations, cellular system principles, and multiple access technologies.",wirelesscommunicationtechnology,2,3,2,2,2,2,2,2,2
+"Analyze large-scale and small-scale radio propagation effects, including path loss models and multipath fading.",wirelesscommunicationtechnology,4,3,4,4,4,4,4,4,4
+Evaluate different diversity techniques and MIMO configurations for wireless communication performance enhancement.,wirelesscommunicationtechnology,5,3,5,5,5,4,5,5,5
+"Compare LTE advancements such as Carrier Aggregation, enhanced MIMO, CoMP, and heterogeneous networks.",wirelesscommunicationtechnology,4,3,2,4,4,4,4,4,4
+"Assess 5G and 6G network architectures, radio access technologies, and propagation models for next-generation communication.",wirelesscommunicationtechnology,5,3,5,3,3,4,5,5,5
+"Implement high‑level big‑data queries and workflows with Pig, Hive, HBase, and Big SQL.",bigdataanalytics,3,3,3,3,3,3,3,3,3
+"Apply big‑data analytics and visualization techniques to solve real‑world problems in domains such as text mining, recommendation, and spatiotemporal analysis.",bigdataanalytics,5,3,3,3,3,3,3,3,3
+"Explain the major trends driving the rise of deep learning, and understand where and how it is applied today.",neuralnetworksanddeeplearning,2,3,2,2,2,2,2,2,2
+"Analyze the key computations underlying deep learning, and apply them to synthesize and train deep neural networks.",neuralnetworksanddeeplearning,4,3,4,4,4,4,4,4,4
+"Improve deep neural networks using techniques such as hyperparameter tuning, regularization, and optimization.",neuralnetworksanddeeplearning,5,3,3,6,4,3,3,6,6
+"Build successful machine learning projects and apply end-to-end learning, transfer learning, and multi-task learning.",neuralnetworksanddeeplearning,5,3,6,6,3,3,6,6,6
+"Create projects using convolutional neural networks for image data and recurrent neural networks for natural language, audio, and other sequence data.",neuralnetworksanddeeplearning,6,3,6,6,3,3,6,6,6
+"Apply basic text processing techniques such as tokenization, stemming, and normalization using NLP libraries.",speechandnaturallanguageprocessing,3,3,3,3,3,3,3,3,3
+"Build and analyze language models using N-grams, smoothing techniques, and neural network- based approaches.",speechandnaturallanguageprocessing,4,3,6,6,4,4,6,6,5
+Implement syntactic parsing and part-of-speech tagging using probabilistic and dependency parsing methods.,speechandnaturallanguageprocessing,4,3,3,3,3,3,3,3,3
+"Apply distributional and lexical semantics techniques for clustering, word sense disambiguation, and semantic analysis. ()",speechandnaturallanguageprocessing,5,3,3,3,3,3,3,3,3
+"Design and develop NLP applications using advanced models such as encoder-decoder architectures, attention mechanisms, and transformers like BERT.",speechandnaturallanguageprocessing,6,3,6,6,6,4,6,6,6
+"Explain the differences between machine learning systems in research and production, and describe the components and needs of ML systems in real-world scenarios.",mlops,2,3,2,2,2,2,2,2,2
+"Apply fundamental concepts of data systems including data sources, formats, models, and processing frameworks to enable machine learning workflows.",mlops,3,3,3,3,3,3,3,3,3
+"Analyze the processes of data sampling, labeling, handling class imbalance, and feature engineering in the design of ML systems.",mlops,4,3,4,4,4,4,4,4,4
+"Evaluate deployment strategies such as batch and online prediction, and assess the trade-offs in cloud vs. edge deployment.",mlops,5,3,5,5,5,4,5,5,5
+"Design an end-to-end ML production pipeline including model monitoring, diagnosis of failures, and resource management.",mlops,6,3,6,3,5,4,6,6,6
+"Understand key concepts of quantum computing including qubits, gates, measurement, and quantum parallelism.",quantummachinelearning,2,3,2,2,1,2,2,2,5
+Apply data encoding methods like amplitude encoding and Hamiltonian simulation on quantum systems.,quantummachinelearning,3,3,3,3,3,3,3,3,5
+"Analyze quantum algorithms such as Deutsch-Jozsa, Bernstein-Vazirani, and Simon using Qiskit and Cirq.",quantummachinelearning,4,3,4,4,4,4,4,4,5
+Select an appropriate problem statement after reviewing the literature and identifying the research gaps,capstoneproject,1,3,3,3,2,4,3,5,2
+Formulate a feasible design model,capstoneproject,6,3,6,6,6,3,3,6,0
+"Develop the prototype/proof of concept, test and validate the results",capstoneproject,6,3,6,3,6,3,3,6,6
+"Create, work in team and apply the solution in practical way to specific problem",capstoneproject,6,3,6,6,3,3,3,6,3
+Summarize the major findings to compile a technical report.,capstoneproject,2,3,2,2,3,4,2,2,2

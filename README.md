@@ -8,7 +8,49 @@ redundancy flag, prerequisite check, and Bloom's-taxonomy level of each learning
 |---|---|---|
 | 1 | Project proposal | – |
 | 2 | Dataset (MIT OpenCourseWare) + TF-IDF baseline | `src/collect.py`, `preprocess.py`, `baseline.py` |
-| 3 | **NMIMS syllabus dataset + pipeline v1 (embeddings, information extraction, Bloom, topic map)** | `src/parse_nmims.py`, `pipeline.py`, `evaluate_v1.py`, … |
+| 3 | NMIMS syllabus dataset + pipeline v1 (embeddings, information extraction, Bloom, topic map) | `src/parse_nmims.py`, `pipeline.py`, `evaluate_v1.py`, … |
+| 4 | **Improved approaches vs baselines (hybrid search, transformer / LLM classification and extraction, LLM summaries)** | `src/improved.py`, `src/w4_*.py` |
+
+## Week 4 — improved approaches vs baselines
+
+Four components were re-implemented with an improved approach and compared with their baseline on the same test data
+(details, tables and figure in the Week 4 report and `results/w4_*.json`):
+
+| Task | Baseline | Improved approach | Metric | Baseline | Improved | Verdict (95% interval of the difference) |
+|---|---|---|---|---|---|---|
+| Course search (which course teaches this outcome?) | TF-IDF cosine | Hybrid: BM25 + bge-base, RRF | MRR@10 | 0.582 | 0.617 | improved, +0.035 [0.011, 0.057] |
+| | | Hybrid: BM25 + domain-adapted MiniLM | MRR@10 | 0.582 | 0.630 | improved, +0.048 [0.023, 0.073] |
+| | | Hybrid + cross-encoder rerank | MRR@10 | 0.582 | 0.607 | no clear difference |
+| Bloom level (326 faculty-tagged outcomes) | Rule-based verb lexicon | Fine-tuned transformer + rule hint | accuracy | 0.727 | 0.733 | no clear difference |
+| | | Phi-3 zero-shot | accuracy | 0.727 | 0.718 | no clear difference |
+| | | Phi-3 few-shot | accuracy | 0.727 | 0.607 | worse |
+| Prerequisite extraction (60 strings) | Regex splitter | spaCy noun chunks | F1 | 0.784 | 0.606 | worse |
+| | | Phi-3 few-shot | F1 | 0.784 | 0.852 | improved, +0.068 [0.007, 0.130] |
+| Course summary (40 courses, vs faculty objective) | Extractive, first two outcomes | Phi-3 (unit titles + outcomes) | ROUGE-L | 0.217 | 0.257 | improved, but 32% of its content words are not in the input |
+| | | Phi-3 (full unit text + outcomes) | ROUGE-L | 0.217 | 0.267 | improved, but 31% of its content words are not in the input |
+
+Honest summary: hybrid retrieval and LLM prerequisite extraction are real gains; nothing beat the verb lexicon for Bloom's taxonomy (Phi-3
+zero-shot matches it with no training data); LLM summaries score higher but add unsupported wording, and all three LLM comparison summaries
+tried in `w4_examples.py` failed the faithfulness guard and fell back to a template.
+
+### Run (Week 4)
+Needs `pip install -r requirements.txt` and, for the LLM steps, a local [Ollama](https://ollama.com) with `phi3` and `nomic-embed-text`
+pulled. Once the encoders are cached, set `HF_HUB_OFFLINE=1` (the sentence-transformers loader otherwise contacts huggingface.co even for cached models).
+```bash
+python src/w4_finetune_encoder.py          # domain-adapted MiniLM (contrastive, ~25 min on CPU) -> data/interim/
+python src/w4_retrieval.py --models minilm,bge-small,nomic,bge-base,ft      # task 1 -> results/w4_retrieval.json
+python src/w4_bloom.py                      # task 2 (fine-tuning + Phi-3, ~70 min on CPU; resumes from data/interim/ checkpoints)
+python src/w4_bloom_vote.py                 # exploratory vote between Bloom classifiers
+python src/w4_prereq_extraction.py          # task 3 (gold strings: data/annotation/prereq_extraction_gold.json)
+python src/w4_summarize.py                  # task 4
+python src/w4_examples.py                   # search and comparison-summary examples
+python src/w4_figures.py                    # results/fig_w4_comparison.png
+
+python src/pipeline.py search "transformers and large language models" -k 5 --mode hybrid   # hybrid | dense | keyword | course-vector (Week 3)
+python src/pipeline.py compare --a nm59a8f694 --b nm7677637d --summary                      # adds an LLM summary with a faithfulness guard
+```
+Labels: the prerequisite test strings (`prereq_extraction_gold.json`) were labelled by a single LLM annotator, not by humans. Retrieval,
+Bloom and summary ground truths come from the syllabi themselves (source course, faculty K/L tag, faculty objective).
 
 ## Week 3 — pipeline v1
 
@@ -88,11 +130,14 @@ python src/baseline.py     # TF-IDF cosine, TF-IDF + logistic regression, lexico
 
 ## Layout
 ```
+src/           improved.py  w4_retrieval.py  w4_finetune_encoder.py  w4_bloom.py  w4_bloom_vote.py  w4_prereq_extraction.py
+               w4_summarize.py  w4_examples.py  w4_figures.py                                                     (Week 4)
 src/           parse_nmims.py  pipeline.py  evaluate_v1.py  examples_v1.py  topic_trends.py  make_gold_sample.py   (Week 3)
                collect.py  preprocess.py  baseline.py                                                          (Week 2)
 data/raw/ocw/  Week 2 raw MIT OpenCourseWare pages (CC BY-NC-SA 4.0)
 data/processed nmims_courses.jsonl  calibration.json  courses.jsonl/.csv (Week 2)
 data/annotation  gold / audit labels (see provenance above)
-results/       metrics_v1.json  extraction_audit.json  example_reports_v1.json  topic_trends.*  figures  (Week 2: metrics.json, ...)
+results/       w4_*.json  w4_bloom_predictions.csv  fig_w4_comparison.png                          (Week 4)
+               metrics_v1.json  extraction_audit.json  example_reports_v1.json  topic_trends.*  figures  (Week 2: metrics.json, ...)
 report/        Week 2 and Week 3 reports (.docx)
 ```

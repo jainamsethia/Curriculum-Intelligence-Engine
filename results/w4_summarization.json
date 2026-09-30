@@ -1,0 +1,151 @@
+{
+ "n_courses": 40,
+ "reference": "faculty 'Course Objective' paragraph",
+ "seconds_per_course": {
+  "Template: first unit titles": 0.0,
+  "Extractive: first two outcomes": 0.0,
+  "Extractive: centroid sentences": 0.56,
+  "Phi-3 (unit titles + outcomes)": 10.5,
+  "Phi-3 (full unit text + outcomes)": 22.39
+ },
+ "systems": {
+  "Template: first unit titles": {
+   "rouge1": 0.251,
+   "rouge2": 0.064,
+   "rougeL": 0.196,
+   "embedding_cosine": 0.599,
+   "words": 24.175,
+   "unsupported_terms": 0.138,
+   "rougeL_95ci": [
+    0.171,
+    0.222
+   ],
+   "rougeL_gain_over_best_baseline_95ci": [
+    -0.047,
+    0.007
+   ],
+   "embedding_cosine_gain_over_best_baseline_95ci": [
+    -0.02,
+    0.078
+   ]
+  },
+  "Extractive: first two outcomes": {
+   "rouge1": 0.307,
+   "rouge2": 0.076,
+   "rougeL": 0.217,
+   "embedding_cosine": 0.571,
+   "words": 23.95,
+   "unsupported_terms": 0.0,
+   "rougeL_95ci": [
+    0.195,
+    0.239
+   ],
+   "rougeL_gain_over_best_baseline_95ci": [
+    0.0,
+    0.0
+   ],
+   "embedding_cosine_gain_over_best_baseline_95ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "Extractive: centroid sentences": {
+   "rouge1": 0.219,
+   "rouge2": 0.036,
+   "rougeL": 0.156,
+   "embedding_cosine": 0.501,
+   "words": 48.175,
+   "unsupported_terms": 0.0,
+   "rougeL_95ci": [
+    0.137,
+    0.174
+   ],
+   "rougeL_gain_over_best_baseline_95ci": [
+    -0.085,
+    -0.036
+   ],
+   "embedding_cosine_gain_over_best_baseline_95ci": [
+    -0.123,
+    -0.015
+   ]
+  },
+  "Phi-3 (unit titles + outcomes)": {
+   "rouge1": 0.372,
+   "rouge2": 0.099,
+   "rougeL": 0.257,
+   "embedding_cosine": 0.68,
+   "words": 41.775,
+   "unsupported_terms": 0.325,
+   "rougeL_95ci": [
+    0.237,
+    0.276
+   ],
+   "rougeL_gain_over_best_baseline_95ci": [
+    0.022,
+    0.057
+   ],
+   "embedding_cosine_gain_over_best_baseline_95ci": [
+    0.073,
+    0.15
+   ]
+  },
+  "Phi-3 (full unit text + outcomes)": {
+   "rouge1": 0.39,
+   "rouge2": 0.106,
+   "rougeL": 0.267,
+   "embedding_cosine": 0.696,
+   "words": 43.575,
+   "unsupported_terms": 0.308,
+   "rougeL_95ci": [
+    0.246,
+    0.287
+   ],
+   "rougeL_gain_over_best_baseline_95ci": [
+    0.035,
+    0.065
+   ],
+   "embedding_cosine_gain_over_best_baseline_95ci": [
+    0.088,
+    0.167
+   ]
+  }
+ },
+ "examples": [
+  {
+   "course": "Earthquake Engineering",
+   "reference": "This course focusses on the basics of structural dynamics. It also focusses on the evaluation of dynamic properties of structures and their response subjected to dynamic loads and earthquake loads as per the requirements of Indian standard codal provisions",
+   "Template: first unit titles": "This course covers Single Degree of Freedom (SDOF) Systems, Multiple Degree of Freedom (MDOF) Systems, Seismological Background, Characterization of Ground Motion, Deterministic Earthquake Response, IS Code Method of Seismic Analysis.",
+   "Extractive: first two outcomes": "Determine the natural properties of SDOF and MDOF Systems. Evaluate the response of SDOF and MDOF systems.",
+   "Extractive: centroid sentences": "Characterization of Ground Motion Earthquake response spectra, factors influencing response spectra, design response spectra for elastic systems, peak ground acceleration, response spectrum shapes, deformation, pseudo-velocity, pseudo-acceleration response spectra. peak structural Deterministic Earthquake Response Types of earthquake excitation, lumped SDOF elastic systems. translational excitation, lumped MDOF elastic systems, translational excitation, time history analysis, multistoried buildings with symmetric plans, multi storied buildings",
+   "Phi-3 (unit titles + outcomes)": "The course aims to equip students with the skills to analyze and design structures for seismic resistance, focusing on understanding SDOF and MDOF systems, characterizing ground motion, and applying IS code method for seismic analysis.",
+   "Phi-3 (full unit text + outcomes)": "The course aims to equip students with the ability to determine natural properties, evaluate responses, and analyze structures using IS code methods and response spectra for SDOF and MDOF systems in earthquake engineering. It also covers seismological background, ground motion characterization, and ductile detailing of structures as per IS 13920: 2de."
+  },
+  {
+   "course": "Digital Electronics and Microprocessor",
+   "reference": "1. To provide knowledge of digital logic & digital system as well as their applications in technical field. 2. To provide knowledge of basic building blocks and their working. 3. To provide knowledge of designing the digital logic circuit using basic building blocks and necessary techniques, which is required in computer hardware design. 4. To provide exposure of 8086 architecture, Interface and programming.",
+   "Template: first unit titles": "This course covers Introduction To Digital Systems, Logic Gates and Boolean Algebra, Combinational logic circuit and its implementation, Sequential Logic Circuits, Intel 8086 microprocessor family, I/O device and Memory interfacing with the 8086 microprocessor.",
+   "Extractive: first two outcomes": "Understand concept of digital system and logic simplification. Design and analyze combinational circuits.",
+   "Extractive: centroid sentences": "Combinational logic circuit and its implementation: Combinational circuits: Adders (half and full), Multiplexers, Demultiplexers, Design of digital logic using multiplexers. Intel 8086 microprocessor family: Introduction, Feature of 8086, Architecture of 8086, Pin diagram of 8086, Assembly language programming based on basic data transfer and Arithmetic instruction.",
+   "Phi-3 (unit titles + outcomes)": "The course aims to provide a comprehensive understanding of digital systems, enabling students to design and analyze combinational and sequential circuits, understand the 8086 microprocessor architecture, and create basic assembly language programming. It also focuses on designing interfaces with peripheral devices and memory.",
+   "Phi-3 (full unit text + outcomes)": "The course aims to provide a comprehensive understanding of digital systems, logic simplification, and the design of combinational and sequential circuits, with a focus on the Intel 8086 microprocessor architecture and interfacing techniques. It also seeks to develop skills in assembly language programming and the creation of basic digital logic using universal gates."
+  },
+  {
+   "course": "Environmental Sciences",
+   "reference": "This course aims to understand the multidisciplinary nature of environmental sciences, greenhouse effect and climate change. It also aims to discuss the basics of natural resources, biodiversity, environmental pollution.",
+   "Template: first unit titles": "This course covers Multidisciplinary nature of environmental science, Natural Resources • Natural resources: Forest, Ecosystems • Concept of an ecosystem., Biodiversity • Definition: genetic, species and, Environmental Pollution • Definition, Cause and, The Science of Climate Change •.",
+   "Extractive: first two outcomes": "Explain the concept of natural resources, ecosystem and biodiversity. Relate the various aspects of environmental pollutions with its cause and effect.",
+   "Extractive: centroid sentences": "Multidisciplinary nature of environmental science Definition, scope and importance of environmental sciences. Environmental Pollution • Definition, Cause and effects for Air pollution, Water pollution, Soil pollution, Marine pollution, Noise pollution, Thermal pollution, Nuclear hazards and Solid waste pollution.",
+   "Phi-3 (unit titles + outcomes)": "The course aims to provide a comprehensive understanding of the multidisciplinary nature of environmental science, focusing on natural resources, ecosystems, biodiversity, environmental pollution, and climate change. Students will learn to explain these concepts, relate pollution aspects with their causes and effects, and understand the greenhouse effect and climate change.",
+   "Phi-3 (full unit text + outcomes)": "The course aims to provide a comprehensive understanding of the multidisciplinary nature of environmental science, exploring natural resources, ecosystems, biodiversity, and environmental pollution, while also elucidating the science behind climate change. Students will learn to explain concepts, relate causes and effects, and understand the greenhouse effect and global environmental changes."
+  },
+  {
+   "course": "Business Strategy",
+   "reference": "To familiarize the participants with the basic concepts of business strategy, facilitate the participants to apply the concepts to live corporate situations, and to explain contemporary concepts of strategy.",
+   "Template: first unit titles": "This course covers Introduction to Strategic Management, Internal Environment of Firm- Recognizing a Firm’s Intellectual Assets, External Environments of Firm- Competitive Strategy, Corporate Strategy, and Growth Strategies, Strategy Implementation, Home Assignment.",
+   "Extractive: first two outcomes": "Comprehend fundamental concepts of strategic management to analyze business situations and apply these concepts to solve business problems. Understand the fundamental principles of and interrelationships among business functions such as: R&D, production, marketing, finance, HR and information technology.",
+   "Extractive: centroid sentences": "Introduction to Strategic Management: Importance of Strategic Management, Vision and Objectives, Schools of thought in Strategic Management, Strategy Content, Process, and Practice, Fit Concept and Configuration Perspective in Strategic Management. External Environments of Firm- Competitive Strategy: Five Forces of Industry Attractiveness that Shape Strategy, The concept of Strategic Groups, and Industry Life Cycle, Generic Strategies, Generic Strategies and the Value",
+   "Phi-3 (unit titles + outcomes)": "The course aims to equip students with a comprehensive understanding of strategic management principles, enabling them to analyze business situations, recognize a firm' end intellectual assets, and apply strategies for implementation and growth. It also fosters an understanding of the interrelationships among business functions and their connections to broader societal elements.",
+   "Phi-3 (full unit text + outcomes)": "The course aims to equip students with the ability to comprehend and apply fundamental concepts of strategic management, understand the interrelationships among business functions, and analyze complex business problems using appropriate tools. It also focuses on understanding the inter-relationships of business to various societal elements and the implementation of corporate strategies."
+  }
+ ]
+}

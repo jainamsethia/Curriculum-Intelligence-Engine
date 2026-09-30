@@ -1,0 +1,28 @@
+{
+ "vote(lexicon, transformer + rule hint, Phi-3 zero-shot)": {
+  "accuracy": 0.742,
+  "accuracy_95ci": [
+   0.691,
+   0.791
+  ],
+  "gain_over_lexicon": 0.015,
+  "gain_95ci": [
+   -0.006,
+   0.039
+  ]
+ },
+ "oracle (any of the three right)": {
+  "accuracy": 0.807,
+  "accuracy_95ci": [
+   0.758,
+   0.851
+  ],
+  "gain_over_lexicon": 0.08,
+  "gain_95ci": [
+   0.049,
+   0.111
+  ]
+ },
+ "agreement_lexicon_vs_phi3_zero_shot": 0.847,
+ "agreement_lexicon_vs_transformer_hint": 0.902
+}

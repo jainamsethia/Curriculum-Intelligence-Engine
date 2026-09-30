@@ -7,3 +7,5 @@ numpy>=1.26
 matplotlib>=3.9
 pymupdf>=1.24       # reads the syllabus PDFs
 sentence-transformers>=3.0   # Week 3 embeddings (downloads all-MiniLM-L6-v2 on first use; pulls in torch)
+rank-bm25>=0.2      # Week 4 keyword search baseline
+rouge-score>=0.1    # Week 4 summary evaluation

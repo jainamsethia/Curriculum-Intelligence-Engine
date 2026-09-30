@@ -1,0 +1,149 @@
+{
+ "n_outcomes": 326,
+ "n_courses": 66,
+ "level_counts": {
+  "1": 22,
+  "2": 73,
+  "3": 128,
+  "4": 61,
+  "5": 23,
+  "6": 19
+ },
+ "seeds": 1,
+ "systems": {
+  "Majority class": {
+   "accuracy": 0.393,
+   "accuracy_95ci": [
+    0.329,
+    0.457
+   ],
+   "within_1_level": 0.804,
+   "macro_f1": 0.094,
+   "gain_over_lexicon_95ci": [
+    -0.42,
+    -0.25
+   ],
+   "right_where_lexicon_wrong": 30,
+   "wrong_where_lexicon_right": 139,
+   "mcnemar_exact_p": 0.0
+  },
+  "Rule-based verb lexicon (Week 3)": {
+   "accuracy": 0.727,
+   "accuracy_95ci": [
+    0.676,
+    0.774
+   ],
+   "within_1_level": 0.865,
+   "macro_f1": 0.681,
+   "gain_over_lexicon_95ci": [
+    0.0,
+    0.0
+   ],
+   "right_where_lexicon_wrong": 0,
+   "wrong_where_lexicon_right": 0,
+   "mcnemar_exact_p": null
+  },
+  "Week 3 pipeline classifier": {
+   "accuracy": 0.706,
+   "accuracy_95ci": [
+    0.654,
+    0.757
+   ],
+   "within_1_level": 0.868,
+   "macro_f1": 0.632,
+   "gain_over_lexicon_95ci": [
+    -0.059,
+    0.017
+   ],
+   "right_where_lexicon_wrong": 13,
+   "wrong_where_lexicon_right": 20,
+   "mcnemar_exact_p": 0.296
+  },
+  "TF-IDF + logistic regression": {
+   "accuracy": 0.641,
+   "accuracy_95ci": [
+    0.6,
+    0.682
+   ],
+   "within_1_level": 0.853,
+   "macro_f1": 0.531,
+   "gain_over_lexicon_95ci": [
+    -0.136,
+    -0.033
+   ],
+   "right_where_lexicon_wrong": 27,
+   "wrong_where_lexicon_right": 55,
+   "mcnemar_exact_p": 0.003
+  },
+  "Fine-tuned transformer (text)": {
+   "accuracy": 0.678,
+   "accuracy_95ci": [
+    0.622,
+    0.733
+   ],
+   "within_1_level": 0.899,
+   "macro_f1": 0.37,
+   "gain_over_lexicon_95ci": [
+    -0.112,
+    0.013
+   ],
+   "right_where_lexicon_wrong": 35,
+   "wrong_where_lexicon_right": 51,
+   "mcnemar_exact_p": 0.105,
+   "accuracy_per_seed": [
+    0.678
+   ]
+  },
+  "Fine-tuned transformer (text + rule hint)": {
+   "accuracy": 0.733,
+   "accuracy_95ci": [
+    0.679,
+    0.783
+   ],
+   "within_1_level": 0.88,
+   "macro_f1": 0.658,
+   "gain_over_lexicon_95ci": [
+    -0.033,
+    0.045
+   ],
+   "right_where_lexicon_wrong": 14,
+   "wrong_where_lexicon_right": 12,
+   "mcnemar_exact_p": 0.845,
+   "accuracy_per_seed": [
+    0.733
+   ]
+  },
+  "Phi-3 zero-shot": {
+   "accuracy": 0.718,
+   "accuracy_95ci": [
+    0.667,
+    0.769
+   ],
+   "within_1_level": 0.877,
+   "macro_f1": 0.624,
+   "gain_over_lexicon_95ci": [
+    -0.048,
+    0.026
+   ],
+   "right_where_lexicon_wrong": 20,
+   "wrong_where_lexicon_right": 23,
+   "mcnemar_exact_p": 0.761
+  },
+  "Phi-3 few-shot (12 examples)": {
+   "accuracy": 0.607,
+   "accuracy_95ci": [
+    0.547,
+    0.666
+   ],
+   "within_1_level": 0.822,
+   "macro_f1": 0.546,
+   "gain_over_lexicon_95ci": [
+    -0.177,
+    -0.064
+   ],
+   "right_where_lexicon_wrong": 18,
+   "wrong_where_lexicon_right": 57,
+   "mcnemar_exact_p": 0.0
+  }
+ }
+}

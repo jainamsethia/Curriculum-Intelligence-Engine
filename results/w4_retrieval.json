@@ -1,0 +1,276 @@
+{
+ "setup": {
+  "courses": 640,
+  "clusters": 607,
+  "unit_chunks": 5577,
+  "fit_courses": 358,
+  "val_courses": 100,
+  "test_courses": 197,
+  "queries": {
+   "val": 471,
+   "test": 869
+  },
+  "cluster_cosine": 0.85,
+  "selected_on_validation": {
+   "keyword": "BM25, whole course",
+   "dense": "bge-base-en-v1.5 / course vector"
+  }
+ },
+ "validation_MRR@10": {
+  "TF-IDF cosine (Week 2 baseline)": 0.581,
+  "BM25, whole course": 0.591,
+  "BM25, best unit": 0.561,
+  "MiniLM-L6 (Week 3 encoder) / course vector": 0.609,
+  "MiniLM-L6 (Week 3 encoder) / best unit": 0.623,
+  "bge-small-en-v1.5 / course vector": 0.604,
+  "bge-small-en-v1.5 / best unit": 0.587,
+  "nomic-embed-text / course vector": 0.637,
+  "nomic-embed-text / best unit": 0.628,
+  "bge-base-en-v1.5 / course vector": 0.654,
+  "bge-base-en-v1.5 / best unit": 0.619,
+  "MiniLM-L6 domain-adapted (ours) / course vector": 0.634,
+  "MiniLM-L6 domain-adapted (ours) / best unit": 0.65
+ },
+ "test": {
+  "TF-IDF cosine (Week 2 baseline)": {
+   "MRR@10": 0.582,
+   "Recall@1": 0.473,
+   "Recall@5": 0.736,
+   "Recall@10": 0.817,
+   "nDCG@10": 0.638,
+   "MRR@10_95ci": [
+    0.54,
+    0.622
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "BM25, whole course": {
+   "MRR@10": 0.578,
+   "Recall@1": 0.467,
+   "Recall@5": 0.731,
+   "Recall@10": 0.812,
+   "nDCG@10": 0.634,
+   "MRR@10_95ci": [
+    0.534,
+    0.619
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.026,
+    0.017
+   ]
+  },
+  "BM25, best unit": {
+   "MRR@10": 0.534,
+   "Recall@1": 0.407,
+   "Recall@5": 0.719,
+   "Recall@10": 0.799,
+   "nDCG@10": 0.598,
+   "MRR@10_95ci": [
+    0.497,
+    0.573
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.075,
+    -0.02
+   ]
+  },
+  "MiniLM-L6 (Week 3 encoder) / course vector": {
+   "MRR@10": 0.583,
+   "Recall@1": 0.441,
+   "Recall@5": 0.783,
+   "Recall@10": 0.883,
+   "nDCG@10": 0.655,
+   "MRR@10_95ci": [
+    0.545,
+    0.619
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.035,
+    0.034
+   ]
+  },
+  "MiniLM-L6 (Week 3 encoder) / best unit": {
+   "MRR@10": 0.598,
+   "Recall@1": 0.455,
+   "Recall@5": 0.796,
+   "Recall@10": 0.89,
+   "nDCG@10": 0.668,
+   "MRR@10_95ci": [
+    0.561,
+    0.634
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.016,
+    0.048
+   ]
+  },
+  "bge-small-en-v1.5 / course vector": {
+   "MRR@10": 0.557,
+   "Recall@1": 0.417,
+   "Recall@5": 0.754,
+   "Recall@10": 0.841,
+   "nDCG@10": 0.626,
+   "MRR@10_95ci": [
+    0.52,
+    0.596
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.062,
+    0.01
+   ]
+  },
+  "bge-small-en-v1.5 / best unit": {
+   "MRR@10": 0.575,
+   "Recall@1": 0.426,
+   "Recall@5": 0.786,
+   "Recall@10": 0.858,
+   "nDCG@10": 0.644,
+   "MRR@10_95ci": [
+    0.538,
+    0.611
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.038,
+    0.024
+   ]
+  },
+  "nomic-embed-text / course vector": {
+   "MRR@10": 0.575,
+   "Recall@1": 0.443,
+   "Recall@5": 0.755,
+   "Recall@10": 0.843,
+   "nDCG@10": 0.64,
+   "MRR@10_95ci": [
+    0.532,
+    0.613
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.042,
+    0.026
+   ]
+  },
+  "nomic-embed-text / best unit": {
+   "MRR@10": 0.615,
+   "Recall@1": 0.484,
+   "Recall@5": 0.801,
+   "Recall@10": 0.863,
+   "nDCG@10": 0.675,
+   "MRR@10_95ci": [
+    0.577,
+    0.651
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    0.001,
+    0.066
+   ]
+  },
+  "bge-base-en-v1.5 / course vector": {
+   "MRR@10": 0.574,
+   "Recall@1": 0.435,
+   "Recall@5": 0.762,
+   "Recall@10": 0.861,
+   "nDCG@10": 0.643,
+   "MRR@10_95ci": [
+    0.534,
+    0.614
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.04,
+    0.024
+   ]
+  },
+  "bge-base-en-v1.5 / best unit": {
+   "MRR@10": 0.606,
+   "Recall@1": 0.459,
+   "Recall@5": 0.802,
+   "Recall@10": 0.886,
+   "nDCG@10": 0.674,
+   "MRR@10_95ci": [
+    0.57,
+    0.641
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.007,
+    0.054
+   ]
+  },
+  "MiniLM-L6 domain-adapted (ours) / course vector": {
+   "MRR@10": 0.596,
+   "Recall@1": 0.457,
+   "Recall@5": 0.785,
+   "Recall@10": 0.883,
+   "nDCG@10": 0.665,
+   "MRR@10_95ci": [
+    0.557,
+    0.633
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.021,
+    0.047
+   ]
+  },
+  "MiniLM-L6 domain-adapted (ours) / best unit": {
+   "MRR@10": 0.61,
+   "Recall@1": 0.466,
+   "Recall@5": 0.808,
+   "Recall@10": 0.896,
+   "nDCG@10": 0.68,
+   "MRR@10_95ci": [
+    0.573,
+    0.646
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.005,
+    0.062
+   ]
+  },
+  "Hybrid: BM25, whole course + bge-base-en-v1.5 / course vector (RRF)": {
+   "MRR@10": 0.617,
+   "Recall@1": 0.482,
+   "Recall@5": 0.796,
+   "Recall@10": 0.875,
+   "nDCG@10": 0.68,
+   "MRR@10_95ci": [
+    0.578,
+    0.657
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    0.011,
+    0.057
+   ]
+  },
+  "Hybrid: BM25, whole course + MiniLM-L6 domain-adapted (ours) / best unit (RRF)": {
+   "MRR@10": 0.63,
+   "Recall@1": 0.493,
+   "Recall@5": 0.802,
+   "Recall@10": 0.888,
+   "nDCG@10": 0.693,
+   "MRR@10_95ci": [
+    0.591,
+    0.667
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    0.023,
+    0.073
+   ]
+  },
+  "Hybrid + cross-encoder rerank (top 10)": {
+   "MRR@10": 0.607,
+   "Recall@1": 0.465,
+   "Recall@5": 0.802,
+   "Recall@10": 0.878,
+   "nDCG@10": 0.673,
+   "MRR@10_95ci": [
+    0.569,
+    0.645
+   ],
+   "MRR@10_gain_over_TFIDF_95ci": [
+    -0.003,
+    0.052
+   ]
+  }
+ }
+}

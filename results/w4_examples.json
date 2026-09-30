@@ -1,0 +1,446 @@
+{
+ "search": {
+  "transformers and large language models": {
+   "keyword": [
+    {
+     "course": "Generative AI",
+     "score": 11.7171,
+     "best_unit": "Large Language Models (LLM) Introduction to LLM: difference between traditional language models and LLM, Auto regressive models, Overview of attention mechanisms, multi-head attention, and self-attention in transformer-based models. Positional Embeddings(PE):",
+     "example_id": "nm8b216b85"
+    },
+    {
+     "course": "Speech and Natural Language Processing",
+     "score": 10.608,
+     "best_unit": "Machine Translation and Encoder-Decoder Models Encoder-Decoder Models, Attention and Contextual Embeddings, Neural Language Models and Generation, Encoder-Decoder Networks, Attention Applications of Encoder-Decoder Networks, Self-Attention and Transformer Networks, BERT Pre-training of",
+     "example_id": "nm85e9140a"
+    },
+    {
+     "course": "Cognitive Science & Analytics",
+     "score": 10.1527,
+     "best_unit": "Artificial Intelligence & Machine Learning Fundamentals of Artificial Intelligence: Various areas of AI: Knowledge: Text Analytics, Topic Modelling, Natural Language Processing (NLP), Natural Language Generation (NLG), Natural Language Understanding (NLU),",
+     "example_id": "nmaebe1af8"
+    }
+   ],
+   "dense": [
+    {
+     "course": "Generative AI",
+     "score": 0.8043,
+     "best_unit": "Large Language Models (LLM) Introduction to LLM: difference between traditional language models and LLM, Auto regressive models, Overview of attention mechanisms, multi-head attention, and self-attention in transformer-based models. Positional Embeddings(PE):",
+     "example_id": "nm8b216b85"
+    },
+    {
+     "course": "Speech and Natural Language Processing",
+     "score": 0.7535,
+     "best_unit": "Machine Translation and Encoder-Decoder Models Encoder-Decoder Models, Attention and Contextual Embeddings, Neural Language Models and Generation, Encoder-Decoder Networks, Attention Applications of Encoder-Decoder Networks, Self-Attention and Transformer Networks, BERT Pre-training of",
+     "example_id": "nm85e9140a"
+    },
+    {
+     "course": "Natural Language Processing",
+     "score": 0.7427,
+     "best_unit": "Language Modeling: Probability in context of NLP, Probabilistic language model, N-Grams, smoothing, perplexity, Zipf’s Law, Heap’s law ,Text classification using Naïve Baye’s classifier, Sentiment analysis with logistic regression",
+     "example_id": "nm57ee6fd1"
+    }
+   ],
+   "hybrid": [
+    {
+     "course": "Generative AI",
+     "score": 0.0328,
+     "best_unit": "Large Language Models (LLM) Introduction to LLM: difference between traditional language models and LLM, Auto regressive models, Overview of attention mechanisms, multi-head attention, and self-attention in transformer-based models. Positional Embeddings(PE):",
+     "example_id": "nm8b216b85"
+    },
+    {
+     "course": "Speech and Natural Language Processing",
+     "score": 0.0323,
+     "best_unit": "Machine Translation and Encoder-Decoder Models Encoder-Decoder Models, Attention and Contextual Embeddings, Neural Language Models and Generation, Encoder-Decoder Networks, Attention Applications of Encoder-Decoder Networks, Self-Attention and Transformer Networks, BERT Pre-training of",
+     "example_id": "nm85e9140a"
+    },
+    {
+     "course": "Natural Language Processing",
+     "score": 0.0315,
+     "best_unit": "Language Modeling: Probability in context of NLP, Probabilistic language model, N-Grams, smoothing, perplexity, Zipf’s Law, Heap’s law ,Text classification using Naïve Baye’s classifier, Sentiment analysis with logistic regression",
+     "example_id": "nm57ee6fd1"
+    }
+   ],
+   "course-vector (Week 3)": [
+    {
+     "course": "Generative AI",
+     "similarity": 0.53,
+     "example_id": "nm134342b2"
+    },
+    {
+     "course": "Speech and Natural Language Processing",
+     "similarity": 0.512,
+     "example_id": "nm45f0efc6"
+    },
+    {
+     "course": "Formal Language and Automata Theory",
+     "similarity": 0.503,
+     "example_id": "nm87e65bdb"
+    }
+   ]
+  },
+  "blockchain and smart contracts": {
+   "keyword": [
+    {
+     "course": "Blockchain Technology",
+     "score": 23.5962,
+     "best_unit": "Blockchain-Based Futures System Introduction, Characteristics, Contractual Confidentiality, Smart Contract Languages, Oracles, Deploying Smart Contracts on Blockchain",
+     "example_id": "nm4bc683ac"
+    },
+    {
+     "course": "Introduction to Blockchain",
+     "score": 21.4616,
+     "best_unit": "Smart Contracts Introduction, Characteristics, Contractual Confidentiality, Smart Contract Languages, Oracles, Deploying Smart Contracts on Blockchain",
+     "example_id": "nm89ef493a"
+    },
+    {
+     "course": "Fundamentals of Blockchain",
+     "score": 21.4616,
+     "best_unit": "Smart Contracts Introduction, Characteristics, Contractual Confidentiality, Smart Contract Languages, Oracles, Deploying Smart Contracts on Blockchain",
+     "example_id": "nm024126ff"
+    }
+   ],
+   "dense": [
+    {
+     "course": "Blockchain Technology",
+     "score": 0.7474,
+     "best_unit": "Blockchain-Based Futures System Introduction, Characteristics, Contractual Confidentiality, Smart Contract Languages, Oracles, Deploying Smart Contracts on Blockchain",
+     "example_id": "nm4bc683ac"
+    },
+    {
+     "course": "Introduction to Blockchain",
+     "score": 0.7396,
+     "best_unit": "Smart Contracts Introduction, Characteristics, Contractual Confidentiality, Smart Contract Languages, Oracles, Deploying Smart Contracts on Blockchain",
+     "example_id": "nm89ef493a"
+    },
+    {
+     "course": "Fundamentals of Blockchain",
+     "score": 0.7396,
+     "best_unit": "Smart Contracts Introduction, Characteristics, Contractual Confidentiality, Smart Contract Languages, Oracles, Deploying Smart Contracts on Blockchain",
+     "example_id": "nm024126ff"
+    }
+   ],
+   "hybrid": [
+    {
+     "course": "Blockchain Technology",
+     "score": 0.0328,
+     "best_unit": "Blockchain-Based Futures System Introduction, Characteristics, Contractual Confidentiality, Smart Contract Languages, Oracles, Deploying Smart Contracts on Blockchain",
+     "example_id": "nm4bc683ac"
+    },
+    {
+     "course": "Introduction to Blockchain",
+     "score": 0.0323,
+     "best_unit": "Smart Contracts Introduction, Characteristics, Contractual Confidentiality, Smart Contract Languages, Oracles, Deploying Smart Contracts on Blockchain",
+     "example_id": "nm89ef493a"
+    },
+    {
+     "course": "Fundamentals of Blockchain",
+     "score": 0.0317,
+     "best_unit": "Smart Contracts Introduction, Characteristics, Contractual Confidentiality, Smart Contract Languages, Oracles, Deploying Smart Contracts on Blockchain",
+     "example_id": "nm024126ff"
+    }
+   ],
+   "course-vector (Week 3)": [
+    {
+     "course": "Blockchain Technology",
+     "similarity": 0.708,
+     "example_id": "nm0e5033b7"
+    },
+    {
+     "course": "Introduction to Blockchain",
+     "similarity": 0.664,
+     "example_id": "nm89ef493a"
+    },
+    {
+     "course": "Fundamentals of Blockchain",
+     "similarity": 0.664,
+     "example_id": "nmea36fbdf"
+    }
+   ]
+  },
+  "cloud computing and DevOps": {
+   "keyword": [
+    {
+     "course": "DevOps",
+     "score": 20.2503,
+     "best_unit": "DevOps on Cloud Why Cloud, introduction to Cloud Computing, Why DevOps on Cloud, Introduction to AWS, Various AWS services, DevOps using AWS, Continuous integration (CI), continuous delivery (CD), infrastructure as",
+     "example_id": "nmc14aad96"
+    },
+    {
+     "course": "Cloud, Microservices & Application",
+     "score": 17.6091,
+     "best_unit": "Devops tools: Fundamentals, Tools and Applications, Containerization Process and application.",
+     "example_id": "nm997d50e8"
+    },
+    {
+     "course": "Cloud Computing and IoT",
+     "score": 12.578,
+     "best_unit": "Building the Cloud Infrastructure: Cloud Computing v/s Grid Computing, cloud computing reference model, cloud infrastructure components, cloud service models, deployment models, considerations for building cloud infrastructure, cloud service lifecycle.",
+     "example_id": "nma29337c8"
+    }
+   ],
+   "dense": [
+    {
+     "course": "Cloud Technology",
+     "score": 0.7339,
+     "best_unit": "Cloud web services Technologies and the processes required when deploying web services; Deploying a web service from inside and outside a cloud architecture, advantages and disadvantages",
+     "example_id": "nmef934f76"
+    },
+    {
+     "course": "Cloud, Microservices & Application",
+     "score": 0.733,
+     "best_unit": "Devops tools: Fundamentals, Tools and Applications, Containerization Process and application.",
+     "example_id": "nm997d50e8"
+    },
+    {
+     "course": "DevOps",
+     "score": 0.7032,
+     "best_unit": "DevOps on Cloud Why Cloud, introduction to Cloud Computing, Why DevOps on Cloud, Introduction to AWS, Various AWS services, DevOps using AWS, Continuous integration (CI), continuous delivery (CD), infrastructure as",
+     "example_id": "nmc14aad96"
+    }
+   ],
+   "hybrid": [
+    {
+     "course": "DevOps",
+     "score": 0.0323,
+     "best_unit": "DevOps on Cloud Why Cloud, introduction to Cloud Computing, Why DevOps on Cloud, Introduction to AWS, Various AWS services, DevOps using AWS, Continuous integration (CI), continuous delivery (CD), infrastructure as",
+     "example_id": "nmc14aad96"
+    },
+    {
+     "course": "Cloud, Microservices & Application",
+     "score": 0.0323,
+     "best_unit": "Devops tools: Fundamentals, Tools and Applications, Containerization Process and application.",
+     "example_id": "nm997d50e8"
+    },
+    {
+     "course": "Cloud Technology",
+     "score": 0.032,
+     "best_unit": "Cloud web services Technologies and the processes required when deploying web services; Deploying a web service from inside and outside a cloud architecture, advantages and disadvantages",
+     "example_id": "nmef934f76"
+    }
+   ],
+   "course-vector (Week 3)": [
+    {
+     "course": "Cloud, Microservices & Application",
+     "similarity": 0.716,
+     "example_id": "nmff4c6e64"
+    },
+    {
+     "course": "DevOps",
+     "similarity": 0.713,
+     "example_id": "nm444f0fae"
+    },
+    {
+     "course": "Cloud Technology",
+     "similarity": 0.68,
+     "example_id": "nmb31f9bee"
+    }
+   ]
+  },
+  "protecting a network from attacks": {
+   "keyword": [
+    {
+     "course": "Network Security",
+     "score": 9.3832,
+     "best_unit": "Network Protocols and Vulnerabilities- Overview of basic networking infrastructure and network protocols, IP, TCP, Routing protocols, DNS. Network Defenses- Network defense tools, Secure protocols, Firewalls, VPNs, Tor, I2P, Intrusion Detection",
+     "example_id": "nm87210e6b"
+    },
+    {
+     "course": "Blockchain Technology",
+     "score": 9.1427,
+     "best_unit": "Pseudo-anonymity vs. anonymity, attacks on Blockchains: Sybil attacks, selfish mining, 51% attacks advent of algorand; Sharding based consensus algorithms to prevent these attacks Blockchain Application Development Identifying Blockchain Platform, Proof",
+     "example_id": "nm4bc683ac"
+    },
+    {
+     "course": "Information Systems Security",
+     "score": 8.3033,
+     "best_unit": "Design Principles Various security threats and attacks (non-malicious program errors, malwares, APT, social engineering, etc.), threat actors, method of defence, design principles, security policies, types of security policies",
+     "example_id": "nmd2e88aa5"
+    }
+   ],
+   "dense": [
+    {
+     "course": "Network Security",
+     "score": 0.6899,
+     "best_unit": "Network Protocols and Vulnerabilities- Overview of basic networking infrastructure and network protocols, IP, TCP, Routing protocols, DNS. Network Defenses- Network defense tools, Secure protocols, Firewalls, VPNs, Tor, I2P, Intrusion Detection",
+     "example_id": "nm87210e6b"
+    },
+    {
+     "course": "Network Design",
+     "score": 0.6488,
+     "best_unit": "Developing Network Security Strategies Network security design, security mechanisms, modularizing security design, securing wireless networks, authentication in wireless networks.",
+     "example_id": "nm1c3fa6b6"
+    },
+    {
+     "course": "Web Security",
+     "score": 0.6458,
+     "best_unit": "Securing Web Based Services Web Security, Web Server Lockdown, Managing Access Control. Stopping Browser Exploits: Exploitable Browser Characteristics, Cookies, Web Spoofing, Web Server Exploits. Making Browsers and E-mail Clients More",
+     "example_id": "nm11855de1"
+    }
+   ],
+   "hybrid": [
+    {
+     "course": "Network Security",
+     "score": 0.0328,
+     "best_unit": "Network Protocols and Vulnerabilities- Overview of basic networking infrastructure and network protocols, IP, TCP, Routing protocols, DNS. Network Defenses- Network defense tools, Secure protocols, Firewalls, VPNs, Tor, I2P, Intrusion Detection",
+     "example_id": "nm87210e6b"
+    },
+    {
+     "course": "Information Systems Security",
+     "score": 0.0306,
+     "best_unit": "Design Principles Various security threats and attacks (non-malicious program errors, malwares, APT, social engineering, etc.), threat actors, method of defence, design principles, security policies, types of security policies",
+     "example_id": "nmd2e88aa5"
+    },
+    {
+     "course": "Cybersecurity Fundamentals",
+     "score": 0.0305,
+     "best_unit": "Design Principles Various Security threats and attacks, method of defence, Design Principles, Security policies, types of security policies, Case Study.",
+     "example_id": "nm02c1b10e"
+    }
+   ],
+   "course-vector (Week 3)": [
+    {
+     "course": "Network Security",
+     "similarity": 0.646,
+     "example_id": "nm87210e6b"
+    },
+    {
+     "course": "Network design",
+     "similarity": 0.523,
+     "example_id": "nme80f976a"
+    },
+    {
+     "course": "Cyber Security",
+     "similarity": 0.5,
+     "example_id": "nm7044b489"
+    }
+   ]
+  },
+  "regression and classification with scikit-learn": {
+   "keyword": [
+    {
+     "course": "Machine Learning",
+     "score": 11.1475,
+     "best_unit": "Regression :Principal Component Regression, Logistic Regression",
+     "example_id": "nm34f6baa4"
+    },
+    {
+     "course": "Machine Learning Algorithms",
+     "score": 7.6604,
+     "best_unit": "Unsupervised and supervised learning review Simple linear regression; Naïve Bayes; decision trees for classification; clustering",
+     "example_id": "nm488cce03"
+    },
+    {
+     "course": "Internet of Things (IoT)",
+     "score": 7.4062,
+     "best_unit": "Data Analytics in IoT Electronics & Telecommunication Machine Learning models: Classification, Regression, Clustering, Model building process: Training the model, Testing the model, Validation of Model, Modelling Algorithms: Decision tree, Liner",
+     "example_id": "nm32818f78"
+    }
+   ],
+   "dense": [
+    {
+     "course": "Machine Learning",
+     "score": 0.7887,
+     "best_unit": "Regression :Principal Component Regression, Logistic Regression",
+     "example_id": "nm34f6baa4"
+    },
+    {
+     "course": "Machine Learning Algorithms",
+     "score": 0.7798,
+     "best_unit": "Unsupervised and supervised learning review Simple linear regression; Naïve Bayes; decision trees for classification; clustering",
+     "example_id": "nm488cce03"
+    },
+    {
+     "course": "Applications of Machine Learning",
+     "score": 0.7609,
+     "best_unit": "Experimental Evaluation of Learning Algorithms Measuring the accuracy of learned hypotheses. Comparing learning algorithms: cross-validation, learning curves, and statistical hypothesis testing.",
+     "example_id": "nm1eac74e2"
+    }
+   ],
+   "hybrid": [
+    {
+     "course": "Machine Learning",
+     "score": 0.0328,
+     "best_unit": "Regression :Principal Component Regression, Logistic Regression",
+     "example_id": "nm34f6baa4"
+    },
+    {
+     "course": "Machine Learning Algorithms",
+     "score": 0.0323,
+     "best_unit": "Unsupervised and supervised learning review Simple linear regression; Naïve Bayes; decision trees for classification; clustering",
+     "example_id": "nm488cce03"
+    },
+    {
+     "course": "AI and ML for Cybersecurity",
+     "score": 0.0301,
+     "best_unit": "Supervised Learning Classification vs Regression, Linear and Polynomial Regression, Linear Models: Regression, Ridge, Lasso regularization, Model building with suitable application, Data pre-processing, Data visualization, model training, model evaluation.",
+     "example_id": "nm5091cda4"
+    }
+   ],
+   "course-vector (Week 3)": [
+    {
+     "course": "Machine Learning",
+     "similarity": 0.587,
+     "example_id": "nm13c2f945"
+    },
+    {
+     "course": "Machine Learning Algorithms",
+     "similarity": 0.578,
+     "example_id": "nmac6051f2"
+    },
+    {
+     "course": "Applications of Machine Learning",
+     "similarity": 0.545,
+     "example_id": "nmfbb305fa"
+    }
+   ]
+  }
+ },
+ "comparisons": {
+  "same course, two versions": {
+   "course_a": "Probability and Statistics 2021-22",
+   "course_b": "Probability and Statistics 2025-26",
+   "overlap": "100%",
+   "confidence": 0.999,
+   "template_summary": "Probability and Statistics and Probability and Statistics share 100% of their units (probability of being judged overlapping: 100%). Common topics: Basic Probability, Basic Statistics, Bivariate Distributions, Linear Statistical Models. Redundancy warning raised.",
+   "summary": {
+    "text": "Probability and Statistics and Probability and Statistics share 100% of their units (probability of being judged overlapping: 100%). Common topics: Basic Probability, Basic Statistics, Bivariate Distributions, Linear Statistical Models. Redundancy warning raised.",
+    "method": "template (llm output failed the faithfulness check)",
+    "llm_text": "Courses A and B have a 100% overlap in units, sharing common topics such as Basic Probability, Basic Statistics, Bivariate Distributions, Linear Statistical Models, Random variables, and Probability Distributions. However, Course A lacks algebra prerequisites, which are not covered in Course B. Given the redundancy warning, the committee should consider revising the curriculum to eliminate overlap and address the missing algebra prerequisites.",
+    "unsupported_term_rate": 0.207,
+    "percentages_consistent": true
+   },
+   "seconds": 15.4
+  },
+  "related but distinct courses": {
+   "course_a": "Machine Learning 2026-27",
+   "course_b": "Deep Learning 2026-27",
+   "overlap": "0%",
+   "confidence": 0.106,
+   "template_summary": "Machine Learning and Deep Learning share 0% of their units (probability of being judged overlapping: 11%). Only in Machine Learning: Introduction, Linear Model Selection and Regularization, Moving Beyond Linearity. Only in Deep Learning: Introduction to Deep Learning, Neural Networks, Optimization and Regularization for Deep Learning.",
+   "summary": {
+    "text": "Machine Learning and Deep Learning share 0% of their units (probability of being judged overlapping: 11%). Only in Machine Learning: Introduction, Linear Model Selection and Regularization, Moving Beyond Linearity. Only in Deep Learning: Introduction to Deep Learning, Neural Networks, Optimization and Regularization for Deep Learning.",
+    "method": "template (llm output failed the faithfulness check)",
+    "llm_text": "Courses A and B have no unit overlap, sharing only a 11% overlap probability based on reviewer comments. Course A includes unique topics such as Linear Model Selection and Regularization, while Course B offers specialized content on Neural Networks and Convolutional Neural Networks. Given the lack of redundancy and distinct content, the committee should consider approving both courses for the curriculum.",
+    "unsupported_term_rate": 0.31,
+    "percentages_consistent": true
+   },
+   "seconds": 14.6
+  },
+  "course and its prerequisite": {
+   "course_a": "Operating Systems 2026-27",
+   "course_b": "Distributed Computing 2026-27",
+   "overlap": "0%",
+   "confidence": 0.122,
+   "template_summary": "Operating Systems and Distributed Computing share 0% of their units (probability of being judged overlapping: 12%). Only in Operating Systems: Introduction to Operating system, Process and Process Scheduling, Process Concurrency. Only in Distributed Computing: Introduction to Distributed System, Communication, Synchronization.",
+   "summary": {
+    "text": "Operating Systems and Distributed Computing share 0% of their units (probability of being judged overlapping: 12%). Only in Operating Systems: Introduction to Operating system, Process and Process Scheduling, Process Concurrency. Only in Distributed Computing: Introduction to Distributed System, Communication, Synchronization.",
+    "method": "template (llm output failed the faithfulness check)",
+    "llm_text": "Courses A and B have no unit overlap, sharing only a 12% overlap probability in reviewers' opinions. Course A uniquely covers topics like Introduction to Operating Systems and Memory Management, while Course B focuses on Distributed Systems and Naming. Given the lack of overlap and unique content, the committee should consider these courses distinct and not redundant.",
+    "unsupported_term_rate": 0.231,
+    "percentages_consistent": true
+   },
+   "seconds": 12.8
+  }
+ }
+}

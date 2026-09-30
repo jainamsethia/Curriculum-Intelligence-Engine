@@ -10,7 +10,8 @@ CLI:
     python src/pipeline.py compare --a nm0012 --b nm0345 [--out report.json]
     python src/pipeline.py compare --a syllabus_a.pdf --b syllabus_b.docx
     python src/pipeline.py outcomes --course nm0012
-    python src/pipeline.py search "transformers and large language models" -k 5
+    python src/pipeline.py search "transformers and large language models" -k 5 [--mode hybrid|dense|keyword|course-vector]
+    python src/pipeline.py compare --a nm59a8f694 --b nm7677637d --summary      # adds an LLM summary (local Ollama, phi3)
 """
 import argparse, hashlib, json, pickle, re, sys, zipfile
 from collections import Counter, defaultdict
@@ -24,6 +25,9 @@ MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 BLOOM = {1: "Remember", 2: "Understand", 3: "Apply", 4: "Analyze", 5: "Evaluate", 6: "Create"}
 ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 8, "IX": 9, "X": 10}
 # defaults used until evaluate_v1.py has written data/processed/calibration.json
+# Week 4: encoder behind Pipeline.search (chosen on validation courses in w4_retrieval.py)
+SEARCH_ENCODER = "BAAI/bge-base-en-v1.5"          # validation-selected dense model with the course-vector aggregator
+SEARCH_QUERY_PREFIX = "Represent this sentence for searching relevant passages: "
 DEFAULT_CAL = {"tau_unit": 0.65, "tau_prereq_resolve": 0.75, "tau_prereq_cover": 0.5, "logit": None, "tfidf_fit_courses": None}
 
 
@@ -317,7 +321,7 @@ class Pipeline:
         self.courses = courses if courses is not None else load_courses()
         self.by_id = {c["id"]: c for c in self.courses}
         self.cal = load_calibration()
-        self._cat = self._bloom = self._tfidf = None
+        self._cat = self._bloom = self._tfidf = self._index = None
 
     # lazily built helpers -------------------------------------------------
     @property
@@ -358,7 +362,7 @@ class Pipeline:
         return feat, al
 
     # public API ------------------------------------------------------------
-    def compare(self, a, b, max_topics=12):
+    def compare(self, a, b, max_topics=12, summary=False):
         cal = self.cal
         ua, ub = unit_texts(a), unit_texts(b)
         feat, al = self.pair_features(a, b)
@@ -373,7 +377,7 @@ class Pipeline:
         uniq_b = [ub[j][0] for j in range(len(ub)) if al["best_b"][j] < cal["tau_unit"]]
         meta = lambda c: {k: c.get(k, "") for k in ("id", "course_name", "code", "program", "semester", "academic_year")}
         redundant = (conf >= 0.8) if conf is not None else al["overlap"] >= 0.5
-        return {
+        report = {
             "course_a": meta(a), "course_b": meta(b),
             "overlap": {"score": round(al["overlap"], 3), "percent": f"{al['overlap']:.0%}",
                         "confidence": None if conf is None else round(conf, 3),
@@ -387,6 +391,10 @@ class Pipeline:
             "outcome_bloom": {"a": self.map_outcomes(a), "b": self.map_outcomes(b)},
             "method": f"{self.emb.name} unit alignment (tau={cal['tau_unit']:.2f}) + TF-IDF, logistic calibration" + ("" if conf is not None else " [uncalibrated: run evaluate_v1.py]"),
         }
+        if summary:                                   # Week 4: LLM-assisted committee summary with a faithfulness guard (needs a local Ollama + phi3)
+            import improved
+            report["summary"] = improved.llm_comparison_summary(report)
+        return report
 
     def map_outcomes(self, c):
         """Bloom level for every learning outcome of a course (the faculty K/L tag is kept alongside when the syllabus has one)."""
@@ -398,6 +406,16 @@ class Pipeline:
             if o["k_levels"]:
                 p["faculty_tag"] = o["k_levels"]
         return pred
+
+    def search(self, query, k=5, mode="hybrid"):
+        """Week 4 course search over unit descriptions: BM25 + dense embeddings fused by reciprocal rank fusion (mode: hybrid, dense, keyword).
+        Evaluated against TF-IDF / BM25 / single encoders in w4_retrieval.py."""
+        if self._index is None:
+            import improved
+            enc = Embedder(SEARCH_ENCODER)
+            self._index = improved.HybridIndex(self.courses, enc, SEARCH_QUERY_PREFIX)
+            enc.save()
+        return self._index.search(query, k, mode)
 
     def similar(self, query, k=5):
         """Semantic search: courses (one per name) whose content is closest to a free-text query."""
@@ -444,16 +462,18 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     c = sub.add_parser("compare"); c.add_argument("--a", required=True); c.add_argument("--b", required=True); c.add_argument("--out")
+    c.add_argument("--summary", action="store_true", help="add an LLM-written summary (needs Ollama with phi3)")
     o = sub.add_parser("outcomes"); o.add_argument("--course", required=True)
     s = sub.add_parser("search"); s.add_argument("query"); s.add_argument("-k", type=int, default=5)
+    s.add_argument("--mode", choices=["hybrid", "dense", "keyword", "course-vector"], default="hybrid", help="course-vector = the Week 3 method")
     args = ap.parse_args()
     p = Pipeline()
     if args.cmd == "compare":
-        res = p.compare(p.get(args.a), p.get(args.b))
+        res = p.compare(p.get(args.a), p.get(args.b), summary=args.summary)
     elif args.cmd == "outcomes":
         res = p.map_outcomes(p.get(args.course))
     else:
-        res = p.similar(args.query, args.k)
+        res = p.similar(args.query, args.k) if args.mode == "course-vector" else p.search(args.query, args.k, args.mode)
     p.emb.save()
     text = json.dumps(res, indent=2, ensure_ascii=False)
     if getattr(args, "out", None):

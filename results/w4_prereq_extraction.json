@@ -1,0 +1,403 @@
+{
+ "n_items": 60,
+ "n_gold_empty": 14,
+ "systems": {
+  "Rule-based splitter (Week 3)": {
+   "overall": {
+    "precision": 0.676,
+    "recall": 0.933,
+    "f1": 0.784,
+    "gold_phrases": 105,
+    "false_alarm_rate_on_empty_gold": 0.643
+   },
+   "by_kind": {
+    "nil": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "gold_phrases": 0,
+     "false_alarm_rate_on_empty_gold": 0.0
+    },
+    "sentence": {
+     "precision": 0.463,
+     "recall": 0.962,
+     "f1": 0.625,
+     "gold_phrases": 26,
+     "false_alarm_rate_on_empty_gold": 0.889
+    },
+    "code": {
+     "precision": 0.895,
+     "recall": 0.773,
+     "f1": 0.829,
+     "gold_phrases": 22,
+     "false_alarm_rate_on_empty_gold": null
+    },
+    "and/or": {
+     "precision": 0.615,
+     "recall": 1.0,
+     "f1": 0.762,
+     "gold_phrases": 16,
+     "false_alarm_rate_on_empty_gold": 1.0
+    },
+    "single": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "gold_phrases": 8,
+     "false_alarm_rate_on_empty_gold": null
+    },
+    "comma": {
+     "precision": 0.842,
+     "recall": 0.97,
+     "f1": 0.901,
+     "gold_phrases": 33,
+     "false_alarm_rate_on_empty_gold": null
+    }
+   },
+   "seconds_per_item": 0.0,
+   "unparseable_outputs": 0,
+   "f1_gain_over_rule_based_95ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "spaCy noun chunks (NER-style)": {
+   "overall": {
+    "precision": 0.459,
+    "recall": 0.895,
+    "f1": 0.606,
+    "gold_phrases": 105,
+    "false_alarm_rate_on_empty_gold": 0.786
+   },
+   "by_kind": {
+    "nil": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "gold_phrases": 0,
+     "false_alarm_rate_on_empty_gold": 0.25
+    },
+    "sentence": {
+     "precision": 0.233,
+     "recall": 0.923,
+     "f1": 0.372,
+     "gold_phrases": 26,
+     "false_alarm_rate_on_empty_gold": 1.0
+    },
+    "code": {
+     "precision": 0.708,
+     "recall": 0.773,
+     "f1": 0.739,
+     "gold_phrases": 22,
+     "false_alarm_rate_on_empty_gold": null
+    },
+    "and/or": {
+     "precision": 0.56,
+     "recall": 0.875,
+     "f1": 0.683,
+     "gold_phrases": 16,
+     "false_alarm_rate_on_empty_gold": 1.0
+    },
+    "single": {
+     "precision": 0.889,
+     "recall": 1.0,
+     "f1": 0.941,
+     "gold_phrases": 8,
+     "false_alarm_rate_on_empty_gold": null
+    },
+    "comma": {
+     "precision": 0.721,
+     "recall": 0.939,
+     "f1": 0.816,
+     "gold_phrases": 33,
+     "false_alarm_rate_on_empty_gold": null
+    }
+   },
+   "seconds_per_item": 0.139,
+   "unparseable_outputs": 0,
+   "f1_gain_over_rule_based_95ci": [
+    -0.237,
+    -0.113
+   ]
+  },
+  "Phi-3 few-shot (LLM-assisted)": {
+   "overall": {
+    "precision": 0.765,
+    "recall": 0.962,
+    "f1": 0.852,
+    "gold_phrases": 105,
+    "false_alarm_rate_on_empty_gold": 0.643
+   },
+   "by_kind": {
+    "nil": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "gold_phrases": 0,
+     "false_alarm_rate_on_empty_gold": 0.0
+    },
+    "sentence": {
+     "precision": 0.532,
+     "recall": 0.962,
+     "f1": 0.685,
+     "gold_phrases": 26,
+     "false_alarm_rate_on_empty_gold": 0.889
+    },
+    "code": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "gold_phrases": 22,
+     "false_alarm_rate_on_empty_gold": null
+    },
+    "and/or": {
+     "precision": 0.75,
+     "recall": 0.938,
+     "f1": 0.833,
+     "gold_phrases": 16,
+     "false_alarm_rate_on_empty_gold": 1.0
+    },
+    "single": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "gold_phrases": 8,
+     "false_alarm_rate_on_empty_gold": null
+    },
+    "comma": {
+     "precision": 0.886,
+     "recall": 0.939,
+     "f1": 0.912,
+     "gold_phrases": 33,
+     "false_alarm_rate_on_empty_gold": null
+    }
+   },
+   "seconds_per_item": 4.137,
+   "unparseable_outputs": 0,
+   "f1_gain_over_rule_based_95ci": [
+    0.007,
+    0.13
+   ]
+  }
+ },
+ "examples": [
+  {
+   "id": "r01",
+   "text": "Course Objectives The course introduces microprocessor architecture and enables students to learn programming and interfacing of microproces",
+   "gold": [],
+   "Rule-based s": [
+    "Course Objectives The course introduces microprocessor architecture",
+    "enables students to learn programming",
+    "programming",
+    "interfacing of microcontrollers"
+   ],
+   "spaCy noun c": [
+    "Course Objectives",
+    "course",
+    "microprocessor architecture",
+    "students",
+    "microprocessor",
+    "advanced processors",
+    "microcontrollers"
+   ],
+   "Phi-3 few-sh": [
+    "Operating Systems",
+    "Computer Networks"
+   ]
+  },
+  {
+   "id": "r09",
+   "text": "Computer Programming – I (basic programming skills)",
+   "gold": [
+    "Computer Programming - I"
+   ],
+   "Rule-based s": [
+    "Computer Programming – I (basic programming skills)"
+   ],
+   "spaCy noun c": [
+    "Computer Programming",
+    "basic programming skills"
+   ],
+   "Phi-3 few-sh": [
+    "Computer Programming – I"
+   ]
+  },
+  {
+   "id": "r11",
+   "text": "Strength of Material (BTME04009), Mathematics - I, II, III (MBME01001, MBME02008, MBME003007), Theory of Machines - I and II (MBME04008 & MB",
+   "gold": [
+    "Strength of Material",
+    "Mathematics - I",
+    "Mathematics - II",
+    "Mathematics - III",
+    "Theory of Machines - I",
+    "Theory of Machines - II"
+   ],
+   "Rule-based s": [
+    "Strength of Material",
+    "Mathematics - I",
+    "III",
+    "Theory of Machines - I"
+   ],
+   "spaCy noun c": [
+    "Strength",
+    "Material",
+    "Mathematics",
+    "II",
+    "III",
+    "Theory",
+    "Machines"
+   ],
+   "Phi-3 few-sh": [
+    "Strength of Material",
+    "Mathematics - I",
+    "Mathematics - II",
+    "Mathematics - III",
+    "Theory of Machines - I",
+    "Theory of Machines - II"
+   ]
+  },
+  {
+   "id": "r12",
+   "text": "Fundamental Knowledge of Control Systems, Computer Programming, Calculus, Linear Algebra and Probability, Programming Knowledge, and Statist",
+   "gold": [
+    "Control Systems",
+    "Computer Programming",
+    "Calculus",
+    "Linear Algebra",
+    "Probability",
+    "Programming Knowledge",
+    "Statistics"
+   ],
+   "Rule-based s": [
+    "Control Systems",
+    "Computer Programming",
+    "Calculus",
+    "Linear Algebra",
+    "Probability",
+    "Programming Knowledge",
+    "Statistics"
+   ],
+   "spaCy noun c": [
+    "Control Systems",
+    "Computer Programming",
+    "Calculus",
+    "Linear Algebra",
+    "Probability",
+    "Programming Knowledge",
+    "Statistics"
+   ],
+   "Phi-3 few-sh": [
+    "Control Systems",
+    "Computer Programming",
+    "Calculus",
+    "Linear Algebra",
+    "Probability",
+    "Programming Knowledge",
+    "Statistics"
+   ]
+  },
+  {
+   "id": "r14",
+   "text": "Financial & Cost Accounting",
+   "gold": [
+    "Financial & Cost Accounting"
+   ],
+   "Rule-based s": [
+    "Financial",
+    "Cost Accounting"
+   ],
+   "spaCy noun c": [
+    "Financial Cost Accounting"
+   ],
+   "Phi-3 few-sh": [
+    "Financial & Cost Accounting"
+   ]
+  },
+  {
+   "id": "r15",
+   "text": "Engineering Graphics and Design",
+   "gold": [
+    "Engineering Graphics and Design"
+   ],
+   "Rule-based s": [
+    "Engineering Graphics",
+    "Design"
+   ],
+   "spaCy noun c": [
+    "Engineering Graphics",
+    "Design"
+   ],
+   "Phi-3 few-sh": [
+    "Engineering Graphics and Design"
+   ]
+  },
+  {
+   "id": "r44",
+   "text": "Knowledge of Integration, Differential Equation, Periodic function, Even and odd Function, Beta- Gamma Function, Circular Function and Trigo",
+   "gold": [
+    "Integration",
+    "Differential Equation",
+    "Periodic function",
+    "Even and odd Function",
+    "Beta-Gamma Function",
+    "Circular Function",
+    "Trigonometric series"
+   ],
+   "Rule-based s": [
+    "Integration",
+    "Differential Equation",
+    "Periodic function",
+    "Even",
+    "odd Function",
+    "Beta- Gamma Function",
+    "Circular Function",
+    "Trigonometric series"
+   ],
+   "spaCy noun c": [
+    "Integration",
+    "Differential Equation",
+    "Periodic function",
+    "Function",
+    "Beta- Gamma Function",
+    "Circular Function Trigonometric series"
+   ],
+   "Phi-3 few-sh": [
+    "Integration",
+    "Differential Equation",
+    "Periodic function",
+    "Even and odd Function",
+    "Beta- Gamma Function",
+    "Circular function",
+    "Trigonometric series"
+   ]
+  },
+  {
+   "id": "r56",
+   "text": "Probability/Python/Deep learning/Neural Network",
+   "gold": [
+    "Probability",
+    "Python",
+    "Deep learning",
+    "Neural Network"
+   ],
+   "Rule-based s": [
+    "Probability",
+    "Python",
+    "Deep learning",
+    "Neural Network"
+   ],
+   "spaCy noun c": [
+    "Probability Python",
+    "Deep learning",
+    "Neural Network"
+   ],
+   "Phi-3 few-sh": [
+    "Probability",
+    "Python",
+    "Deep learning",
+    "Neural Network"
+   ]
+  }
+ ]
+}

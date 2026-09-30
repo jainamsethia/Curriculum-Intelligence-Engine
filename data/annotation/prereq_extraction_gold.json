@@ -1,0 +1,516 @@
+{
+ "note": "60 prerequisite strings sampled from data/processed/nmims_courses.jsonl (seed 4), stratified by structure. gold = the prerequisite subjects a reviewer would list. Labelled by a single LLM annotator (not a human); compound names such as 'Computer Organization and Architecture' are treated as one course. Empty list = no subject named ('Nil', objectives text captured by the parser, eligibility statements).",
+ "items": [
+  {
+   "id": "r00",
+   "kind": "nil",
+   "gold": [],
+   "text": "NA"
+  },
+  {
+   "id": "r01",
+   "kind": "sentence",
+   "gold": [],
+   "text": "Course Objectives The course introduces microprocessor architecture and enables students to learn programming and interfacing of microprocessor. This course will also help the students to understand the concepts of advanced processors, programming and interfacing of microcontrollers."
+  },
+  {
+   "id": "r02",
+   "kind": "code",
+   "gold": [
+    "Fundamentals of Computer Science"
+   ],
+   "text": "Fundamentals of Computer Science (BTCS01003)"
+  },
+  {
+   "id": "r03",
+   "kind": "and/or",
+   "gold": [
+    "Manufacturing Processes-I",
+    "Manufacturing Processes-II"
+   ],
+   "text": "Manufacturing Processes-I and Manufacturing Processes-II"
+  },
+  {
+   "id": "r04",
+   "kind": "nil",
+   "gold": [],
+   "text": "Nil"
+  },
+  {
+   "id": "r05",
+   "kind": "sentence",
+   "gold": [],
+   "text": "Objectives - To enable students to understand the basic concepts of an Operating system. To strengthen the understanding of various algorithms related to the process, memory, I/O and file management through implementation."
+  },
+  {
+   "id": "r06",
+   "kind": "sentence",
+   "gold": [
+    "Linear algebra",
+    "calculus"
+   ],
+   "text": "Students are required to have the following prerequisites: Linear algebra (vectors, matrices, derivatives) and calculus"
+  },
+  {
+   "id": "r07",
+   "kind": "sentence",
+   "gold": [],
+   "text": "Final Year students from Engineering, Architecture, and PG students from all programs are eligible for the course"
+  },
+  {
+   "id": "r08",
+   "kind": "code",
+   "gold": [
+    "Engineering Graphics & Design",
+    "Manufacturing Processes"
+   ],
+   "text": "Engineering Graphics & Design(BTMA01004), Manufacturing Processes (BTMA03011)"
+  },
+  {
+   "id": "r09",
+   "kind": "single",
+   "gold": [
+    "Computer Programming - I"
+   ],
+   "text": "Computer Programming – I (basic programming skills)"
+  },
+  {
+   "id": "r10",
+   "kind": "comma",
+   "gold": [
+    "basic computer knowledge",
+    "data warehousing",
+    "data mining"
+   ],
+   "text": "Basic computer knowledge, data warehousing and mining"
+  },
+  {
+   "id": "r11",
+   "kind": "code",
+   "gold": [
+    "Strength of Material",
+    "Mathematics - I",
+    "Mathematics - II",
+    "Mathematics - III",
+    "Theory of Machines - I",
+    "Theory of Machines - II"
+   ],
+   "text": "Strength of Material (BTME04009), Mathematics - I, II, III (MBME01001, MBME02008, MBME003007), Theory of Machines - I and II (MBME04008 & MBME05004)"
+  },
+  {
+   "id": "r12",
+   "kind": "sentence",
+   "gold": [
+    "Control Systems",
+    "Computer Programming",
+    "Calculus",
+    "Linear Algebra",
+    "Probability",
+    "Programming Knowledge",
+    "Statistics"
+   ],
+   "text": "Fundamental Knowledge of Control Systems, Computer Programming, Calculus, Linear Algebra and Probability, Programming Knowledge, and Statistics"
+  },
+  {
+   "id": "r13",
+   "kind": "sentence",
+   "gold": [],
+   "text": "Objectives: 1. To introduce financial statements and their analysis 2. To develop capability of using various methods of analysis for investment proposals 3. To introduce various aspects of project financing and fund management for projects"
+  },
+  {
+   "id": "r14",
+   "kind": "and/or",
+   "gold": [
+    "Financial & Cost Accounting"
+   ],
+   "text": "Financial & Cost Accounting"
+  },
+  {
+   "id": "r15",
+   "kind": "and/or",
+   "gold": [
+    "Engineering Graphics and Design"
+   ],
+   "text": "Engineering Graphics and Design"
+  },
+  {
+   "id": "r16",
+   "kind": "sentence",
+   "gold": [],
+   "text": "Objectives - To understand the basic aspects of the constitution of India, the evolution, the directive principle & important provisions. Also to understand the implications of important constitutional provision on Business and Professionals."
+  },
+  {
+   "id": "r17",
+   "kind": "single",
+   "gold": [
+    "Computer"
+   ],
+   "text": "Basic Knowledge of Computer"
+  },
+  {
+   "id": "r18",
+   "kind": "single",
+   "gold": [
+    "Data Structures"
+   ],
+   "text": "Data Structures"
+  },
+  {
+   "id": "r19",
+   "kind": "single",
+   "gold": [
+    "Physics"
+   ],
+   "text": "Physics"
+  },
+  {
+   "id": "r20",
+   "kind": "and/or",
+   "gold": [
+    "Introduction to Business Analytics and Business Intelligence"
+   ],
+   "text": "Introduction to Business Analytics and Business Intelligence"
+  },
+  {
+   "id": "r21",
+   "kind": "single",
+   "gold": [
+    "programming constructs"
+   ],
+   "text": "Basic programming constructs"
+  },
+  {
+   "id": "r22",
+   "kind": "code",
+   "gold": [
+    "Constitution of India"
+   ],
+   "text": "Constitution of India (BTMA01005)"
+  },
+  {
+   "id": "r23",
+   "kind": "comma",
+   "gold": [
+    "Engineering Mathematics - III",
+    "Engineering Mathematics - IV",
+    "Object Oriented Programming"
+   ],
+   "text": "Engineering Mathematics –III& IV, Object Oriented Programming"
+  },
+  {
+   "id": "r24",
+   "kind": "sentence",
+   "gold": [],
+   "text": "Objectives:  To develop an understanding of linear and nonlinear differential equations and their use as equations of motion for dynamic systems  To develop an understanding of solution process using numerical integration  To develop an understanding of state space methods of analysis of dynamic systems"
+  },
+  {
+   "id": "r25",
+   "kind": "sentence",
+   "gold": [
+    "Business Communication and Value Science-I",
+    "Business Communication and Value Science-II",
+    "Technical Communication and Leadership Skills"
+   ],
+   "text": "Completion of Business communication and Value Science-I, Business Communication And Value Science-II & Technical Communication and Leadership Skills."
+  },
+  {
+   "id": "r26",
+   "kind": "and/or",
+   "gold": [
+    "Computer Organization and Architecture"
+   ],
+   "text": "Computer Organization and Architecture"
+  },
+  {
+   "id": "r27",
+   "kind": "comma",
+   "gold": [
+    "Theory of Structures",
+    "Concrete Technology"
+   ],
+   "text": "Theory of Structures; Concrete Technology"
+  },
+  {
+   "id": "r28",
+   "kind": "comma",
+   "gold": [
+    "Operating System",
+    "Computer Organization and Architecture"
+   ],
+   "text": "Operating System, Computer Organization and Architecture"
+  },
+  {
+   "id": "r29",
+   "kind": "sentence",
+   "gold": [],
+   "text": "Objectives: 1. To provide knowledge of digital logic & digital system as well as their applications in technical field. 2. To provide knowledge of basic building blocks and their working. 3. To provide knowledge of designing the digital logic circuit using basic building blocks and necessary techniques which is required in computer hardware design."
+  },
+  {
+   "id": "r30",
+   "kind": "comma",
+   "gold": [
+    "algebra",
+    "calculus",
+    "statistical concepts"
+   ],
+   "text": "Basic understanding of algebra, calculus, and fundamental statistical concepts."
+  },
+  {
+   "id": "r31",
+   "kind": "sentence",
+   "gold": [],
+   "text": "Objectives - This course provides introduction to Indian traditional knowledge and its relevance in the modern society."
+  },
+  {
+   "id": "r32",
+   "kind": "code",
+   "gold": [
+    "Engineering Mathematics - I",
+    "Engineering Mathematics - II",
+    "Engineering Mathematics - III",
+    "Engineering Thermodynamics"
+   ],
+   "text": "Engineering Mathematics - I, II and III (BTAB01001, BTME02001 and BTME03001), Engineering Thermodynamics (BTME03002)"
+  },
+  {
+   "id": "r33",
+   "kind": "nil",
+   "gold": [],
+   "text": "-"
+  },
+  {
+   "id": "r34",
+   "kind": "single",
+   "gold": [
+    "Engineering Physics"
+   ],
+   "text": "Engineering Physics"
+  },
+  {
+   "id": "r35",
+   "kind": "nil",
+   "gold": [],
+   "text": "---"
+  },
+  {
+   "id": "r36",
+   "kind": "comma",
+   "gold": [
+    "Basic Electrical and Electronics Engineering",
+    "Electronic Devices and circuits"
+   ],
+   "text": "Basic Electrical and Electronics Engineering, Electronic Devices and circuits"
+  },
+  {
+   "id": "r37",
+   "kind": "comma",
+   "gold": [
+    "Statistical Structures in Data and Inference",
+    "Foundations of Machine Learning"
+   ],
+   "text": "Statistical Structures in Data and Inference, Foundations of Machine Learning"
+  },
+  {
+   "id": "r38",
+   "kind": "and/or",
+   "gold": [],
+   "text": "Knowledge of all core and elective courses completed till 3rd year."
+  },
+  {
+   "id": "r39",
+   "kind": "code",
+   "gold": [
+    "Engineering Thermodynamics",
+    "Thermal Engineering",
+    "Heat Transfer"
+   ],
+   "text": "Engineering Thermodynamics (BTME03012), Thermal Engineering (BTME04011), Heat Transfer (BTME06001)"
+  },
+  {
+   "id": "r40",
+   "kind": "and/or",
+   "gold": [
+    "Principles of Communications Engineering",
+    "digital communication"
+   ],
+   "text": "Principles of Communications Engineering and digital communication"
+  },
+  {
+   "id": "r41",
+   "kind": "comma",
+   "gold": [
+    "Matrices",
+    "Transforms"
+   ],
+   "text": "Matrices, Transforms"
+  },
+  {
+   "id": "r42",
+   "kind": "code",
+   "gold": [
+    "Manufacturing Processes - I"
+   ],
+   "text": "Manufacturing Processes - I (BTME04012)"
+  },
+  {
+   "id": "r43",
+   "kind": "and/or",
+   "gold": [
+    "Microprocessor and Microcontrollers"
+   ],
+   "text": "Microprocessor and Microcontrollers"
+  },
+  {
+   "id": "r44",
+   "kind": "sentence",
+   "gold": [
+    "Integration",
+    "Differential Equation",
+    "Periodic function",
+    "Even and odd Function",
+    "Beta-Gamma Function",
+    "Circular Function",
+    "Trigonometric series"
+   ],
+   "text": "Knowledge of Integration, Differential Equation, Periodic function, Even and odd Function, Beta- Gamma Function, Circular Function and Trigonometric series."
+  },
+  {
+   "id": "r45",
+   "kind": "single",
+   "gold": [
+    "C Language"
+   ],
+   "text": "Fundamentals of C Language"
+  },
+  {
+   "id": "r46",
+   "kind": "single",
+   "gold": [
+    "Economics concepts"
+   ],
+   "text": "Basic knowledge of Economics concepts"
+  },
+  {
+   "id": "r47",
+   "kind": "comma",
+   "gold": [
+    "Digital Logic Design",
+    "Computer Organization and Architecture"
+   ],
+   "text": "Digital Logic Design, Computer Organization and Architecture"
+  },
+  {
+   "id": "r48",
+   "kind": "comma",
+   "gold": [
+    "Computer science",
+    "Database Management Systems"
+   ],
+   "text": "Fundamental of Computer science, Database Management Systems."
+  },
+  {
+   "id": "r49",
+   "kind": "comma",
+   "gold": [
+    "Soil Mechanics",
+    "Foundation Engineering",
+    "Advanced Geotechnical Engineering"
+   ],
+   "text": "Soil Mechanics, Foundation Engineering, Advanced Geotechnical Engineering"
+  },
+  {
+   "id": "r50",
+   "kind": "comma",
+   "gold": [
+    "Introduction to Business Analytics and Business Intelligence",
+    "Machine Learning"
+   ],
+   "text": "Introduction to Business Analytics and Business Intelligence, Machine Learning."
+  },
+  {
+   "id": "r51",
+   "kind": "and/or",
+   "gold": [
+    "English"
+   ],
+   "text": "Basic Knowledge of English (verbal and written) Completion of all units from Semester 1"
+  },
+  {
+   "id": "r52",
+   "kind": "sentence",
+   "gold": [
+    "Control Systems",
+    "Computer Programming",
+    "Calculus",
+    "Linear Algebra",
+    "Probability",
+    "Programming Knowledge",
+    "Statistics"
+   ],
+   "text": "Fundamental Knowledge of Control Systems, Computer Programming, Calculus, Linear Algebra and Probability, Programming Knowledge and Statistics."
+  },
+  {
+   "id": "r53",
+   "kind": "comma",
+   "gold": [
+    "Object Oriented Programming",
+    "Database Management System"
+   ],
+   "text": "Object Oriented Programming, Database Management System"
+  },
+  {
+   "id": "r54",
+   "kind": "code",
+   "gold": [
+    "Fluid Mechanics",
+    "Mathematics - I",
+    "Mathematics - II",
+    "Physics"
+   ],
+   "text": "Fluid Mechanics (BTME04010), Mathematics-I & II (BTME01001& BTME02008), Physics (BTME01003)"
+  },
+  {
+   "id": "r55",
+   "kind": "and/or",
+   "gold": [
+    "Probability and Statistics"
+   ],
+   "text": "Probability and Statistics"
+  },
+  {
+   "id": "r56",
+   "kind": "and/or",
+   "gold": [
+    "Probability",
+    "Python",
+    "Deep learning",
+    "Neural Network"
+   ],
+   "text": "Probability/Python/Deep learning/Neural Network"
+  },
+  {
+   "id": "r57",
+   "kind": "comma",
+   "gold": [
+    "Engineering Mechanics",
+    "Fluid Mechanics",
+    "Strength of Materials"
+   ],
+   "text": "Engineering Mechanics, Fluid Mechanics and Strength of Materials"
+  },
+  {
+   "id": "r58",
+   "kind": "and/or",
+   "gold": [
+    "Computer and communication networks"
+   ],
+   "text": "Computer and communication networks"
+  },
+  {
+   "id": "r59",
+   "kind": "sentence",
+   "gold": [],
+   "text": "Develop the logic building skill. Solve pattern-recognition based problems because it will improve the visualization of logic. It is one of the fundamental steps of computation thinking."
+  }
+ ]
+}

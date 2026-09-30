@@ -1,0 +1,17 @@
+{
+ "epochs": 5,
+ "batch": 32,
+ "lr": 2e-05,
+ "anchors": 1692,
+ "fit_courses": 347,
+ "val_MRR@10": {
+  "epoch 0 (base encoder)": 0.6214,
+  "epoch 1": 0.625,
+  "epoch 2": 0.6502,
+  "epoch 3": 0.644,
+  "epoch 4": 0.6461,
+  "epoch 5": 0.6491
+ },
+ "best_epoch": 2,
+ "seconds": 1169
+}
