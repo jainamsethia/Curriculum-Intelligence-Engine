@@ -31,6 +31,8 @@ FOOTER = re.compile(r"(?i)(?:MBA\s*\(?\s*Tech\)?|B\.?\s?Tech\.?)[^\n]{0,80}?(?:p
                     r"|B\.?\s?Tech\.?[^\n]{0,60}?/\s*(?:Semester|SEM)[-\s]*[IVX]+(?:\s*(?:and|&|/)\s*[IVX]+)?(?:\s*/?\s*(?:A\.?Y\.?[-\s]*)?20\d\d[-–]\d\d\s*/?)?(?:\s*Page\s*\d*)?"
                     r"|(?:Electronics\s*(?:&|&amp;|and)\s*Telecommunication|Information Technology|Computer Engineering|Mechanical Engineering|Civil Engineering|Electrical Engineering)\s+Department|_{3,}|\s+of\s+\d{1,3}\s*$"
                     r"|(?:\bof\s+\d+|20\d\d\s*[-–]\s*\d\d)\s*/\s*Page\s*\d*|\bA\.?Y\.?[-\s]*20\d\d[-–]\d\d|(?<=[\w.,;])\s*/\s*Page\s*\d+(?:\s*of\s*\d+)?")
+# the pattern before the fix, kept only to count how many records the fix changed (evidence for the report)
+OLD_PRE = re.compile(r"(?is)pre\s*[-–]?\s*requisites?\s*[:\-–]?\s*(.*?)(?=\n\s*(?:course\s+)?objectives?|\n\s*(?:course\s+)?outcomes?)")
 AY = re.compile(r"(20\d\d)\s*[-–/_]\s*(?:20)?(\d\d)\b")
 # Bloom tags on outcomes: "(K3)", "(K3, K4)", "(L4 - Analyzing)", "(L2)"; K/L both mean Bloom level 1-6
 KLEVEL = re.compile(r"\(\s*([KL]\s?[1-6](?:\s*[,&/]\s*[KL]?\s?[1-6])*)(?:\s*[-–:]\s*[A-Za-z]+)?\s*\)", re.I)
@@ -284,6 +286,7 @@ def parse_block(block, src):
         "lecture_hrs": int(ts.group(1)) if ts else None, "practical_hrs": int(ts.group(2)) if ts else None,
         "tutorial_hrs": int(ts.group(3)) if ts else None, "credits": int(ts.group(4)) if ts else None,
         "prerequisites": norm(pre.group(1)) if pre else "", "objectives": objectives,
+        "_prereq_fixed": bool(pre) and norm(OLD_PRE.search(body).group(1)) != norm(pre.group(1)),
         "outcomes": outs, "units": units, "text_books": tidy(sec.get("books", "")),
         "reference_books": tidy(sec.get("refs", "")), "lab_work": tidy(sec.get("lab", "")), "source": src,
     }
@@ -342,7 +345,7 @@ def main(zip_path, rebuild=False):
             assert all(r["id"] != rec["id"] for r in seen.values()), "id collision"
             raw[rec["id"]] = "\n".join(l for l, _ in block)
             seen[h] = rec
-    recs = []
+    recs, fixed = [], sum(r.pop("_prereq_fixed") for r in seen.values())
     for h, rec in seen.items():
         rec["source_files"] = sorted(set(sources[h]))          # all of them: programme membership comes from these
         rec["n_source_files"] = len(set(sources[h]))
@@ -359,6 +362,7 @@ def main(zip_path, rebuild=False):
     st = {**stats, "courses": len(recs), "distinct_course_names": len(fam), "names_in_>=2_versions": sum(c >= 2 for c in fam.values()),
           "by_academic_year": dict(sorted(Counter(r["academic_year"] for r in recs).items())),
           "with_prerequisites_text": sum(bool(r["prerequisites"]) for r in recs),
+          "prerequisite_fix_changed": fixed,
           "with_objectives": sum(bool(r["objectives"]) for r in recs),
           "with_outcomes": sum(bool(r["outcomes"]) for r in recs), "outcomes_total": sum(len(r["outcomes"]) for r in recs),
           "outcomes_with_k_level": sum(bool(o["k_levels"]) for r in recs for o in r["outcomes"]),
