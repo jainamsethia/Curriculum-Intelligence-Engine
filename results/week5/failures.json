@@ -1,0 +1,283 @@
+{
+ "n": 12,
+ "selection_rules": "that pass the threshold and the three lowest-scoring overlapping pairs below it; the first three prerequisite flags, two redundancy\n    flags and one emerging-topic gap the reference labels call wrong; the first topic the detector calls covered although the labels\n    see a gap; and the two Bloom errors furthest from the faculty tag. Root causes and fixes: reports/failure_notes.json.",
+ "cases": [
+  {
+   "key": "overlap|PR087",
+   "type": "overlap false positive",
+   "input": "Computer Networks vs Cloud Computing",
+   "prediction": "score 0.781 (threshold 0.775)",
+   "truth": "no overlap",
+   "evidence": "Computer network layers and protocols vs cloud computing layers and containers; cloud is only mentioned in CN future-networks overview.",
+   "id": "F01",
+   "category": "shared vocabulary, different subject",
+   "root_cause": "Both syllabi use networking-layer vocabulary (layers, protocols, services, virtualisation), so lexical and semantic scores pass the threshold although the subjects differ.",
+   "fix_or_limitation": "Weight matches by distinctive topic terms and require several matched units, not one high course score."
+  },
+  {
+   "key": "overlap|PR135",
+   "type": "overlap false negative",
+   "input": "Unmanned Aerial Vehicles vs Engineering Mechanics",
+   "prediction": "score 0.569 (threshold 0.775)",
+   "truth": "partial overlap",
+   "evidence": "Both teach rigid-body kinematics and dynamics (forces, moments, motion), but A is otherwise UAV types, guidance and regulation while B covers statics, friction, trusses and centroids.",
+   "id": "F02",
+   "category": "one shared unit diluted",
+   "root_cause": "Only one unit-level topic (rigid-body dynamics) is shared inside otherwise different courses, so the whole-course score stays below the threshold.",
+   "fix_or_limitation": "Report partial overlap from the unit-level detector (best unit pair) instead of the course score."
+  },
+  {
+   "key": "overlap|PR090",
+   "type": "overlap false negative",
+   "input": "Cybersecurity for Non-IT vs Foundation of Information systems",
+   "prediction": "score 0.594 (threshold 0.775)",
+   "truth": "partial overlap",
+   "evidence": "Security threats and safeguards for information systems are taught in both, but B is mostly IS strategy, ERP/CRM, e-commerce and A covers crypto, IAM, firewalls.",
+   "id": "F03",
+   "category": "one shared unit diluted",
+   "root_cause": "One security unit is shared; the rest of each course (IS strategy vs cryptography, IAM) pulls the course score down.",
+   "fix_or_limitation": "Same as above: unit-level evidence for partial overlap."
+  },
+  {
+   "key": "overlap|PR152",
+   "type": "overlap false negative",
+   "input": "Cognitive Science & Analytics vs Advanced Business Analytics in Python and R",
+   "prediction": "score 0.600 (threshold 0.775)",
+   "truth": "partial overlap",
+   "evidence": "Both teach basic inferential statistics (hypothesis testing, ANOVA, correlation) and ML techniques, but A adds cognitive science/AI breadth while B focuses on regression and model evaluation in Python/R.",
+   "id": "F04",
+   "category": "one shared unit diluted",
+   "root_cause": "Shared statistics topics (hypothesis testing, ANOVA) are phrased differently and sit inside larger, different courses.",
+   "fix_or_limitation": "Unit-level evidence; a domain-adapted encoder for statistics wording."
+  },
+  {
+   "key": "prerequisite|CIVIL|f48c6dd41|Chemistry (Semester- II)",
+   "type": "prerequisite flag judged wrong",
+   "input": "Open Elective - I (BSC) - Fundamentals of Fuels and Lubricants (CIVIL) needs 'Chemistry (Semester- II)'",
+   "prediction": "flagged as missing",
+   "truth": "reference labels: warning is wrong",
+   "evidence": "Chemistry is taught earlier.",
+   "id": "F05",
+   "category": "noisy prerequisite text",
+   "root_cause": "The phrase keeps '(Semester- II)' and the first-year chemistry course has a different name, so neither the name nor the topic match passes.",
+   "fix_or_limitation": "Strip semester and code annotations from phrases; link common first-year courses to every programme explicitly."
+  },
+  {
+   "key": "prerequisite|CIVIL|fdb685ff5|Engineering Mathematics",
+   "type": "prerequisite flag judged wrong",
+   "input": "Open Elective - I (BSC) - Modelling and Simulation (CIVIL) needs 'Engineering Mathematics'",
+   "prediction": "flagged as missing",
+   "truth": "reference labels: warning is wrong",
+   "evidence": "Calculus, Linear Algebra and Mathematics - III are taught earlier.",
+   "id": "F06",
+   "category": "umbrella prerequisite name",
+   "root_cause": "'Engineering Mathematics' names a group of courses (Calculus, Linear Algebra, Mathematics - III); it resolves to a same-named course of another programme that Civil does not offer.",
+   "fix_or_limitation": "A small ontology of umbrella subjects mapped to their member courses."
+  },
+  {
+   "key": "prerequisite|CIVIL|fec17aa83|geography",
+   "type": "prerequisite flag judged wrong",
+   "input": "Remote Sensing, GIS and Data Science Applications in Environmental Management (CIVIL) needs 'geography'",
+   "prediction": "flagged as missing",
+   "truth": "reference labels: warning is wrong",
+   "evidence": "Generic background phrase; Introduction to Earth Sciences, Geology and Surveying provide the needed geographic grounding.",
+   "id": "F07",
+   "category": "not a course subject",
+   "root_cause": "A background phrase ('geography') is treated as a required course; no earlier unit is close enough to it.",
+   "fix_or_limitation": "Classify phrases as subject or background before checking (e.g. the LLM extractor)."
+  },
+  {
+   "key": "redundancy|nm3528490a|nmbb19f1e3",
+   "type": "redundancy flag judged wrong",
+   "input": "Design of Reinforced Concrete Structures vs Design of Steel Structures",
+   "prediction": "flagged as redundant",
+   "truth": "reference labels: warning is wrong",
+   "evidence": "Limit state design is applied to different materials (RCC per IS 456 vs steel sections); not the same content.",
+   "id": "F08",
+   "category": "same method, different object",
+   "root_cause": "Both courses teach limit-state design, so the unit texts share method vocabulary although the material differs (concrete vs steel).",
+   "fix_or_limitation": "Require overlap of the domain nouns, or a stricter duplicate threshold for design units."
+  },
+  {
+   "key": "redundancy|nmf35e83e7|nm29b947cb",
+   "type": "redundancy flag judged wrong",
+   "input": "Introduction to Cryptography vs Elliptic Curve Cryptography",
+   "prediction": "flagged as redundant",
+   "truth": "reference labels: warning is wrong",
+   "evidence": "Broad survey of RSA, Rabin, ElGamal versus in-depth ECC protocols (ECDH, Schnorr, ECDSA); only minor overlap.",
+   "id": "F09",
+   "category": "same topic, different depth",
+   "root_cause": "Public-key cryptography appears in both, as a survey in one and in depth in the other; the unit score cannot see depth.",
+   "fix_or_limitation": "Compare hours and outcome levels of matched units; report as partial, not redundant."
+  },
+  {
+   "key": "emerging_covered|Large language models and generative AI|CSBS",
+   "type": "missed emerging-topic gap",
+   "input": "'Large language models and generative AI' in programme CSBS",
+   "prediction": "judged as already taught",
+   "truth": "reference labels: a real gap",
+   "evidence": "Closest units are compiler code generation, cognitive science and RNNs; no LLM or generative AI unit.",
+   "id": "F10",
+   "category": "lenient threshold",
+   "root_cause": "The topic threshold reused from the prerequisite check lets weakly related units (code generation, RNNs) count as coverage.",
+   "fix_or_limitation": "Tune a separate threshold for emerging topics on labelled checks; this also explains the low gap recall."
+  },
+  {
+   "key": "bloom|Apply, Deploy, and Manage the applicatio",
+   "type": "Bloom level error",
+   "input": "Apply, Deploy, and Manage the applications efficiently while evaluating and integrating best practices in real-world scenarios.",
+   "prediction": "Apply",
+   "truth": "faculty tag Create",
+   "evidence": "first verb: deploy",
+   "id": "F11",
+   "category": "multi-verb outcome",
+   "root_cause": "The lexicon takes the first known verb ('apply'), but the outcome also asks to evaluate and integrate, which the faculty tag as Create.",
+   "fix_or_limitation": "Use the highest-level verb, or the classifier, when an outcome has several verbs."
+  },
+  {
+   "key": "bloom|Construct the curves using surveying ins",
+   "type": "Bloom level error",
+   "input": "Construct the curves using surveying instruments",
+   "prediction": "Create",
+   "truth": "faculty tag Apply",
+   "evidence": "first verb: construct",
+   "id": "F12",
+   "category": "domain-specific verb sense",
+   "root_cause": "'Construct' is Create in Bloom verb lists, but constructing survey curves is a practical skill the faculty tag as Apply.",
+   "fix_or_limitation": "A domain-specific verb map learned from faculty tags (needs more tagged outcomes)."
+  }
+ ],
+ "table": {
+  "columns": [
+   "#",
+   "Type",
+   "Input",
+   "Prediction / truth",
+   "Category",
+   "Root cause",
+   "Fix or known limitation"
+  ],
+  "rows": [
+   [
+    "F01",
+    "overlap false positive",
+    "Computer Networks vs Cloud Computing",
+    "score 0.781 (threshold 0.775) / no overlap",
+    "shared vocabulary, different subject",
+    "Both syllabi use networking-layer vocabulary (layers, protocols, services, virtualisation), so lexical and semantic scores pass the threshold although the subjects differ.",
+    "Weight matches by distinctive topic terms and require several matched units, not one high course score."
+   ],
+   [
+    "F02",
+    "overlap false negative",
+    "Unmanned Aerial Vehicles vs Engineering Mechanics",
+    "score 0.569 (threshold 0.775) / partial overlap",
+    "one shared unit diluted",
+    "Only one unit-level topic (rigid-body dynamics) is shared inside otherwise different courses, so the whole-course score stays below the threshold.",
+    "Report partial overlap from the unit-level detector (best unit pair) instead of the course score."
+   ],
+   [
+    "F03",
+    "overlap false negative",
+    "Cybersecurity for Non-IT vs Foundation of Information systems",
+    "score 0.594 (threshold 0.775) / partial overlap",
+    "one shared unit diluted",
+    "One security unit is shared; the rest of each course (IS strategy vs cryptography, IAM) pulls the course score down.",
+    "Same as above: unit-level evidence for partial overlap."
+   ],
+   [
+    "F04",
+    "overlap false negative",
+    "Cognitive Science & Analytics vs Advanced Business Analytics in Python and R",
+    "score 0.600 (threshold 0.775) / partial overlap",
+    "one shared unit diluted",
+    "Shared statistics topics (hypothesis testing, ANOVA) are phrased differently and sit inside larger, different courses.",
+    "Unit-level evidence; a domain-adapted encoder for statistics wording."
+   ],
+   [
+    "F05",
+    "prerequisite flag judged wrong",
+    "Open Elective - I (BSC) - Fundamentals of Fuels and Lubricants (CIVIL) needs 'Chemistry (Semester- II)'",
+    "flagged as missing / reference labels: warning is wrong",
+    "noisy prerequisite text",
+    "The phrase keeps '(Semester- II)' and the first-year chemistry course has a different name, so neither the name nor the topic match passes.",
+    "Strip semester and code annotations from phrases; link common first-year courses to every programme explicitly."
+   ],
+   [
+    "F06",
+    "prerequisite flag judged wrong",
+    "Open Elective - I (BSC) - Modelling and Simulation (CIVIL) needs 'Engineering Mathematics'",
+    "flagged as missing / reference labels: warning is wrong",
+    "umbrella prerequisite name",
+    "'Engineering Mathematics' names a group of courses (Calculus, Linear Algebra, Mathematics - III); it resolves to a same-named course of another programme that Civil does not offer.",
+    "A small ontology of umbrella subjects mapped to their member courses."
+   ],
+   [
+    "F07",
+    "prerequisite flag judged wrong",
+    "Remote Sensing, GIS and Data Science Applications in Environmental Management (CIVIL) needs 'geography'",
+    "flagged as missing / reference labels: warning is wrong",
+    "not a course subject",
+    "A background phrase ('geography') is treated as a required course; no earlier unit is close enough to it.",
+    "Classify phrases as subject or background before checking (e.g. the LLM extractor)."
+   ],
+   [
+    "F08",
+    "redundancy flag judged wrong",
+    "Design of Reinforced Concrete Structures vs Design of Steel Structures",
+    "flagged as redundant / reference labels: warning is wrong",
+    "same method, different object",
+    "Both courses teach limit-state design, so the unit texts share method vocabulary although the material differs (concrete vs steel).",
+    "Require overlap of the domain nouns, or a stricter duplicate threshold for design units."
+   ],
+   [
+    "F09",
+    "redundancy flag judged wrong",
+    "Introduction to Cryptography vs Elliptic Curve Cryptography",
+    "flagged as redundant / reference labels: warning is wrong",
+    "same topic, different depth",
+    "Public-key cryptography appears in both, as a survey in one and in depth in the other; the unit score cannot see depth.",
+    "Compare hours and outcome levels of matched units; report as partial, not redundant."
+   ],
+   [
+    "F10",
+    "missed emerging-topic gap",
+    "'Large language models and generative AI' in programme CSBS",
+    "judged as already taught / reference labels: a real gap",
+    "lenient threshold",
+    "The topic threshold reused from the prerequisite check lets weakly related units (code generation, RNNs) count as coverage.",
+    "Tune a separate threshold for emerging topics on labelled checks; this also explains the low gap recall."
+   ],
+   [
+    "F11",
+    "Bloom level error",
+    "Apply, Deploy, and Manage the applications efficiently while evaluating and integrating best practices in real-world sce",
+    "Apply / faculty tag Create",
+    "multi-verb outcome",
+    "The lexicon takes the first known verb ('apply'), but the outcome also asks to evaluate and integrate, which the faculty tag as Create.",
+    "Use the highest-level verb, or the classifier, when an outcome has several verbs."
+   ],
+   [
+    "F12",
+    "Bloom level error",
+    "Construct the curves using surveying instruments",
+    "Create / faculty tag Apply",
+    "domain-specific verb sense",
+    "'Construct' is Create in Bloom verb lists, but constructing survey curves is a practical skill the faculty tag as Apply.",
+    "A domain-specific verb map learned from faculty tags (needs more tagged outcomes)."
+   ]
+  ]
+ },
+ "by_category": {
+  "shared vocabulary, different subject": 1,
+  "one shared unit diluted": 3,
+  "noisy prerequisite text": 1,
+  "umbrella prerequisite name": 1,
+  "not a course subject": 1,
+  "same method, different object": 1,
+  "same topic, different depth": 1,
+  "lenient threshold": 1,
+  "multi-verb outcome": 1,
+  "domain-specific verb sense": 1
+ }
+}

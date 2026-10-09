@@ -1,0 +1,164 @@
+{
+ "overlap": {
+  "method": "fusion of TF-IDF and MaxSim (validation percentiles)",
+  "test": {
+   "n": 119,
+   "n_any_overlap": 32,
+   "n_substantial": 2,
+   "spearman": {
+    "value": 0.717,
+    "ci95": [
+     0.624,
+     0.794
+    ]
+   },
+   "roc_auc": {
+    "value": 0.965,
+    "ci95": [
+     0.937,
+     0.987
+    ]
+   },
+   "avg_precision": {
+    "value": 0.916,
+    "ci95": [
+     0.839,
+     0.972
+    ]
+   },
+   "roc_auc_substantial": {
+    "value": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "at_val_threshold": {
+   "threshold": 0.775,
+   "precision": 0.95,
+   "recall": 0.594,
+   "f1": 0.731,
+   "tp": 19,
+   "fp": 1,
+   "fn": 13,
+   "f1_ci95": [
+    0.571,
+    0.848
+   ]
+  }
+ },
+ "threshold": 0.775,
+ "targets_met": 13,
+ "targets_missed": 1,
+ "targets_total": 14,
+ "table": {
+  "columns": [
+   "Capability",
+   "Metric (test split)",
+   "Result",
+   "Target",
+   "Met?"
+  ],
+  "rows": [
+   [
+    "1 Overlap",
+    "Spearman",
+    "0.717",
+    ">= 0.6",
+    "yes"
+   ],
+   [
+    "",
+    "ROC-AUC (any overlap)",
+    "0.965",
+    ">= 0.85",
+    "yes"
+   ],
+   [
+    "",
+    "F1 at validation threshold",
+    "0.731",
+    ">= 0.7",
+    "yes"
+   ],
+   [
+    "2 Redundancy",
+    "precision of top flags (reference labels)",
+    "0.800",
+    ">= 0.7",
+    "yes"
+   ],
+   [
+    "",
+    "injected near-duplicates in top 20",
+    "1.000",
+    ">= 0.8",
+    "yes"
+   ],
+   [
+    "3 Prerequisites",
+    "removal recall",
+    "0.880",
+    ">= 0.8",
+    "yes"
+   ],
+   [
+    "",
+    "precision of flags (reference labels)",
+    "0.100",
+    ">= 0.6",
+    "no"
+   ],
+   [
+    "",
+    "false alarms after renaming",
+    "0.120",
+    "<= 0.2",
+    "yes"
+   ],
+   [
+    "4 Curriculum diff",
+    "precision (real year pairs)",
+    "0.998",
+    ">= 0.85",
+    "yes"
+   ],
+   [
+    "",
+    "recall (real year pairs)",
+    "0.956",
+    ">= 0.85",
+    "yes"
+   ],
+   [
+    "5 Bloom",
+    "accuracy vs faculty tags",
+    "0.776",
+    ">= 0.7",
+    "yes"
+   ],
+   [
+    "",
+    "within one level",
+    "0.871",
+    ">= 0.85",
+    "yes"
+   ],
+   [
+    "6 Emerging topics",
+    "precision of flagged gaps",
+    "1.000",
+    ">= 0.7",
+    "yes"
+   ],
+   [
+    "7 Topic labels",
+    "share accepted",
+    "0.700",
+    ">= 0.7",
+    "yes"
+   ]
+  ]
+ }
+}

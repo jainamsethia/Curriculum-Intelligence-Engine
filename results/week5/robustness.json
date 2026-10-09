@@ -1,0 +1,154 @@
+{
+ "perturbed_side": "course B of every labelled test pair",
+ "results": {
+  "typos": {
+   "fusion of TF-IDF and MaxSim (validation percentiles)": {
+    "n_pairs": 119,
+    "spearman": 0.717,
+    "spearman_clean": 0.717,
+    "roc_auc": 0.965,
+    "roc_auc_clean": 0.965,
+    "mean_score_change": -0.006
+   },
+   "tfidf_cosine": {
+    "n_pairs": 119,
+    "spearman": 0.709,
+    "spearman_clean": 0.708,
+    "roc_auc": 0.959,
+    "roc_auc_clean": 0.959,
+    "mean_score_change": -0.0
+   }
+  },
+  "word_drop": {
+   "fusion of TF-IDF and MaxSim (validation percentiles)": {
+    "n_pairs": 119,
+    "spearman": 0.706,
+    "spearman_clean": 0.717,
+    "roc_auc": 0.958,
+    "roc_auc_clean": 0.965,
+    "mean_score_change": -0.011
+   },
+   "tfidf_cosine": {
+    "n_pairs": 119,
+    "spearman": 0.702,
+    "spearman_clean": 0.708,
+    "roc_auc": 0.955,
+    "roc_auc_clean": 0.959,
+    "mean_score_change": -0.002
+   }
+  },
+  "shuffled_units": {
+   "fusion of TF-IDF and MaxSim (validation percentiles)": {
+    "n_pairs": 119,
+    "spearman": 0.717,
+    "spearman_clean": 0.717,
+    "roc_auc": 0.965,
+    "roc_auc_clean": 0.965,
+    "mean_score_change": 0.0
+   },
+   "tfidf_cosine": {
+    "n_pairs": 119,
+    "spearman": 0.709,
+    "spearman_clean": 0.708,
+    "roc_auc": 0.959,
+    "roc_auc_clean": 0.959,
+    "mean_score_change": 0.0
+   }
+  },
+  "truncated_half": {
+   "fusion of TF-IDF and MaxSim (validation percentiles)": {
+    "n_pairs": 119,
+    "spearman": 0.692,
+    "spearman_clean": 0.717,
+    "roc_auc": 0.948,
+    "roc_auc_clean": 0.965,
+    "mean_score_change": -0.035
+   },
+   "tfidf_cosine": {
+    "n_pairs": 119,
+    "spearman": 0.686,
+    "spearman_clean": 0.708,
+    "roc_auc": 0.944,
+    "roc_auc_clean": 0.959,
+    "mean_score_change": -0.009
+   }
+  },
+  "missing_sections": {
+   "fusion of TF-IDF and MaxSim (validation percentiles)": {
+    "n_pairs": 119,
+    "spearman": 0.707,
+    "spearman_clean": 0.717,
+    "roc_auc": 0.958,
+    "roc_auc_clean": 0.965,
+    "mean_score_change": -0.024
+   },
+   "tfidf_cosine": {
+    "n_pairs": 119,
+    "spearman": 0.666,
+    "spearman_clean": 0.708,
+    "roc_auc": 0.931,
+    "roc_auc_clean": 0.959,
+    "mean_score_change": -0.01
+   }
+  }
+ },
+ "self_similarity_median": {
+  "typos": 1.0,
+  "word_drop": 1.0,
+  "shuffled_units": 1.0,
+  "truncated_half": 0.988,
+  "missing_sections": 1.0
+ },
+ "table": {
+  "columns": [
+   "Perturbation",
+   "Pairs",
+   "Spearman fusion of TF-IDF and MaxSim (validation percentiles)",
+   "Spearman TF-IDF",
+   "ROC-AUC fusion of TF-IDF and MaxSim (validation percentiles)",
+   "ROC-AUC TF-IDF"
+  ],
+  "rows": [
+   [
+    "typos",
+    119,
+    "0.717 → 0.717",
+    "0.708 → 0.709",
+    "0.965 → 0.965",
+    "0.959 → 0.959"
+   ],
+   [
+    "word drop",
+    119,
+    "0.717 → 0.706",
+    "0.708 → 0.702",
+    "0.965 → 0.958",
+    "0.959 → 0.955"
+   ],
+   [
+    "shuffled units",
+    119,
+    "0.717 → 0.717",
+    "0.708 → 0.709",
+    "0.965 → 0.965",
+    "0.959 → 0.959"
+   ],
+   [
+    "truncated half",
+    119,
+    "0.717 → 0.692",
+    "0.708 → 0.686",
+    "0.965 → 0.948",
+    "0.959 → 0.944"
+   ],
+   [
+    "missing sections",
+    119,
+    "0.717 → 0.707",
+    "0.708 → 0.666",
+    "0.965 → 0.958",
+    "0.959 → 0.931"
+   ]
+  ]
+ }
+}
