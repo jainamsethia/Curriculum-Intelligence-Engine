@@ -1,0 +1,327 @@
+{
+ "week": 2,
+ "tag": "week-2-redo",
+ "commit": "c3a1e1b2358da725cfa81f4b28838a2c1c3172a4",
+ "values": [
+  {
+   "key": "dataset/parse_stats:prerequisite_fix_changed",
+   "value": "19"
+  },
+  {
+   "key": "dataset/stats:course_versions",
+   "value": "2,366"
+  },
+  {
+   "key": "dataset/stats:families",
+   "value": "645"
+  },
+  {
+   "key": "dataset/stats:programmes",
+   "value": "13"
+  },
+  {
+   "key": "dataset/split:families.train",
+   "value": "387"
+  },
+  {
+   "key": "dataset/split:families.val",
+   "value": "129"
+  },
+  {
+   "key": "dataset/split:families.test",
+   "value": "129"
+  },
+  {
+   "key": "week2/labels:items",
+   "value": "200"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  },
+  {
+   "key": "dataset/parse_stats:text_pdf",
+   "value": "531"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  },
+  {
+   "key": "dataset/parse_stats:scanned_pdf_skipped",
+   "value": "1,882"
+  },
+  {
+   "key": "dataset/parse_stats:exact_duplicates",
+   "value": "1,511"
+  },
+  {
+   "key": "dataset/parse_stats:dropped_legacy_or_unknown_year",
+   "value": "46"
+  },
+  {
+   "key": "dataset/parse_stats:courses",
+   "value": "2,366"
+  },
+  {
+   "key": "dataset/parse_stats:outcomes_total",
+   "value": "8,650"
+  },
+  {
+   "key": "dataset/parse_stats:outcomes_with_k_level",
+   "value": "546"
+  },
+  {
+   "key": "dataset/parse_stats:units_total",
+   "value": "14,747"
+  },
+  {
+   "key": "dataset/stats:families",
+   "value": "645"
+  },
+  {
+   "key": "dataset/stats:families_with_2plus_versions",
+   "value": "472"
+  },
+  {
+   "key": "dataset/stats:common_courses",
+   "value": "233"
+  },
+  {
+   "key": "table:week2/eda:per_programme",
+   "value": "{\"columns\": [\"Programme\", \"Versions\", \"With prerequisite\", \"With outcomes\", \"Units / course\"], \"rows\": [[\"MECHANICAL\", 422, \"61%\", \"100%\", 5.4], [\"DS\", 394, \"56%\", \"99%\", 6.7], [\"IT\", 283, \"84%\", \"99%\", 6.3], [\"AI\", 258, \"64%\", \"100%\", 5.6], [\"CSE-CYBER\", 254, \"66%\", \"99%\", 5.6], [\"CSBS\", 248, \"81%\", \"100%\", 6.9], [\"MECHATRONICS\", 244, \"72%\", \"100%\", 5.7], [\"CIVIL\", 234, \"57%\", \"100%\", 6.0], [\"COMP\", 213, \"79%\", \"100%\", 6.3], [\"CSE-DS\", 202, \"67%\", \"100%\", 7.6], [\"EXTC\", 169, \"86%\", \"100%\", 5.6]]}"
+  },
+  {
+   "key": "week2/eda:words_per_course.median",
+   "value": "263"
+  },
+  {
+   "key": "week2/eda:with_prerequisite_phrase_share:.0%",
+   "value": "72%"
+  },
+  {
+   "key": "dataset/split:seed",
+   "value": "42"
+  },
+  {
+   "key": "dataset/split:hash",
+   "value": "4763325fd5"
+  },
+  {
+   "key": "dataset/split:families.train",
+   "value": "387"
+  },
+  {
+   "key": "dataset/split:families.val",
+   "value": "129"
+  },
+  {
+   "key": "dataset/split:families.test",
+   "value": "129"
+  },
+  {
+   "key": "dataset/split:versions.train",
+   "value": "1,423"
+  },
+  {
+   "key": "dataset/split:versions.val",
+   "value": "487"
+  },
+  {
+   "key": "dataset/split:versions.test",
+   "value": "456"
+  },
+  {
+   "key": "week2/labels:items",
+   "value": "200"
+  },
+  {
+   "key": "week2/labels:pass2_by.phi3",
+   "value": "106"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:pass2_by.phi3",
+   "value": "106"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_phi3.percent_agreement:.0%",
+   "value": "74%"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_phi3.cohen_kappa",
+   "value": "0.561"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_claude.percent_agreement:.0%",
+   "value": "99%"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_claude.cohen_kappa",
+   "value": "0.969"
+  },
+  {
+   "key": "week2/labels:resolved_by_pass3",
+   "value": "28"
+  },
+  {
+   "key": "week2/labels:uncertain_excluded",
+   "value": "1"
+  },
+  {
+   "key": "week2/labels:by_split.val.0",
+   "value": "61"
+  },
+  {
+   "key": "week2/labels:by_split.val.1",
+   "value": "14"
+  },
+  {
+   "key": "week2/labels:by_split.val.2",
+   "value": "5"
+  },
+  {
+   "key": "week2/labels:by_split.test.0",
+   "value": "87"
+  },
+  {
+   "key": "week2/labels:by_split.test.1",
+   "value": "30"
+  },
+  {
+   "key": "week2/labels:by_split.test.2",
+   "value": "2"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:items",
+   "value": "200"
+  },
+  {
+   "key": "table:week2/summary:table",
+   "value": "{\"columns\": [\"Capability\", \"Method\", \"Metric (test split)\", \"Result\"], \"rows\": [[\"1 Overlap\", \"TF-IDF cosine\", \"Spearman [95% CI]\", \"0.708 [0.62, 0.78]\"], [\"\", \"\", \"ROC-AUC any overlap [95% CI]\", \"0.959 [0.93, 0.98]\"], [\"\", \"\", \"F1 at validation threshold\", \"0.774\"], [\"2 Redundancy\", \"course-level TF-IDF cosine within a programme\", \"injected near-duplicates found in top 20\", \"0.600\"], [\"3 Prerequisites\", \"regex split + exact course-name match\", \"removal recall [95% CI]\", \"1.000 [1.00, 1.00]\"], [\"\", \"\", \"false alarms, intact programme\", \"0.470 [0.34, 0.59]\"], [\"\", \"\", \"false alarms after renaming the course\", \"1.000 [1.00, 1.00]\"], [\"4 Curriculum diff\", \"exact course-name set difference\", \"precision / recall of changes\", \"0.990 / 1.000\"], [\"\", \"\", \"precision / recall with renamed courses\", \"0.793 / 1.000\"], [\"5 Bloom level\", \"hand-written verb lexicon (majority level when no verb matches)\", \"accuracy [95% CI]\", \"0.776 [0.72, 0.83]\"], [\"\", \"\", \"within one level / macro-F1\", \"0.871 / 0.756\"]]}"
+  },
+  {
+   "key": "week2/overlap:methods.tfidf_cosine.test.spearman.value",
+   "value": "0.708"
+  },
+  {
+   "key": "week2/overlap:methods.tfidf_cosine.test.roc_auc.value",
+   "value": "0.959"
+  },
+  {
+   "key": "week2/overlap:methods.tfidf_cosine.at_val_threshold.threshold",
+   "value": "0.126"
+  },
+  {
+   "key": "week2/overlap:methods.tfidf_cosine.at_val_threshold.precision",
+   "value": "0.800"
+  },
+  {
+   "key": "week2/overlap:methods.tfidf_cosine.at_val_threshold.recall",
+   "value": "0.750"
+  },
+  {
+   "key": "week2/overlap:version_pairs.n",
+   "value": "359"
+  },
+  {
+   "key": "week2/overlap:version_pairs.tfidf_median",
+   "value": "1.000"
+  },
+  {
+   "key": "week2/overlap:version_pairs.cross_course_median_by_label.2",
+   "value": "0.595"
+  },
+  {
+   "key": "week2/redundancy:threshold_from_val_substantial_overlap",
+   "value": "0.451"
+  },
+  {
+   "key": "week2/redundancy:flags_test",
+   "value": "5"
+  },
+  {
+   "key": "week2/redundancy:synthetic_injection.recall_at_20:.0%",
+   "value": "60%"
+  },
+  {
+   "key": "week2/redundancy:synthetic_injection.cases",
+   "value": "60"
+  },
+  {
+   "key": "week2/prerequisites:phrases_checked",
+   "value": "228"
+  },
+  {
+   "key": "week2/prerequisites:course_programme_pairs_checked",
+   "value": "141"
+  },
+  {
+   "key": "week2/prerequisites:flags",
+   "value": "136"
+  },
+  {
+   "key": "week2/prerequisites:flags_by_type.unresolved",
+   "value": "126"
+  },
+  {
+   "key": "week2/prerequisites:tests.cases",
+   "value": "83"
+  },
+  {
+   "key": "week2/prerequisites:tests.removal_recall.value",
+   "value": "1.000"
+  },
+  {
+   "key": "week2/prerequisites:tests.intact_false_alarm.value:.0%",
+   "value": "47%"
+  },
+  {
+   "key": "week2/prerequisites:tests.rename_false_alarm.value:.0%",
+   "value": "100%"
+  },
+  {
+   "key": "week2/diff:year_pairs",
+   "value": "53"
+  },
+  {
+   "key": "week2/diff:precision",
+   "value": "0.990"
+  },
+  {
+   "key": "week2/diff:recall",
+   "value": "1.000"
+  },
+  {
+   "key": "week2/diff:rename_test.precision",
+   "value": "0.793"
+  },
+  {
+   "key": "week2/bloom:lexicon.accuracy.value:.0%",
+   "value": "78%"
+  },
+  {
+   "key": "week2/bloom:test_outcomes",
+   "value": "85"
+  },
+  {
+   "key": "week2/bloom:majority_class.accuracy.value:.0%",
+   "value": "31%"
+  },
+  {
+   "key": "week2/bloom:test_outcomes",
+   "value": "85"
+  }
+ ]
+}
