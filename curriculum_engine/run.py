@@ -43,7 +43,15 @@ def step_data():
     return recs
 
 
-STEPS = {"data": step_data}
+def step_week(n):
+    def fn():
+        import importlib
+        from curriculum_engine.experiments.common import Ctx
+        importlib.import_module(f"curriculum_engine.experiments.week{n}").run(Ctx())
+    return fn
+
+
+STEPS = {"data": step_data, "week2": step_week(2), "week3": step_week(3), "week4": step_week(4), "week5": step_week(5)}
 
 
 def main(target):
