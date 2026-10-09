@@ -1,0 +1,127 @@
+{
+ "week": 1,
+ "tag": "week-1-redo",
+ "commit": "6e80a22cf7b428ba0ba6b006b45cde2e84057c93",
+ "values": [
+  {
+   "key": "dataset/parse_stats:courses",
+   "value": "2,366"
+  },
+  {
+   "key": "dataset/parse_stats:distinct_course_names",
+   "value": "655"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  },
+  {
+   "key": "dataset/parse_stats:text_pdf",
+   "value": "531"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  },
+  {
+   "key": "dataset/parse_stats:scanned_pdf_skipped",
+   "value": "1,882"
+  },
+  {
+   "key": "dataset/parse_stats:courses",
+   "value": "2,366"
+  },
+  {
+   "key": "dataset/parse_stats:distinct_course_names",
+   "value": "655"
+  },
+  {
+   "key": "dataset/parse_stats:names_in_>=2_versions",
+   "value": "472"
+  },
+  {
+   "key": "dataset/parse_stats:outcomes_total",
+   "value": "8,650"
+  },
+  {
+   "key": "dataset/parse_stats:outcomes_with_k_level",
+   "value": "546"
+  },
+  {
+   "key": "dataset/parse_stats:units_total",
+   "value": "14,747"
+  },
+  {
+   "key": "plan/targets:overlap.spearman",
+   "value": "0.600"
+  },
+  {
+   "key": "plan/targets:overlap.roc_auc",
+   "value": "0.850"
+  },
+  {
+   "key": "plan/targets:overlap.f1",
+   "value": "0.700"
+  },
+  {
+   "key": "plan/targets:redundancy.precision_at_20",
+   "value": "0.700"
+  },
+  {
+   "key": "plan/targets:redundancy.synthetic_recall_at_20",
+   "value": "0.800"
+  },
+  {
+   "key": "plan/targets:prerequisites.removal_recall",
+   "value": "0.800"
+  },
+  {
+   "key": "plan/targets:prerequisites.flag_precision",
+   "value": "0.600"
+  },
+  {
+   "key": "plan/targets:prerequisites.rename_false_alarm_max",
+   "value": "0.200"
+  },
+  {
+   "key": "plan/targets:diff.precision",
+   "value": "0.850"
+  },
+  {
+   "key": "plan/targets:diff.recall",
+   "value": "0.850"
+  },
+  {
+   "key": "plan/targets:bloom.accuracy",
+   "value": "0.700"
+  },
+  {
+   "key": "plan/targets:bloom.within_one",
+   "value": "0.850"
+  },
+  {
+   "key": "plan/targets:emerging.gap_precision",
+   "value": "0.700"
+  },
+  {
+   "key": "plan/targets:topics.accepted_share",
+   "value": "0.700"
+  },
+  {
+   "key": "dataset/split:fractions.train:.0%",
+   "value": "60%"
+  },
+  {
+   "key": "dataset/split:fractions.val:.0%",
+   "value": "20%"
+  },
+  {
+   "key": "dataset/split:fractions.test:.0%",
+   "value": "20%"
+  },
+  {
+   "key": "dataset/split:seed",
+   "value": "42"
+  }
+ ]
+}
