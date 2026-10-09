@@ -1,4 +1,4 @@
-"""Core logic with tiny synthetic inputs: curriculum diff, prerequisite checks, perturbations (no NMIMS data)."""
+"""Core logic with tiny synthetic inputs: curriculum diff, prerequisite checks, emerging list, perturbations (no NMIMS data)."""
 import json
 from collections import defaultdict
 from pathlib import Path
@@ -40,6 +40,12 @@ def test_prerequisite_check_flags_only_missing_course():
 def test_coverage_rule_skips_sparse_programmes():
     st = {"IBM": defaultdict(set, {1: {"a"}, 2: {"b"}})}
     assert not PQ.covered(st, {"IBM": 1}, "IBM", 3)
+
+
+def test_emerging_reference_has_sources_for_verified_topics():
+    ref = json.loads((Path(__file__).parents[1] / "curriculum_engine/emerging_topics.json").read_text(encoding="utf-8"))
+    for t in ref["topics"]:
+        assert (t["source"] in ref["sources"]) if t["verified"] else ("unverified" in t["note"])
 
 
 def test_perturbations_are_deterministic_and_bounded():
