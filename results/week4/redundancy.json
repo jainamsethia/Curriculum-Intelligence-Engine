@@ -1,0 +1,19 @@
+{
+ "method": "unit-level near-duplicates; encoder ablation",
+ "minilm": {
+  "threshold_from_val": 0.548,
+  "synthetic_injection": {
+   "cases": 60,
+   "recall_at_20": 1.0,
+   "detected_at_threshold": 1.0
+  }
+ },
+ "bge_base": {
+  "threshold_from_val": 0.7,
+  "synthetic_injection": {
+   "cases": 60,
+   "recall_at_20": 1.0,
+   "detected_at_threshold": 1.0
+  }
+ }
+}

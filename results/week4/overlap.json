@@ -1,0 +1,542 @@
+{
+ "n_val": 80,
+ "n_test": 119,
+ "methods": {
+  "tfidf_cosine": {
+   "val_spearman": 0.677,
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.708,
+     "ci95": [
+      0.618,
+      0.782
+     ]
+    },
+    "roc_auc": {
+     "value": 0.959,
+     "ci95": [
+      0.929,
+      0.984
+     ]
+    },
+    "avg_precision": {
+     "value": 0.912,
+     "ci95": [
+      0.843,
+      0.966
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.126,
+    "precision": 0.8,
+    "recall": 0.75,
+    "f1": 0.774,
+    "tp": 24,
+    "fp": 6,
+    "fn": 8,
+    "f1_ci95": [
+     0.666,
+     0.869
+    ]
+   },
+   "vs_core_spearman": {
+    "difference": 0.041,
+    "ci95": [
+     -0.027,
+     0.12
+    ],
+    "verdict": "no clear difference"
+   },
+   "vs_core_auc": {
+    "difference": 0.027,
+    "ci95": [
+     -0.018,
+     0.081
+    ],
+    "verdict": "no clear difference"
+   }
+  },
+  "maxsim_minilm": {
+   "val_spearman": 0.673,
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.667,
+     "ci95": [
+      0.552,
+      0.762
+     ]
+    },
+    "roc_auc": {
+     "value": 0.932,
+     "ci95": [
+      0.878,
+      0.972
+     ]
+    },
+    "avg_precision": {
+     "value": 0.864,
+     "ci95": [
+      0.755,
+      0.946
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.373,
+    "precision": 0.815,
+    "recall": 0.688,
+    "f1": 0.746,
+    "tp": 22,
+    "fp": 5,
+    "fn": 10,
+    "f1_ci95": [
+     0.585,
+     0.872
+    ]
+   },
+   "vs_core_spearman": {
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "verdict": "no clear difference"
+   },
+   "vs_core_auc": {
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "verdict": "no clear difference"
+   }
+  },
+  "meanpool_minilm": {
+   "val_spearman": 0.649,
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.606,
+     "ci95": [
+      0.456,
+      0.724
+     ]
+    },
+    "roc_auc": {
+     "value": 0.891,
+     "ci95": [
+      0.811,
+      0.955
+     ]
+    },
+    "avg_precision": {
+     "value": 0.828,
+     "ci95": [
+      0.688,
+      0.922
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.496,
+    "precision": 0.724,
+    "recall": 0.656,
+    "f1": 0.689,
+    "tp": 21,
+    "fp": 8,
+    "fn": 11,
+    "f1_ci95": [
+     0.531,
+     0.816
+    ]
+   },
+   "vs_core_spearman": {
+    "difference": -0.061,
+    "ci95": [
+     -0.133,
+     0.0
+    ],
+    "verdict": "no clear difference"
+   },
+   "vs_core_auc": {
+    "difference": -0.041,
+    "ci95": [
+     -0.093,
+     -0.0
+    ],
+    "verdict": "no clear difference"
+   }
+  },
+  "maxsim_bge_base": {
+   "val_spearman": 0.697,
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.676,
+     "ci95": [
+      0.572,
+      0.761
+     ]
+    },
+    "roc_auc": {
+     "value": 0.938,
+     "ci95": [
+      0.892,
+      0.976
+     ]
+    },
+    "avg_precision": {
+     "value": 0.874,
+     "ci95": [
+      0.783,
+      0.951
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 0.996,
+     "ci95": [
+      0.982,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.654,
+    "precision": 0.727,
+    "recall": 0.75,
+    "f1": 0.738,
+    "tp": 24,
+    "fp": 9,
+    "fn": 8,
+    "f1_ci95": [
+     0.61,
+     0.852
+    ]
+   },
+   "vs_core_spearman": {
+    "difference": 0.009,
+    "ci95": [
+     -0.07,
+     0.089
+    ],
+    "verdict": "no clear difference"
+   },
+   "vs_core_auc": {
+    "difference": 0.006,
+    "ci95": [
+     -0.046,
+     0.061
+    ],
+    "verdict": "no clear difference"
+   }
+  },
+  "max_unit_minilm": {
+   "val_spearman": 0.655,
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.708,
+     "ci95": [
+      0.595,
+      0.793
+     ]
+    },
+    "roc_auc": {
+     "value": 0.959,
+     "ci95": [
+      0.92,
+      0.987
+     ]
+    },
+    "avg_precision": {
+     "value": 0.909,
+     "ci95": [
+      0.811,
+      0.974
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 0.996,
+     "ci95": [
+      0.977,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.548,
+    "precision": 0.95,
+    "recall": 0.594,
+    "f1": 0.731,
+    "tp": 19,
+    "fp": 1,
+    "fn": 13,
+    "f1_ci95": [
+     0.564,
+     0.857
+    ]
+   },
+   "vs_core_spearman": {
+    "difference": 0.04,
+    "ci95": [
+     -0.003,
+     0.095
+    ],
+    "verdict": "no clear difference"
+   },
+   "vs_core_auc": {
+    "difference": 0.027,
+    "ci95": [
+     -0.002,
+     0.062
+    ],
+    "verdict": "no clear difference"
+   }
+  },
+  "fusion_rank_tfidf_maxsim": {
+   "val_spearman": 0.708,
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.715,
+     "ci95": [
+      0.619,
+      0.792
+     ]
+    },
+    "roc_auc": {
+     "value": 0.963,
+     "ci95": [
+      0.933,
+      0.986
+     ]
+    },
+    "avg_precision": {
+     "value": 0.915,
+     "ci95": [
+      0.835,
+      0.971
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.775,
+    "precision": 0.909,
+    "recall": 0.625,
+    "f1": 0.741,
+    "tp": 20,
+    "fp": 2,
+    "fn": 12,
+    "f1_ci95": [
+     0.583,
+     0.857
+    ]
+   },
+   "vs_core_spearman": {
+    "difference": 0.048,
+    "ci95": [
+     0.001,
+     0.105
+    ],
+    "verdict": "improved"
+   },
+   "vs_core_auc": {
+    "difference": 0.032,
+    "ci95": [
+     0.001,
+     0.071
+    ],
+    "verdict": "improved"
+   }
+  },
+  "fusion_logistic": {
+   "val_spearman": 0.678,
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.726,
+     "ci95": [
+      0.626,
+      0.806
+     ]
+    },
+    "roc_auc": {
+     "value": 0.971,
+     "ci95": [
+      0.94,
+      0.992
+     ]
+    },
+    "avg_precision": {
+     "value": 0.932,
+     "ci95": [
+      0.856,
+      0.981
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.251,
+    "precision": 0.917,
+    "recall": 0.688,
+    "f1": 0.786,
+    "tp": 22,
+    "fp": 2,
+    "fn": 10,
+    "f1_ci95": [
+     0.667,
+     0.885
+    ]
+   },
+   "vs_core_spearman": {
+    "difference": 0.058,
+    "ci95": [
+     0.019,
+     0.113
+    ],
+    "verdict": "improved"
+   },
+   "vs_core_auc": {
+    "difference": 0.039,
+    "ci95": [
+     0.012,
+     0.073
+    ],
+    "verdict": "improved"
+   }
+  }
+ },
+ "selected_on_validation": "fusion_rank_tfidf_maxsim",
+ "confidence_calibration_test": {
+  "brier": 0.138,
+  "ece": 0.213
+ },
+ "table": {
+  "columns": [
+   "Method",
+   "Val Spearman",
+   "Test Spearman",
+   "Δ Spearman vs core [95% CI]",
+   "Test ROC-AUC",
+   "Δ AUC vs core [95% CI]",
+   "Verdict"
+  ],
+  "rows": [
+   [
+    "TF-IDF cosine (Week 2)",
+    "0.677",
+    "0.708",
+    "+0.041 [-0.03, 0.12]",
+    "0.959",
+    "+0.027 [-0.02, 0.08]",
+    "no clear difference"
+   ],
+   [
+    "MaxSim, MiniLM (Week 3 core)",
+    "0.673",
+    "0.667",
+    "+0.000 [0.00, 0.00]",
+    "0.932",
+    "+0.000 [0.00, 0.00]",
+    "(core)"
+   ],
+   [
+    "Mean-pooled course vector, MiniLM",
+    "0.649",
+    "0.606",
+    "-0.061 [-0.13, 0.00]",
+    "0.891",
+    "-0.041 [-0.09, -0.00]",
+    "no clear difference"
+   ],
+   [
+    "MaxSim, bge-base encoder",
+    "0.697",
+    "0.676",
+    "+0.009 [-0.07, 0.09]",
+    "0.938",
+    "+0.006 [-0.05, 0.06]",
+    "no clear difference"
+   ],
+   [
+    "Best single unit pair, MiniLM",
+    "0.655",
+    "0.708",
+    "+0.040 [-0.00, 0.10]",
+    "0.959",
+    "+0.027 [-0.00, 0.06]",
+    "no clear difference"
+   ],
+   [
+    "Fusion: rank average TF-IDF + MaxSim",
+    "0.708",
+    "0.715",
+    "+0.048 [0.00, 0.10]",
+    "0.963",
+    "+0.032 [0.00, 0.07]",
+    "improved"
+   ],
+   [
+    "Fusion: logistic regression (probability)",
+    "0.678",
+    "0.726",
+    "+0.058 [0.02, 0.11]",
+    "0.971",
+    "+0.039 [0.01, 0.07]",
+    "improved"
+   ]
+  ]
+ }
+}

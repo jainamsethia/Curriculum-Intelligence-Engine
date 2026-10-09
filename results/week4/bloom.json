@@ -1,0 +1,56 @@
+{
+ "baseline": "verb lexicon (Week 2)",
+ "improved": "lexicon_then_learned_then_classifier",
+ "val_accuracy": {
+  "lexicon_then_learned_then_classifier": 0.789,
+  "learned_then_lexicon_then_classifier": 0.772
+ },
+ "lexicon": {
+  "accuracy": {
+   "value": 0.776,
+   "ci95": [
+    0.723,
+    0.829
+   ],
+   "n": 85
+  },
+  "within_one": {
+   "value": 0.871,
+   "ci95": [
+    0.804,
+    0.938
+   ],
+   "n": 85
+  },
+  "macro_f1": 0.756,
+  "n": 85
+ },
+ "improved_test": {
+  "accuracy": {
+   "value": 0.776,
+   "ci95": [
+    0.723,
+    0.829
+   ],
+   "n": 85
+  },
+  "within_one": {
+   "value": 0.871,
+   "ci95": [
+    0.804,
+    0.938
+   ],
+   "n": 85
+  },
+  "macro_f1": 0.756,
+  "n": 85
+ },
+ "vs_lexicon_accuracy": {
+  "difference": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "verdict": "no clear difference"
+ }
+}

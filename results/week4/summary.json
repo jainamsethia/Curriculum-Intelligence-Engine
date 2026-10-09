@@ -1,0 +1,54 @@
+{
+ "table": {
+  "columns": [
+   "Capability",
+   "Metric (test)",
+   "Week 2 baseline",
+   "Week 3 core",
+   "Week 4 improved",
+   "Verdict (95% CI of difference)"
+  ],
+  "rows": [
+   [
+    "1 Overlap",
+    "Spearman",
+    "0.708",
+    "0.667",
+    "0.715 (fusion_rank_tfidf_maxsim)",
+    "improved"
+   ],
+   [
+    "",
+    "ROC-AUC any overlap",
+    "0.959",
+    "0.932",
+    "0.963",
+    "improved"
+   ],
+   [
+    "2 Redundancy",
+    "injected found in top 20",
+    "0.600",
+    "1.000",
+    "1.000 (bge-base)",
+    "encoder ablation"
+   ],
+   [
+    "3 Prerequisites",
+    "removal recall / rename false alarm",
+    "1.000 / 1.000",
+    "0.880 / 0.120",
+    "Week 3 model kept",
+    "bge-base prerequisite re-tuning not run (time)"
+   ],
+   [
+    "5 Bloom",
+    "accuracy",
+    "0.776",
+    "0.776",
+    "0.776",
+    "no clear difference"
+   ]
+  ]
+ }
+}
