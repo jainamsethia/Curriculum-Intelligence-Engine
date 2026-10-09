@@ -1,0 +1,107 @@
+{
+ "week": 4,
+ "tag": "week-4-redo",
+ "commit": "4dbcadbe4823a344677897483b84dae37ce3bf2a",
+ "values": [
+  {
+   "key": "table:week4/summary:table",
+   "value": "{\"columns\": [\"Capability\", \"Metric (test)\", \"Week 2 baseline\", \"Week 3 core\", \"Week 4 improved\", \"Verdict (95% CI of difference)\"], \"rows\": [[\"1 Overlap\", \"Spearman\", \"0.708\", \"0.667\", \"0.715 (fusion_rank_tfidf_maxsim)\", \"improved\"], [\"\", \"ROC-AUC any overlap\", \"0.959\", \"0.932\", \"0.963\", \"improved\"], [\"2 Redundancy\", \"injected found in top 20\", \"0.600\", \"1.000\", \"1.000 (bge-base)\", \"encoder ablation\"], [\"3 Prerequisites\", \"removal recall / rename false alarm\", \"1.000 / 1.000\", \"0.880 / 0.120\", \"Week 3 model kept\", \"bge-base prerequisite re-tuning not run (time)\"], [\"5 Bloom\", \"accuracy\", \"0.776\", \"0.776\", \"0.776\", \"no clear difference\"]]}"
+  },
+  {
+   "key": "week4/overlap:n_test",
+   "value": "119"
+  },
+  {
+   "key": "week4/overlap:n_val",
+   "value": "80"
+  },
+  {
+   "key": "table:week4/overlap:table",
+   "value": "{\"columns\": [\"Method\", \"Val Spearman\", \"Test Spearman\", \"\u0394 Spearman vs core [95% CI]\", \"Test ROC-AUC\", \"\u0394 AUC vs core [95% CI]\", \"Verdict\"], \"rows\": [[\"TF-IDF cosine (Week 2)\", \"0.677\", \"0.708\", \"+0.041 [-0.03, 0.12]\", \"0.959\", \"+0.027 [-0.02, 0.08]\", \"no clear difference\"], [\"MaxSim, MiniLM (Week 3 core)\", \"0.673\", \"0.667\", \"+0.000 [0.00, 0.00]\", \"0.932\", \"+0.000 [0.00, 0.00]\", \"(core)\"], [\"Mean-pooled course vector, MiniLM\", \"0.649\", \"0.606\", \"-0.061 [-0.13, 0.00]\", \"0.891\", \"-0.041 [-0.09, -0.00]\", \"no clear difference\"], [\"MaxSim, bge-base encoder\", \"0.697\", \"0.676\", \"+0.009 [-0.07, 0.09]\", \"0.938\", \"+0.006 [-0.05, 0.06]\", \"no clear difference\"], [\"Best single unit pair, MiniLM\", \"0.655\", \"0.708\", \"+0.040 [-0.00, 0.10]\", \"0.959\", \"+0.027 [-0.00, 0.06]\", \"no clear difference\"], [\"Fusion: rank average TF-IDF + MaxSim\", \"0.708\", \"0.715\", \"+0.048 [0.00, 0.10]\", \"0.963\", \"+0.032 [0.00, 0.07]\", \"improved\"], [\"Fusion: logistic regression (probability)\", \"0.678\", \"0.726\", \"+0.058 [0.02, 0.11]\", \"0.971\", \"+0.039 [0.01, 0.07]\", \"improved\"]]}"
+  },
+  {
+   "key": "week4/overlap:selected_on_validation",
+   "value": "fusion_rank_tfidf_maxsim"
+  },
+  {
+   "key": "week4/overlap:methods.fusion_rank_tfidf_maxsim.test.spearman.value",
+   "value": "0.715"
+  },
+  {
+   "key": "week4/overlap:methods.fusion_rank_tfidf_maxsim.test.roc_auc.value",
+   "value": "0.963"
+  },
+  {
+   "key": "week4/overlap:methods.tfidf_cosine.test.spearman.value",
+   "value": "0.708"
+  },
+  {
+   "key": "week4/overlap:confidence_calibration_test.brier",
+   "value": "0.138"
+  },
+  {
+   "key": "week4/overlap:confidence_calibration_test.ece",
+   "value": "0.213"
+  },
+  {
+   "key": "week4/overlap:n_val",
+   "value": "80"
+  },
+  {
+   "key": "week4/redundancy:minilm.synthetic_injection.recall_at_20",
+   "value": "1.000"
+  },
+  {
+   "key": "week4/redundancy:bge_base.synthetic_injection.recall_at_20",
+   "value": "1.000"
+  },
+  {
+   "key": "week2/redundancy:synthetic_injection.recall_at_20",
+   "value": "0.600"
+  },
+  {
+   "key": "week4/bloom:improved",
+   "value": "lexicon_then_learned_then_classifier"
+  },
+  {
+   "key": "week4/bloom:improved_test.accuracy.value",
+   "value": "0.776"
+  },
+  {
+   "key": "week4/bloom:lexicon.accuracy.value",
+   "value": "0.776"
+  },
+  {
+   "key": "week4/bloom:vs_lexicon_accuracy.difference",
+   "value": "0.000"
+  },
+  {
+   "key": "week4/bloom:vs_lexicon_accuracy.ci95.0",
+   "value": "0.000"
+  },
+  {
+   "key": "week4/bloom:vs_lexicon_accuracy.ci95.1",
+   "value": "0.000"
+  },
+  {
+   "key": "week4/bloom:vs_lexicon_accuracy.verdict",
+   "value": "no clear difference"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:items",
+   "value": "200"
+  },
+  {
+   "key": "dataset/parse_stats:text_pdf",
+   "value": "531"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  }
+ ]
+}
