@@ -1,0 +1,143 @@
+{
+ "week": 5,
+ "tag": "week-5-redo",
+ "commit": "85f3791d2804d1fd1a55c371cd156e2121d902b7",
+ "values": [
+  {
+   "key": "week5/final:overlap.method",
+   "value": "fusion of TF-IDF and MaxSim (validation percentiles)"
+  },
+  {
+   "key": "week5/failures:n",
+   "value": "12"
+  },
+  {
+   "key": "week5/final:targets_met",
+   "value": "13"
+  },
+  {
+   "key": "week5/final:targets_total",
+   "value": "14"
+  },
+  {
+   "key": "week5/final:targets_missed",
+   "value": "1"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:items",
+   "value": "200"
+  },
+  {
+   "key": "table:week5/final:table",
+   "value": "{\"columns\": [\"Capability\", \"Metric (test split)\", \"Result\", \"Target\", \"Met?\"], \"rows\": [[\"1 Overlap\", \"Spearman\", \"0.717\", \">= 0.6\", \"yes\"], [\"\", \"ROC-AUC (any overlap)\", \"0.965\", \">= 0.85\", \"yes\"], [\"\", \"F1 at validation threshold\", \"0.731\", \">= 0.7\", \"yes\"], [\"2 Redundancy\", \"precision of top flags (reference labels)\", \"0.800\", \">= 0.7\", \"yes\"], [\"\", \"injected near-duplicates in top 20\", \"1.000\", \">= 0.8\", \"yes\"], [\"3 Prerequisites\", \"removal recall\", \"0.880\", \">= 0.8\", \"yes\"], [\"\", \"precision of flags (reference labels)\", \"0.100\", \">= 0.6\", \"no\"], [\"\", \"false alarms after renaming\", \"0.120\", \"<= 0.2\", \"yes\"], [\"4 Curriculum diff\", \"precision (real year pairs)\", \"0.998\", \">= 0.85\", \"yes\"], [\"\", \"recall (real year pairs)\", \"0.956\", \">= 0.85\", \"yes\"], [\"5 Bloom\", \"accuracy vs faculty tags\", \"0.776\", \">= 0.7\", \"yes\"], [\"\", \"within one level\", \"0.871\", \">= 0.85\", \"yes\"], [\"6 Emerging topics\", \"precision of flagged gaps\", \"1.000\", \">= 0.7\", \"yes\"], [\"7 Topic labels\", \"share accepted\", \"0.700\", \">= 0.7\", \"yes\"]]}"
+  },
+  {
+   "key": "week5/final:overlap.test.spearman.value",
+   "value": "0.717"
+  },
+  {
+   "key": "week5/final:overlap.test.spearman.ci95.0",
+   "value": "0.624"
+  },
+  {
+   "key": "week5/final:overlap.test.spearman.ci95.1",
+   "value": "0.794"
+  },
+  {
+   "key": "week5/final:overlap.test.roc_auc.value",
+   "value": "0.965"
+  },
+  {
+   "key": "week5/final:overlap.test.roc_auc.ci95.0",
+   "value": "0.937"
+  },
+  {
+   "key": "week5/final:overlap.test.roc_auc.ci95.1",
+   "value": "0.987"
+  },
+  {
+   "key": "week5/final:overlap.test.n",
+   "value": "119"
+  },
+  {
+   "key": "week5/final:overlap.at_val_threshold.precision",
+   "value": "0.950"
+  },
+  {
+   "key": "week5/final:overlap.at_val_threshold.recall",
+   "value": "0.594"
+  },
+  {
+   "key": "table:week5/per_programme:table",
+   "value": "{\"columns\": [\"Programme\", \"Labelled pairs\", \"Overlap ROC-AUC\", \"Tagged outcomes\", \"Bloom accuracy\", \"Prerequisite cases\", \"Removal recall\"], \"rows\": [[\"AI\", 4, \"n/a\", 23, \"0.696\", 1, \"1.000\"], [\"CIVIL\", 15, \"1.000\", 19, \"0.842\", 16, \"1.000\"], [\"COMMON\", 0, \"n/a\", 3, \"1.000\", 0, \"n/a\"], [\"COMP\", 14, \"0.950\", 26, \"0.692\", 9, \"1.000\"], [\"CSBS\", 26, \"0.990\", 13, \"0.692\", 12, \"0.833\"], [\"CSE-CYBER\", 8, \"1.000\", 18, \"0.722\", 2, \"1.000\"], [\"CSE-DS\", 18, \"0.944\", 18, \"0.778\", 5, \"0.800\"], [\"DS\", 19, \"0.960\", 40, \"0.775\", 3, \"1.000\"], [\"ELECTRICAL\", 4, \"n/a\", 0, \"n/a\", 0, \"n/a\"], [\"EXTC\", 20, \"0.933\", 35, \"0.743\", 10, \"0.800\"], [\"IT\", 14, \"0.875\", 23, \"0.696\", 2, \"1.000\"], [\"MECHANICAL\", 36, \"0.975\", 14, \"0.857\", 14, \"0.714\"], [\"MECHATRONICS\", 15, \"1.000\", 14, \"0.857\", 9, \"0.889\"]]}"
+  },
+  {
+   "key": "week5/sensitivity:test_f1_at_chosen",
+   "value": "0.731"
+  },
+  {
+   "key": "week5/sensitivity:best_test_f1_any_threshold",
+   "value": "0.836"
+  },
+  {
+   "key": "week4/overlap:n_val",
+   "value": "80"
+  },
+  {
+   "key": "table:week5/robustness:table",
+   "value": "{\"columns\": [\"Perturbation\", \"Pairs\", \"Spearman fusion of TF-IDF and MaxSim (validation percentiles)\", \"Spearman TF-IDF\", \"ROC-AUC fusion of TF-IDF and MaxSim (validation percentiles)\", \"ROC-AUC TF-IDF\"], \"rows\": [[\"typos\", 119, \"0.717 \u2192 0.717\", \"0.708 \u2192 0.709\", \"0.965 \u2192 0.965\", \"0.959 \u2192 0.959\"], [\"word drop\", 119, \"0.717 \u2192 0.706\", \"0.708 \u2192 0.702\", \"0.965 \u2192 0.958\", \"0.959 \u2192 0.955\"], [\"shuffled units\", 119, \"0.717 \u2192 0.717\", \"0.708 \u2192 0.709\", \"0.965 \u2192 0.965\", \"0.959 \u2192 0.959\"], [\"truncated half\", 119, \"0.717 \u2192 0.692\", \"0.708 \u2192 0.686\", \"0.965 \u2192 0.948\", \"0.959 \u2192 0.944\"], [\"missing sections\", 119, \"0.717 \u2192 0.707\", \"0.708 \u2192 0.666\", \"0.965 \u2192 0.958\", \"0.959 \u2192 0.931\"]]}"
+  },
+  {
+   "key": "week5/robustness:self_similarity_median.typos",
+   "value": "1.000"
+  },
+  {
+   "key": "week5/robustness:self_similarity_median.truncated_half",
+   "value": "0.988"
+  },
+  {
+   "key": "week5/failures:selection_rules",
+   "value": "that pass the threshold and the three lowest-scoring overlapping pairs below it; the first three prerequisite flags, two redundancy\n    flags and one emerging-topic gap the reference labels call wrong; the first topic the detector calls covered although the labels\n    see a gap; and the two Bloom errors furthest from the faculty tag. Root causes and fixes: reports/failure_notes.json."
+  },
+  {
+   "key": "table:week5/failures:table",
+   "value": "{\"columns\": [\"#\", \"Type\", \"Input\", \"Prediction / truth\", \"Category\", \"Root cause\", \"Fix or known limitation\"], \"rows\": [[\"F01\", \"overlap false positive\", \"Computer Networks vs Cloud Computing\", \"score 0.781 (threshold 0.775) / no overlap\", \"shared vocabulary, different subject\", \"Both syllabi use networking-layer vocabulary (layers, protocols, services, virtualisation), so lexical and semantic scores pass the threshold although the subjects differ.\", \"Weight matches by distinctive topic terms and require several matched units, not one high course score.\"], [\"F02\", \"overlap false negative\", \"Unmanned Aerial Vehicles vs Engineering Mechanics\", \"score 0.569 (threshold 0.775) / partial overlap\", \"one shared unit diluted\", \"Only one unit-level topic (rigid-body dynamics) is shared inside otherwise different courses, so the whole-course score stays below the threshold.\", \"Report partial overlap from the unit-level detector (best unit pair) instead of the course score.\"], [\"F03\", \"overlap false negative\", \"Cybersecurity for Non-IT vs Foundation of Information systems\", \"score 0.594 (threshold 0.775) / partial overlap\", \"one shared unit diluted\", \"One security unit is shared; the rest of each course (IS strategy vs cryptography, IAM) pulls the course score down.\", \"Same as above: unit-level evidence for partial overlap.\"], [\"F04\", \"overlap false negative\", \"Cognitive Science & Analytics vs Advanced Business Analytics in Python and R\", \"score 0.600 (threshold 0.775) / partial overlap\", \"one shared unit diluted\", \"Shared statistics topics (hypothesis testing, ANOVA) are phrased differently and sit inside larger, different courses.\", \"Unit-level evidence; a domain-adapted encoder for statistics wording.\"], [\"F05\", \"prerequisite flag judged wrong\", \"Open Elective - I (BSC) - Fundamentals of Fuels and Lubricants (CIVIL) needs 'Chemistry (Semester- II)'\", \"flagged as missing / reference labels: warning is wrong\", \"noisy prerequisite text\", \"The phrase keeps '(Semester- II)' and the first-year chemistry course has a different name, so neither the name nor the topic match passes.\", \"Strip semester and code annotations from phrases; link common first-year courses to every programme explicitly.\"], [\"F06\", \"prerequisite flag judged wrong\", \"Open Elective - I (BSC) - Modelling and Simulation (CIVIL) needs 'Engineering Mathematics'\", \"flagged as missing / reference labels: warning is wrong\", \"umbrella prerequisite name\", \"'Engineering Mathematics' names a group of courses (Calculus, Linear Algebra, Mathematics - III); it resolves to a same-named course of another programme that Civil does not offer.\", \"A small ontology of umbrella subjects mapped to their member courses.\"], [\"F07\", \"prerequisite flag judged wrong\", \"Remote Sensing, GIS and Data Science Applications in Environmental Management (CIVIL) needs 'geography'\", \"flagged as missing / reference labels: warning is wrong\", \"not a course subject\", \"A background phrase ('geography') is treated as a required course; no earlier unit is close enough to it.\", \"Classify phrases as subject or background before checking (e.g. the LLM extractor).\"], [\"F08\", \"redundancy flag judged wrong\", \"Design of Reinforced Concrete Structures vs Design of Steel Structures\", \"flagged as redundant / reference labels: warning is wrong\", \"same method, different object\", \"Both courses teach limit-state design, so the unit texts share method vocabulary although the material differs (concrete vs steel).\", \"Require overlap of the domain nouns, or a stricter duplicate threshold for design units.\"], [\"F09\", \"redundancy flag judged wrong\", \"Introduction to Cryptography vs Elliptic Curve Cryptography\", \"flagged as redundant / reference labels: warning is wrong\", \"same topic, different depth\", \"Public-key cryptography appears in both, as a survey in one and in depth in the other; the unit score cannot see depth.\", \"Compare hours and outcome levels of matched units; report as partial, not redundant.\"], [\"F10\", \"missed emerging-topic gap\", \"'Large language models and generative AI' in programme CSBS\", \"judged as already taught / reference labels: a real gap\", \"lenient threshold\", \"The topic threshold reused from the prerequisite check lets weakly related units (code generation, RNNs) count as coverage.\", \"Tune a separate threshold for emerging topics on labelled checks; this also explains the low gap recall.\"], [\"F11\", \"Bloom level error\", \"Apply, Deploy, and Manage the applications efficiently while evaluating and integrating best practices in real-world sce\", \"Apply / faculty tag Create\", \"multi-verb outcome\", \"The lexicon takes the first known verb ('apply'), but the outcome also asks to evaluate and integrate, which the faculty tag as Create.\", \"Use the highest-level verb, or the classifier, when an outcome has several verbs.\"], [\"F12\", \"Bloom level error\", \"Construct the curves using surveying instruments\", \"Create / faculty tag Apply\", \"domain-specific verb sense\", \"'Construct' is Create in Bloom verb lists, but constructing survey curves is a practical skill the faculty tag as Apply.\", \"A domain-specific verb map learned from faculty tags (needs more tagged outcomes).\"]]}"
+  },
+  {
+   "key": "dataset/parse_stats:text_pdf",
+   "value": "531"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  },
+  {
+   "key": "week2/labels:pass2_by.phi3",
+   "value": "106"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_phi3.percent_agreement:.0%",
+   "value": "74%"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_phi3.cohen_kappa",
+   "value": "0.561"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_claude.percent_agreement:.0%",
+   "value": "99%"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_claude.cohen_kappa",
+   "value": "0.969"
+  }
+ ]
+}
