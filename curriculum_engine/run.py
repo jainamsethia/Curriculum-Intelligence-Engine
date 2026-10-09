@@ -7,6 +7,7 @@
 Environment: NMIMS_ZIP (default ./B TECH.zip), CE_DATA_DIR (default ./data; NMIMS-derived, never committed).
 """
 import json, sys
+from pathlib import Path
 from collections import Counter
 
 from curriculum_engine import RESULTS, SEED
@@ -51,7 +52,8 @@ def step_week(n):
     return fn
 
 
-STEPS = {"data": step_data, "week2": step_week(2), "week3": step_week(3), "week4": step_week(4), "week5": step_week(5)}
+STEPS = {"data": step_data, **{f"week{n}": step_week(n) for n in range(2, 9)
+                                 if (Path(__file__).parent / f"experiments/week{n}.py").exists()}}      # the weeks present in this commit
 
 
 def main(target):
