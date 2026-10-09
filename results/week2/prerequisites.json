@@ -1,0 +1,95 @@
+{
+ "method": "regex split + exact course-name match",
+ "programmes_checked": [
+  "AI",
+  "CIVIL",
+  "COMP",
+  "CSBS",
+  "CSE-CYBER",
+  "CSE-DS",
+  "DS",
+  "EXTC",
+  "IT",
+  "MECHANICAL",
+  "MECHATRONICS"
+ ],
+ "course_programme_pairs_checked": 141,
+ "phrases_checked": 228,
+ "flags": 136,
+ "flags_by_type": {
+  "unresolved": 126,
+  "not_offered_earlier": 10
+ },
+ "flag_rate_per_phrase": 0.596,
+ "examples": [
+  {
+   "programme": "AI",
+   "course": "Blockchain Technology",
+   "semester": 5,
+   "phrase": "Programming (Java",
+   "type": "unresolved"
+  },
+  {
+   "programme": "AI",
+   "course": "Blockchain Technology",
+   "semester": 5,
+   "phrase": "Python)",
+   "type": "unresolved"
+  },
+  {
+   "programme": "CIVIL",
+   "course": "Hydrogeology and Groundwater Modelling",
+   "semester": 5,
+   "phrase": "Fluid Mechanics",
+   "type": "not_offered_earlier"
+  },
+  {
+   "programme": "CIVIL",
+   "course": "Hydrogeology and Groundwater Modelling",
+   "semester": 5,
+   "phrase": "Hydraulics",
+   "type": "unresolved"
+  },
+  {
+   "programme": "CIVIL",
+   "course": "Workshop on Building Planning and Design",
+   "semester": 4,
+   "phrase": "Building Design",
+   "type": "unresolved"
+  },
+  {
+   "programme": "CIVIL",
+   "course": "Workshop on Building Planning and Design",
+   "semester": 4,
+   "phrase": "Drawing",
+   "type": "unresolved"
+  }
+ ],
+ "tests": {
+  "cases": 83,
+  "removal_recall": {
+   "value": 1.0,
+   "ci95": [
+    1.0,
+    1.0
+   ],
+   "n": 83
+  },
+  "intact_false_alarm": {
+   "value": 0.47,
+   "ci95": [
+    0.341,
+    0.595
+   ],
+   "n": 83
+  },
+  "rename_false_alarm": {
+   "value": 1.0,
+   "ci95": [
+    1.0,
+    1.0
+   ],
+   "n": 83
+  }
+ }
+}

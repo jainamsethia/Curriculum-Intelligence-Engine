@@ -1,0 +1,63 @@
+{
+ "file": "labels/pairs_llm.csv",
+ "items": 200,
+ "pass2_by": {
+  "phi3": 106,
+  "claude_b": 94
+ },
+ "agreement_claude_vs_phi3": {
+  "n_items": 106,
+  "n_both_labelled": 106,
+  "percent_agreement": 0.736,
+  "cohen_kappa": 0.561,
+  "kappa_weights": "quadratic",
+  "status": {
+   "agreed": 78,
+   "majority": 27,
+   "uncertain": 1
+  },
+  "consensus": {
+   "0": 68,
+   "1": 31,
+   "2": 6
+  }
+ },
+ "agreement_claude_vs_claude": {
+  "n_items": 94,
+  "n_both_labelled": 94,
+  "percent_agreement": 0.989,
+  "cohen_kappa": 0.969,
+  "kappa_weights": "quadratic",
+  "status": {
+   "agreed": 93,
+   "majority": 1
+  },
+  "consensus": {
+   "0": 80,
+   "1": 13,
+   "2": 1
+  }
+ },
+ "resolved_by_pass3": 28,
+ "uncertain_excluded": 1,
+ "by_split": {
+  "val": {
+   "0": 61,
+   "1": 14,
+   "2": 5
+  },
+  "test": {
+   "0": 87,
+   "1": 30,
+   "2": 2
+  }
+ },
+ "strata": {
+  "high": 60,
+  "mid": 60,
+  "disagreement": 20,
+  "near_name": 20,
+  "low": 20,
+  "random": 20
+ }
+}

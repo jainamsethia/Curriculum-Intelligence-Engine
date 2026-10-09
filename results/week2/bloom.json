@@ -1,0 +1,48 @@
+{
+ "method": "hand-written verb lexicon (majority level when no verb matches)",
+ "train_outcomes": 184,
+ "val_outcomes": 57,
+ "test_outcomes": 85,
+ "verb_found_share": 0.965,
+ "majority_level": "Apply",
+ "lexicon": {
+  "accuracy": {
+   "value": 0.776,
+   "ci95": [
+    0.723,
+    0.829
+   ],
+   "n": 85
+  },
+  "within_one": {
+   "value": 0.871,
+   "ci95": [
+    0.804,
+    0.938
+   ],
+   "n": 85
+  },
+  "macro_f1": 0.756,
+  "n": 85
+ },
+ "majority_class": {
+  "accuracy": {
+   "value": 0.306,
+   "ci95": [
+    0.203,
+    0.42
+   ],
+   "n": 85
+  },
+  "within_one": {
+   "value": 0.753,
+   "ci95": [
+    0.641,
+    0.86
+   ],
+   "n": 85
+  },
+  "macro_f1": 0.078,
+  "n": 85
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "table": {
+  "columns": [
+   "Capability",
+   "Method",
+   "Metric (test split)",
+   "Result"
+  ],
+  "rows": [
+   [
+    "1 Overlap",
+    "TF-IDF cosine",
+    "Spearman [95% CI]",
+    "0.708 [0.62, 0.78]"
+   ],
+   [
+    "",
+    "",
+    "ROC-AUC any overlap [95% CI]",
+    "0.959 [0.93, 0.98]"
+   ],
+   [
+    "",
+    "",
+    "F1 at validation threshold",
+    "0.774"
+   ],
+   [
+    "2 Redundancy",
+    "course-level TF-IDF cosine within a programme",
+    "injected near-duplicates found in top 20",
+    "0.600"
+   ],
+   [
+    "3 Prerequisites",
+    "regex split + exact course-name match",
+    "removal recall [95% CI]",
+    "1.000 [1.00, 1.00]"
+   ],
+   [
+    "",
+    "",
+    "false alarms, intact programme",
+    "0.470 [0.34, 0.59]"
+   ],
+   [
+    "",
+    "",
+    "false alarms after renaming the course",
+    "1.000 [1.00, 1.00]"
+   ],
+   [
+    "4 Curriculum diff",
+    "exact course-name set difference",
+    "precision / recall of changes",
+    "0.990 / 1.000"
+   ],
+   [
+    "",
+    "",
+    "precision / recall with renamed courses",
+    "0.793 / 1.000"
+   ],
+   [
+    "5 Bloom level",
+    "hand-written verb lexicon (majority level when no verb matches)",
+    "accuracy [95% CI]",
+    "0.776 [0.72, 0.83]"
+   ],
+   [
+    "",
+    "",
+    "within one level / macro-F1",
+    "0.871 / 0.756"
+   ]
+  ]
+ }
+}

@@ -20,11 +20,14 @@ from build_report import PH, ROOT, fmt, lookup  # noqa: E402
 
 REQUIRED = ["LLM-annotated reference labels", "No human annotators were used; results are indicative.",
             "semester syllabus booklets", "OCR"]
+FLAG_DISCLOSURE = ("flags (Week 3 onwards) were labelled by two Claude passes with different wording plus a pass 3, with no Phi-3, "
+                   "so agreement on flags is not independent")
+ONLY_AS = [(r"paraphras", "paraphrase variant not run (time)"), (r"bge-base prerequisite", "bge-base prerequisite re-tuning not run (time)")]
 FORBIDDEN = [r"human gold", r"human kappa", r"course[- ]policy", r"\bgold (?:set|labels?|standard)\b", r"Fleiss"]
 ALLOWED_DIGITS = re.compile(
     r"95\s?%|^\|\s*\d+\s*\||capabilit(?:y|ies) \d(?:\s?[–-]\s?\d)?|Week\s?\d|Weeks? \d(?:\s?[–-]\s?\d)?|J0\d\d|Groups? \d+(?:\s?/\s?\d+)?|20\d\d(?:[-–/]\d\d)?|\b[KL][1-6]\b|K1[–-]K6|L1[–-]L6|Phi-3|"
     r"v\d+(?:\.\d+)*|MiniLM-L\d+|bge-\w+-en-v\d\.\d|[A-Za-z]+\d+[A-Za-z]*|\b\d{1,2} (?:Sep|Oct|Nov)\b|\b[0-2]\s?=|\b0/1/2\b|"
-    r"\bpass(?:es)? \d(?:[–-]\d)?\b|\bPass \d\b|\b\d(?:st|nd|rd|th)\b|\btop-?\d+\b|@\d+|\bCapability \d\b|\bcaps? \d(?:[–-]\d)?\b|"
+    r"\bpass(?:es)? \d(?:[–-]\d)?\b|\bPass \d\b|\b\d(?:st|nd|rd|th)\b|\btop[- ]?\d+\b|\b0 / 1 / 2\b|@\d+|\bCapability \d\b|\bcaps? \d(?:[–-]\d)?\b|"
     r"\b[1-7]\.\s|\(\d\)|±1|2-of-3|\b5 members\b|section \d", re.I)
 
 
@@ -77,7 +80,13 @@ def check(paths):
                 errs.append(f"{p.name}: {k} differs between reports ({seen[k]!r} vs {v!r})")
         if "{{" in text:
             errs.append(f"{p.name}: unresolved placeholder")
-        for r in REQUIRED + [coverage]:
+        labels = lookup("week2/labels", "")
+        split_sentence = (f"For {fmt(labels['pass2_by']['claude_b'], '')} of {fmt(labels['items'], '')} pairs the second labeller was a Claude prompt "
+                          "rather than Phi-3, so agreement on those items is not independent.")
+        for k, allowed in ONLY_AS:                  # skipped analyses may only appear as "not run"
+            if len(re.findall(k, flat, re.I)) != flat.count(allowed):
+                errs.append(f"{p.name}: mentions /{k}/ other than as {allowed!r}")
+        for r in REQUIRED + [coverage, split_sentence, FLAG_DISCLOSURE]:
             if r not in flat:
                 errs.append(f"{p.name}: missing required wording {r!r}")
         for r in FORBIDDEN:
