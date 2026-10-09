@@ -14,6 +14,7 @@ maps learning outcomes to Bloom's taxonomy, and flags emerging-topic gaps. Every
 | 3 | Core NLP model | `week-3-redo` | `submissions/week3/` |
 | 4 | Improved model | `week-4-redo` | `submissions/week4/` |
 | 5 | Evaluation & error analysis | `week-5-redo` | `submissions/week5/` |
+| 1–5 | Final bundle (all five reports from one commit) | `week-5-redo` | `submissions/week5_bundle/` |
 
 The first versions of Weeks 2–4 (MIT OpenCourseWare data, then an early NMIMS parser) are kept for history in `legacy/` and
 `legacy_mit/` (tag `pre-redo`). None of their numbers are reused.
@@ -50,7 +51,12 @@ submissions/week<N>/ report, SUBMIT.md (the code zip is built with git archive, 
 ```
 
 ## Labels and AI assistance
-Evaluation uses **LLM-annotated reference labels**: each item is labelled in independent passes with different prompt wordings
-(a Claude model in a fresh context, then Phi-3 locally), without model scores; disagreements get a third pass and items without a
-2-of-3 majority are excluded. **No human annotators were used; results are indicative.** Agreement is reported as LLM-vs-LLM
-agreement. `labels/human_spot_check.csv` lets team members check a sample later. Code and reports were written with AI assistance (Claude).
+Evaluation uses **LLM-annotated reference labels** (`labels/`). **No human annotators were used; results are indicative.**
+- 200 stratified course pairs: pass 1 Claude (wording A, fresh context, no model scores); pass 2 Phi-3 (local, Ollama) for PR001-PR106
+  and a second Claude prompt (wording B) for PR107-PR200; pass 3 Claude (wording C) on the 29 disagreements; 2-of-3 majority,
+  1 item excluded as uncertain. Agreement is reported separately per subset; the Claude-vs-Claude subset is not independent.
+- 187 detector flags (Week 3): two Claude passes with different wording plus a pass 3, no Phi-3, so agreement on flags is not independent.
+- `labels/human_spot_check.csv`: 10 pairs per team member for optional checking later.
+- Not run (time), listed as future work: the paraphrase variant of the robustness tests; bge-base prerequisite re-tuning.
+
+Code and reports were written with AI assistance (Claude).
