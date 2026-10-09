@@ -45,7 +45,7 @@ Folders    :
 
 ## 4. Findings and limitations
 - Unit-level semantics help where the committee needs help: one repeated unit inside otherwise different courses (redundancy), renamed courses (diff, prerequisite false alarms). They do not beat TF-IDF at ranking whole courses, and missing-prerequisite flags are still mostly wrong, which Week 5 analyses.
-- Prerequisite checks depend on the programme structure, which has gaps where booklets are scanned ({{dataset/parse_stats:text_pdf}} of {{dataset/parse_stats:pdfs_considered}} non-exam PDFs parsed); programmes with little data are skipped. OCR is future work.
+- Prerequisite checks depend on the programme structure built from the NMIMS semester syllabus booklets, which has gaps where booklets are scanned ({{dataset/parse_stats:text_pdf}} of {{dataset/parse_stats:pdfs_considered}} non-exam PDFs parsed); programmes with little data are skipped. OCR is future work.
 - Labels are LLM-annotated reference labels; the label-free tests (injection, removal, renaming) do not depend on them.
 - Week 4: encoder and aggregation ablations, score fusion and calibrated confidence, Bloom classifier, with paired confidence intervals.
 
