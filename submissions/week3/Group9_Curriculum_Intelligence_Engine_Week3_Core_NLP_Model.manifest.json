@@ -1,0 +1,223 @@
+{
+ "week": 3,
+ "tag": "week-3-redo",
+ "commit": "2d41ffa154bd37c4217c20468f7c8d07d4f7463b",
+ "values": [
+  {
+   "key": "table:week3/summary:progress",
+   "value": "{\"columns\": [\"Capability\", \"Metric (test split)\", \"Week 2 baseline\", \"Week 3 core\"], \"rows\": [[\"1 Overlap\", \"Spearman [95% CI]\", \"0.708 [0.62, 0.78]\", \"0.667 [0.55, 0.76]\"], [\"\", \"ROC-AUC any overlap [95% CI]\", \"0.959 [0.93, 0.98]\", \"0.932 [0.88, 0.97]\"], [\"\", \"F1 at validation threshold\", \"0.774\", \"0.746\"], [\"2 Redundancy\", \"injected near-duplicates found in top 20\", \"0.600\", \"1.000\"], [\"3 Prerequisites\", \"removal recall [95% CI]\", \"1.000 [1.00, 1.00]\", \"0.880 [0.80, 0.95]\"], [\"\", \"false alarms, intact programme\", \"0.470 [0.34, 0.59]\", \"0.036 [0.00, 0.08]\"], [\"\", \"false alarms after renaming the course\", \"1.000 [1.00, 1.00]\", \"0.120 [0.06, 0.20]\"], [\"4 Curriculum diff\", \"precision / recall of changes\", \"0.990 / 1.000\", \"0.998 / 0.956\"], [\"\", \"precision / recall with renamed courses\", \"0.793 / 1.000\", \"0.993 / 0.956\"], [\"5 Bloom level\", \"accuracy [95% CI]\", \"0.776 [0.72, 0.83]\", \"0.776 [0.72, 0.83]\"], [\"\", \"within one level / macro-F1\", \"0.871 / 0.756\", \"0.871 / 0.756\"], [\"2 Redundancy\", \"precision of flags (reference labels, sample of 20)\", \"0.250\", \"0.800\"], [\"3 Prerequisites\", \"precision of flags (reference labels, sample of 20)\", \"0.050\", \"0.100\"], [\"6 Emerging topics\", \"precision of flagged gaps\", \"-\", \"1.000\"], [\"7 Topic labels\", \"share of labels accepted\", \"-\", \"0.700\"]]}"
+  },
+  {
+   "key": "week3/thresholds:unit_match",
+   "value": "0.550"
+  },
+  {
+   "key": "week3/thresholds:unit_duplicate:.3f",
+   "value": "0.548"
+  },
+  {
+   "key": "week3/thresholds:prereq_resolve",
+   "value": "0.750"
+  },
+  {
+   "key": "week3/thresholds:prereq_topic",
+   "value": "0.400"
+  },
+  {
+   "key": "week3/topics:k",
+   "value": "40"
+  },
+  {
+   "key": "week3/emerging:verified_topics",
+   "value": "21"
+  },
+  {
+   "key": "week3/emerging:gaps",
+   "value": "5"
+  },
+  {
+   "key": "week3/emerging:pairs_checked",
+   "value": "67"
+  },
+  {
+   "key": "table:week3/overlap:table",
+   "value": "{\"columns\": [\"Method\", \"Spearman [95% CI]\", \"ROC-AUC [95% CI]\", \"Avg. precision\", \"P / R / F1 at val threshold\"], \"rows\": [[\"TF-IDF cosine (Week 2 baseline)\", \"0.708 [0.62, 0.78]\", \"0.959 [0.93, 0.98]\", \"0.912\", \"0.800 / 0.750 / 0.774\"], [\"Chunk MaxSim, soft (core)\", \"0.667 [0.55, 0.76]\", \"0.932 [0.88, 0.97]\", \"0.864\", \"0.815 / 0.688 / 0.746\"], [\"Chunk MaxSim, unit coverage F\", \"0.705 [0.56, 0.83]\", \"0.794 [0.70, 0.89]\", \"0.698\", \"0.944 / 0.531 / 0.680\"]]}"
+  },
+  {
+   "key": "week3/overlap:methods.maxsim_soft.test.spearman.value",
+   "value": "0.667"
+  },
+  {
+   "key": "week3/overlap:methods.tfidf_cosine.test.spearman.value",
+   "value": "0.708"
+  },
+  {
+   "key": "week3/overlap:methods.maxsim_soft.test.roc_auc.value",
+   "value": "0.932"
+  },
+  {
+   "key": "week3/overlap:methods.tfidf_cosine.test.roc_auc.value",
+   "value": "0.959"
+  },
+  {
+   "key": "week3/overlap:version_pairs.n",
+   "value": "359"
+  },
+  {
+   "key": "week3/overlap:version_pairs.maxsim_median",
+   "value": "1.000"
+  },
+  {
+   "key": "week3/overlap:version_pairs.cross_course_median_by_label.2",
+   "value": "0.702"
+  },
+  {
+   "key": "week3/redundancy:synthetic_injection.recall_at_20:.0%",
+   "value": "100%"
+  },
+  {
+   "key": "week2/redundancy:synthetic_injection.recall_at_20:.0%",
+   "value": "60%"
+  },
+  {
+   "key": "week3/redundancy:flags_test",
+   "value": "114"
+  },
+  {
+   "key": "week3/prerequisites:tests.removal_recall.value",
+   "value": "0.880"
+  },
+  {
+   "key": "week2/prerequisites:tests.removal_recall.value",
+   "value": "1.000"
+  },
+  {
+   "key": "week3/prerequisites:tests.intact_false_alarm.value",
+   "value": "0.036"
+  },
+  {
+   "key": "week2/prerequisites:tests.intact_false_alarm.value",
+   "value": "0.470"
+  },
+  {
+   "key": "week3/prerequisites:tests.rename_false_alarm.value",
+   "value": "0.120"
+  },
+  {
+   "key": "week2/prerequisites:tests.rename_false_alarm.value",
+   "value": "1.000"
+  },
+  {
+   "key": "week3/prerequisites:flags",
+   "value": "33"
+  },
+  {
+   "key": "week2/prerequisites:flags",
+   "value": "136"
+  },
+  {
+   "key": "week2/diff:rename_test.precision",
+   "value": "0.793"
+  },
+  {
+   "key": "week3/diff:rename_test.precision",
+   "value": "0.993"
+  },
+  {
+   "key": "week3/diff:precision",
+   "value": "0.998"
+  },
+  {
+   "key": "week3/flag_precision:redundancy.core.flags_labelled",
+   "value": "20"
+  },
+  {
+   "key": "week3/flag_precision:redundancy.baseline.precision",
+   "value": "0.250"
+  },
+  {
+   "key": "week3/flag_precision:redundancy.core.precision",
+   "value": "0.800"
+  },
+  {
+   "key": "week3/flag_precision:prerequisite.core.flags_labelled",
+   "value": "20"
+  },
+  {
+   "key": "week3/flag_precision:prerequisite.baseline.precision",
+   "value": "0.050"
+  },
+  {
+   "key": "week3/flag_precision:prerequisite.core.precision",
+   "value": "0.100"
+  },
+  {
+   "key": "week3/flag_precision:emerging_gap.core.flags_labelled",
+   "value": "5"
+  },
+  {
+   "key": "week3/flag_precision:emerging_gap.core.precision",
+   "value": "1.000"
+  },
+  {
+   "key": "week3/flag_precision:emerging_gap_recall:.0%",
+   "value": "11%"
+  },
+  {
+   "key": "week3/flag_precision:emerging_real_gaps",
+   "value": "46"
+  },
+  {
+   "key": "week3/flag_precision:topic_label.core.precision:.0%",
+   "value": "70%"
+  },
+  {
+   "key": "week3/flag_precision:agreement_pass1_vs_pass2.percent_agreement:.0%",
+   "value": "97%"
+  },
+  {
+   "key": "week2/labels:pass2_by.phi3",
+   "value": "106"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_phi3.percent_agreement:.0%",
+   "value": "74%"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_phi3.cohen_kappa",
+   "value": "0.561"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_claude.percent_agreement:.0%",
+   "value": "99%"
+  },
+  {
+   "key": "week2/labels:agreement_claude_vs_claude.cohen_kappa",
+   "value": "0.969"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:items",
+   "value": "200"
+  },
+  {
+   "key": "json:week3/examples:excerpt",
+   "value": "{\"common_topics\": [{\"similarity\": 1.0, \"topic_a\": \"Designing the Supply Chain Network\", \"topic_b\": \"Designing the Supply Chain Network\", \"topic_label\": \"marketing, supply chain, customer\"}, {\"similarity\": 0.961, \"topic_a\": \"Warehouse and Transportation Management\", \"topic_b\": \"Warehouse and Transportation Management\", \"topic_label\": \"waste, industrial, quality\"}, {\"similarity\": 0.943, \"topic_a\": \"Building a Strategic Frame Work to Analyze Supply Chain\", \"topic_b\": \"Building a Strategic Framework to Analyze Supply Chain\", \"topic_label\": \"marketing, supply chain, customer\"}, {\"similarity\": 0.692, \"topic_a\": \"Supply chain Analytics-II\", \"topic_b\": \"IT in Supply Chain\", \"topic_label\": \"cost, demand, costs\"}, {\"similarity\": 0.603, \"topic_a\": \"Modelling in Supply Chain Management\", \"topic_b\": \"Building a Strategic Framework to Analyze Supply Chain\", \"topic_label\": \"marketing, supply chain, customer\"}], \"course_a\": {\"academic_year\": \"2021-22\", \"code\": \"BTME08016\", \"course_name\": \"Department Elective IV - Supply Chain Analytics\", \"id\": \"nm48af830b\", \"programmes\": [\"MECHANICAL\"], \"semester\": \"VIII\"}, \"course_b\": {\"academic_year\": \"2021-22\", \"code\": \"MBOEMEL001\", \"course_name\": \"Open Elective I - Logistics and Supply Chain Management\", \"id\": \"nm9d8c41ec\", \"programmes\": [\"MECHANICAL\"], \"semester\": \"VII\"}, \"overlap\": {\"lexical_similarity\": 0.698, \"percent\": \"91%\", \"redundancy_warning\": true, \"semantic_similarity\": 0.791, \"unit_coverage_f\": 0.909}, \"unique_to_a\": [\"Supply chain Analytics-I\"], \"unique_to_b\": []}"
+  },
+  {
+   "key": "dataset/parse_stats:text_pdf",
+   "value": "531"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  }
+ ]
+}
