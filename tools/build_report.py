@@ -77,7 +77,10 @@ class Resolver:
         return s
 
     def text(self, s):
-        return PH.sub(lambda m: self.value(m.group(1).strip()), s)
+        def sub(m):
+            v = self.value(m.group(1).strip())
+            return v if isinstance(v, str) else json.dumps(v, indent=1, ensure_ascii=False)      # {{json:...}} inside a code block
+        return PH.sub(sub, s)
 
 
 def tree(commit):
