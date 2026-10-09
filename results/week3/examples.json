@@ -1,0 +1,287 @@
+{
+ "examples": [
+  {
+   "course_a": {
+    "id": "nm48af830b",
+    "course_name": "Department Elective IV - Supply Chain Analytics",
+    "code": "BTME08016",
+    "academic_year": "2021-22",
+    "semester": "VIII",
+    "programmes": [
+     "MECHANICAL"
+    ]
+   },
+   "course_b": {
+    "id": "nm9d8c41ec",
+    "course_name": "Open Elective I - Logistics and Supply Chain Management",
+    "code": "MBOEMEL001",
+    "academic_year": "2021-22",
+    "semester": "VII",
+    "programmes": [
+     "MECHANICAL"
+    ]
+   },
+   "overlap": {
+    "percent": "91%",
+    "unit_coverage_f": 0.909,
+    "semantic_similarity": 0.791,
+    "lexical_similarity": 0.698,
+    "redundancy_warning": true
+   },
+   "common_topics": [
+    {
+     "topic_a": "Designing the Supply Chain Network",
+     "topic_b": "Designing the Supply Chain Network",
+     "similarity": 1.0,
+     "topic_label": "marketing, supply chain, customer"
+    },
+    {
+     "topic_a": "Warehouse and Transportation Management",
+     "topic_b": "Warehouse and Transportation Management",
+     "similarity": 0.961,
+     "topic_label": "waste, industrial, quality"
+    },
+    {
+     "topic_a": "Building a Strategic Frame Work to Analyze Supply Chain",
+     "topic_b": "Building a Strategic Framework to Analyze Supply Chain",
+     "similarity": 0.943,
+     "topic_label": "marketing, supply chain, customer"
+    },
+    {
+     "topic_a": "Supply chain Analytics-II",
+     "topic_b": "IT in Supply Chain",
+     "similarity": 0.692,
+     "topic_label": "cost, demand, costs"
+    },
+    {
+     "topic_a": "Modelling in Supply Chain Management",
+     "topic_b": "Building a Strategic Framework to Analyze Supply Chain",
+     "similarity": 0.603,
+     "topic_label": "marketing, supply chain, customer"
+    }
+   ],
+   "unique_to_a": [
+    "Supply chain Analytics-I"
+   ],
+   "unique_to_b": [],
+   "missing_prerequisites": {
+    "a": [],
+    "b": []
+   },
+   "outcome_bloom": {
+    "a": [
+     {
+      "outcome": "Know the functions of supply chain management and its process.",
+      "level": "Remember",
+      "faculty_tag": null
+     },
+     {
+      "outcome": "Evaluate the performance of supply chain management.",
+      "level": "Evaluate",
+      "faculty_tag": null
+     },
+     {
+      "outcome": "Illustrate complexity involved in coordination of inter-firm and intra-firmin implementing",
+      "level": "Understand",
+      "faculty_tag": null
+     }
+    ],
+    "b": [
+     {
+      "outcome": "Know the functions of supply chain management and its process.",
+      "level": "Remember",
+      "faculty_tag": null
+     },
+     {
+      "outcome": "Evaluate the performance of supply chain management.",
+      "level": "Evaluate",
+      "faculty_tag": null
+     },
+     {
+      "outcome": "Illustrate complexity involved in coordination of inter-firm and intra-firm implementing p",
+      "level": "Understand",
+      "faculty_tag": null
+     }
+    ]
+   },
+   "method": "MiniLM chunk MaxSim (unit match >= 0.55), TF-IDF, programme-graph prerequisite check",
+   "version": "0.2.0"
+  },
+  {
+   "course_a": {
+    "id": "nm3750a0e0",
+    "course_name": "Dynamic System Modeling and Analysis",
+    "code": "BTMA07004",
+    "academic_year": "2021-22",
+    "semester": "VI",
+    "programmes": [
+     "MECHATRONICS"
+    ]
+   },
+   "course_b": {
+    "id": "nmc3fe3e32",
+    "course_name": "Modern Control Systems",
+    "code": "702MH0E007",
+    "academic_year": "2025-26",
+    "semester": "VI",
+    "programmes": [
+     "MECHATRONICS"
+    ]
+   },
+   "overlap": {
+    "percent": "19%",
+    "unit_coverage_f": 0.19,
+    "semantic_similarity": 0.478,
+    "lexical_similarity": 0.131,
+    "redundancy_warning": false
+   },
+   "common_topics": [
+    {
+     "topic_a": "Transfer-Function approach to modeling dynamic system: Introduction, Block",
+     "topic_b": "Introduction",
+     "similarity": 0.604,
+     "topic_label": "transform, fourier, laplace"
+    },
+    {
+     "topic_a": "Introduction to system dynamics: Introduction, Mathematical Modeling of",
+     "topic_b": "Introduction",
+     "similarity": 0.587,
+     "topic_label": "simulation, time series, processes"
+    }
+   ],
+   "unique_to_a": [
+    "The Laplace transform",
+    "Mechanical systems",
+    "State-Space approach to modeling dynamic system",
+    "Electrical systems and electromechanical systems",
+    "Fluid systems and thermal systems"
+   ],
+   "unique_to_b": [
+    "Classical Control Theory",
+    "Controller Design",
+    "Introduction to Modern Control Theory",
+    "Discrete Time Systems",
+    "Performance Specifications",
+    "Introduction to Advanced Topics"
+   ],
+   "missing_prerequisites": {
+    "a": [
+     {
+      "programme": "MECHATRONICS",
+      "phrase": "Engineering Mathematics - I",
+      "type": "not_offered_earlier"
+     },
+     {
+      "programme": "MECHATRONICS",
+      "phrase": "III",
+      "type": "assumed_topic_not_taught"
+     }
+    ],
+    "b": []
+   },
+   "outcome_bloom": {
+    "a": [
+     {
+      "outcome": "Design the mathematical models of the physical systems.",
+      "level": "Create",
+      "faculty_tag": null
+     },
+     {
+      "outcome": "Analyse the response of the systems and also modify the systems as per the requirements us",
+      "level": "Analyze",
+      "faculty_tag": null
+     }
+    ],
+    "b": [
+     {
+      "outcome": "Use the theoretical concepts in classical and modern control theory",
+      "level": "Apply",
+      "faculty_tag": null
+     },
+     {
+      "outcome": "Analyze the performance of a control methodology",
+      "level": "Analyze",
+      "faculty_tag": null
+     },
+     {
+      "outcome": "Develop theoretical designs for controllers using modern methods",
+      "level": "Create",
+      "faculty_tag": null
+     },
+     {
+      "outcome": "Analyze control designs for motion control",
+      "level": "Analyze",
+      "faculty_tag": null
+     }
+    ]
+   },
+   "method": "MiniLM chunk MaxSim (unit match >= 0.55), TF-IDF, programme-graph prerequisite check",
+   "version": "0.2.0"
+  }
+ ],
+ "excerpt": {
+  "course_a": {
+   "id": "nm48af830b",
+   "course_name": "Department Elective IV - Supply Chain Analytics",
+   "code": "BTME08016",
+   "academic_year": "2021-22",
+   "semester": "VIII",
+   "programmes": [
+    "MECHANICAL"
+   ]
+  },
+  "course_b": {
+   "id": "nm9d8c41ec",
+   "course_name": "Open Elective I - Logistics and Supply Chain Management",
+   "code": "MBOEMEL001",
+   "academic_year": "2021-22",
+   "semester": "VII",
+   "programmes": [
+    "MECHANICAL"
+   ]
+  },
+  "overlap": {
+   "percent": "91%",
+   "unit_coverage_f": 0.909,
+   "semantic_similarity": 0.791,
+   "lexical_similarity": 0.698,
+   "redundancy_warning": true
+  },
+  "common_topics": [
+   {
+    "topic_a": "Designing the Supply Chain Network",
+    "topic_b": "Designing the Supply Chain Network",
+    "similarity": 1.0,
+    "topic_label": "marketing, supply chain, customer"
+   },
+   {
+    "topic_a": "Warehouse and Transportation Management",
+    "topic_b": "Warehouse and Transportation Management",
+    "similarity": 0.961,
+    "topic_label": "waste, industrial, quality"
+   },
+   {
+    "topic_a": "Building a Strategic Frame Work to Analyze Supply Chain",
+    "topic_b": "Building a Strategic Framework to Analyze Supply Chain",
+    "similarity": 0.943,
+    "topic_label": "marketing, supply chain, customer"
+   },
+   {
+    "topic_a": "Supply chain Analytics-II",
+    "topic_b": "IT in Supply Chain",
+    "similarity": 0.692,
+    "topic_label": "cost, demand, costs"
+   },
+   {
+    "topic_a": "Modelling in Supply Chain Management",
+    "topic_b": "Building a Strategic Framework to Analyze Supply Chain",
+    "similarity": 0.603,
+    "topic_label": "marketing, supply chain, customer"
+   }
+  ],
+  "unique_to_a": [
+   "Supply chain Analytics-I"
+  ],
+  "unique_to_b": []
+ }
+}

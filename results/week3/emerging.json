@@ -1,0 +1,149 @@
+{
+ "status": "DRAFT - pending approval by Group 9 (9 Oct 2026). Only 'verified' entries are used in metrics.",
+ "threshold": 0.4,
+ "verified_topics": 21,
+ "unverified_topics": [
+  "Retrieval-augmented generation",
+  "MLOps",
+  "Blockchain"
+ ],
+ "pairs_checked": 67,
+ "gaps": 5,
+ "by_programme": {
+  "AI": {
+   "checked": 8,
+   "gaps": 1
+  },
+  "COMP": {
+   "checked": 8,
+   "gaps": 1
+  },
+  "CSBS": {
+   "checked": 2,
+   "gaps": 0
+  },
+  "CSE-CYBER": {
+   "checked": 3,
+   "gaps": 0
+  },
+  "CSE-DS": {
+   "checked": 6,
+   "gaps": 0
+  },
+  "DS": {
+   "checked": 7,
+   "gaps": 1
+  },
+  "IT": {
+   "checked": 8,
+   "gaps": 1
+  },
+  "EXTC": {
+   "checked": 5,
+   "gaps": 0
+  },
+  "MECHATRONICS": {
+   "checked": 7,
+   "gaps": 0
+  },
+  "MECHANICAL": {
+   "checked": 9,
+   "gaps": 0
+  },
+  "CIVIL": {
+   "checked": 4,
+   "gaps": 1
+  }
+ },
+ "table": {
+  "columns": [
+   "Programme",
+   "Topics checked",
+   "Gaps flagged"
+  ],
+  "rows": [
+   [
+    "AI",
+    8,
+    1
+   ],
+   [
+    "CIVIL",
+    4,
+    1
+   ],
+   [
+    "COMP",
+    8,
+    1
+   ],
+   [
+    "CSBS",
+    2,
+    0
+   ],
+   [
+    "CSE-CYBER",
+    3,
+    0
+   ],
+   [
+    "CSE-DS",
+    6,
+    0
+   ],
+   [
+    "DS",
+    7,
+    1
+   ],
+   [
+    "EXTC",
+    5,
+    0
+   ],
+   [
+    "IT",
+    8,
+    1
+   ],
+   [
+    "MECHANICAL",
+    9,
+    0
+   ],
+   [
+    "MECHATRONICS",
+    7,
+    0
+   ]
+  ]
+ },
+ "gaps_list": [
+  {
+   "topic": "Large language models and generative AI",
+   "programme": "COMP",
+   "best_similarity": 0.388
+  },
+  {
+   "topic": "Large language models and generative AI",
+   "programme": "IT",
+   "best_similarity": 0.398
+  },
+  {
+   "topic": "Generative AI watermarking",
+   "programme": "AI",
+   "best_similarity": 0.353
+  },
+  {
+   "topic": "Generative AI watermarking",
+   "programme": "DS",
+   "best_similarity": 0.278
+  },
+  {
+   "topic": "Osmotic power",
+   "programme": "CIVIL",
+   "best_similarity": 0.302
+  }
+ ]
+}

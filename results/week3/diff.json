@@ -1,0 +1,547 @@
+{
+ "method": "name match, then content match (MaxSim) for renamed courses",
+ "year_pairs": 53,
+ "precision": 0.998,
+ "recall": 0.956,
+ "true_changes": 1849,
+ "claimed_changes": 1771,
+ "rename_test": {
+  "year_pairs": 53,
+  "precision": 0.993,
+  "recall": 0.956,
+  "true_changes": 1849,
+  "claimed_changes": 1779
+ },
+ "per_year_pair": [
+  {
+   "programme": "AI",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 30,
+   "courses_to": 41,
+   "tp": 35,
+   "claimed": 35,
+   "true": 37
+  },
+  {
+   "programme": "AI",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 41,
+   "courses_to": 50,
+   "tp": 49,
+   "claimed": 49,
+   "true": 51
+  },
+  {
+   "programme": "AI",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 50,
+   "courses_to": 37,
+   "tp": 33,
+   "claimed": 33,
+   "true": 35
+  },
+  {
+   "programme": "AI",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 37,
+   "courses_to": 34,
+   "tp": 27,
+   "claimed": 27,
+   "true": 27
+  },
+  {
+   "programme": "AI",
+   "from": "2025-26",
+   "to": "2026-27",
+   "courses_from": 34,
+   "courses_to": 34,
+   "tp": 32,
+   "claimed": 32,
+   "true": 34
+  },
+  {
+   "programme": "CIVIL",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 48,
+   "courses_to": 34,
+   "tp": 52,
+   "claimed": 52,
+   "true": 58
+  },
+  {
+   "programme": "CIVIL",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 34,
+   "courses_to": 30,
+   "tp": 12,
+   "claimed": 12,
+   "true": 12
+  },
+  {
+   "programme": "CIVIL",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 30,
+   "courses_to": 22,
+   "tp": 26,
+   "claimed": 26,
+   "true": 26
+  },
+  {
+   "programme": "CIVIL",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 22,
+   "courses_to": 17,
+   "tp": 7,
+   "claimed": 7,
+   "true": 7
+  },
+  {
+   "programme": "CIVIL",
+   "from": "2025-26",
+   "to": "2026-27",
+   "courses_from": 17,
+   "courses_to": 33,
+   "tp": 34,
+   "claimed": 34,
+   "true": 34
+  },
+  {
+   "programme": "COMP",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 32,
+   "courses_to": 26,
+   "tp": 40,
+   "claimed": 40,
+   "true": 44
+  },
+  {
+   "programme": "COMP",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 26,
+   "courses_to": 41,
+   "tp": 19,
+   "claimed": 19,
+   "true": 19
+  },
+  {
+   "programme": "COMP",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 41,
+   "courses_to": 32,
+   "tp": 15,
+   "claimed": 15,
+   "true": 15
+  },
+  {
+   "programme": "COMP",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 32,
+   "courses_to": 43,
+   "tp": 13,
+   "claimed": 13,
+   "true": 13
+  },
+  {
+   "programme": "COMP",
+   "from": "2025-26",
+   "to": "2026-27",
+   "courses_from": 43,
+   "courses_to": 26,
+   "tp": 41,
+   "claimed": 41,
+   "true": 41
+  },
+  {
+   "programme": "CSBS",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 40,
+   "courses_to": 40,
+   "tp": 52,
+   "claimed": 52,
+   "true": 52
+  },
+  {
+   "programme": "CSBS",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 40,
+   "courses_to": 47,
+   "tp": 27,
+   "claimed": 27,
+   "true": 31
+  },
+  {
+   "programme": "CSBS",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 47,
+   "courses_to": 48,
+   "tp": 23,
+   "claimed": 23,
+   "true": 23
+  },
+  {
+   "programme": "CSBS",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 48,
+   "courses_to": 41,
+   "tp": 23,
+   "claimed": 23,
+   "true": 23
+  },
+  {
+   "programme": "CSBS",
+   "from": "2025-26",
+   "to": "2026-27",
+   "courses_from": 41,
+   "courses_to": 19,
+   "tp": 48,
+   "claimed": 48,
+   "true": 48
+  },
+  {
+   "programme": "CSE-CYBER",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 32,
+   "courses_to": 52,
+   "tp": 34,
+   "claimed": 34,
+   "true": 34
+  },
+  {
+   "programme": "CSE-CYBER",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 52,
+   "courses_to": 61,
+   "tp": 25,
+   "claimed": 25,
+   "true": 25
+  },
+  {
+   "programme": "CSE-CYBER",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 61,
+   "courses_to": 20,
+   "tp": 41,
+   "claimed": 41,
+   "true": 41
+  },
+  {
+   "programme": "CSE-CYBER",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 20,
+   "courses_to": 37,
+   "tp": 25,
+   "claimed": 25,
+   "true": 25
+  },
+  {
+   "programme": "CSE-CYBER",
+   "from": "2025-26",
+   "to": "2026-27",
+   "courses_from": 37,
+   "courses_to": 27,
+   "tp": 46,
+   "claimed": 46,
+   "true": 46
+  },
+  {
+   "programme": "CSE-DS",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 15,
+   "courses_to": 46,
+   "tp": 31,
+   "claimed": 31,
+   "true": 31
+  },
+  {
+   "programme": "CSE-DS",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 46,
+   "courses_to": 45,
+   "tp": 29,
+   "claimed": 29,
+   "true": 29
+  },
+  {
+   "programme": "CSE-DS",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 45,
+   "courses_to": 49,
+   "tp": 38,
+   "claimed": 38,
+   "true": 38
+  },
+  {
+   "programme": "CSE-DS",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 49,
+   "courses_to": 14,
+   "tp": 37,
+   "claimed": 37,
+   "true": 37
+  },
+  {
+   "programme": "CSE-DS",
+   "from": "2025-26",
+   "to": "2026-27",
+   "courses_from": 14,
+   "courses_to": 33,
+   "tp": 45,
+   "claimed": 45,
+   "true": 47
+  },
+  {
+   "programme": "DS",
+   "from": "2020-21",
+   "to": "2021-22",
+   "courses_from": 15,
+   "courses_to": 48,
+   "tp": 39,
+   "claimed": 39,
+   "true": 41
+  },
+  {
+   "programme": "DS",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 48,
+   "courses_to": 52,
+   "tp": 68,
+   "claimed": 68,
+   "true": 74
+  },
+  {
+   "programme": "DS",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 52,
+   "courses_to": 58,
+   "tp": 26,
+   "claimed": 26,
+   "true": 26
+  },
+  {
+   "programme": "DS",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 58,
+   "courses_to": 49,
+   "tp": 23,
+   "claimed": 23,
+   "true": 23
+  },
+  {
+   "programme": "DS",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 49,
+   "courses_to": 72,
+   "tp": 27,
+   "claimed": 27,
+   "true": 27
+  },
+  {
+   "programme": "DS",
+   "from": "2025-26",
+   "to": "2026-27",
+   "courses_from": 72,
+   "courses_to": 44,
+   "tp": 44,
+   "claimed": 44,
+   "true": 48
+  },
+  {
+   "programme": "EXTC",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 24,
+   "courses_to": 37,
+   "tp": 19,
+   "claimed": 19,
+   "true": 19
+  },
+  {
+   "programme": "EXTC",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 37,
+   "courses_to": 24,
+   "tp": 25,
+   "claimed": 25,
+   "true": 25
+  },
+  {
+   "programme": "IT",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 63,
+   "courses_to": 34,
+   "tp": 47,
+   "claimed": 47,
+   "true": 51
+  },
+  {
+   "programme": "IT",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 34,
+   "courses_to": 42,
+   "tp": 26,
+   "claimed": 26,
+   "true": 26
+  },
+  {
+   "programme": "IT",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 42,
+   "courses_to": 45,
+   "tp": 15,
+   "claimed": 15,
+   "true": 15
+  },
+  {
+   "programme": "IT",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 45,
+   "courses_to": 44,
+   "tp": 7,
+   "claimed": 7,
+   "true": 7
+  },
+  {
+   "programme": "IT",
+   "from": "2025-26",
+   "to": "2026-27",
+   "courses_from": 44,
+   "courses_to": 42,
+   "tp": 38,
+   "claimed": 38,
+   "true": 40
+  },
+  {
+   "programme": "MECHANICAL",
+   "from": "2020-21",
+   "to": "2021-22",
+   "courses_from": 23,
+   "courses_to": 77,
+   "tp": 64,
+   "claimed": 68,
+   "true": 70
+  },
+  {
+   "programme": "MECHANICAL",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 77,
+   "courses_to": 58,
+   "tp": 77,
+   "claimed": 77,
+   "true": 89
+  },
+  {
+   "programme": "MECHANICAL",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 58,
+   "courses_to": 66,
+   "tp": 52,
+   "claimed": 52,
+   "true": 54
+  },
+  {
+   "programme": "MECHANICAL",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 66,
+   "courses_to": 50,
+   "tp": 34,
+   "claimed": 34,
+   "true": 36
+  },
+  {
+   "programme": "MECHANICAL",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 50,
+   "courses_to": 56,
+   "tp": 32,
+   "claimed": 32,
+   "true": 32
+  },
+  {
+   "programme": "MECHANICAL",
+   "from": "2025-26",
+   "to": "2026-27",
+   "courses_from": 56,
+   "courses_to": 51,
+   "tp": 45,
+   "claimed": 45,
+   "true": 47
+  },
+  {
+   "programme": "MECHATRONICS",
+   "from": "2021-22",
+   "to": "2022-23",
+   "courses_from": 55,
+   "courses_to": 16,
+   "tp": 51,
+   "claimed": 51,
+   "true": 63
+  },
+  {
+   "programme": "MECHATRONICS",
+   "from": "2022-23",
+   "to": "2023-24",
+   "courses_from": 16,
+   "courses_to": 44,
+   "tp": 36,
+   "claimed": 36,
+   "true": 40
+  },
+  {
+   "programme": "MECHATRONICS",
+   "from": "2023-24",
+   "to": "2024-25",
+   "courses_from": 44,
+   "courses_to": 47,
+   "tp": 5,
+   "claimed": 5,
+   "true": 5
+  },
+  {
+   "programme": "MECHATRONICS",
+   "from": "2024-25",
+   "to": "2025-26",
+   "courses_from": 47,
+   "courses_to": 55,
+   "tp": 8,
+   "claimed": 8,
+   "true": 8
+  }
+ ]
+}

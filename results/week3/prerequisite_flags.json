@@ -1,0 +1,299 @@
+[
+ {
+  "programme": "CIVIL",
+  "family": "f2002b1e7",
+  "course": "Workshop on Building Planning and Design",
+  "semester": 4,
+  "phrase": "Drawing",
+  "resolved_family": "f0bb3aff2",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CIVIL",
+  "family": "f48c6dd41",
+  "course": "Open Elective - I (BSC) - Fundamentals of Fuels and Lubricants",
+  "semester": 4,
+  "phrase": "Chemistry (Semester- II)",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "CIVIL",
+  "family": "fdb685ff5",
+  "course": "Open Elective - I (BSC) - Modelling and Simulation",
+  "semester": 4,
+  "phrase": "Engineering Mathematics",
+  "resolved_family": "fc93140d8",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CIVIL",
+  "family": "fec17aa83",
+  "course": "Remote Sensing, GIS and Data Science Applications in Environmental Management",
+  "semester": 6,
+  "phrase": "geography",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "CIVIL",
+  "family": "fec17aa83",
+  "course": "Remote Sensing, GIS and Data Science Applications in Environmental Management",
+  "semester": 6,
+  "phrase": "computer usage",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f1264dd02",
+  "course": "Introduction to Innovation, IP Management & Entrepreneurship",
+  "semester": 4,
+  "phrase": "Computer Science BTCS01003",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f2b9482b0",
+  "course": "Cognitive Science & Analytics",
+  "semester": 7,
+  "phrase": "Business Intelligence",
+  "resolved_family": "f78a74491",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Microprocessor",
+  "resolved_family": "f15ed87da",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Microcontroller",
+  "resolved_family": "f15ed87da",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Cyber Security",
+  "resolved_family": "f4f2f26ce",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f54ab3907",
+  "course": "Formal Language and Automata Theory",
+  "semester": 3,
+  "phrase": "Algorithms",
+  "resolved_family": "f0745dc3f",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f625eb2ac",
+  "course": "IT Workshop",
+  "semester": 7,
+  "phrase": "Engineering Mathematics",
+  "resolved_family": "fc93140d8",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSE-DS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Microprocessor",
+  "resolved_family": "f15ed87da",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSE-DS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Microcontroller",
+  "resolved_family": "f15ed87da",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSE-DS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Cyber Security",
+  "resolved_family": "f4f2f26ce",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSE-DS",
+  "family": "fd221ab4a",
+  "course": "Advanced Business Analytics in Python and R",
+  "semester": 5,
+  "phrase": "Analytics",
+  "resolved_family": "f0d4d4648",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "DS",
+  "family": "f1948d729",
+  "course": "Environmental Science",
+  "semester": 2,
+  "phrase": "mathematics",
+  "resolved_family": "f0e4a0b82",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "DS",
+  "family": "f21bad262",
+  "course": "Cloud Computing",
+  "semester": 7,
+  "phrase": "Information Storage",
+  "resolved_family": "f12912804",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "DS",
+  "family": "f21bad262",
+  "course": "Cloud Computing",
+  "semester": 7,
+  "phrase": "Management",
+  "resolved_family": "f0bdcd8ce",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "DS",
+  "family": "f63b62ca4",
+  "course": "Web Analytics",
+  "semester": 7,
+  "phrase": "DS I",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "EXTC",
+  "family": "f307d818b",
+  "course": "Minor Project",
+  "semester": 6,
+  "phrase": "subjects studied till semester V",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "IT",
+  "family": "f2ee08859",
+  "course": "Human Computer Interaction",
+  "semester": 3,
+  "phrase": "Software Engineering",
+  "resolved_family": "f00ec9d24",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "MECHANICAL",
+  "family": "f083a1d04",
+  "course": "System Administration",
+  "semester": 6,
+  "phrase": "Operating Systems",
+  "resolved_family": "f17d2913e",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "MECHANICAL",
+  "family": "f0e386931",
+  "course": "Unmanned Aerial Vehicles",
+  "semester": 6,
+  "phrase": "Engineering Mathematics-I",
+  "resolved_family": "fc93140d8",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "MECHANICAL",
+  "family": "f0e386931",
+  "course": "Unmanned Aerial Vehicles",
+  "semester": 6,
+  "phrase": "III",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "MECHANICAL",
+  "family": "f4d98b873",
+  "course": "Partial Differential Equations and Laplace Transforms",
+  "semester": 3,
+  "phrase": "Ordinary Differential Equations",
+  "resolved_family": "f1f49746a",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f3750a0e0",
+  "course": "Dynamic System Modeling and Analysis",
+  "semester": 6,
+  "phrase": "Engineering Mathematics - I",
+  "resolved_family": "fc93140d8",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f3750a0e0",
+  "course": "Dynamic System Modeling and Analysis",
+  "semester": 6,
+  "phrase": "III",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f7271db71",
+  "course": "Transforms and Series",
+  "semester": 3,
+  "phrase": "Periodic function",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f7271db71",
+  "course": "Transforms and Series",
+  "semester": 3,
+  "phrase": "Even",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f7271db71",
+  "course": "Transforms and Series",
+  "semester": 3,
+  "phrase": "odd Function",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f7271db71",
+  "course": "Transforms and Series",
+  "semester": 3,
+  "phrase": "Circular Function",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f7271db71",
+  "course": "Transforms and Series",
+  "semester": 3,
+  "phrase": "Trigonometric series",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ }
+]

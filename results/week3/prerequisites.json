@@ -1,0 +1,85 @@
+{
+ "method": "embedding resolution + topic check over earlier semesters",
+ "thresholds": {
+  "prereq_resolve": 0.75,
+  "prereq_topic": 0.4
+ },
+ "phrases_checked": 228,
+ "flags": 33,
+ "flags_by_type": {
+  "not_offered_earlier": 20,
+  "assumed_topic_not_taught": 13
+ },
+ "flag_rate_per_phrase": 0.145,
+ "examples": [
+  {
+   "programme": "CIVIL",
+   "course": "Workshop on Building Planning and Design",
+   "semester": 4,
+   "phrase": "Drawing",
+   "type": "not_offered_earlier"
+  },
+  {
+   "programme": "CIVIL",
+   "course": "Open Elective - I (BSC) - Fundamentals of Fuels and Lubricants",
+   "semester": 4,
+   "phrase": "Chemistry (Semester- II)",
+   "type": "assumed_topic_not_taught"
+  },
+  {
+   "programme": "CIVIL",
+   "course": "Open Elective - I (BSC) - Modelling and Simulation",
+   "semester": 4,
+   "phrase": "Engineering Mathematics",
+   "type": "not_offered_earlier"
+  },
+  {
+   "programme": "CIVIL",
+   "course": "Remote Sensing, GIS and Data Science Applications in Environmental Management",
+   "semester": 6,
+   "phrase": "geography",
+   "type": "assumed_topic_not_taught"
+  },
+  {
+   "programme": "CIVIL",
+   "course": "Remote Sensing, GIS and Data Science Applications in Environmental Management",
+   "semester": 6,
+   "phrase": "computer usage",
+   "type": "assumed_topic_not_taught"
+  },
+  {
+   "programme": "CSBS",
+   "course": "Introduction to Innovation, IP Management & Entrepreneurship",
+   "semester": 4,
+   "phrase": "Computer Science BTCS01003",
+   "type": "assumed_topic_not_taught"
+  }
+ ],
+ "tests": {
+  "cases": 83,
+  "removal_recall": {
+   "value": 0.88,
+   "ci95": [
+    0.803,
+    0.946
+   ],
+   "n": 83
+  },
+  "intact_false_alarm": {
+   "value": 0.036,
+   "ci95": [
+    0.0,
+    0.078
+   ],
+   "n": 83
+  },
+  "rename_false_alarm": {
+   "value": 0.12,
+   "ci95": [
+    0.056,
+    0.197
+   ],
+   "n": 83
+  }
+ }
+}

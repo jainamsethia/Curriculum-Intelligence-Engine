@@ -1,0 +1,927 @@
+{
+ "k": 40,
+ "fitted_on": "units of training courses",
+ "mean_coherence": 0.57,
+ "topics": [
+  {
+   "topic": 0,
+   "name": "design, vr, ar",
+   "terms": [
+    "design",
+    "vr",
+    "ar",
+    "creating",
+    "modeling"
+   ],
+   "units": 83,
+   "coherence": 0.527,
+   "examples": [
+    "Cascading Style Sheets (CSS3)",
+    "Principles of illumination & design",
+    "Basics of Line Designer",
+    "Factory Explorer and Library Management",
+    "Introduction to VHDL",
+    "Auxiliary Views",
+    "Introduction",
+    "Design fundamentals"
+   ]
+  },
+  {
+   "topic": 1,
+   "name": "science, technology, knowledge",
+   "terms": [
+    "science",
+    "technology",
+    "knowledge",
+    "forensic",
+    "science technology"
+   ],
+   "units": 86,
+   "coherence": 0.387,
+   "examples": [
+    "Knowledge and Reasoning",
+    "Introduction to Natural Language Processing",
+    "Introduction to the Course",
+    "Solving Ethical Problems",
+    "Literature search and review",
+    "Technical writing",
+    "Ethics in research",
+    "Logic"
+   ]
+  },
+  {
+   "topic": 2,
+   "name": "process, material, manufacturing",
+   "terms": [
+    "process",
+    "material",
+    "manufacturing",
+    "powder",
+    "welding"
+   ],
+   "units": 60,
+   "coherence": 0.611,
+   "examples": [
+    "Job on lathe performing plain and taper turning.",
+    "Job on precision turning and screw cutting.",
+    "Assembly of Two pieces using operations like drilling,",
+    "Introduction to Additive Manufacturing",
+    "Classification of Additive Manufacturing Techniques",
+    "Post- Processing",
+    "Design for Additive Manufacturing (DfAM)",
+    "Metal Casting"
+   ]
+  },
+  {
+   "topic": 3,
+   "name": "circuits, voltage, phase",
+   "terms": [
+    "circuits",
+    "voltage",
+    "phase",
+    "bjt",
+    "amplifiers"
+   ],
+   "units": 60,
+   "coherence": 0.535,
+   "examples": [
+    "Introduction to DC Circuit Fundamentals",
+    "DC Network Analysis",
+    "AC Circuits Fundamentals and Analysis",
+    "Transformer",
+    "Electrochemistry",
+    "Load Compensation",
+    "Static shunt compensators",
+    "Static series compensation"
+   ]
+  },
+  {
+   "topic": 4,
+   "name": "ai, automation, rpa",
+   "terms": [
+    "ai",
+    "automation",
+    "rpa",
+    "agents",
+    "intelligence"
+   ],
+   "units": 28,
+   "coherence": 0.638,
+   "examples": [
+    "Introduction",
+    "Fundamentals of Business Intelligence",
+    "Introduction to Artificial Intelligence",
+    "Expert system",
+    "Introduction to Artificial Intelligence",
+    "Introduction to Agentic AI and its Applications",
+    "Introduction to DSS",
+    "Introduction to AI"
+   ]
+  },
+  {
+   "topic": 5,
+   "name": "neural, networks, neural networks",
+   "terms": [
+    "neural",
+    "networks",
+    "neural networks",
+    "learning",
+    "deep"
+   ],
+   "units": 50,
+   "coherence": 0.586,
+   "examples": [
+    "Variational Circuits as Machine Learning Models",
+    "Quantum Models as Kernel Methods",
+    "Meta- Learning",
+    "Autoencoders",
+    "Deep Generative Models",
+    "Transformer Architecture",
+    "Graph Neural Networks",
+    "Graph Neural Networks for Node Classification"
+   ]
+  },
+  {
+   "topic": 6,
+   "name": "codes, logic, quantum",
+   "terms": [
+    "codes",
+    "logic",
+    "quantum",
+    "binary",
+    "gates"
+   ],
+   "units": 46,
+   "coherence": 0.588,
+   "examples": [
+    "Introduction to quantum computing",
+    "Representing Data on Quantum computer",
+    "Introduction to Quantum algorithms",
+    "Quantum Machine Learning",
+    "Data path Design",
+    "Synchronization",
+    "Introduction to Digital Systems and Binary Codes",
+    "Logic Gates and Simplification of Boolean Expressions"
+   ]
+  },
+  {
+   "topic": 7,
+   "name": "search, algorithm, problem",
+   "terms": [
+    "search",
+    "algorithm",
+    "problem",
+    "sort",
+    "evolutionary"
+   ],
+   "units": 64,
+   "coherence": 0.556,
+   "examples": [
+    "Problem Solving",
+    "Introduction",
+    "Analysing the Algorithms",
+    "Divide and Conquer Technique",
+    "Greedy Technique",
+    "Dynamic Programming",
+    "Backtracking",
+    "Solving problems by Searching"
+   ]
+  },
+  {
+   "topic": 8,
+   "name": "image, detection, video",
+   "terms": [
+    "image",
+    "detection",
+    "video",
+    "images",
+    "processing"
+   ],
+   "units": 59,
+   "coherence": 0.585,
+   "examples": [
+    "Digital Image Processing Systems",
+    "Image Enhancement in the Spatial domain",
+    "Image Segmentation, Representation and Description",
+    "Morphological Image Processing",
+    "Image Transforms",
+    "Wavelets and Multiresolution Processing",
+    "Image Data Compression",
+    "Image fundamentals"
+   ]
+  },
+  {
+   "topic": 9,
+   "name": "network, routing, iot",
+   "terms": [
+    "network",
+    "routing",
+    "iot",
+    "ip",
+    "satellite"
+   ],
+   "units": 87,
+   "coherence": 0.528,
+   "examples": [
+    "Introduction to Web Development",
+    "Route Handling",
+    "Introduction of Industrial IoT (IIoT) and project planning",
+    "IIoT Networking",
+    "Communication",
+    "Traffic Engineering",
+    "Introduction",
+    "Internet Applications"
+   ]
+  },
+  {
+   "topic": 10,
+   "name": "waste, industrial, quality",
+   "terms": [
+    "waste",
+    "industrial",
+    "quality",
+    "management",
+    "treatment"
+   ],
+   "units": 45,
+   "coherence": 0.568,
+   "examples": [
+    "Overview of Plant Navigation and Management",
+    "Applications of AM & Industry 4.0",
+    "Applications of AM & Industry 4.0",
+    "Controlling",
+    "Production Concepts",
+    "Material and Inventory Management",
+    "Warehouse and Transportation Management",
+    "Occupational Health"
+   ]
+  },
+  {
+   "topic": 11,
+   "name": "data, analytics, big",
+   "terms": [
+    "data",
+    "analytics",
+    "big",
+    "big data",
+    "database"
+   ],
+   "units": 101,
+   "coherence": 0.586,
+   "examples": [
+    "Introduction",
+    "Accessing Data and producing detail reports",
+    "Reading Data Sets",
+    "Manipulating Data",
+    "Data Transformations",
+    "Introduction to Data Mining",
+    "Introduction to Data Science",
+    "Getting to know your data"
+   ]
+  },
+  {
+   "topic": 12,
+   "name": "equations, equation, method",
+   "terms": [
+    "equations",
+    "equation",
+    "method",
+    "heat",
+    "boundary"
+   ],
+   "units": 58,
+   "coherence": 0.537,
+   "examples": [
+    "Differentiation and Applications of derivatives",
+    "Differential Equations",
+    "Vector Integration – Line Integral, Boundary over square,",
+    "First order Ordinary Differential Equations",
+    "Higher order Ordinary Differential Equations",
+    "Partial Differential Equations",
+    "Partial Differential Equations and Applications",
+    "Conduction"
+   ]
+  },
+  {
+   "topic": 13,
+   "name": "management, entrepreneurship, leadership",
+   "terms": [
+    "management",
+    "entrepreneurship",
+    "leadership",
+    "ethics",
+    "human"
+   ],
+   "units": 91,
+   "coherence": 0.512,
+   "examples": [
+    "Introduction to Management a) Management: Meaning and Characteristics",
+    "Understanding the Management’s Context",
+    "Organizing",
+    "Staffing",
+    "Leading",
+    "Controlling",
+    "Management Theories",
+    "Planning & Strategy- Concept of planning, Significance of"
+   ]
+  },
+  {
+   "topic": 14,
+   "name": "radar, measurement, refrigeration",
+   "terms": [
+    "radar",
+    "measurement",
+    "refrigeration",
+    "transducers",
+    "optical"
+   ],
+   "units": 53,
+   "coherence": 0.514,
+   "examples": [
+    "Standards",
+    "A. Introduction to Refrigeration",
+    "A. Air Refrigeration System",
+    "Air conditioning and HVAC systems",
+    "Heat Exchangers",
+    "Measurements and Sensors",
+    "Satellite subsystems",
+    "Radar systems"
+   ]
+  },
+  {
+   "topic": 15,
+   "name": "probability, distribution, test",
+   "terms": [
+    "probability",
+    "distribution",
+    "test",
+    "sample",
+    "distributions"
+   ],
+   "units": 50,
+   "coherence": 0.567,
+   "examples": [
+    "Estimation Theory",
+    "Hypothesis Testing",
+    "Random Number Generation",
+    "Random Variate Generation",
+    "Probability Theory Basics",
+    "Introduction to Probability",
+    "Sampling and Estimation",
+    "Correlation Analysis"
+   ]
+  },
+  {
+   "topic": 16,
+   "name": "function, python, functions",
+   "terms": [
+    "function",
+    "python",
+    "functions",
+    "javascript",
+    "vba"
+   ],
+   "units": 46,
+   "coherence": 0.551,
+   "examples": [
+    "Java Script",
+    "Introduction to Python",
+    "Python Data Structures & Flow Control",
+    "Python Functions",
+    "Regular Expression and database connectivity using Python",
+    "Functions, Graphs and Limits",
+    "Scripting",
+    "Client-Side Programming"
+   ]
+  },
+  {
+   "topic": 17,
+   "name": "risk, risk management, management",
+   "terms": [
+    "risk",
+    "risk management",
+    "management",
+    "disaster",
+    "safety"
+   ],
+   "units": 34,
+   "coherence": 0.681,
+   "examples": [
+    "Fire Safety installation",
+    "Operational risk (OR) modelling",
+    "Market risk modelling",
+    "Construction Safety Management",
+    "Reporting, Recording and Investigation",
+    "Fire Prevention",
+    "Safety Regulations",
+    "Risk Management Fundamentals"
+   ]
+  },
+  {
+   "topic": 18,
+   "name": "project, software, product",
+   "terms": [
+    "project",
+    "software",
+    "product",
+    "quality",
+    "development"
+   ],
+   "units": 117,
+   "coherence": 0.543,
+   "examples": [
+    "Introduction",
+    "Software quality factors",
+    "Components of SQA",
+    "Defect removal effectiveness",
+    "Software testing",
+    "Maintenance and external participants",
+    "Software quality metrics",
+    "IIoT Project Planning"
+   ]
+  },
+  {
+   "topic": 19,
+   "name": "drives, steering, hev",
+   "terms": [
+    "drives",
+    "steering",
+    "hev",
+    "ignition",
+    "axle"
+   ],
+   "units": 49,
+   "coherence": 0.576,
+   "examples": [
+    "Lifts and Escalators",
+    "Introduction to Transportation",
+    "Geometric Design of Highways",
+    "Design of Flexible Drives",
+    "CAM",
+    "Basic Characteristics of Engines",
+    "Fuel Delivery in Spark Ignition Engines",
+    "Combustion and Combustion Systems in Compression Ignition Engines"
+   ]
+  },
+  {
+   "topic": 20,
+   "name": "cost, demand, costs",
+   "terms": [
+    "cost",
+    "demand",
+    "costs",
+    "budgeting",
+    "supply"
+   ],
+   "units": 54,
+   "coherence": 0.543,
+   "examples": [
+    "Formulate the different use cases/feasible design model.",
+    "Introduction",
+    "Theory of Production",
+    "Forecasting Demand for Services",
+    "Cost Estimating and Budgeting",
+    "Cost Estimating and Budgeting",
+    "Resource Allocation",
+    "Economic Analysis"
+   ]
+  },
+  {
+   "topic": 21,
+   "name": "beams, shear, stiffness",
+   "terms": [
+    "beams",
+    "shear",
+    "stiffness",
+    "plane",
+    "stress"
+   ],
+   "units": 37,
+   "coherence": 0.573,
+   "examples": [
+    "Stress & strain",
+    "Internal Forces in Beams and Rigid Jointed Frames",
+    "Stresses in Beams",
+    "Principal stresses",
+    "Deflections of beams",
+    "Intersection of Surfaces of Solids",
+    "Deterministic Earthquake Response",
+    "Mechanical Behavior of Metals"
+   ]
+  },
+  {
+   "topic": 22,
+   "name": "blockchain, cryptography, ciphers",
+   "terms": [
+    "blockchain",
+    "cryptography",
+    "ciphers",
+    "key",
+    "hash"
+   ],
+   "units": 40,
+   "coherence": 0.639,
+   "examples": [
+    "Cryptography for Blockchain",
+    "Introduction to Blockchain",
+    "Types of Blockchain",
+    "Consensus Algorithms",
+    "Smart Contracts",
+    "Use cases of Blockchain Technology",
+    "Blockchain Development Platforms",
+    "Blockchain Application Development"
+   ]
+  },
+  {
+   "topic": 23,
+   "name": "properties, carbon, applications",
+   "terms": [
+    "properties",
+    "carbon",
+    "applications",
+    "nano",
+    "nanomaterials"
+   ],
+   "units": 40,
+   "coherence": 0.538,
+   "examples": [
+    "Micro and Nano Mechanical Systems",
+    "Micro and Nano Finishing Processes",
+    "Applications of Nano and Micromachining in Industry",
+    "Atomic structure and Periodic properties of elements",
+    "Chemical bonding",
+    "Important Engineering Materials",
+    "Spectroscopic techniques and Applications",
+    "BioMEMS"
+   ]
+  },
+  {
+   "topic": 24,
+   "name": "simulation, time series, processes",
+   "terms": [
+    "simulation",
+    "time series",
+    "processes",
+    "markov",
+    "random"
+   ],
+   "units": 41,
+   "coherence": 0.56,
+   "examples": [
+    "Introduction to Random Processes",
+    "Special Random Processes",
+    "Introduction",
+    "Discrete Event Simulation",
+    "Random Processes and Queuing Models",
+    "Simulation Output Data Analysis for a Single System",
+    "Introduction to Stochastic Process",
+    "Stationary Process"
+   ]
+  },
+  {
+   "topic": 25,
+   "name": "marketing, supply chain, customer",
+   "terms": [
+    "marketing",
+    "supply chain",
+    "customer",
+    "service",
+    "chain"
+   ],
+   "units": 67,
+   "coherence": 0.519,
+   "examples": [
+    "Connector Usage and Asset Management in Line Designer",
+    "Building a Strategic Framework to Analyze Supply Chain",
+    "Designing the Supply Chain Network",
+    "IT in Supply Chain",
+    "Product Development – Technical and Business Concerns",
+    "Business Use Cases",
+    "Technology Use Cases",
+    "Legal and Governance Use Cases"
+   ]
+  },
+  {
+   "topic": 26,
+   "name": "financial, capital, futures",
+   "terms": [
+    "financial",
+    "capital",
+    "futures",
+    "markets",
+    "money"
+   ],
+   "units": 64,
+   "coherence": 0.56,
+   "examples": [
+    "Introduction to financial markets",
+    "Time Value of Money Concept",
+    "Markowitz portfolio theory",
+    "Capital Asset Pricing Model and portfolio performance analysis",
+    "Risk Learning",
+    "Modern Financial Theory",
+    "Corporate Finance",
+    "Integration and Applications of Integrals"
+   ]
+  },
+  {
+   "topic": 27,
+   "name": "concrete, soil, rocks",
+   "terms": [
+    "concrete",
+    "soil",
+    "rocks",
+    "rock",
+    "foundation"
+   ],
+   "units": 95,
+   "coherence": 0.551,
+   "examples": [
+    "Elements of Structural Geology",
+    "Engineering Classification of Rocks and Rock Masses",
+    "In-situ stress measurement in Rocks and Rock testing",
+    "Strength, Modulus and Stress-Strain Responses of Rocks",
+    "Bearing Capacity of Rocks",
+    "Stability of Rock Slopes",
+    "Rock Bolting and Grouting",
+    "Introduction"
+   ]
+  },
+  {
+   "topic": 28,
+   "name": "cloud, architecture, cloud computing",
+   "terms": [
+    "cloud",
+    "architecture",
+    "cloud computing",
+    "computing",
+    "service"
+   ],
+   "units": 82,
+   "coherence": 0.578,
+   "examples": [
+    "Node JS",
+    "IIoT Platforms, Software and Services",
+    "Introduction to Distributed System",
+    "Decentralized Applications (Dapps)",
+    "Introduction to NoSQL",
+    "Case Study",
+    "Back End Development",
+    "Databases and Deployment"
+   ]
+  },
+  {
+   "topic": 29,
+   "name": "design, structures, gear",
+   "terms": [
+    "design",
+    "structures",
+    "gear",
+    "bridges",
+    "materials"
+   ],
+   "units": 71,
+   "coherence": 0.54,
+   "examples": [
+    "Electrical Systems in Buildings",
+    "Conventional Representation",
+    "Part Details and Assembly",
+    "Introduction to Ductile Detailing of Structures",
+    "Selection of work equipment",
+    "Introduction to Railway and Airport Engineering",
+    "Stress Analysis",
+    "Design of Shafts and Couplings"
+   ]
+  },
+  {
+   "topic": 30,
+   "name": "tree, class, functions",
+   "terms": [
+    "tree",
+    "class",
+    "functions",
+    "file",
+    "programming"
+   ],
+   "units": 69,
+   "coherence": 0.577,
+   "examples": [
+    "Hyper Text Mark Up Language",
+    "File and Exceptional Handling",
+    "Classes and Objects",
+    "GPSS",
+    "Knowledge Representation",
+    "Naming",
+    "Set Theory, Relations, Functions",
+    "Abstract algebra"
+   ]
+  },
+  {
+   "topic": 31,
+   "name": "regression, linear, linear regression",
+   "terms": [
+    "regression",
+    "linear",
+    "linear regression",
+    "squares",
+    "multiple"
+   ],
+   "units": 48,
+   "coherence": 0.571,
+   "examples": [
+    "Regression Analysis (Simple Multiple and Logistic Regression)",
+    "Calculus of Several Variables",
+    "Matrices – Eigen values, Eigen vectors, Quadratic form",
+    "Linear Model Selection and Regularization",
+    "Linear Equations and Vector Spaces",
+    "Linear Transformation and Eigenvalues",
+    "Essential Linear Algebra for Machine Learning",
+    "Matrix Decomposition with an application to Data Problems"
+   ]
+  },
+  {
+   "topic": 32,
+   "name": "hydraulic, pumps, valves",
+   "terms": [
+    "hydraulic",
+    "pumps",
+    "valves",
+    "flow",
+    "pneumatic"
+   ],
+   "units": 38,
+   "coherence": 0.666,
+   "examples": [
+    "Plumbing Systems in Building",
+    "Spillways and Flood Control Works",
+    "Mathematical Modeling of Physical Systems",
+    "Microfluidic Devices",
+    "Fluid Power Actuation",
+    "Introduction to Fluid Power Generating/Utilizing Elements",
+    "Control and Regulation Elements",
+    "Hydraulics"
+   ]
+  },
+  {
+   "topic": 33,
+   "name": "wind, turbine, turbines",
+   "terms": [
+    "wind",
+    "turbine",
+    "turbines",
+    "wind energy",
+    "power"
+   ],
+   "units": 15,
+   "coherence": 0.699,
+   "examples": [
+    "Introduction",
+    "Types and Components of Wind Turbine",
+    "Propeller",
+    "Wind Turbine Design",
+    "Economics, Environmental Concerns and Safety",
+    "Wind Energy",
+    "Power Cycles",
+    "Impact of Tides, Waves, and Wind on Design of Harbour"
+   ]
+  },
+  {
+   "topic": 34,
+   "name": "energy, solar, climate",
+   "terms": [
+    "energy",
+    "solar",
+    "climate",
+    "ecosystem",
+    "green"
+   ],
+   "units": 62,
+   "coherence": 0.552,
+   "examples": [
+    "Introduction to Environment",
+    "Natural resources",
+    "Environmental Pollution",
+    "Global Issues related to Environmental Degradation",
+    "Multidisciplinary nature of environmental science",
+    "Natural Resources • Natural resources: Forest resources, Water",
+    "Ecosystems • Concept of an ecosystem. • Structure",
+    "Biodiversity • Definition: genetic, species and ecosystem diversity."
+   ]
+  },
+  {
+   "topic": 35,
+   "name": "transform, fourier, laplace",
+   "terms": [
+    "transform",
+    "fourier",
+    "laplace",
+    "laplace transform",
+    "vibration"
+   ],
+   "units": 57,
+   "coherence": 0.545,
+   "examples": [
+    "Linear Systems with Random Inputs",
+    "Fourier series",
+    "Fourier Transform",
+    "Laplace transformation",
+    "Time Domain Methods",
+    "Laplace Transform Method",
+    "Analogy between Mechanical and Electrical Systems",
+    "Introduction to System Identification"
+   ]
+  },
+  {
+   "topic": 36,
+   "name": "memory, instruction, embedded",
+   "terms": [
+    "memory",
+    "instruction",
+    "embedded",
+    "architecture",
+    "organization"
+   ],
+   "units": 60,
+   "coherence": 0.604,
+   "examples": [
+    "Computer Architecture Organization and Bus Interconnection",
+    "Memory Organization",
+    "Central Processing Unit",
+    "Control Unit with Peripheral Devices and Multiprocessors",
+    "Real time Operating Systems and application areas",
+    "Memories",
+    "Processes and Signals in Unix",
+    "Signals and Threads and Terminal I/O"
+   ]
+  },
+  {
+   "topic": 37,
+   "name": "clustering, mining, learning",
+   "terms": [
+    "clustering",
+    "mining",
+    "learning",
+    "data mining",
+    "trees"
+   ],
+   "units": 47,
+   "coherence": 0.636,
+   "examples": [
+    "Learning",
+    "Data Mining advantages and applications",
+    "Knowledge Discovery in Database",
+    "Basics of Classification",
+    "Market Basket Analysis",
+    "Learning",
+    "Introduction to Clustering",
+    "Introduction"
+   ]
+  },
+  {
+   "topic": 38,
+   "name": "security, privacy, authentication",
+   "terms": [
+    "security",
+    "privacy",
+    "authentication",
+    "access",
+    "access control"
+   ],
+   "units": 96,
+   "coherence": 0.602,
+   "examples": [
+    "Introduction",
+    "Design Principles",
+    "Program Security",
+    "OS Security",
+    "Database Security",
+    "Identity and access management(IAM)",
+    "Security Technologies",
+    "Introduction"
+   ]
+  },
+  {
+   "topic": 39,
+   "name": "robot, robots, control",
+   "terms": [
+    "robot",
+    "robots",
+    "control",
+    "controller",
+    "motion"
+   ],
+   "units": 74,
+   "coherence": 0.59,
+   "examples": [
+    "Fundamentals of Robotics",
+    "Introduction to Motion Control",
+    "Kinematics of Robots",
+    "Analysis of Robots",
+    "Kinetics of Robots",
+    "Testing and Validation",
+    "Modeling and Simulation",
+    "Positioning Components in a Kinematic System"
+   ]
+  }
+ ]
+}

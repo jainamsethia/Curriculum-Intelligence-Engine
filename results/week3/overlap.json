@@ -1,0 +1,191 @@
+{
+ "n_val": 80,
+ "n_test": 119,
+ "methods": {
+  "tfidf_cosine": {
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.708,
+     "ci95": [
+      0.618,
+      0.782
+     ]
+    },
+    "roc_auc": {
+     "value": 0.959,
+     "ci95": [
+      0.929,
+      0.984
+     ]
+    },
+    "avg_precision": {
+     "value": 0.912,
+     "ci95": [
+      0.843,
+      0.966
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.126,
+    "precision": 0.8,
+    "recall": 0.75,
+    "f1": 0.774,
+    "tp": 24,
+    "fp": 6,
+    "fn": 8,
+    "f1_ci95": [
+     0.666,
+     0.869
+    ]
+   }
+  },
+  "maxsim_soft": {
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.667,
+     "ci95": [
+      0.552,
+      0.762
+     ]
+    },
+    "roc_auc": {
+     "value": 0.932,
+     "ci95": [
+      0.878,
+      0.972
+     ]
+    },
+    "avg_precision": {
+     "value": 0.864,
+     "ci95": [
+      0.755,
+      0.946
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.373,
+    "precision": 0.815,
+    "recall": 0.688,
+    "f1": 0.746,
+    "tp": 22,
+    "fp": 5,
+    "fn": 10,
+    "f1_ci95": [
+     0.585,
+     0.872
+    ]
+   }
+  },
+  "maxsim_coverage": {
+   "test": {
+    "n": 119,
+    "n_any_overlap": 32,
+    "n_substantial": 2,
+    "spearman": {
+     "value": 0.705,
+     "ci95": [
+      0.563,
+      0.834
+     ]
+    },
+    "roc_auc": {
+     "value": 0.794,
+     "ci95": [
+      0.7,
+      0.885
+     ]
+    },
+    "avg_precision": {
+     "value": 0.698,
+     "ci95": [
+      0.544,
+      0.832
+     ]
+    },
+    "roc_auc_substantial": {
+     "value": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "at_val_threshold": {
+    "threshold": 0.143,
+    "precision": 0.944,
+    "recall": 0.531,
+    "f1": 0.68,
+    "tp": 17,
+    "fp": 1,
+    "fn": 15,
+    "f1_ci95": [
+     0.522,
+     0.807
+    ]
+   }
+  }
+ },
+ "version_pairs": {
+  "n": 359,
+  "maxsim_median": 1.0,
+  "cross_course_median_by_label": {
+   "0": 0.275,
+   "1": 0.405,
+   "2": 0.702
+  }
+ },
+ "table": {
+  "columns": [
+   "Method",
+   "Spearman [95% CI]",
+   "ROC-AUC [95% CI]",
+   "Avg. precision",
+   "P / R / F1 at val threshold"
+  ],
+  "rows": [
+   [
+    "TF-IDF cosine (Week 2 baseline)",
+    "0.708 [0.62, 0.78]",
+    "0.959 [0.93, 0.98]",
+    "0.912",
+    "0.800 / 0.750 / 0.774"
+   ],
+   [
+    "Chunk MaxSim, soft (core)",
+    "0.667 [0.55, 0.76]",
+    "0.932 [0.88, 0.97]",
+    "0.864",
+    "0.815 / 0.688 / 0.746"
+   ],
+   [
+    "Chunk MaxSim, unit coverage F",
+    "0.705 [0.56, 0.83]",
+    "0.794 [0.70, 0.89]",
+    "0.698",
+    "0.944 / 0.531 / 0.680"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "method": "unit-level near-duplicates (MiniLM MaxSim) within a programme",
+ "threshold_from_val": 0.548,
+ "flags_test": 114,
+ "flags_by_programme": {
+  "MECHANICAL": 24,
+  "CIVIL": 8,
+  "MECHATRONICS": 14,
+  "CSBS": 16,
+  "CSE-CYBER": 6,
+  "EXTC": 12,
+  "CSE-DS": 8,
+  "IT": 3,
+  "COMP": 5,
+  "AI": 2,
+  "DS": 12,
+  "ELECTRICAL": 2,
+  "IBM": 2
+ },
+ "top_flags": [
+  {
+   "programme": "MECHANICAL",
+   "course_a": "Department Elective IV - Supply Chain Analytics",
+   "unit_a": "Designing the Supply Chain Network",
+   "course_b": "Open Elective I - Logistics and Supply Chain Management",
+   "unit_b": "Designing the Supply Chain Network",
+   "similarity": 1.0
+  },
+  {
+   "programme": "CIVIL",
+   "course_a": "Modelling and Simulation",
+   "unit_a": "Modeling with ODEs",
+   "course_b": "Open Elective - I (BSC) - Modelling and Simulation",
+   "unit_b": "Modeling with ODEs",
+   "similarity": 0.998
+  },
+  {
+   "programme": "MECHATRONICS",
+   "course_a": "Complex Variables and Transforms",
+   "unit_a": "Laplace Transforms",
+   "course_b": "Transforms and Series",
+   "unit_b": "Laplace transformation",
+   "similarity": 0.948
+  },
+  {
+   "programme": "MECHANICAL",
+   "course_a": "Complex Variables and Transforms",
+   "unit_a": "Laplace Transforms",
+   "course_b": "Partial Differential Equations and Laplace Transforms",
+   "unit_b": "Laplace transformation",
+   "similarity": 0.909
+  },
+  {
+   "programme": "MECHANICAL",
+   "course_a": "Open Elective I - Production Management",
+   "unit_a": "Quality Management System",
+   "course_b": "Quality Management",
+   "unit_b": "Quality Management Systems",
+   "similarity": 0.907
+  },
+  {
+   "programme": "MECHANICAL",
+   "course_a": "Total Quality Management",
+   "unit_a": "Introduction",
+   "course_b": "Quality Management",
+   "unit_b": "Introduction to Quality",
+   "similarity": 0.873
+  },
+  {
+   "programme": "MECHANICAL",
+   "course_a": "Open Elective I - Production Management",
+   "unit_a": "Introduction to TQM",
+   "course_b": "Total Quality Management",
+   "unit_b": "TQM Principles and Practices",
+   "similarity": 0.84
+  },
+  {
+   "programme": "CSBS",
+   "course_a": "Constitution of India",
+   "unit_a": "Emergency Provisions – Concept of National Emergency under",
+   "course_b": "Indian Constitution",
+   "unit_b": "Emergency Provisions under Article 352 – 360.",
+   "similarity": 0.831
+  }
+ ],
+ "synthetic_injection": {
+  "cases": 60,
+  "recall_at_20": 1.0,
+  "detected_at_threshold": 1.0
+ }
+}
