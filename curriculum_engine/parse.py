@@ -1,22 +1,22 @@
-"""Week 3, step 1 - Information extraction: NMIMS B.Tech syllabus booklets (PDF) -> structured course records.
+"""Information extraction: NMIMS B.Tech semester syllabus booklets (PDF) -> structured course records.
 
 Reads the text-layer syllabus PDFs straight from the zip (no need to unpack 16 GB) and writes
-    data/processed/nmims_courses.jsonl   one record per distinct course version
-    results/nmims_dataset_stats.json
+    data/processed/courses.jsonl         one record per distinct course version
+    results/dataset/parse_stats.json
 Page text is cached in data/interim/nmims_pages.jsonl so that re-running after a parser change takes seconds.
 
 Scanned PDFs (all past exam papers, most pre-2020 syllabi) have no text layer and are skipped: no OCR engine here.
 Records from before AY 2020-21 are dropped: they come from OCR'd scans with heavy character noise.
 
-    python src/parse_nmims.py "path/to/B TECH.zip" [--rebuild-cache]
+    python -m curriculum_engine.parse [path/to/B TECH.zip] [--rebuild-cache]     (default: $NMIMS_ZIP or ./B TECH.zip)
 """
 import hashlib, json, re, sys, zipfile
 from collections import Counter, defaultdict
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT, RES = ROOT / "data/processed/nmims_courses.jsonl", ROOT / "results"
-CACHE = ROOT / "data/interim/nmims_pages.jsonl"
+from curriculum_engine import DATA, RESULTS, ZIP
+
+OUT, RES = DATA / "processed/courses.jsonl", RESULTS / "dataset"
+CACHE = DATA / "interim/nmims_pages.jsonl"
 SKIP_NAME = re.compile(r"exam|question|paper", re.I)          # past papers: scanned, and not syllabi anyway
 MIN_AY = 2020                                                   # first academic year kept (start year)
 NOISE = re.compile(r"SVKM|Narsee Monjee|Mukesh Patel School|Prepared by|Approved by|Head of the Dep|^\s*Signature|"
@@ -274,7 +274,8 @@ def parse_block(block, src):
     if not (units or (outs and objectives)):
         return None
     ts = re.search(r"(?s)(\d)\s*\n\s*(\d)\s*\n\s*(\d)\s*\n\s*(\d{1,2})\s*\n\s*(?:Marks|-|\d)", body[:1500])
-    pre = re.search(r"(?is)pre\s*[-–]?\s*requisites?\s*[:\-–]?\s*(.*?)(?=\n\s*(?:course\s+)?objectives?|\n\s*(?:course\s+)?outcomes?)", body)
+    # [ \t]* (not \s*) after the colon: \s* ate the newline of an empty field, so 'Course Objective' text became the prerequisite
+    pre = re.search(r"(?is)pre\s*[-–]?\s*requisites?[ \t]*[:\-–]?[ \t]*(.*?)(?=\n\s*(?:course\s+)?objectives?|\n\s*(?:course\s+)?outcomes?)", body)
     code_s = re.sub(r"\s+", "", code.group(1)).upper() if code else ""
     return {
         "course_name": cname, "code": code_s if re.search(r"\d", code_s) else "", "course_key": key(cname),
@@ -343,15 +344,15 @@ def main(zip_path, rebuild=False):
             seen[h] = rec
     recs = []
     for h, rec in seen.items():
-        rec["source_files"] = sorted(set(sources[h]))[:6]
+        rec["source_files"] = sorted(set(sources[h]))          # all of them: programme membership comes from these
         rec["n_source_files"] = len(set(sources[h]))
         recs.append(rec)
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    RES.mkdir(exist_ok=True)
+    RES.mkdir(parents=True, exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         for r in recs:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
-    with open(ROOT / "data/interim/nmims_raw_blocks.jsonl", "w", encoding="utf-8") as f:   # audit aid, not committed
+    with open(DATA / "interim/nmims_raw_blocks.jsonl", "w", encoding="utf-8") as f:   # audit aid, not committed
         for r in recs:
             f.write(json.dumps({"id": r["id"], "raw": raw[r["id"]]}, ensure_ascii=False) + "\n")
     fam = Counter(r["course_key"] for r in recs)
@@ -365,10 +366,10 @@ def main(zip_path, rebuild=False):
           "units_with_title": sum(bool(u["title"]) for r in recs for u in r["units"]),
           "units_with_hours": sum(u["hours"] is not None for r in recs for u in r["units"]),
           "with_code": sum(bool(r["code"]) for r in recs), "with_credits": sum(r["credits"] is not None for r in recs)}
-    (RES / "nmims_dataset_stats.json").write_text(json.dumps(st, indent=2))
+    (RES / "parse_stats.json").write_text(json.dumps(st, indent=2))
     print(json.dumps(st, indent=2))
 
 
 if __name__ == "__main__":
     a = [x for x in sys.argv[1:] if not x.startswith("--")]
-    main(a[0] if a else "C:/Users/jainam/Downloads/B TECH.zip", "--rebuild-cache" in sys.argv)
+    main(a[0] if a else ZIP, "--rebuild-cache" in sys.argv)
