@@ -1,9 +1,16 @@
-# derived / bulky / regenerable
-data/interim/
-data/raw/nmims_zip/
+# NMIMS-derived data never goes to the (public) repo: raw zip, parsed text, caches, labelling packets
+data/
+*.zip
+*.pkl
+
+# python
 __pycache__/
 *.pyc
-*.zip
+*.egg-info/
+.pytest_cache/
+
+# Word lock files
+~$*
 
 # tool folders (nothing from an assistant's working folders goes to the repo)
 .claude/
