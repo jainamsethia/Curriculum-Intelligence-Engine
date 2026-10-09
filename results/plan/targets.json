@@ -1,0 +1,10 @@
+{
+ "_note": "Success criteria fixed in Proposal v2 (9 Oct 2026), before any redo result existed. Measured on the held-out test split.",
+ "overlap": {"spearman": 0.6, "roc_auc": 0.85, "f1": 0.7},
+ "redundancy": {"precision_at_20": 0.7, "synthetic_recall_at_20": 0.8},
+ "prerequisites": {"removal_recall": 0.8, "flag_precision": 0.6, "rename_false_alarm_max": 0.2},
+ "diff": {"precision": 0.85, "recall": 0.85},
+ "bloom": {"accuracy": 0.7, "within_one": 0.85},
+ "emerging": {"gap_precision": 0.7},
+ "topics": {"accepted_share": 0.7}
+}

@@ -1,0 +1,20 @@
+{
+ "seed": 42,
+ "fractions": {
+  "train": 0.6,
+  "val": 0.2,
+  "test": 0.2
+ },
+ "unit": "course family (same code or same name)",
+ "hash": "4763325fd5",
+ "families": {
+  "train": 387,
+  "val": 129,
+  "test": 129
+ },
+ "versions": {
+  "train": 1423,
+  "test": 456,
+  "val": 487
+ }
+}
