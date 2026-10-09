@@ -1,0 +1,35 @@
+Program: B. Tech (Computer Engineering)
+Semester : V
+Course/Module : Synthetic Networks
+Module Code: 702CE0C099
+Teaching Scheme
+Lecture
+Practical
+Tutorial
+Credit
+3
+2
+0
+4
+Marks
+Pre-requisite:
+Course Objective:
+The course would enable students to understand how packets move through a network.
+Course Outcomes:
+After completion of the course, students will be able to:
+1. Explain the layers of the network stack (K2)
+2. Configure routing on a small network (K3)
+Detailed Syllabus:
+Unit
+Description
+Duration
+1
+Network layers: OSI and TCP/IP models, encapsulation.
+08
+2
+Routing: distance vector and link state routing, OSPF.
+07
+Total
+15
+Text Books:
+1. A. Author, Networks, 1st Edition, Publisher, 2020.
