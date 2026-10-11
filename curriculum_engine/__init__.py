@@ -2,7 +2,7 @@
 import os
 from pathlib import Path
 
-__version__ = "0.2.0"
+__version__ = "0.6.0"
 ROOT = Path(__file__).resolve().parents[1]
 DATA = Path(os.environ.get("CE_DATA_DIR", ROOT / "data"))          # NMIMS-derived data, never committed
 RESULTS = ROOT / "results"

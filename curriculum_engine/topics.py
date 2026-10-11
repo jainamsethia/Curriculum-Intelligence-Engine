@@ -16,11 +16,14 @@ class TopicModel:
         texts = [t for c in courses for _, t in chunks(c)]
         titles = [l for c in courses for l, _ in chunks(c)]
         E = self.emb(texts)
+        self.k = min(self.k, len(texts))                  # tiny datasets (tests, a single uploaded syllabus)
         km = KMeans(self.k, n_init=4, random_state=SEED).fit(E)
         lab = km.labels_
         C = km.cluster_centers_
         self.centroids = C / np.linalg.norm(C, axis=1, keepdims=True)
-        cv = CountVectorizer(stop_words="english", ngram_range=(1, 2), min_df=3, max_df=0.5, token_pattern=r"(?u)\b[a-zA-Z][a-zA-Z\-]+\b")
+        small = len(texts) < 50                           # tiny inputs: keep every term
+        cv = CountVectorizer(stop_words="english", ngram_range=(1, 2), min_df=1 if small else 3, max_df=1.0 if small else 0.5,
+                             token_pattern=r"(?u)\b[a-zA-Z][a-zA-Z\-]+\b")
         X = cv.fit_transform(texts)
         terms = np.array(cv.get_feature_names_out())
         tf = np.vstack([np.asarray(X[lab == k].sum(0)).ravel() for k in range(self.k)])
