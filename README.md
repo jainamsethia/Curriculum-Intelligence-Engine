@@ -15,6 +15,7 @@ maps learning outcomes to Bloom's taxonomy, and flags emerging-topic gaps. Every
 | 4 | Improved model | `week-4-redo` | `submissions/week4/` |
 | 5 | Evaluation & error analysis | `week-5-redo` | `submissions/week5/` |
 | 1–5 | Final bundle (all five reports from one commit) | `week-5-redo` | `submissions/week5_bundle/` |
+| 6 | Asset engineering: package + API, prerequisite checker v2 | `week-6-redo` | `submissions/week6/` |
 
 The first versions of Weeks 2–4 (MIT OpenCourseWare data, then an early NMIMS parser) are kept for history in `legacy/` and
 `legacy_mit/` (tag `pre-redo`). None of their numbers are reused.
@@ -38,6 +39,16 @@ python tools/check_reports.py submissions/week1/*.docx
 The first parse reads ~2,400 PDFs from the zip (cached afterwards in `data/interim/`). Embeddings use cached sentence-transformer
 models; set `HF_HUB_OFFLINE=1` once they are downloaded. The optional LLM (Phi-3) runs locally through Ollama; nothing is sent to
 external services.
+
+## API (Week 6)
+```bash
+pip install -e .[dev]
+uvicorn curriculum_engine.api:app --port 8000      # OpenAPI docs: http://localhost:8000/docs
+```
+Endpoints: `POST /compare-curricula`, `/map-outcomes`, `/find-overlaps`, `/check-prerequisites`, `/detect-redundancy`, `/emerging-topics`,
+`GET /health`. Details, confidence definitions and real examples: `docs/API.md`, `docs/examples/`, `docs/openapi.json`.
+The Teams code zip also contains `data/processed/courses.jsonl` (parsed syllabi), so the API runs without the 13 GB archive; that
+file is never pushed to GitHub.
 
 ## Repository layout
 ```

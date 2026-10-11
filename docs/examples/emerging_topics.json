@@ -1,0 +1,80 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/emerging-topics",
+  "body": {
+   "programme": "COMP"
+  }
+ },
+ "status": 200,
+ "response": {
+  "meta": {
+   "engine_version": "0.6.0",
+   "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+   "course_versions": 2366,
+   "split_hash": "4763325fd5",
+   "evaluation_note": "confidence values come from LLM-annotated reference labels (no human annotators); indicative"
+  },
+  "programme": "COMP",
+  "reference_status": "DRAFT - pending approval by Group 9 (9 Oct 2026). Only 'verified' entries are used in metrics.",
+  "gap_precision": 1.0,
+  "note": "gaps are precise but gap recall is low: weakly related units can count as coverage (threshold shared with the prerequisite topic check)",
+  "topics": [
+   {
+    "topic": "Large language models and generative AI",
+    "covered": false,
+    "best_similarity": 0.388,
+    "closest_units": [
+     "AI and Robotics - Introduction to AI",
+     "Deep Learning - Recurrent Neural Networks",
+     "Deep Learning - Convolutional Neural Networks"
+    ],
+    "source": "Stanford HAI, The 2026 AI Index Report (top takeaways)"
+   },
+   {
+    "topic": "AI agents",
+    "covered": true,
+    "best_similarity": 0.548,
+    "closest_units": [
+     "AI and Robotics - Introduction to AI",
+     "Robotic Process Automation - Introduction and Fundamental concepts of Robotic Process Automation (RPA)",
+     "Artificial Intelligence - Introduction to Artificial Intelligence"
+    ],
+    "source": "Stanford HAI, The 2026 AI Index Report (top takeaways)"
+   },
+   {
+    "topic": "Responsible AI and AI safety evaluation",
+    "covered": true,
+    "best_similarity": 0.436,
+    "closest_units": [
+     "AI and Robotics - Introduction to AI",
+     "Artificial Intelligence - Introduction to Artificial Intelligence",
+     "Robotic Process Automation - Future Trends in RPA and App Creation"
+    ],
+    "source": "Stanford HAI, The 2026 AI Index Report (top takeaways)"
+   },
+   {
+    "topic": "Efficient small AI models and edge AI",
+    "covered": true,
+    "best_similarity": 0.414,
+    "closest_units": [
+     "Deep Learning - Optimization and Regularization for Deep Learning",
+     "Deep Learning - Convolutional Neural Networks",
+     "Computer Vision - Introduction to Computer Vision and Image Descriptors"
+    ],
+    "source": "Stanford HAI, The 2025 AI Index Report (top takeaways)"
+   },
+   {
+    "topic": "AI chips and data-centre hardware",
+    "covered": true,
+    "best_similarity": 0.452,
+    "closest_units": [
+     "Embedded Systems - Processor and memory Organization",
+     "Computer Organization and Architecture - Computer Architecture Organization and Bus Interconnection",
+     "Computer Organization and Architecture - Control Unit with Peripheral Devices and Multiprocessors"
+    ],
+    "source": "Stanford HAI, The 2026 AI Index Report (top takeaways)"
+   }
+  ]
+ }
+}

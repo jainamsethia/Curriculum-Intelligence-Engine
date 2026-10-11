@@ -1,0 +1,1278 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "Curriculum Intelligence Engine API",
+  "description": "Course and programme comparison for NMIMS curriculum committees: overlap, redundancy, missing prerequisites, curriculum diff, Bloom levels and emerging-topic gaps. Confidence values come from LLM-annotated reference labels (no human annotators); they are indicative.",
+  "version": "0.6.0"
+ },
+ "paths": {
+  "/health": {
+   "get": {
+    "summary": "Health",
+    "operationId": "health_health_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Health"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/compare-curricula": {
+   "post": {
+    "summary": "Compare Curricula",
+    "description": "Two courses -> overlap, common/unique topics, prerequisite check, Bloom levels. Two programmes (or two years of one\nprogramme) -> courses retained, renamed or revised, removed and added.",
+    "operationId": "compare_curricula_compare_curricula_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/CompareRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "anyOf": [
+          {
+           "$ref": "#/components/schemas/CompareCoursesResponse"
+          },
+          {
+           "$ref": "#/components/schemas/CompareProgrammesResponse"
+          }
+         ],
+         "title": "Response Compare Curricula Compare Curricula Post"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/map-outcomes": {
+   "post": {
+    "summary": "Map Outcomes",
+    "operationId": "map_outcomes_map_outcomes_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/OutcomesRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/OutcomesResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/find-overlaps": {
+   "post": {
+    "summary": "Find Overlaps",
+    "operationId": "find_overlaps_find_overlaps_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/FindOverlapsRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/FindOverlapsResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/check-prerequisites": {
+   "post": {
+    "summary": "Check Prerequisites",
+    "operationId": "check_prerequisites_check_prerequisites_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/PrerequisitesRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/PrerequisitesResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/detect-redundancy": {
+   "post": {
+    "summary": "Detect Redundancy",
+    "operationId": "detect_redundancy_detect_redundancy_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ProgrammeRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/RedundancyResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/emerging-topics": {
+   "post": {
+    "summary": "Emerging Topics",
+    "operationId": "emerging_topics_emerging_topics_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ProgrammeRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/EmergingResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "BloomItem": {
+    "properties": {
+     "outcome": {
+      "type": "string",
+      "title": "Outcome"
+     },
+     "level": {
+      "type": "string",
+      "title": "Level"
+     },
+     "confidence": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Confidence",
+      "description": "Precision of this predicted level against faculty K/L tags (test split)"
+     },
+     "faculty_tag": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "integer"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Faculty Tag"
+     }
+    },
+    "type": "object",
+    "required": [
+     "outcome",
+     "level"
+    ],
+    "title": "BloomItem"
+   },
+   "CompareCoursesResponse": {
+    "properties": {
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "course_a": {
+      "$ref": "#/components/schemas/CourseInfo"
+     },
+     "course_b": {
+      "$ref": "#/components/schemas/CourseInfo"
+     },
+     "overlap": {
+      "$ref": "#/components/schemas/Overlap"
+     },
+     "common_topics": {
+      "items": {
+       "$ref": "#/components/schemas/TopicMatch"
+      },
+      "type": "array",
+      "title": "Common Topics"
+     },
+     "unique_to_a": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Unique To A"
+     },
+     "unique_to_b": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Unique To B"
+     },
+     "prerequisites_a": {
+      "$ref": "#/components/schemas/PrereqResult"
+     },
+     "prerequisites_b": {
+      "$ref": "#/components/schemas/PrereqResult"
+     },
+     "outcome_bloom_a": {
+      "items": {
+       "$ref": "#/components/schemas/BloomItem"
+      },
+      "type": "array",
+      "title": "Outcome Bloom A"
+     },
+     "outcome_bloom_b": {
+      "items": {
+       "$ref": "#/components/schemas/BloomItem"
+      },
+      "type": "array",
+      "title": "Outcome Bloom B"
+     }
+    },
+    "type": "object",
+    "required": [
+     "meta",
+     "course_a",
+     "course_b",
+     "overlap",
+     "common_topics",
+     "unique_to_a",
+     "unique_to_b",
+     "prerequisites_a",
+     "prerequisites_b",
+     "outcome_bloom_a",
+     "outcome_bloom_b"
+    ],
+    "title": "CompareCoursesResponse"
+   },
+   "CompareProgrammesResponse": {
+    "properties": {
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "a": {
+      "$ref": "#/components/schemas/ProgrammeRef"
+     },
+     "b": {
+      "$ref": "#/components/schemas/ProgrammeRef"
+     },
+     "retained": {
+      "type": "integer",
+      "title": "Retained"
+     },
+     "renamed_or_revised": {
+      "items": {
+       "prefixItems": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "string"
+        }
+       ],
+       "type": "array",
+       "maxItems": 2,
+       "minItems": 2
+      },
+      "type": "array",
+      "title": "Renamed Or Revised",
+      "description": "Matched by content although the name differs"
+     },
+     "removed": {
+      "items": {
+       "$ref": "#/components/schemas/DiffCourse"
+      },
+      "type": "array",
+      "title": "Removed"
+     },
+     "added": {
+      "items": {
+       "$ref": "#/components/schemas/DiffCourse"
+      },
+      "type": "array",
+      "title": "Added"
+     },
+     "note": {
+      "type": "string",
+      "title": "Note"
+     }
+    },
+    "type": "object",
+    "required": [
+     "meta",
+     "a",
+     "b",
+     "retained",
+     "renamed_or_revised",
+     "removed",
+     "added",
+     "note"
+    ],
+    "title": "CompareProgrammesResponse"
+   },
+   "CompareRequest": {
+    "properties": {
+     "course_a": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/CourseRef"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "course_b": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/CourseRef"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "programme_a": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/ProgrammeRef"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "programme_b": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/ProgrammeRef"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     }
+    },
+    "type": "object",
+    "title": "CompareRequest"
+   },
+   "CourseInfo": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "course_name": {
+      "type": "string",
+      "title": "Course Name"
+     },
+     "code": {
+      "type": "string",
+      "title": "Code",
+      "default": ""
+     },
+     "academic_year": {
+      "type": "string",
+      "title": "Academic Year",
+      "default": ""
+     },
+     "semester": {
+      "type": "string",
+      "title": "Semester",
+      "default": ""
+     },
+     "programmes": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Programmes",
+      "default": []
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "course_name"
+    ],
+    "title": "CourseInfo"
+   },
+   "CourseRef": {
+    "properties": {
+     "id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Id",
+      "examples": [
+       "nm48af830b"
+      ]
+     },
+     "name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Name",
+      "examples": [
+       "Machine Learning"
+      ]
+     },
+     "text": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Text",
+      "description": "Syllabus text in the NMIMS template, or any text with one topic per paragraph"
+     },
+     "programme": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Programme",
+      "description": "Programme code, needed for prerequisite checks on raw text",
+      "examples": [
+       "COMP"
+      ]
+     },
+     "semester": {
+      "anyOf": [
+       {
+        "type": "integer",
+        "maximum": 10.0,
+        "minimum": 1.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Semester"
+     },
+     "academic_year": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Academic Year",
+      "examples": [
+       "2025-26"
+      ]
+     }
+    },
+    "type": "object",
+    "title": "CourseRef",
+    "description": "A course: an id from the parsed NMIMS dataset, a course name (latest version is used), or raw syllabus text."
+   },
+   "DiffCourse": {
+    "properties": {
+     "family": {
+      "type": "string",
+      "title": "Family"
+     },
+     "course_name": {
+      "type": "string",
+      "title": "Course Name"
+     }
+    },
+    "type": "object",
+    "required": [
+     "family",
+     "course_name"
+    ],
+    "title": "DiffCourse"
+   },
+   "EmergingItem": {
+    "properties": {
+     "topic": {
+      "type": "string",
+      "title": "Topic"
+     },
+     "covered": {
+      "type": "boolean",
+      "title": "Covered"
+     },
+     "best_similarity": {
+      "type": "number",
+      "title": "Best Similarity"
+     },
+     "closest_units": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Closest Units"
+     },
+     "source": {
+      "type": "string",
+      "title": "Source"
+     }
+    },
+    "type": "object",
+    "required": [
+     "topic",
+     "covered",
+     "best_similarity",
+     "closest_units",
+     "source"
+    ],
+    "title": "EmergingItem"
+   },
+   "EmergingResponse": {
+    "properties": {
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "programme": {
+      "type": "string",
+      "title": "Programme"
+     },
+     "reference_status": {
+      "type": "string",
+      "title": "Reference Status"
+     },
+     "gap_precision": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Gap Precision",
+      "description": "Precision of flagged gaps on reference labels; gap recall is low (see note)"
+     },
+     "note": {
+      "type": "string",
+      "title": "Note"
+     },
+     "topics": {
+      "items": {
+       "$ref": "#/components/schemas/EmergingItem"
+      },
+      "type": "array",
+      "title": "Topics"
+     }
+    },
+    "type": "object",
+    "required": [
+     "meta",
+     "programme",
+     "reference_status",
+     "note",
+     "topics"
+    ],
+    "title": "EmergingResponse"
+   },
+   "FindOverlapsRequest": {
+    "properties": {
+     "course": {
+      "$ref": "#/components/schemas/CourseRef"
+     },
+     "k": {
+      "type": "integer",
+      "maximum": 50.0,
+      "minimum": 1.0,
+      "title": "K",
+      "default": 5
+     },
+     "programme": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Programme",
+      "description": "Only search courses of this programme"
+     }
+    },
+    "type": "object",
+    "required": [
+     "course"
+    ],
+    "title": "FindOverlapsRequest"
+   },
+   "FindOverlapsResponse": {
+    "properties": {
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "query": {
+      "$ref": "#/components/schemas/CourseInfo"
+     },
+     "results": {
+      "items": {
+       "$ref": "#/components/schemas/OverlapHit"
+      },
+      "type": "array",
+      "title": "Results"
+     }
+    },
+    "type": "object",
+    "required": [
+     "meta",
+     "query",
+     "results"
+    ],
+    "title": "FindOverlapsResponse"
+   },
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "type": "array",
+      "title": "Detail"
+     }
+    },
+    "type": "object",
+    "title": "HTTPValidationError"
+   },
+   "Health": {
+    "properties": {
+     "status": {
+      "type": "string",
+      "title": "Status"
+     },
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "endpoints": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Endpoints"
+     }
+    },
+    "type": "object",
+    "required": [
+     "status",
+     "meta",
+     "endpoints"
+    ],
+    "title": "Health"
+   },
+   "Meta": {
+    "properties": {
+     "engine_version": {
+      "type": "string",
+      "title": "Engine Version"
+     },
+     "encoder": {
+      "type": "string",
+      "title": "Encoder"
+     },
+     "course_versions": {
+      "type": "integer",
+      "title": "Course Versions"
+     },
+     "split_hash": {
+      "type": "string",
+      "title": "Split Hash"
+     },
+     "evaluation_note": {
+      "type": "string",
+      "title": "Evaluation Note"
+     }
+    },
+    "type": "object",
+    "required": [
+     "engine_version",
+     "encoder",
+     "course_versions",
+     "split_hash",
+     "evaluation_note"
+    ],
+    "title": "Meta"
+   },
+   "OutcomesRequest": {
+    "properties": {
+     "course": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/CourseRef"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "outcomes": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "string"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Outcomes",
+      "examples": [
+       [
+        "Design a relational database schema",
+        "Explain normal forms"
+       ]
+      ]
+     }
+    },
+    "type": "object",
+    "title": "OutcomesRequest"
+   },
+   "OutcomesResponse": {
+    "properties": {
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "outcomes": {
+      "items": {
+       "$ref": "#/components/schemas/BloomItem"
+      },
+      "type": "array",
+      "title": "Outcomes"
+     }
+    },
+    "type": "object",
+    "required": [
+     "meta",
+     "outcomes"
+    ],
+    "title": "OutcomesResponse"
+   },
+   "Overlap": {
+    "properties": {
+     "percent": {
+      "type": "string",
+      "title": "Percent",
+      "description": "Share of matched units (F-measure of unit coverage)"
+     },
+     "semantic_similarity": {
+      "type": "number",
+      "title": "Semantic Similarity"
+     },
+     "lexical_similarity": {
+      "type": "number",
+      "title": "Lexical Similarity"
+     },
+     "confidence": {
+      "type": "number",
+      "title": "Confidence",
+      "description": "P(any overlap) from a logistic model fitted on validation labels; relative, not well calibrated"
+     },
+     "redundancy_warning": {
+      "type": "boolean",
+      "title": "Redundancy Warning"
+     }
+    },
+    "type": "object",
+    "required": [
+     "percent",
+     "semantic_similarity",
+     "lexical_similarity",
+     "confidence",
+     "redundancy_warning"
+    ],
+    "title": "Overlap"
+   },
+   "OverlapHit": {
+    "properties": {
+     "course": {
+      "$ref": "#/components/schemas/CourseInfo"
+     },
+     "score": {
+      "type": "number",
+      "title": "Score",
+      "description": "Rank-average of TF-IDF and MaxSim percentiles among validation pairs (0-1)"
+     },
+     "confidence": {
+      "type": "number",
+      "title": "Confidence"
+     }
+    },
+    "type": "object",
+    "required": [
+     "course",
+     "score",
+     "confidence"
+    ],
+    "title": "OverlapHit"
+   },
+   "PrereqFlag": {
+    "properties": {
+     "programme": {
+      "type": "string",
+      "title": "Programme"
+     },
+     "phrase": {
+      "type": "string",
+      "title": "Phrase"
+     },
+     "type": {
+      "type": "string",
+      "enum": [
+       "not_offered_earlier",
+       "assumed_topic_not_taught"
+      ],
+      "title": "Type"
+     },
+     "expected_precision": {
+      "type": "number",
+      "title": "Expected Precision",
+      "description": "Share of such flags judged correct on LLM-annotated reference labels (test split)"
+     }
+    },
+    "type": "object",
+    "required": [
+     "programme",
+     "phrase",
+     "type",
+     "expected_precision"
+    ],
+    "title": "PrereqFlag"
+   },
+   "PrereqResult": {
+    "properties": {
+     "checked": {
+      "type": "boolean",
+      "title": "Checked"
+     },
+     "reason": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Reason",
+      "description": "Why the course was not checked (coverage, common course, first semester)"
+     },
+     "flags": {
+      "items": {
+       "$ref": "#/components/schemas/PrereqFlag"
+      },
+      "type": "array",
+      "title": "Flags",
+      "default": []
+     }
+    },
+    "type": "object",
+    "required": [
+     "checked"
+    ],
+    "title": "PrereqResult"
+   },
+   "PrerequisitesRequest": {
+    "properties": {
+     "course": {
+      "$ref": "#/components/schemas/CourseRef"
+     }
+    },
+    "type": "object",
+    "required": [
+     "course"
+    ],
+    "title": "PrerequisitesRequest"
+   },
+   "PrerequisitesResponse": {
+    "properties": {
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "course": {
+      "$ref": "#/components/schemas/CourseInfo"
+     },
+     "result": {
+      "$ref": "#/components/schemas/PrereqResult"
+     }
+    },
+    "type": "object",
+    "required": [
+     "meta",
+     "course",
+     "result"
+    ],
+    "title": "PrerequisitesResponse"
+   },
+   "ProgrammeRef": {
+    "properties": {
+     "programme": {
+      "type": "string",
+      "title": "Programme",
+      "examples": [
+       "COMP"
+      ]
+     },
+     "academic_year": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Academic Year",
+      "description": "Default: the latest year with enough parsed courses",
+      "examples": [
+       "2025-26"
+      ]
+     }
+    },
+    "type": "object",
+    "required": [
+     "programme"
+    ],
+    "title": "ProgrammeRef"
+   },
+   "ProgrammeRequest": {
+    "properties": {
+     "programme": {
+      "type": "string",
+      "title": "Programme",
+      "examples": [
+       "COMP"
+      ]
+     },
+     "academic_year": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Academic Year"
+     },
+     "k": {
+      "type": "integer",
+      "maximum": 200.0,
+      "minimum": 1.0,
+      "title": "K",
+      "default": 20
+     }
+    },
+    "type": "object",
+    "required": [
+     "programme"
+    ],
+    "title": "ProgrammeRequest"
+   },
+   "RedundancyResponse": {
+    "properties": {
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "programme": {
+      "type": "string",
+      "title": "Programme"
+     },
+     "academic_year": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Academic Year"
+     },
+     "courses_checked": {
+      "type": "integer",
+      "title": "Courses Checked"
+     },
+     "pairs": {
+      "items": {
+       "$ref": "#/components/schemas/RedundantPair"
+      },
+      "type": "array",
+      "title": "Pairs"
+     }
+    },
+    "type": "object",
+    "required": [
+     "meta",
+     "programme",
+     "academic_year",
+     "courses_checked",
+     "pairs"
+    ],
+    "title": "RedundancyResponse"
+   },
+   "RedundantPair": {
+    "properties": {
+     "course_a": {
+      "type": "string",
+      "title": "Course A"
+     },
+     "unit_a": {
+      "type": "string",
+      "title": "Unit A"
+     },
+     "course_b": {
+      "type": "string",
+      "title": "Course B"
+     },
+     "unit_b": {
+      "type": "string",
+      "title": "Unit B"
+     },
+     "similarity": {
+      "type": "number",
+      "title": "Similarity"
+     },
+     "expected_precision": {
+      "type": "number",
+      "title": "Expected Precision",
+      "description": "Precision of top redundancy flags on LLM-annotated reference labels (test split)"
+     }
+    },
+    "type": "object",
+    "required": [
+     "course_a",
+     "unit_a",
+     "course_b",
+     "unit_b",
+     "similarity",
+     "expected_precision"
+    ],
+    "title": "RedundantPair"
+   },
+   "TopicMatch": {
+    "properties": {
+     "topic_a": {
+      "type": "string",
+      "title": "Topic A"
+     },
+     "topic_b": {
+      "type": "string",
+      "title": "Topic B"
+     },
+     "similarity": {
+      "type": "number",
+      "title": "Similarity"
+     },
+     "topic_label": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Topic Label"
+     }
+    },
+    "type": "object",
+    "required": [
+     "topic_a",
+     "topic_b",
+     "similarity"
+    ],
+    "title": "TopicMatch"
+   },
+   "ValidationError": {
+    "properties": {
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "type": "array",
+      "title": "Location"
+     },
+     "msg": {
+      "type": "string",
+      "title": "Message"
+     },
+     "type": {
+      "type": "string",
+      "title": "Error Type"
+     }
+    },
+    "type": "object",
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError"
+   }
+  }
+ }
+}

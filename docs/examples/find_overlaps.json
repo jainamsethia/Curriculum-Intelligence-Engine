@@ -1,0 +1,104 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/find-overlaps",
+  "body": {
+   "course": {
+    "id": "nm48af830b"
+   },
+   "k": 5
+  }
+ },
+ "status": 200,
+ "response": {
+  "meta": {
+   "engine_version": "0.6.0",
+   "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+   "course_versions": 2366,
+   "split_hash": "4763325fd5",
+   "evaluation_note": "confidence values come from LLM-annotated reference labels (no human annotators); indicative"
+  },
+  "query": {
+   "id": "nm48af830b",
+   "course_name": "Department Elective IV - Supply Chain Analytics",
+   "code": "BTME08016",
+   "academic_year": "2021-22",
+   "semester": "VIII",
+   "programmes": [
+    "MECHANICAL"
+   ]
+  },
+  "results": [
+   {
+    "course": {
+     "id": "nmb48b228d",
+     "course_name": "Supply Chain Analytics",
+     "code": "702ME0E022",
+     "academic_year": "2026-27",
+     "semester": "VII/XI",
+     "programmes": [
+      "MECHANICAL"
+     ]
+    },
+    "score": 0.981,
+    "confidence": 0.841
+   },
+   {
+    "course": {
+     "id": "nm9d8c41ec",
+     "course_name": "Open Elective I - Logistics and Supply Chain Management",
+     "code": "MBOEMEL001",
+     "academic_year": "2021-22",
+     "semester": "VII",
+     "programmes": [
+      "MECHANICAL"
+     ]
+    },
+    "score": 0.975,
+    "confidence": 0.833
+   },
+   {
+    "course": {
+     "id": "nm624491c4",
+     "course_name": "Operations and Supply Chain Management",
+     "code": "702ME0I013",
+     "academic_year": "2026-27",
+     "semester": "V/VI",
+     "programmes": [
+      "MECHANICAL"
+     ]
+    },
+    "score": 0.962,
+    "confidence": 0.79
+   },
+   {
+    "course": {
+     "id": "nmd00a9663",
+     "course_name": "Foundation of Information systems",
+     "code": "MBOEITF001",
+     "academic_year": "2021-22",
+     "semester": "VII",
+     "programmes": [
+      "IT"
+     ]
+    },
+    "score": 0.856,
+    "confidence": 0.332
+   },
+   {
+    "course": {
+     "id": "nm355e0725",
+     "course_name": "Services Science & Service Operational Management",
+     "code": "702CO0C048",
+     "academic_year": "2025-26",
+     "semester": "V/ VII",
+     "programmes": [
+      "CSBS"
+     ]
+    },
+    "score": 0.856,
+    "confidence": 0.323
+   }
+  ]
+ }
+}

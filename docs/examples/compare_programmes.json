@@ -1,0 +1,65 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/compare-curricula",
+  "body": {
+   "programme_a": {
+    "programme": "COMP",
+    "academic_year": "2024-25"
+   },
+   "programme_b": {
+    "programme": "COMP",
+    "academic_year": "2025-26"
+   }
+  }
+ },
+ "status": 200,
+ "response": {
+  "meta": {
+   "engine_version": "0.6.0",
+   "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+   "course_versions": 2366,
+   "split_hash": "4763325fd5",
+   "evaluation_note": "confidence values come from LLM-annotated reference labels (no human annotators); indicative"
+  },
+  "a": {
+   "programme": "COMP",
+   "academic_year": "2024-25"
+  },
+  "b": {
+   "programme": "COMP",
+   "academic_year": "2025-26"
+  },
+  "retained": 31,
+  "renamed_or_revised": [],
+  "removed": [
+   {
+    "family": "f0d759ba5",
+    "course_name": "Project"
+   }
+  ],
+  "added": [
+   {
+    "family": "f024b11f5",
+    "course_name": "Natural Language Processing"
+   },
+   {
+    "family": "f09c0c821",
+    "course_name": "Distributed Computing"
+   },
+   {
+    "family": "f0cd1c52d",
+    "course_name": "Cryptography and Network Security"
+   },
+   {
+    "family": "f0de87e94",
+    "course_name": "Discrete Mathematics"
+   },
+   {
+    "family": "f0eca17b9",
+    "course_name": "Deep Learning"
+   }
+  ],
+  "note": "only text-layer booklets are parsed: a course 'removed' or 'added' may sit in a scanned booklet of the other year"
+ }
+}

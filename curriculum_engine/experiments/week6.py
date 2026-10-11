@@ -185,7 +185,72 @@ def prerequisites_v2(ctx):
     return dump(res, f"{OUT}/prerequisites_v2.json")
 
 
+def fusion_reference(ctx):
+    """Validation-pair scores: the fusion turns a pair's TF-IDF and MaxSim into percentiles of these (Week 4 selection)."""
+    from curriculum_engine.experiments import week2 as W2, week4 as W4
+    val = ctx.pair_labels("val")
+    return dump({"pairs": len(val), "tfidf_cosine": sorted(round(float(x), 6) for x in W2.score_pairs(ctx, val, ctx.tfidf.cosine)),
+                 "maxsim_minilm": sorted(round(float(x), 6) for x in W2.score_pairs(ctx, val, W4.soft_with(ctx.emb)))}, f"{OUT}/fusion_reference.json")
+
+
+def bloom_confidence(ctx):
+    """Confidence of a Bloom prediction = precision of that predicted level against faculty tags on the test split."""
+    from curriculum_engine import bloom as B
+    t = B.tagged_outcomes(ctx.recs, ctx.split)["test"]
+    by = {}
+    for x, l, _ in t:
+        p = B.lexicon_level(x) or 3
+        by.setdefault(B.BLOOM[p], []).append(p == l)
+    return dump({**{k: E.r3(np.mean(v)) for k, v in sorted(by.items())}, "_n": {k: len(v) for k, v in sorted(by.items())}}, f"{OUT}/bloom_confidence.json")
+
+
+def api_examples(ctx):
+    """One real request/response per endpoint (lists shortened) -> docs/examples/, and the OpenAPI schema -> docs/openapi.json."""
+    from fastapi.testclient import TestClient
+    from curriculum_engine.api import app
+    ex = json.loads((RESULTS / "week3/examples.json").read_text(encoding="utf-8"))["examples"][0]
+    flagged = json.loads((RESULTS / OUT / "prerequisite_flags_v2.json").read_text(encoding="utf-8"))[0]
+    pre_course = next(r for r in sorted(ctx.recs, key=lambda r: r["id"]) if r["family"] == flagged["family"] and flagged["programme"] in r["programmes"])
+    calls = {
+        "compare_courses": ("/compare-curricula", {"course_a": {"id": ex["course_a"]["id"]}, "course_b": {"id": ex["course_b"]["id"]}}),
+        "compare_programmes": ("/compare-curricula", {"programme_a": {"programme": "COMP", "academic_year": "2024-25"},
+                                                      "programme_b": {"programme": "COMP", "academic_year": "2025-26"}}),
+        "map_outcomes": ("/map-outcomes", {"outcomes": ["Design a relational database schema for a given problem", "Explain the layers of the OSI model",
+                                                        "Construct the curves using surveying instruments"]}),
+        "find_overlaps": ("/find-overlaps", {"course": {"id": ex["course_a"]["id"]}, "k": 5}),
+        "check_prerequisites": ("/check-prerequisites", {"course": {"id": pre_course["id"]}}),
+        "detect_redundancy": ("/detect-redundancy", {"programme": "COMP", "k": 5}),
+        "emerging_topics": ("/emerging-topics", {"programme": "COMP"}),
+    }
+    out_dir = ROOT / "docs/examples"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    client = TestClient(app)
+    shorten = lambda v: [shorten(x) for x in v[:5]] if isinstance(v, list) else {k: shorten(x) for k, x in v.items()} if isinstance(v, dict) else v
+    status = {}
+    for name, (path, body) in calls.items():
+        r = client.post(path, json=body)
+        status[name] = r.status_code
+        (out_dir / f"{name}.json").write_text(json.dumps({"request": {"method": "POST", "path": path, "body": body},
+                                                          "status": r.status_code, "response": shorten(r.json())}, indent=1, ensure_ascii=False), encoding="utf-8")
+    h = client.get("/health")
+    status["health"] = h.status_code
+    (out_dir / "health.json").write_text(json.dumps({"request": {"method": "GET", "path": "/health"}, "status": h.status_code, "response": h.json()},
+                                                    indent=1, ensure_ascii=False), encoding="utf-8")
+    (ROOT / "docs/openapi.json").write_text(json.dumps(app.openapi(), indent=1), encoding="utf-8")
+    cc = json.loads((out_dir / "compare_courses.json").read_text(encoding="utf-8"))["response"]
+    excerpt = {"request": calls["compare_courses"][1], "response": {k: cc[k] for k in ("course_a", "course_b", "overlap")} |
+               {"common_topics": cc["common_topics"][:3], "unique_to_a": cc["unique_to_a"][:3], "prerequisites_a": cc["prerequisites_a"],
+                "meta": {k: cc["meta"][k] for k in ("engine_version", "encoder", "split_hash")}}}
+    from curriculum_engine import __version__
+    return dump({"status_codes": status, "all_ok": all(v == 200 for v in status.values()), "endpoints": len(status), "engine_version": __version__,
+                 "compare_courses_excerpt": excerpt}, f"{OUT}/api_examples.json")
+
+
 def run(ctx):
     print("  week6.prerequisites_v2", flush=True)
     prerequisites_v2(ctx)
+    fusion_reference(ctx)
+    bloom_confidence(ctx)
+    print("  week6.api_examples", flush=True)
+    api_examples(ctx)
     ctx.emb.save()

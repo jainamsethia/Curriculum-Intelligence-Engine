@@ -1,0 +1,43 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/map-outcomes",
+  "body": {
+   "outcomes": [
+    "Design a relational database schema for a given problem",
+    "Explain the layers of the OSI model",
+    "Construct the curves using surveying instruments"
+   ]
+  }
+ },
+ "status": 200,
+ "response": {
+  "meta": {
+   "engine_version": "0.6.0",
+   "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+   "course_versions": 2366,
+   "split_hash": "4763325fd5",
+   "evaluation_note": "confidence values come from LLM-annotated reference labels (no human annotators); indicative"
+  },
+  "outcomes": [
+   {
+    "outcome": "Design a relational database schema for a given problem",
+    "level": "Create",
+    "confidence": 0.429,
+    "faculty_tag": null
+   },
+   {
+    "outcome": "Explain the layers of the OSI model",
+    "level": "Understand",
+    "confidence": 0.704,
+    "faculty_tag": null
+   },
+   {
+    "outcome": "Construct the curves using surveying instruments",
+    "level": "Create",
+    "confidence": 0.429,
+    "faculty_tag": null
+   }
+  ]
+ }
+}

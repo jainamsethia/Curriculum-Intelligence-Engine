@@ -1,0 +1,137 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/compare-curricula",
+  "body": {
+   "course_a": {
+    "id": "nm48af830b"
+   },
+   "course_b": {
+    "id": "nm9d8c41ec"
+   }
+  }
+ },
+ "status": 200,
+ "response": {
+  "meta": {
+   "engine_version": "0.6.0",
+   "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+   "course_versions": 2366,
+   "split_hash": "4763325fd5",
+   "evaluation_note": "confidence values come from LLM-annotated reference labels (no human annotators); indicative"
+  },
+  "course_a": {
+   "id": "nm48af830b",
+   "course_name": "Department Elective IV - Supply Chain Analytics",
+   "code": "BTME08016",
+   "academic_year": "2021-22",
+   "semester": "VIII",
+   "programmes": [
+    "MECHANICAL"
+   ]
+  },
+  "course_b": {
+   "id": "nm9d8c41ec",
+   "course_name": "Open Elective I - Logistics and Supply Chain Management",
+   "code": "MBOEMEL001",
+   "academic_year": "2021-22",
+   "semester": "VII",
+   "programmes": [
+    "MECHANICAL"
+   ]
+  },
+  "overlap": {
+   "percent": "91%",
+   "semantic_similarity": 0.791,
+   "lexical_similarity": 0.698,
+   "confidence": 0.833,
+   "redundancy_warning": true
+  },
+  "common_topics": [
+   {
+    "topic_a": "Designing the Supply Chain Network",
+    "topic_b": "Designing the Supply Chain Network",
+    "similarity": 1.0,
+    "topic_label": "marketing, supply chain, customer"
+   },
+   {
+    "topic_a": "Warehouse and Transportation Management",
+    "topic_b": "Warehouse and Transportation Management",
+    "similarity": 0.961,
+    "topic_label": "waste, industrial, quality"
+   },
+   {
+    "topic_a": "Building a Strategic Frame Work to Analyze Supply Chain",
+    "topic_b": "Building a Strategic Framework to Analyze Supply Chain",
+    "similarity": 0.943,
+    "topic_label": "marketing, supply chain, customer"
+   },
+   {
+    "topic_a": "Supply chain Analytics-II",
+    "topic_b": "IT in Supply Chain",
+    "similarity": 0.692,
+    "topic_label": "cost, demand, costs"
+   },
+   {
+    "topic_a": "Modelling in Supply Chain Management",
+    "topic_b": "Building a Strategic Framework to Analyze Supply Chain",
+    "similarity": 0.603,
+    "topic_label": "marketing, supply chain, customer"
+   }
+  ],
+  "unique_to_a": [
+   "Supply chain Analytics-I"
+  ],
+  "unique_to_b": [],
+  "prerequisites_a": {
+   "checked": true,
+   "reason": null,
+   "flags": []
+  },
+  "prerequisites_b": {
+   "checked": true,
+   "reason": null,
+   "flags": []
+  },
+  "outcome_bloom_a": [
+   {
+    "outcome": "Know the functions of supply chain management and its process.",
+    "level": "Remember",
+    "confidence": 0.875,
+    "faculty_tag": null
+   },
+   {
+    "outcome": "Evaluate the performance of supply chain management.",
+    "level": "Evaluate",
+    "confidence": 1.0,
+    "faculty_tag": null
+   },
+   {
+    "outcome": "Illustrate complexity involved in coordination of inter-firm and intra-firmin implementing programs.",
+    "level": "Understand",
+    "confidence": 0.704,
+    "faculty_tag": null
+   }
+  ],
+  "outcome_bloom_b": [
+   {
+    "outcome": "Know the functions of supply chain management and its process.",
+    "level": "Remember",
+    "confidence": 0.875,
+    "faculty_tag": null
+   },
+   {
+    "outcome": "Evaluate the performance of supply chain management.",
+    "level": "Evaluate",
+    "confidence": 1.0,
+    "faculty_tag": null
+   },
+   {
+    "outcome": "Illustrate complexity involved in coordination of inter-firm and intra-firm implementing programs.",
+    "level": "Understand",
+    "confidence": 0.704,
+    "faculty_tag": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "status_codes": {
+  "compare_courses": 200,
+  "compare_programmes": 200,
+  "map_outcomes": 200,
+  "find_overlaps": 200,
+  "check_prerequisites": 200,
+  "detect_redundancy": 200,
+  "emerging_topics": 200,
+  "health": 200
+ },
+ "all_ok": true,
+ "endpoints": 8,
+ "engine_version": "0.6.0",
+ "compare_courses_excerpt": {
+  "request": {
+   "course_a": {
+    "id": "nm48af830b"
+   },
+   "course_b": {
+    "id": "nm9d8c41ec"
+   }
+  },
+  "response": {
+   "course_a": {
+    "id": "nm48af830b",
+    "course_name": "Department Elective IV - Supply Chain Analytics",
+    "code": "BTME08016",
+    "academic_year": "2021-22",
+    "semester": "VIII",
+    "programmes": [
+     "MECHANICAL"
+    ]
+   },
+   "course_b": {
+    "id": "nm9d8c41ec",
+    "course_name": "Open Elective I - Logistics and Supply Chain Management",
+    "code": "MBOEMEL001",
+    "academic_year": "2021-22",
+    "semester": "VII",
+    "programmes": [
+     "MECHANICAL"
+    ]
+   },
+   "overlap": {
+    "percent": "91%",
+    "semantic_similarity": 0.791,
+    "lexical_similarity": 0.698,
+    "confidence": 0.833,
+    "redundancy_warning": true
+   },
+   "common_topics": [
+    {
+     "topic_a": "Designing the Supply Chain Network",
+     "topic_b": "Designing the Supply Chain Network",
+     "similarity": 1.0,
+     "topic_label": "marketing, supply chain, customer"
+    },
+    {
+     "topic_a": "Warehouse and Transportation Management",
+     "topic_b": "Warehouse and Transportation Management",
+     "similarity": 0.961,
+     "topic_label": "waste, industrial, quality"
+    },
+    {
+     "topic_a": "Building a Strategic Frame Work to Analyze Supply Chain",
+     "topic_b": "Building a Strategic Framework to Analyze Supply Chain",
+     "similarity": 0.943,
+     "topic_label": "marketing, supply chain, customer"
+    }
+   ],
+   "unique_to_a": [
+    "Supply chain Analytics-I"
+   ],
+   "prerequisites_a": {
+    "checked": true,
+    "reason": null,
+    "flags": []
+   },
+   "meta": {
+    "engine_version": "0.6.0",
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "split_hash": "4763325fd5"
+   }
+  }
+ }
+}

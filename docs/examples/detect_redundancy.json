@@ -1,0 +1,65 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/detect-redundancy",
+  "body": {
+   "programme": "COMP",
+   "k": 5
+  }
+ },
+ "status": 200,
+ "response": {
+  "meta": {
+   "engine_version": "0.6.0",
+   "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+   "course_versions": 2366,
+   "split_hash": "4763325fd5",
+   "evaluation_note": "confidence values come from LLM-annotated reference labels (no human annotators); indicative"
+  },
+  "programme": "COMP",
+  "academic_year": null,
+  "courses_checked": 59,
+  "pairs": [
+   {
+    "course_a": "Capstone Project",
+    "unit_a": "Formulate the different use cases/feasible design model.",
+    "course_b": "Project",
+    "unit_b": "Formulate the different use cases/feasible design model.",
+    "similarity": 1.0,
+    "expected_precision": 0.8
+   },
+   {
+    "course_a": "Fundamentals of Blockchain",
+    "unit_a": "Blockchain Application Development",
+    "course_b": "Blockchain Technology",
+    "unit_b": "Blockchain Application Development",
+    "similarity": 1.0,
+    "expected_precision": 0.8
+   },
+   {
+    "course_a": "Cyber Forensics",
+    "unit_a": "Case Study",
+    "course_b": "Ethical Hacking",
+    "unit_b": "Case Study",
+    "similarity": 1.0,
+    "expected_precision": 0.8
+   },
+   {
+    "course_a": "Advanced Web Programming",
+    "unit_a": "Angular JS",
+    "course_b": "Web Programming",
+    "unit_b": "Angular JS",
+    "similarity": 0.995,
+    "expected_precision": 0.8
+   },
+   {
+    "course_a": "Data Structures and Algorithms",
+    "unit_a": "Non- Linear Data Structures - II",
+    "course_b": "Data Structures",
+    "unit_b": "Non-Linear Data structure II",
+    "similarity": 0.966,
+    "expected_precision": 0.8
+   }
+  ]
+ }
+}

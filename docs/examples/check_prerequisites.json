@@ -1,0 +1,43 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/check-prerequisites",
+  "body": {
+   "course": {
+    "id": "nm1b82f319"
+   }
+  }
+ },
+ "status": 200,
+ "response": {
+  "meta": {
+   "engine_version": "0.6.0",
+   "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+   "course_versions": 2366,
+   "split_hash": "4763325fd5",
+   "evaluation_note": "confidence values come from LLM-annotated reference labels (no human annotators); indicative"
+  },
+  "course": {
+   "id": "nm1b82f319",
+   "course_name": "Data Mining and Analytics",
+   "code": "",
+   "academic_year": "2022-23",
+   "semester": "",
+   "programmes": [
+    "CSBS"
+   ]
+  },
+  "result": {
+   "checked": true,
+   "reason": null,
+   "flags": [
+    {
+     "programme": "CSBS",
+     "phrase": "Machine Learning",
+     "type": "not_offered_earlier",
+     "expected_precision": 0.5
+    }
+   ]
+  }
+ }
+}
