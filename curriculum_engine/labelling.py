@@ -32,7 +32,7 @@ PROMPT_B = {
               "whether the warning is correct.\n"
               'Reply with JSON only: {"label": "correct" or "wrong", "reason": "one short sentence"}\n\n'),
 }
-LABELS_OF = {"pairs": {0, 1, 2}, "flags": {"correct", "wrong"}}
+LABELS_OF = {"pairs": {0, 1, 2}, "flags": {"correct", "wrong"}, "prereqv2": {"correct", "wrong"}}
 
 
 # ------------------------------------------------------------------ rendering (no scores, no ids)

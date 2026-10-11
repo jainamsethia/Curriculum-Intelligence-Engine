@@ -1,0 +1,55 @@
+item,split,method,key
+PV001,test,v2,CSBS|f1b82f319|Machine Learning
+PV002,test,v2,CSBS|f2b9482b0|Business Intelligence
+PV003,test,v2,CSBS|f419e5fc7|Microprocessor and Microcontroller
+PV004,test,v2,CSBS|f419e5fc7|Cyber Security
+PV005,test,v2,CSE-DS|f419e5fc7|Microprocessor and Microcontroller
+L:CSE-DS|f419e5fc7|Cyber Security,test,v2,CSE-DS|f419e5fc7|Cyber Security
+PV006,test,v2,DS|f21bad262|Information Storage & Management
+PV007,test,v2,IT|f2ee08859|Software Engineering
+PV008,test,v2,MECHANICAL|f083a1d04|Operating Systems
+L:MECHANICAL|f4d98b873|Ordinary Differential Equations,test,v2,MECHANICAL|f4d98b873|Ordinary Differential Equations
+L:MECHATRONICS|f7271db71|Periodic function,test,v2,MECHATRONICS|f7271db71|Periodic function
+PV009,test,v2,MECHATRONICS|f7271db71|Even and odd Function
+L:MECHATRONICS|f7271db71|Circular Function,test,v2,MECHATRONICS|f7271db71|Circular Function
+L:MECHATRONICS|f7271db71|Trigonometric series,test,v2,MECHATRONICS|f7271db71|Trigonometric series
+PV010,val,v1,AI|f30bb4854|Applications of Machine Learning
+PV011,val,v1,AI|fdf178d12|Algorithms
+PV012,val,v1,CSBS|f0d759ba5|all core
+PV013,val,v1,CSBS|f0d759ba5|elective courses completed till semester VII
+PV014,val,v1,CSBS|f329813fc|Financial
+PV015,val,v1,CSBS|f69c2a2d8|Engineering Mathematics
+PV016,val,v1,CSE-CYBER|f0d759ba5|all core
+PV017,val,v1,CSE-CYBER|f0d759ba5|elective courses completed till semester VII
+PV018,val,v1,CSE-DS|f0b2181c9|Analytics
+PV019,val,v1,CSE-DS|f0d759ba5|all core
+PV020,val,v1,CSE-DS|f27cfcf23|Foundations of Machine Learning
+PV021,val,v1,DS|f0d759ba5|elective courses completed till semester VII
+PV022,val,v1,EXTC|f156b6c90|Anlog Communication
+PV023,val,v1,EXTC|f275838af|Image Processing fundamentals
+PV024,val,v1,EXTC|f4cc25deb|Systems
+PV025,val,v1,IT|f0d759ba5|all core
+PV026,val,v1,IT|f6921b5f6|Database Management Systems
+PV027,val,v1,MECHANICAL|f024b11f5|Algorithms
+PV028,val,v1,MECHANICAL|f18a167d5|Web Programming
+PV029,val,v1,MECHATRONICS|f4063ed2c|Measurements
+PV030,val,v2,AI|f00f80d44|data warehousing and mining
+PV010,val,v2,AI|f30bb4854|Applications of Machine Learning
+PV031,val,v2,CIVIL|f1532fd95|Foundation Engineering
+PV032,val,v2,COMP|f275838af|Image Processing fundamentals
+PV033,val,v2,CSBS|f0b2181c9|Analytics and Modeling-I
+PV034,val,v2,CSBS|f47194614|SDUML
+PV035,val,v2,CSE-DS|f275838af|Image Processing fundamentals
+PV020,val,v2,CSE-DS|f27cfcf23|Foundations of Machine Learning
+PV036,val,v2,CSE-DS|f27cfcf23|Applications of Machine Learning
+PV037,val,v2,CSE-DS|f30bb4854|Foundations of Machine Learning
+PV038,val,v2,CSE-DS|f30bb4854|Applications of Machine Learning
+PV039,val,v2,DS|ffd5b41a1|Economics concepts
+PV040,val,v2,EXTC|f05b5b247|data communication
+PV041,val,v2,EXTC|f156b6c90|Microprocessor and Microcontrollers
+PV042,val,v2,EXTC|f4cc25deb|Probability and Stochastic Processes
+PV026,val,v2,IT|f6921b5f6|Database Management Systems
+PV028,val,v2,MECHANICAL|f18a167d5|Web Programming
+PV043,val,v2,MECHANICAL|f2750a785|Digital Logic Design
+PV044,val,v2,MECHANICAL|f39e17703|Manufacturing Practice
+PV045,val,v2,MECHATRONICS|f478ab6ca|Classical Physics

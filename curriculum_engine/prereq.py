@@ -155,3 +155,91 @@ class TopicChecker:
 
     def __call__(self, phrase, before):
         return self.best(phrase, before) >= self.tau
+
+
+# ------------------------------------------------------------------ v2 (after the Week 5 error analysis, cases F05-F07)
+PAREN = re.compile(r"\([^)]*\)?")                                  # '(Semester- II)', '(Java, Python)', unclosed '(Java'
+CODE_TOKEN = re.compile(r"\b(?=[A-Z0-9]*\d)(?=[A-Z0-9]*[A-Z])[A-Z0-9]{6,}\b")      # 'BTCS01003', '702CE0C099'
+ROMAN_SEQ = re.compile(r"^(?:[IVX]+|\d)(?:\s*(?:and|&|,)?\s*(?:[IVX]+|\d))*$", re.I)
+NON_SUBJECT = re.compile(r"(?i)\b(?:subjects?|courses?)\b.*\b(?:till|up ?to|completed|studied|previous|earlier)\b|^\s*all\b|"
+                         r"\busage\b|\bskills?\b|\baptitude\b|\binterest\b|\bgeography\b|\bschool\b|\bhsc\b|\b10\s*\+\s*2\b")
+GENERIC = set("engineering basic basics introduction introductory fundamental fundamentals principles applied advanced theory elementary "
+              "concepts concept knowledge course courses of in and the to for with a an i ii iii iv v vi".split())
+UMBRELLA = {   # a broad subject is met by any earlier course on one of its member subjects
+    "mathematics": {"mathematics", "calculus", "algebra", "differential", "equations", "statistics", "probability", "numerical", "transforms", "discrete"},
+    "maths": {"mathematics", "calculus", "algebra", "differential", "equations"},
+    "programming": {"programming", "python", "java", "c", "coding"},
+    "algorithms": {"algorithms", "algorithm"},
+    "electronics": {"electronics", "electronic"},
+}
+
+
+def _tokens(s):
+    return set(re.findall(r"[a-z]+", (s or "").lower())) - GENERIC
+
+
+def _in(t, pool):
+    """Token in pool, allowing a plural 's' on either side ('algorithm' / 'algorithms')."""
+    return t in pool or t + "s" in pool or (t.endswith("s") and t[:-1] in pool)
+
+
+def split_prereq_v2(text):
+    """Like split_prereq, but: parentheses and course codes are dropped; 'and' / '&' / 'or' only split when every side has at least
+    two words (keeps 'Information Storage and Management'); a bare roman numeral re-attaches to the previous name ('III')."""
+    t = CODE_TOKEN.sub(" ", PAREN.sub(" ", text or ""))
+    if not t.strip() or NONE_PREREQ.match(t.strip()):
+        return []
+    out = []
+    for p in re.split(r"[;,\n/]", t):
+        p = LEAD.sub("", re.sub(r"\s+", " ", p).strip(" .:-–"))
+        sides = [s.strip(" .:-–") for s in re.split(r"\band\b|&|\bas well as\b|\bor\b", p)]
+        for q in (sides if len(sides) > 1 and all(len(s.split()) >= 2 for s in sides) else [p]):
+            q = LEAD.sub("", q)
+            nums = re.findall(r"[IVX]+|\d", q, flags=re.I) if ROMAN_SEQ.match(q) else []
+            if nums and out:                               # 'II and III' after 'Engineering Mathematics - I'
+                stem = re.sub(r"[\s\-–]*(?:[IVX]+|\d)$", "", out[-1], flags=re.I)
+                out += [f"{stem} - {n.upper()}" for n in nums]
+                continue
+            if 2 < len(q) <= 90 and not NONE_PREREQ.match(q):
+                out.append(q)
+    return list(dict.fromkeys(out))
+
+
+def alias_met(phrase, earlier_names, single=True):
+    """Every content word of the phrase (or, for a broad subject, one of its member subjects) appears in the name of ONE earlier
+    course. single=False pools the words of all earlier names (the first v2 attempt, 'v2a': too lenient, removal recall fell)."""
+    toks = _tokens(phrase)
+    ok = lambda pool: bool(toks) and all(_in(t, pool) or any(_in(m, pool) for m in UMBRELLA.get(t, ())) for t in toks)
+    if not single:
+        return ok(set().union(*map(_tokens, earlier_names)) if earlier_names else set())
+    return any(ok(_tokens(n)) for n in earlier_names)
+
+
+def check_programme_v2(prog, view, st, resolver, versions, topic_covered, own_covered, names, families=None, log=None, single_alias=True):
+    """v2 = v1 with four filters before a flag is raised: non-subject phrases, alias / umbrella names met by an earlier course,
+    and phrases the course's own units teach (course content, not a prerequisite). `log` counts what each filter removed."""
+    flags = []
+    for fam, c in sorted(view[prog].items()):
+        if families is not None and fam not in families:
+            continue
+        if c["common"] or not c["sem"] or c["sem"] < 2 or not covered(st, versions, prog, c["sem"]):
+            continue
+        before = earlier(st, prog, c["sem"])
+        before_names = [names[f] for f in before if f in names]
+        for ph in split_prereq_v2(c.get("prerequisites", "")):
+            why = ("non_subject" if NON_SUBJECT.search(ph) else "alias_met" if alias_met(ph, before_names, single_alias)
+                   else "own_content" if own_covered(ph, c) else None)
+            if why:
+                if log is not None:
+                    log[why] = log.get(why, 0) + 1
+                continue
+            d = resolver.resolve(ph, before)
+            if d == fam:
+                continue
+            base = {"programme": prog, "family": fam, "course": c["course_name"], "semester": c["sem"], "phrase": ph, "resolved_family": d}
+            if d is not None:
+                if d not in before:
+                    flags.append({**base, "type": "not_offered_earlier"})
+            elif not topic_covered(ph, before):
+                flags.append({**base, "type": "assumed_topic_not_taught"})
+    return flags

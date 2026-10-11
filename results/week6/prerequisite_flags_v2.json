@@ -1,0 +1,128 @@
+[
+ {
+  "programme": "CSBS",
+  "family": "f1b82f319",
+  "course": "Data Mining and Analytics",
+  "semester": 5,
+  "phrase": "Machine Learning",
+  "resolved_family": "f0bd64d7a",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f2b9482b0",
+  "course": "Cognitive Science & Analytics",
+  "semester": 7,
+  "phrase": "Business Intelligence",
+  "resolved_family": "f78a74491",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Microprocessor and Microcontroller",
+  "resolved_family": "f15ed87da",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSBS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Cyber Security",
+  "resolved_family": "f4f2f26ce",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSE-DS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Microprocessor and Microcontroller",
+  "resolved_family": "f15ed87da",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "CSE-DS",
+  "family": "f419e5fc7",
+  "course": "IoT and Applications",
+  "semester": 5,
+  "phrase": "Cyber Security",
+  "resolved_family": "f4f2f26ce",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "DS",
+  "family": "f21bad262",
+  "course": "Cloud Computing",
+  "semester": 7,
+  "phrase": "Information Storage & Management",
+  "resolved_family": "f12912804",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "IT",
+  "family": "f2ee08859",
+  "course": "Human Computer Interaction",
+  "semester": 3,
+  "phrase": "Software Engineering",
+  "resolved_family": "f00ec9d24",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "MECHANICAL",
+  "family": "f083a1d04",
+  "course": "System Administration",
+  "semester": 6,
+  "phrase": "Operating Systems",
+  "resolved_family": "f17d2913e",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "MECHANICAL",
+  "family": "f4d98b873",
+  "course": "Partial Differential Equations and Laplace Transforms",
+  "semester": 3,
+  "phrase": "Ordinary Differential Equations",
+  "resolved_family": "f1f49746a",
+  "type": "not_offered_earlier"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f7271db71",
+  "course": "Transforms and Series",
+  "semester": 3,
+  "phrase": "Periodic function",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f7271db71",
+  "course": "Transforms and Series",
+  "semester": 3,
+  "phrase": "Even and odd Function",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f7271db71",
+  "course": "Transforms and Series",
+  "semester": 3,
+  "phrase": "Circular Function",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ },
+ {
+  "programme": "MECHATRONICS",
+  "family": "f7271db71",
+  "course": "Transforms and Series",
+  "semester": 3,
+  "phrase": "Trigonometric series",
+  "resolved_family": null,
+  "type": "assumed_topic_not_taught"
+ }
+]

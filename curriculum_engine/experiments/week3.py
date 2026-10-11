@@ -245,6 +245,22 @@ def _units(c, n=6, words=18):
     return "; ".join(f"{t}: {_cut(x, words)}" for t, x in chunks(c)[:n])
 
 
+Q_PRE = "QUESTION: Is the warning correct, i.e. is this prerequisite really NOT covered by any course taught in an earlier semester of the programme?"
+
+
+def prereq_item(ctx, f, chk, names):
+    """(full, compact) text of one missing-prerequisite flag for the labellers; no scores."""
+    before = sorted({names[x] for x in PQ.earlier(ctx.st, f["programme"], f["semester"])})
+    q = ctx.emb([f["phrase"]])[0]
+    near = sorted(((float((chk.U[x] @ q).max()), names[x]) for x in PQ.earlier(ctx.st, f["programme"], f["semester"]) if x in chk.U and len(chk.U[x])), reverse=True)[:5]
+    full = (f"WARNING (missing prerequisite): course '{f['course']}' (programme {f['programme']}, semester {f['semester']}) lists the prerequisite "
+            f"'{f['phrase']}', which the tool could not find among the courses of earlier semesters.\n"
+            f"Courses taught in earlier semesters of this programme: {'; '.join(before)}\n{Q_PRE}")
+    compact = (f"WARNING (missing prerequisite): course '{f['course']}' (semester {f['semester']}) needs '{f['phrase']}'.\n"
+               f"Most related earlier courses: {'; '.join(n for _, n in near)}\n{Q_PRE}")
+    return full, compact
+
+
 def build_flag_items(ctx, th):
     """~150 flags from baseline and core detectors (test split) + topic labels, rendered without any score."""
     from curriculum_engine import emerging as EM
@@ -271,22 +287,13 @@ def build_flag_items(ctx, th):
     names = {}
     for r in ctx.recs:
         names.setdefault(r["family"], r["course_name"])
-    q_pre = "QUESTION: Is the warning correct, i.e. is this prerequisite really NOT covered by any course taught in an earlier semester of the programme?"
     base = [f for p in sorted(ctx.view) for f in PQ.check_programme(p, ctx.view, ctx.st, PQ.ExactResolver(ctx.recs), ctx.versions, families=fams)]
     core = json.loads((RESULTS / OUT / "prerequisite_flags.json").read_text(encoding="utf-8"))
     chk = PQ.TopicChecker(ctx.reps, ctx.emb, th["prereq_topic"])
     for method, fl in (("baseline", base), ("core", core)):
         for i in sorted(rng.permutation(len(fl))[:K_FLAGS]):
             f = fl[i]
-            before = sorted({names[x] for x in PQ.earlier(ctx.st, f["programme"], f["semester"])})
-            q = ctx.emb([f["phrase"]])[0]
-            near = sorted(((float((chk.U[x] @ q).max()), names[x]) for x in PQ.earlier(ctx.st, f["programme"], f["semester"]) if x in chk.U and len(chk.U[x])), reverse=True)[:5]
-            full = (f"WARNING (missing prerequisite): course '{f['course']}' (programme {f['programme']}, semester {f['semester']}) lists the prerequisite "
-                    f"'{f['phrase']}', which the tool could not find among the courses of earlier semesters.\n"
-                    f"Courses taught in earlier semesters of this programme: {'; '.join(before)}\n{q_pre}")
-            compact = (f"WARNING (missing prerequisite): course '{f['course']}' (semester {f['semester']}) needs '{f['phrase']}'.\n"
-                       f"Most related earlier courses: {'; '.join(n for _, n in near)}\n{q_pre}")
-            add("prerequisite", method, f"{f['programme']}|{f['family']}|{f['phrase']}", full, compact)
+            add("prerequisite", method, f"{f['programme']}|{f['family']}|{f['phrase']}", *prereq_item(ctx, f, chk, names))
 
     # every topic-programme decision is labelled (gap or covered), so both gap precision and missed gaps can be measured
     for g in EM.coverage(ctx.view, ctx.emb, th["prereq_topic"]):
