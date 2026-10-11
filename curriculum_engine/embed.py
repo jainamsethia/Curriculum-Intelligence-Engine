@@ -1,5 +1,6 @@
 """Sentence-transformer embeddings with an on-disk cache keyed by text hash (re-runs and evaluation are then instant)."""
 import hashlib, os, pickle, re
+from pathlib import Path
 
 import numpy as np
 
@@ -7,8 +8,9 @@ from curriculum_engine import DATA
 
 MINILM = "sentence-transformers/all-MiniLM-L6-v2"
 BGE_BASE = "BAAI/bge-base-en-v1.5"
-os.environ.setdefault("HF_HUB_OFFLINE", "1")           # cached models: do not contact huggingface.co (it can hang for an hour)
-os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+if (Path.home() / ".cache/huggingface/hub/models--sentence-transformers--all-MiniLM-L6-v2").exists():
+    os.environ.setdefault("HF_HUB_OFFLINE", "1")       # cached models: do not contact huggingface.co (it can hang for an hour)
+    os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")  # on a fresh machine (the grader's) the model is downloaded once instead
 os.environ.setdefault("LOKY_MAX_CPU_COUNT", "4")             # joblib cannot count physical cores on this Windows setup
 os.environ.setdefault("USE_TF", "0")                   # sentence-transformers would otherwise import TensorFlow
 

@@ -69,7 +69,10 @@ def _families(recs):
 @lru_cache(maxsize=1)
 def load():
     """All course versions, enriched with family, canonical programmes, study year and semester number."""
-    recs = [json.loads(l) for l in open(COURSES, encoding="utf-8")]
+    return enrich([json.loads(l) for l in open(COURSES, encoding="utf-8")])
+
+
+def enrich(recs):
     fam = _families(recs)
     for r in recs:
         progs, years = set(), set()

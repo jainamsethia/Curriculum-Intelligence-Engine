@@ -3,7 +3,7 @@
 submissions/week<N>/: report .docx (+ .pdf, page count checked), code zip (git archive of tag week-<N>-redo), SUBMIT.md
 (rendered from reports/templates/submit_week<N>.md with the same placeholders as the report). Fails if the report check fails.
 """
-import subprocess, sys
+import subprocess, sys, zipfile
 from pathlib import Path
 
 import fitz
@@ -14,6 +14,15 @@ from check_reports import check  # noqa: E402
 
 PS = r"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
 MAX_PAGES = 5
+DATA_FOR_GRADER = ["data/processed/courses.jsonl"]      # parsed NMIMS syllabi: Teams code zip ONLY (data/ is git-ignored, never pushed)
+
+
+def add_data(zip_path):
+    """Append the parsed dataset to a git-archive zip, so the grader can run the pipeline without the 13 GB archive."""
+    for rel in DATA_FOR_GRADER:
+        assert not git("ls-files", rel), f"{rel} is tracked by git: it must never be committed"
+        with zipfile.ZipFile(zip_path, "a", zipfile.ZIP_DEFLATED) as z:
+            z.write(ROOT / rel, f"Curriculum-Intelligence-Engine/{rel}")
 
 
 def to_pdf(docx):
@@ -35,6 +44,7 @@ def pack(n, out_dir=None, tag=None):
         print(f"WARNING: {pdf.name} has {pages} pages (limit about {MAX_PAGES})")
     zip_path = out_dir / f"Group9_Curriculum_Intelligence_Engine_Week{n}_code.zip"
     subprocess.run(["git", "archive", "--format=zip", "--prefix=Curriculum-Intelligence-Engine/", "-o", str(zip_path), tag], cwd=ROOT, check=True)
+    add_data(zip_path)
     tpl = ROOT / f"reports/templates/submit_week{n}.md"
     if tpl.exists():
         (out_dir / "SUBMIT.md").write_text(Resolver(tag).text(tpl.read_text(encoding="utf-8")), encoding="utf-8")

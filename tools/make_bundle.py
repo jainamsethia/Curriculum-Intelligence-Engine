@@ -9,7 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from build_report import ROOT, Resolver, build, doc_name, git  # noqa: E402
 from check_reports import check  # noqa: E402
-from make_submission import MAX_PAGES, to_pdf  # noqa: E402
+from make_submission import MAX_PAGES, add_data, to_pdf  # noqa: E402
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
@@ -28,6 +28,7 @@ if __name__ == "__main__":
     pages = {d.name: to_pdf(d)[1] for d in docs}
     zip_path = out / f"Group9_Curriculum_Intelligence_Engine_Weeks{a.weeks[0]}-{a.weeks[-1]}_code.zip"
     subprocess.run(["git", "archive", "--format=zip", "--prefix=Curriculum-Intelligence-Engine/", "-o", str(zip_path), a.tag], cwd=ROOT, check=True)
+    add_data(zip_path)
     R = Resolver(a.tag)
     for name in ("INDEX", "SUBMIT"):
         tpl = ROOT / f"reports/templates/bundle_{'interim_' if a.interim else ''}{name.lower()}.md"
