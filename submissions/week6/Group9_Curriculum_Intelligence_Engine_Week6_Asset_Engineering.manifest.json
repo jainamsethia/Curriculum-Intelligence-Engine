@@ -1,0 +1,207 @@
+{
+ "week": 6,
+ "tag": "week-6-redo",
+ "commit": "df06049114b2d407eff248c6f6d6c8d39ebbf63a",
+ "values": [
+  {
+   "key": "week6/api_examples:engine_version",
+   "value": "0.6.0"
+  },
+  {
+   "key": "week6/api_examples:endpoints",
+   "value": "8"
+  },
+  {
+   "key": "week6/prerequisites_v2:flags_test.v1",
+   "value": "33"
+  },
+  {
+   "key": "week6/prerequisites_v2:flags_test.v2",
+   "value": "14"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.val_v1.precision",
+   "value": "0.200"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.val_v2.precision",
+   "value": "0.450"
+  },
+  {
+   "key": "week6/prerequisites_v2:own_content_threshold_from_val",
+   "value": "0.600"
+  },
+  {
+   "key": "week6/prerequisites_v2:tests_test.v1.removal_recall.value",
+   "value": "0.880"
+  },
+  {
+   "key": "week6/prerequisites_v2:tests_test.v2.removal_recall.value",
+   "value": "0.711"
+  },
+  {
+   "key": "week6/prerequisites_v2:tests_test.v1.intact_false_alarm.value",
+   "value": "0.036"
+  },
+  {
+   "key": "week6/prerequisites_v2:tests_test.v2.intact_false_alarm.value",
+   "value": "0.000"
+  },
+  {
+   "key": "week6/prerequisites_v2:tests_test.v1.rename_false_alarm.value",
+   "value": "0.120"
+  },
+  {
+   "key": "week6/prerequisites_v2:tests_test.v2.rename_false_alarm.value",
+   "value": "0.000"
+  },
+  {
+   "key": "week6/prerequisites_v2:same_labels.labelled_flags",
+   "value": "20"
+  },
+  {
+   "key": "week6/prerequisites_v2:same_labels.v1_precision",
+   "value": "0.100"
+  },
+  {
+   "key": "week6/prerequisites_v2:same_labels.v2_precision_on_those",
+   "value": "0.222"
+  },
+  {
+   "key": "week6/prerequisites_v2:same_labels.v2_still_flagged",
+   "value": "9"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.test_v2.precision",
+   "value": "0.500"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.test_v2.ci95.0",
+   "value": "0.176"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.test_v2.ci95.1",
+   "value": "0.875"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.test_v2.n",
+   "value": "14"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.val_v1.precision",
+   "value": "0.200"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.val_v1.ci95.0",
+   "value": "0.050"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.val_v1.ci95.1",
+   "value": "0.500"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.val_v2.precision",
+   "value": "0.450"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.val_v2.ci95.0",
+   "value": "0.208"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.val_v2.ci95.1",
+   "value": "0.737"
+  },
+  {
+   "key": "week6/prerequisites_v2:same_labels.wrong_flags_dropped_by_v2",
+   "value": "11"
+  },
+  {
+   "key": "week6/prerequisites_v2:same_labels.correct_flags_dropped_by_v2",
+   "value": "0"
+  },
+  {
+   "key": "plan/targets:prerequisites.removal_recall",
+   "value": "0.800"
+  },
+  {
+   "key": "plan/targets:prerequisites.flag_precision",
+   "value": "0.600"
+  },
+  {
+   "key": "week6/prerequisites_v2:v2a_first_attempt.tests_test.removal_recall.value",
+   "value": "0.627"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample.test_v2.precision",
+   "value": "0.500"
+  },
+  {
+   "key": "week3/flag_precision:redundancy.core.precision",
+   "value": "0.800"
+  },
+  {
+   "key": "week6/bloom_confidence:Create",
+   "value": "0.429"
+  },
+  {
+   "key": "week6/bloom_confidence:Understand",
+   "value": "0.704"
+  },
+  {
+   "key": "week6/bloom_confidence:Apply",
+   "value": "0.786"
+  },
+  {
+   "key": "week6/api_examples:status_codes.compare_courses",
+   "value": "200"
+  },
+  {
+   "key": "week6/api_examples:status_codes.compare_programmes",
+   "value": "200"
+  },
+  {
+   "key": "week6/api_examples:status_codes.map_outcomes",
+   "value": "200"
+  },
+  {
+   "key": "week6/api_examples:status_codes.find_overlaps",
+   "value": "200"
+  },
+  {
+   "key": "week6/api_examples:status_codes.check_prerequisites",
+   "value": "200"
+  },
+  {
+   "key": "week6/api_examples:status_codes.detect_redundancy",
+   "value": "200"
+  },
+  {
+   "key": "week6/api_examples:status_codes.emerging_topics",
+   "value": "200"
+  },
+  {
+   "key": "week6/api_examples:status_codes.health",
+   "value": "200"
+  },
+  {
+   "key": "json:week6/api_examples:compare_courses_excerpt",
+   "value": "{\"request\": {\"course_a\": {\"id\": \"nm48af830b\"}, \"course_b\": {\"id\": \"nm9d8c41ec\"}}, \"response\": {\"common_topics\": [{\"similarity\": 1.0, \"topic_a\": \"Designing the Supply Chain Network\", \"topic_b\": \"Designing the Supply Chain Network\", \"topic_label\": \"marketing, supply chain, customer\"}, {\"similarity\": 0.961, \"topic_a\": \"Warehouse and Transportation Management\", \"topic_b\": \"Warehouse and Transportation Management\", \"topic_label\": \"waste, industrial, quality\"}, {\"similarity\": 0.943, \"topic_a\": \"Building a Strategic Frame Work to Analyze Supply Chain\", \"topic_b\": \"Building a Strategic Framework to Analyze Supply Chain\", \"topic_label\": \"marketing, supply chain, customer\"}], \"course_a\": {\"academic_year\": \"2021-22\", \"code\": \"BTME08016\", \"course_name\": \"Department Elective IV - Supply Chain Analytics\", \"id\": \"nm48af830b\", \"programmes\": [\"MECHANICAL\"], \"semester\": \"VIII\"}, \"course_b\": {\"academic_year\": \"2021-22\", \"code\": \"MBOEMEL001\", \"course_name\": \"Open Elective I - Logistics and Supply Chain Management\", \"id\": \"nm9d8c41ec\", \"programmes\": [\"MECHANICAL\"], \"semester\": \"VII\"}, \"meta\": {\"encoder\": \"sentence-transformers/all-MiniLM-L6-v2\", \"engine_version\": \"0.6.0\", \"split_hash\": \"4763325fd5\"}, \"overlap\": {\"confidence\": 0.833, \"lexical_similarity\": 0.698, \"percent\": \"91%\", \"redundancy_warning\": true, \"semantic_similarity\": 0.791}, \"prerequisites_a\": {\"checked\": true, \"flags\": [], \"reason\": null}, \"unique_to_a\": [\"Supply chain Analytics-I\"]}}"
+  },
+  {
+   "key": "dataset/parse_stats:text_pdf",
+   "value": "531"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:items",
+   "value": "200"
+  }
+ ]
+}
