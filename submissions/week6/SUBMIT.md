@@ -3,12 +3,12 @@
 | File (in `submissions/week6/`) | What it is |
 |---|---|
 | `Group9_Curriculum_Intelligence_Engine_Week6_Asset_Engineering.docx` | the Week 6 report (a `.pdf` copy is in the same folder) |
-| `Group9_Curriculum_Intelligence_Engine_Week6_code.zip` | the repository at tag `week-6-redo` (commit `df06049114b2d407eff248c6f6d6c8d39ebbf63a`) **plus** `data/processed/courses.jsonl` (parsed NMIMS syllabi; only in this zip, never on GitHub) |
+| `Group9_Curriculum_Intelligence_Engine_Week6_code.zip` | the repository at tag `week-6-redo-fix` (commit `ee7c1cdf31ee65b973018afccbf33f69968e173f`) **plus** `data/processed/courses.jsonl` (parsed NMIMS syllabi; only in this zip, never on GitHub) |
 
-Repository: https://github.com/jainamsethia/Curriculum-Intelligence-Engine/tree/week-6-redo
+Repository: https://github.com/jainamsethia/Curriculum-Intelligence-Engine/tree/week-6-redo-fix
 
 ## Key numbers
-- API: 8 endpoints, all answering on real NMIMS data (`docs/examples/`); engine version 0.6.0.
+- API: 7 endpoints, all answering on real NMIMS data (`docs/examples/`); engine version 0.6.0.
 - Prerequisite checker v2 vs v1 (test): flags 33 → 14; removal recall 0.880 → 0.711; rename false alarms 0.120 → 0.000.
 - Flag precision: same labels 0.100 → 0.222; fresh validation sample 0.200 → 0.450 (intervals overlap; target 0.600 still missed).
 

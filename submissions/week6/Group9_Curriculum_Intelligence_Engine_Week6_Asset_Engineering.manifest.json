@@ -1,7 +1,7 @@
 {
  "week": 6,
- "tag": "week-6-redo",
- "commit": "df06049114b2d407eff248c6f6d6c8d39ebbf63a",
+ "tag": "week-6-redo-fix",
+ "commit": "ee7c1cdf31ee65b973018afccbf33f69968e173f",
  "values": [
   {
    "key": "week6/api_examples:engine_version",
@@ -9,7 +9,7 @@
   },
   {
    "key": "week6/api_examples:endpoints",
-   "value": "8"
+   "value": "7"
   },
   {
    "key": "week6/prerequisites_v2:flags_test.v1",
@@ -130,6 +130,18 @@
   {
    "key": "week6/prerequisites_v2:v2a_first_attempt.tests_test.removal_recall.value",
    "value": "0.627"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample_agreement.items",
+   "value": "45"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample_agreement.both_passes_agree",
+   "value": "45"
+  },
+  {
+   "key": "week6/prerequisites_v2:fresh_sample_agreement.needed_pass3",
+   "value": "0"
   },
   {
    "key": "week6/prerequisites_v2:fresh_sample.test_v2.precision",
