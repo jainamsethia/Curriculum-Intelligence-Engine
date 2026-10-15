@@ -162,6 +162,21 @@ def fresh_eval():
             for k, v in sorted(res.items())}
 
 
+def fresh_agreement():
+    """Pass 1 vs pass 2 on the fresh sample (both Claude, different wording: not independent) and how many items needed pass 3."""
+    from curriculum_engine.labelling import agreement
+    f = LABELS / "prereqv2_llm.csv"
+    if not f.exists():
+        return None
+    rows = list(csv.DictReader(open(f, encoding="utf-8")))
+    for r in rows:
+        for k in ("pass1", "pass2", "pass3"):
+            r[k] = None if r[k] in ("", "None") else r[k]
+    a = agreement(rows)
+    return {"items": a["n_items"], "both_passes_agree": sum(r["pass1"] == r["pass2"] for r in rows if r["pass1"] is not None),
+            "percent_agreement": a["percent_agreement"], "needed_pass3": sum(r["pass1"] != r["pass2"] for r in rows)}
+
+
 def prerequisites_v2(ctx):
     th = json.loads((RESULTS / "week3/thresholds.json").read_text(encoding="utf-8"))
     own_tau, grid = tune_own(ctx, th)
@@ -177,7 +192,7 @@ def prerequisites_v2(ctx):
            "filters_on_test_phrases": log, "flags_test": {"v1": len(v1_test), "v2": len(v2_test)},
            "flags_by_type_test": {"v1": dict(Counter(f["type"] for f in v1_test)), "v2": dict(Counter(f["type"] for f in v2_test))},
            "tests_test": {"v1": tests(ctx, v1, "test"), "v2": tests(ctx, v2, "test")},
-           "same_labels": same_label_eval(v2_test), "fresh_sample": fresh_eval(),
+           "same_labels": same_label_eval(v2_test), "fresh_sample": fresh_eval(), "fresh_sample_agreement": fresh_agreement(),
            "v2a_first_attempt": {"flags_test": len(v2a_test), "tests_test": tests(ctx, v2a, "test"), "same_labels": same_label_eval(v2a_test),
                                  "why_revised": "pooling words of all earlier course names met too many removed prerequisites (removal recall fell)"},
            "bias_note": "v2's rules were designed from test-split failure cases (F05-F07), so v2 precision on the same test labels is optimistic"}
@@ -242,7 +257,9 @@ def api_examples(ctx):
                {"common_topics": cc["common_topics"][:3], "unique_to_a": cc["unique_to_a"][:3], "prerequisites_a": cc["prerequisites_a"],
                 "meta": {k: cc["meta"][k] for k in ("engine_version", "encoder", "split_hash")}}}
     from curriculum_engine import __version__
-    return dump({"status_codes": status, "all_ok": all(v == 200 for v in status.values()), "endpoints": len(status), "engine_version": __version__,
+    paths = {("POST", path) for path, _ in calls.values()} | {("GET", "/health")}       # /compare-curricula has two examples
+    return dump({"status_codes": status, "all_ok": all(v == 200 for v in status.values()), "endpoints": len(paths), "example_calls": len(status),
+                 "engine_version": __version__,
                  "compare_courses_excerpt": excerpt}, f"{OUT}/api_examples.json")
 
 

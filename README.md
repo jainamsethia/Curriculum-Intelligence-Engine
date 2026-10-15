@@ -15,7 +15,7 @@ maps learning outcomes to Bloom's taxonomy, and flags emerging-topic gaps. Every
 | 4 | Improved model | `week-4-redo` | `submissions/week4/` |
 | 5 | Evaluation & error analysis | `week-5-redo` | `submissions/week5/` |
 | 1–5 | Final bundle (all five reports from one commit) | `week-5-redo` | `submissions/week5_bundle/` |
-| 6 | Asset engineering: package + API, prerequisite checker v2 | `week-6-redo` | `submissions/week6/` |
+| 6 | Asset engineering: package + API, prerequisite checker v2 | `week-6-redo-fix` | `submissions/week6/` |
 
 The first versions of Weeks 2–4 (MIT OpenCourseWare data, then an early NMIMS parser) are kept for history in `legacy/` and
 `legacy_mit/` (tag `pre-redo`). None of their numbers are reused.

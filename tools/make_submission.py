@@ -1,4 +1,4 @@
-"""Pack one week's submission from its git tag:  python tools/make_submission.py <N>
+"""Pack one week's submission from its git tag:  python tools/make_submission.py <N> [tag]
 
 submissions/week<N>/: report .docx (+ .pdf, page count checked), code zip (git archive of tag week-<N>-redo), SUBMIT.md
 (rendered from reports/templates/submit_week<N>.md with the same placeholders as the report). Fails if the report check fails.
@@ -54,4 +54,4 @@ def pack(n, out_dir=None, tag=None):
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
-    pack(int(sys.argv[1]))
+    pack(int(sys.argv[1]), tag=sys.argv[2] if len(sys.argv) > 2 else None)        # optional tag, e.g. week-6-redo-fix

@@ -269,6 +269,12 @@
    ]
   }
  },
+ "fresh_sample_agreement": {
+  "items": 45,
+  "both_passes_agree": 45,
+  "percent_agreement": 1.0,
+  "needed_pass3": 0
+ },
  "v2a_first_attempt": {
   "flags_test": 13,
   "tests_test": {
