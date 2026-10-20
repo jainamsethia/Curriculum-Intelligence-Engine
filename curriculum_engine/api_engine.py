@@ -205,9 +205,11 @@ class ApiEngine(Engine):
 
     def emerging(self, prog):
         from curriculum_engine import emerging as EM
-        items = [g for g in EM.coverage({prog: self.view.get(prog, {})}, self.emb, self.th["prereq_topic"]) if g["programme"] == prog]
+        # Week 7: the validation-tuned unit-match threshold replaces the prerequisite topic threshold (0.40), which made
+        # almost every topic look covered (accuracy on the labelled emerging-topic decisions: results/week7/emerging_threshold.json)
+        items = [g for g in EM.coverage({prog: self.view.get(prog, {})}, self.emb, self.th["unit_match"]) if g["programme"] == prog]
         return {"reference_status": EM.REFERENCE["status"], "gap_precision": self.gap_precision,
-                "note": "gaps are precise but gap recall is low: weakly related units can count as coverage (threshold shared with the prerequisite topic check)",
+                "note": "coverage = a unit at cosine >= the validation-tuned unit-match threshold; 'covered' and 'gap' are both indicative (see results/week7)",
                 "topics": [{"topic": g["topic"], "covered": g["covered"], "best_similarity": g["best_similarity"],
                             "closest_units": [f"{e['course']} - {e['unit']}" for e in g["evidence"][:3]],
                             "source": EM.REFERENCE["sources"][g["source"]]["title"]} for g in items]}
