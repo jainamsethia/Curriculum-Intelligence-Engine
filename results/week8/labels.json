@@ -1,0 +1,52 @@
+{
+ "items": 502,
+ "agreed": 466,
+ "pass3": 35,
+ "uncertain": 1,
+ "human_spot_check_rows": 50,
+ "human_spot_check_filled": 0,
+ "table": {
+  "columns": [
+   "Label set",
+   "Items",
+   "Passes 1 and 2 agree",
+   "Settled by pass 3",
+   "Uncertain (excluded)",
+   "Second labeller"
+  ],
+  "rows": [
+   [
+    "course pairs (overlap 0/1/2)",
+    200,
+    171,
+    28,
+    1,
+    "Phi-3 (106), Claude (wording B) (94)"
+   ],
+   [
+    "detector flags (Week 3)",
+    187,
+    182,
+    5,
+    0,
+    "Claude (wording B) (187)"
+   ],
+   [
+    "prerequisite v2 flags (Week 6)",
+    45,
+    45,
+    0,
+    0,
+    "Claude (wording B) (45)"
+   ],
+   [
+    "JD skill coverage (Week 7)",
+    70,
+    68,
+    2,
+    0,
+    "Claude (wording B) (70)"
+   ]
+  ]
+ }
+}
