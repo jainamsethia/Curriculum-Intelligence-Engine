@@ -15,11 +15,12 @@ from check_reports import check  # noqa: E402
 PS = r"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
 MAX_PAGES = 5
 DATA_FOR_GRADER = ["data/processed/courses.jsonl"]      # parsed NMIMS syllabi: Teams code zip ONLY (data/ is git-ignored, never pushed)
+OUTPUTS_FOR_GRADER = "data/week*/*"                     # outputs quoting syllabus text (Week 7 on): Teams code zip only
 
 
 def add_data(zip_path):
     """Append the parsed dataset to a git-archive zip, so the grader can run the pipeline without the 13 GB archive."""
-    for rel in DATA_FOR_GRADER:
+    for rel in DATA_FOR_GRADER + [p.relative_to(ROOT).as_posix() for p in sorted(ROOT.glob(OUTPUTS_FOR_GRADER))]:
         assert not git("ls-files", rel), f"{rel} is tracked by git: it must never be committed"
         with zipfile.ZipFile(zip_path, "a", zipfile.ZIP_DEFLATED) as z:
             z.write(ROOT / rel, f"Curriculum-Intelligence-Engine/{rel}")
