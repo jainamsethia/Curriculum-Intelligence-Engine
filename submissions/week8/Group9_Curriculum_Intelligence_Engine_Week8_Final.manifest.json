@@ -1,0 +1,215 @@
+{
+ "week": 8,
+ "tag": "v1.0",
+ "commit": "8807acc9d8853b26107ddd355d9af444ae76f552",
+ "values": [
+  {
+   "key": "week8/final_testing:clean_clone.tests_passed",
+   "value": "36"
+  },
+  {
+   "key": "week8/final_testing:clean_clone.result_files_compared",
+   "value": "62"
+  },
+  {
+   "key": "dataset/parse_stats:text_pdf",
+   "value": "531"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  },
+  {
+   "key": "dataset/parse_stats:scanned_pdf_skipped",
+   "value": "1,882"
+  },
+  {
+   "key": "dataset/stats:course_versions",
+   "value": "2,366"
+  },
+  {
+   "key": "dataset/stats:families",
+   "value": "645"
+  },
+  {
+   "key": "dataset/stats:programmes",
+   "value": "13"
+  },
+  {
+   "key": "dataset/split:families.train",
+   "value": "387"
+  },
+  {
+   "key": "dataset/split:families.val",
+   "value": "129"
+  },
+  {
+   "key": "dataset/split:families.test",
+   "value": "129"
+  },
+  {
+   "key": "dataset/split:hash",
+   "value": "4763325fd5"
+  },
+  {
+   "key": "week8/labels:items",
+   "value": "502"
+  },
+  {
+   "key": "week8/labels:pass3",
+   "value": "35"
+  },
+  {
+   "key": "week8/labels:uncertain",
+   "value": "1"
+  },
+  {
+   "key": "table:week8/labels:table",
+   "value": "{\"columns\": [\"Label set\", \"Items\", \"Passes 1 and 2 agree\", \"Settled by pass 3\", \"Uncertain (excluded)\", \"Second labeller\"], \"rows\": [[\"course pairs (overlap 0/1/2)\", 200, 171, 28, 1, \"Phi-3 (106), Claude (wording B) (94)\"], [\"detector flags (Week 3)\", 187, 182, 5, 0, \"Claude (wording B) (187)\"], [\"prerequisite v2 flags (Week 6)\", 45, 45, 0, 0, \"Claude (wording B) (45)\"], [\"JD skill coverage (Week 7)\", 70, 68, 2, 0, \"Claude (wording B) (70)\"]]}"
+  },
+  {
+   "key": "dataset/parse_stats:outcomes_with_k_level",
+   "value": "546"
+  },
+  {
+   "key": "week7/summary:endpoints",
+   "value": "9"
+  },
+  {
+   "key": "table:week8/final:table",
+   "value": "{\"columns\": [\"Capability\", \"Metric (test split)\", \"Week 5\", \"Final v1.0\", \"Target\", \"Met?\", \"Final component\"], \"rows\": [[\"1 Overlap\", \"Spearman\", \"0.717\", \"0.717\", \">= 0.6\", \"yes\", \"unchanged since Week 5\"], [\"\", \"ROC-AUC (any overlap)\", \"0.965\", \"0.965\", \">= 0.85\", \"yes\", \"unchanged since Week 5\"], [\"\", \"F1 at validation threshold\", \"0.731\", \"0.731\", \">= 0.7\", \"yes\", \"unchanged since Week 5\"], [\"2 Redundancy\", \"precision of top flags (reference labels)\", \"0.800\", \"0.800\", \">= 0.7\", \"yes\", \"unchanged since Week 5\"], [\"\", \"injected near-duplicates in top 20\", \"1.000\", \"1.000\", \">= 0.8\", \"yes\", \"unchanged since Week 5\"], [\"3 Prerequisites\", \"removal recall\", \"0.880\", \"0.711\", \">= 0.8\", \"no\", \"checker v2 (Week 6)\"], [\"\", \"precision of flags (reference labels)\", \"0.100\", \"0.500\", \">= 0.6\", \"no\", \"checker v2 (Week 6)\"], [\"\", \"false alarms after renaming\", \"0.120\", \"0.000\", \"<= 0.2\", \"yes\", \"checker v2 (Week 6)\"], [\"4 Curriculum diff\", \"precision (real year pairs)\", \"0.998\", \"0.998\", \">= 0.85\", \"yes\", \"unchanged since Week 5\"], [\"\", \"recall (real year pairs)\", \"0.956\", \"0.956\", \">= 0.85\", \"yes\", \"unchanged since Week 5\"], [\"5 Bloom\", \"accuracy vs faculty tags\", \"0.776\", \"0.776\", \">= 0.7\", \"yes\", \"unchanged since Week 5\"], [\"\", \"within one level\", \"0.871\", \"0.871\", \">= 0.85\", \"yes\", \"unchanged since Week 5\"], [\"6 Emerging topics\", \"precision of flagged gaps\", \"1.000\", \"0.915\", \">= 0.7\", \"yes\", \"threshold 0.55 (Week 7)\"], [\"7 Topic labels\", \"share accepted\", \"0.700\", \"0.700\", \">= 0.7\", \"yes\", \"unchanged since Week 5\"], [\"8 Curriculum modernisation\", \"taught / gap accuracy on JD skill themes (reference labels)\", \"\u2013\", \"0.857\", \"no target set\", \"\u2013\", \"new in Week 7\"]]}"
+  },
+  {
+   "key": "week8/final:targets_met",
+   "value": "12"
+  },
+  {
+   "key": "week8/final:targets_total",
+   "value": "14"
+  },
+  {
+   "key": "week8/final:week5_targets_met",
+   "value": "13"
+  },
+  {
+   "key": "week8/final_testing:clean_clone.commit",
+   "value": "b8bf8be57e71a5beabadbdcd5b86b8e3cd006db9"
+  },
+  {
+   "key": "week8/final_testing:clean_clone.pytest",
+   "value": "36 passed, 7 warnings in 25.31s"
+  },
+  {
+   "key": "week8/final_testing:clean_clone.run_all_seconds",
+   "value": "381"
+  },
+  {
+   "key": "week8/final_testing:clean_clone.result_files_compared",
+   "value": "62"
+  },
+  {
+   "key": "week8/final_testing:clean_clone.reproduced",
+   "value": "True"
+  },
+  {
+   "key": "week8/final_testing:os",
+   "value": "Windows 10.0.26200"
+  },
+  {
+   "key": "week8/final_testing:python",
+   "value": "3.11.9"
+  },
+  {
+   "key": "week8/final_testing:latency.repeats",
+   "value": "3"
+  },
+  {
+   "key": "table:week8/final_testing:latency.table",
+   "value": "{\"columns\": [\"Endpoint (example request)\", \"Status\", \"Median latency (ms)\"], \"rows\": [[\"POST /check-prerequisites (check_prerequisites)\", 200, 10], [\"POST /compare-curricula (compare_courses)\", 200, 14], [\"POST /compare-curricula (compare_programmes)\", 200, 14], [\"POST /detect-redundancy (detect_redundancy)\", 200, 142], [\"POST /emerging-topics (emerging_topics)\", 200, 46], [\"POST /find-overlaps (find_overlaps)\", 200, 458], [\"GET /health (health)\", 200, 5], [\"POST /map-outcomes (map_outcomes)\", 200, 5], [\"POST /modernize-curriculum (31 October demo)\", 200, 255], [\"GET /courses?q=language\", 200, 7]]}"
+  },
+  {
+   "key": "week7/summary:jds",
+   "value": "5"
+  },
+  {
+   "key": "week7/summary:courses",
+   "value": "5"
+  },
+  {
+   "key": "week7/summary:identical_pairs",
+   "value": "3"
+  },
+  {
+   "key": "week7/summary:pairs",
+   "value": "10"
+  },
+  {
+   "key": "week7/summary:demanded_themes",
+   "value": "15"
+  },
+  {
+   "key": "week7/summary:demanded_covered",
+   "value": "6"
+  },
+  {
+   "key": "week7/summary:demanded_gaps",
+   "value": "9"
+  },
+  {
+   "key": "week7/summary:units",
+   "value": "11"
+  },
+  {
+   "key": "week7/group11_handoff:mode",
+   "value": "mock"
+  },
+  {
+   "key": "week7/contracts:group4_rows",
+   "value": "17"
+  },
+  {
+   "key": "week7/group4_handoff:answered_from_expected_section",
+   "value": "4"
+  },
+  {
+   "key": "week7/group4_handoff:questions",
+   "value": "5"
+  },
+  {
+   "key": "week7/fairness:bloom_accuracy_min.0",
+   "value": "0.692"
+  },
+  {
+   "key": "week7/fairness:bloom_accuracy_min.1",
+   "value": "COMP"
+  },
+  {
+   "key": "week7/fairness:bloom_accuracy_max.0",
+   "value": "0.857"
+  },
+  {
+   "key": "week7/fairness:bloom_accuracy_max.1",
+   "value": "MECHATRONICS"
+  },
+  {
+   "key": "dataset/parse_stats:text_pdf",
+   "value": "531"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:items",
+   "value": "200"
+  },
+  {
+   "key": "week8/labels:human_spot_check_rows",
+   "value": "50"
+  }
+ ]
+}
