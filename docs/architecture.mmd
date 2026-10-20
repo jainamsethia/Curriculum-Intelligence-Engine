@@ -1,0 +1,20 @@
+flowchart LR
+    D[NMIMS semester syllabus booklets<br/>parsed locally, never published] --> P
+    J[Job descriptions] --> M
+    subgraph g9[Group 9 - Curriculum Intelligence Engine v1.0]
+        P[parse + families<br/>programmes, split] --> E[embeddings<br/>MiniLM chunks + TF-IDF]
+        E --> C1[overlap and redundancy]
+        E --> C2[prerequisite checker v2]
+        E --> C3[diff, Bloom, emerging topics]
+        E --> M[modernise: skills, gaps,<br/>draft syllabus]
+        C1 & C2 & C3 & M --> API[FastAPI service<br/>JSON + evidence + confidence]
+    end
+    API --> UI[Committee UI<br/>Streamlit] --> BOS[Board of Studies<br/>decides]
+    subgraph peers[Other AI University components]
+        G11[Group 11 Communications<br/>POST /process-notice] --> MAIL[emails to faculty<br/>and students]
+        G4[Group 4 Knowledge Assistant<br/>passage table] --> QA[answers: prerequisites,<br/>labs, credits]
+        G10[Group 10 Administrative Copilot<br/>not integrated yet] --> EL[elective advice]
+    end
+    API -- draft as notice --> G11
+    API -- draft as passages --> G4
+    API -. draft syllabus JSON .-> G10

@@ -1,0 +1,13 @@
+{
+  "name": "curriculum-engine-tools",
+  "private": true,
+  "description": "Node tools for the final deliverables: slides (pptxgenjs) and the Mermaid architecture export (mermaid-cli, using the installed Chrome).",
+  "scripts": {
+    "slides": "node make_slides.js",
+    "architecture": "mmdc -i ../docs/architecture.mmd -o ../docs/architecture.png -p puppeteer.json -w 1800 -b white"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.4.2",
+    "pptxgenjs": "^3.12.0"
+  }
+}

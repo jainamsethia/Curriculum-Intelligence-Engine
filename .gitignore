@@ -16,3 +16,6 @@ __pycache__/
 .claude/
 CLAUDE.md
 .vscode/
+
+# node tools (slides, Mermaid export)
+node_modules/
