@@ -56,7 +56,7 @@ def latency(repeats=3):
         req = json.loads(f.read_text(encoding="utf-8"))["request"]
         calls[f"{req['method']} {req['path']} ({f.stem})"] = (req["method"], req["path"], req.get("body"))
     calls["POST /modernize-curriculum (31 October demo)"] = ("POST", "/modernize-curriculum",
-                                                             {"jds": [{"id": k, "text": v} for k, v in W7.jds().items()], "courses": W7.DEMO_COURSES})
+                                                             {"jds": [{"id": k, "text": v} for k, v in W7.jds().items()], "courses": [{"id": i} for i in W7.DEMO_COURSES]})
     calls["GET /courses?q=language"] = ("GET", "/courses?q=language", None)
     rows = []
     for name, (method, path, body) in calls.items():
