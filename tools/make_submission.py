@@ -26,9 +26,9 @@ def add_data(zip_path):
             z.write(ROOT / rel, f"Curriculum-Intelligence-Engine/{rel}")
 
 
-def to_pdf(docx):
+def to_pdf(docx, script="docx2pdf.ps1"):
     pdf = docx.with_suffix(".pdf")
-    subprocess.run([PS, "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(ROOT / "tools/docx2pdf.ps1"), str(docx), str(pdf)], check=True)
+    subprocess.run([PS, "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(ROOT / "tools" / script), str(docx), str(pdf)], check=True)
     return pdf, len(fitz.open(pdf))
 
 
@@ -46,6 +46,10 @@ def pack(n, out_dir=None, tag=None):
     zip_path = out_dir / f"Group9_Curriculum_Intelligence_Engine_Week{n}_code.zip"
     subprocess.run(["git", "archive", "--format=zip", "--prefix=Curriculum-Intelligence-Engine/", "-o", str(zip_path), tag], cwd=ROOT, check=True)
     add_data(zip_path)
+    if n == 8:                                                  # final presentation, from the same results files
+        deck = out_dir / "Group9_Curriculum_Intelligence_Engine_Week8_Presentation.pptx"
+        subprocess.run(["node", "make_slides.js", str(deck)], cwd=ROOT / "tools", check=True)
+        print(f"{deck.name}: {to_pdf(deck, 'pptx2pdf.ps1')[1]} slides")
     tpl = ROOT / f"reports/templates/submit_week{n}.md"
     if tpl.exists():
         (out_dir / "SUBMIT.md").write_text(Resolver(tag).text(tpl.read_text(encoding="utf-8")), encoding="utf-8")
