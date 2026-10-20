@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "curriculum-engine"
-version = "0.7.0"
+version = "1.0.0"
 description = "Curriculum Intelligence Engine (Group 9): course and programme comparison for NMIMS syllabi - overlap, redundancy, missing prerequisites, diff, Bloom, emerging topics"
 readme = "README.md"
 requires-python = ">=3.10"

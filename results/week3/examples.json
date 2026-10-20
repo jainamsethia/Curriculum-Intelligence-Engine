@@ -105,7 +105,7 @@
     ]
    },
    "method": "MiniLM chunk MaxSim (unit match >= 0.55), TF-IDF, programme-graph prerequisite check",
-   "version": "0.7.0"
+   "version": "1.0.0"
   },
   {
    "course_a": {
@@ -216,7 +216,7 @@
     ]
    },
    "method": "MiniLM chunk MaxSim (unit match >= 0.55), TF-IDF, programme-graph prerequisite check",
-   "version": "0.7.0"
+   "version": "1.0.0"
   }
  ],
  "excerpt": {

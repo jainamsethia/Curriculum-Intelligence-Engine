@@ -3,7 +3,7 @@
  "info": {
   "title": "Curriculum Intelligence Engine API",
   "description": "Course and programme comparison for NMIMS curriculum committees: overlap, redundancy, missing prerequisites, curriculum diff, Bloom levels and emerging-topic gaps. Confidence values come from LLM-annotated reference labels (no human annotators); they are indicative.",
-  "version": "0.7.0"
+  "version": "1.0.0"
  },
  "paths": {
   "/health": {
