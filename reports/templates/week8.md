@@ -53,7 +53,7 @@ Booklets are parsed locally into course records and families; MiniLM chunk embed
 
 ## 5. Final testing
 - **Clean clone** of commit `{{week8/final_testing:clean_clone.commit}}`: {{week8/final_testing:clean_clone.pytest}}; `run all` finished in {{week8/final_testing:clean_clone.run_all_seconds}} s and reproduced every committed result (files compared: {{week8/final_testing:clean_clone.result_files_compared}}, reproduced: {{week8/final_testing:clean_clone.reproduced}}). Machine: {{week8/final_testing:os}}, Python {{week8/final_testing:python}}, CPU only.
-- **API on the real data** (in-process, median of {{week8/final_testing:latency.repeats}} calls after a warm-up; engine start {{week8/final_testing:latency.engine_start_seconds}} s):
+- **API on the real data** (in-process, the requests of `docs/examples`, median of {{week8/final_testing:latency.repeats}} calls after one warm-up call that also loads the models):
 {{table:week8/final_testing:latency.table}}
 - **Report and slide checks**: every number in the reports is a placeholder resolved from `results/*.json` and re-checked by `tools/check_reports.py`; the slides read the same files; the deck passed an Office XML validation.
 

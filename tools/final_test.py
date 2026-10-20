@@ -74,7 +74,7 @@ def latency(repeats=3):
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
-    res = {"date": date.today().isoformat(), "python": platform.python_version(), "os": platform.platform(terse=True),
+    res = {"date": date.today().isoformat(), "python": platform.python_version(), "os": f"{platform.system()} {platform.version()}",      # platform.platform() says Windows-10 on Windows 11
            "cpu_count": os.cpu_count(), "clean_clone": clean_clone()}
     print(json.dumps(res["clean_clone"], indent=1))
     res["latency"] = latency()
