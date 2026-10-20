@@ -1,0 +1,27 @@
+{
+ "all_themes": {
+  "gap": {
+   "n": 48,
+   "precision": 0.896
+  },
+  "covered": {
+   "n": 22,
+   "precision": 0.773
+  },
+  "accuracy": 0.857
+ },
+ "demanded_themes": {
+  "gap": {
+   "n": 9,
+   "precision": 0.778
+  },
+  "covered": {
+   "n": 6,
+   "precision": 1.0
+  },
+  "accuracy": 0.867
+ },
+ "labelled": 70,
+ "uncertain": 0,
+ "needed_pass3": 2
+}

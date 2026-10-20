@@ -1,0 +1,16 @@
+{
+ "labelled_decisions": 67,
+ "really_taught": 21,
+ "week3_threshold": {
+  "threshold": 0.4,
+  "accuracy": 0.388,
+  "gap_precision": 1.0,
+  "gap_recall": 0.109
+ },
+ "unit_match_threshold": {
+  "threshold": 0.55,
+  "accuracy": 0.896,
+  "gap_precision": 0.915,
+  "gap_recall": 0.935
+ }
+}

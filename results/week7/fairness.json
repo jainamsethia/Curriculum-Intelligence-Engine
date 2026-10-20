@@ -1,0 +1,122 @@
+{
+ "excluded_from_prerequisite_checks": [
+  "ELECTRICAL",
+  "IBM"
+ ],
+ "bloom_accuracy_min": [
+  0.692,
+  "COMP"
+ ],
+ "bloom_accuracy_max": [
+  0.857,
+  "MECHATRONICS"
+ ],
+ "table": {
+  "columns": [
+   "Programme",
+   "Parsed course versions",
+   "Prerequisite checks",
+   "Overlap ROC-AUC",
+   "Bloom accuracy",
+   "Removal recall"
+  ],
+  "rows": [
+   [
+    "AI",
+    258,
+    "yes",
+    "n/a",
+    "0.696",
+    "1.000"
+   ],
+   [
+    "CIVIL",
+    234,
+    "yes",
+    "1.000",
+    "0.842",
+    "1.000"
+   ],
+   [
+    "COMP",
+    213,
+    "yes",
+    "0.950",
+    "0.692",
+    "1.000"
+   ],
+   [
+    "CSBS",
+    248,
+    "yes",
+    "0.990",
+    "0.692",
+    "0.833"
+   ],
+   [
+    "CSE-CYBER",
+    254,
+    "yes",
+    "1.000",
+    "0.722",
+    "1.000"
+   ],
+   [
+    "CSE-DS",
+    202,
+    "yes",
+    "0.944",
+    "0.778",
+    "0.800"
+   ],
+   [
+    "DS",
+    394,
+    "yes",
+    "0.960",
+    "0.775",
+    "1.000"
+   ],
+   [
+    "ELECTRICAL",
+    8,
+    "no (too little parsed data)",
+    "n/a",
+    "n/a",
+    "n/a"
+   ],
+   [
+    "EXTC",
+    169,
+    "yes",
+    "0.933",
+    "0.743",
+    "0.800"
+   ],
+   [
+    "IT",
+    283,
+    "yes",
+    "0.875",
+    "0.696",
+    "1.000"
+   ],
+   [
+    "MECHANICAL",
+    422,
+    "yes",
+    "0.975",
+    "0.857",
+    "0.714"
+   ],
+   [
+    "MECHATRONICS",
+    244,
+    "yes",
+    "1.000",
+    "0.857",
+    "0.889"
+   ]
+  ]
+ }
+}

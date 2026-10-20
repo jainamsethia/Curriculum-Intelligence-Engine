@@ -12,7 +12,7 @@
  "all_ok": true,
  "endpoints": 7,
  "example_calls": 8,
- "engine_version": "0.6.0",
+ "engine_version": "0.7.0",
  "compare_courses_excerpt": {
   "request": {
    "course_a": {
@@ -79,7 +79,7 @@
     "flags": []
    },
    "meta": {
-    "engine_version": "0.6.0",
+    "engine_version": "0.7.0",
     "encoder": "sentence-transformers/all-MiniLM-L6-v2",
     "split_hash": "4763325fd5"
    }

@@ -1,0 +1,8 @@
+{
+ "group11_request_schema": true,
+ "group11_response_schema": true,
+ "group4_columns": true,
+ "group4_max_words": 86,
+ "group4_rows": 17,
+ "draft_traceable": true
+}

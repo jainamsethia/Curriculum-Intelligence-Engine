@@ -1,0 +1,299 @@
+{
+ "jds": 5,
+ "requirement_statements": 35,
+ "skill_themes": 70,
+ "demanded_themes": 15,
+ "demanded_covered": 6,
+ "demanded_gaps": 9,
+ "courses": 5,
+ "programmes": [
+  "AI",
+  "COMP",
+  "CSE-DS",
+  "DS",
+  "EXTC",
+  "IT"
+ ],
+ "identical_pairs": 3,
+ "pairs": 10,
+ "shared_topics": 5,
+ "units": 11,
+ "units_shared": 5,
+ "units_existing_demanded": 2,
+ "units_new": 4,
+ "total_hours": 62,
+ "outcomes": 8,
+ "traceable": true,
+ "group4_passages": 17,
+ "group11_mode": "mock",
+ "endpoints": 9,
+ "overlap_table": {
+  "columns": [
+   "Course A",
+   "Course B",
+   "Unit overlap",
+   "Score",
+   "Confidence"
+  ],
+  "rows": [
+   [
+    "Natural Language Processing (nmd6d35385)",
+    "Natural Language Processing (nm57ee6fd1)",
+    "100%",
+    1.0,
+    0.918
+   ],
+   [
+    "Natural Language Processing (nmd6d35385)",
+    "Natural Language Processing (nm26b2f85a)",
+    "100%",
+    1.0,
+    0.918
+   ],
+   [
+    "Natural Language Processing (nm57ee6fd1)",
+    "Natural Language Processing (nm26b2f85a)",
+    "100%",
+    1.0,
+    0.918
+   ],
+   [
+    "Natural Language Processing (nmd6d35385)",
+    "Speech and Natural Language Processing (nm85e9140a)",
+    "60%",
+    0.925,
+    0.56
+   ],
+   [
+    "Natural Language Processing (nm57ee6fd1)",
+    "Speech and Natural Language Processing (nm85e9140a)",
+    "60%",
+    0.925,
+    0.563
+   ],
+   [
+    "Natural Language Processing (nm26b2f85a)",
+    "Speech and Natural Language Processing (nm85e9140a)",
+    "60%",
+    0.925,
+    0.562
+   ],
+   [
+    "Speech and Natural Language Processing (nm85e9140a)",
+    "Generative AI (nm8b216b85)",
+    "14%",
+    0.837,
+    0.418
+   ],
+   [
+    "Natural Language Processing (nmd6d35385)",
+    "Generative AI (nm8b216b85)",
+    "0%",
+    0.7,
+    0.197
+   ],
+   [
+    "Natural Language Processing (nm26b2f85a)",
+    "Generative AI (nm8b216b85)",
+    "0%",
+    0.7,
+    0.206
+   ],
+   [
+    "Natural Language Processing (nm57ee6fd1)",
+    "Generative AI (nm8b216b85)",
+    "0%",
+    0.688,
+    0.194
+   ]
+  ]
+ },
+ "theme_table": {
+  "columns": [
+   "Skill theme (from JDs)",
+   "Asked for by",
+   "Already taught?",
+   "Closest unit topic (course)"
+  ],
+  "rows": [
+   [
+    "large language models",
+    "JD1, JD2, JD3, JD4, JD5",
+    "yes",
+    "Large Language Models (Generative AI)"
+   ],
+   [
+    "learning",
+    "JD2, JD4, JD5",
+    "yes",
+    "Machine Learning and NLP (Speech and NLP)"
+   ],
+   [
+    "tokenization",
+    "JD1, JD2, JD4",
+    "yes",
+    "Basic Text Processing Tokenization (Speech and NLP)"
+   ],
+   [
+    "fine-tuned models",
+    "JD1, JD4",
+    "yes",
+    "Parameter Efficient Fine Tuning (Generative AI)"
+   ],
+   [
+    "training transformer models",
+    "JD1, JD4",
+    "yes",
+    "Generative Pretrained Transformer (Generative AI)"
+   ],
+   [
+    "automatic metrics",
+    "JD1, JD3",
+    "gap",
+    "Information retrieval (NLP)"
+   ],
+   [
+    "cloud GPUs",
+    "JD1, JD5",
+    "gap",
+    "PCFG (Speech and NLP)"
+   ],
+   [
+    "human evaluation",
+    "JD1, JD3",
+    "gap",
+    "Evaluating Language Models (Speech and NLP)"
+   ],
+   [
+    "prompts",
+    "JD1, JD3",
+    "gap",
+    "Feature Engineering (NLP)"
+   ],
+   [
+    "PyTorch and REST API development",
+    "JD3, JD5",
+    "gap",
+    "Practice with ipython Notebooks (Speech and NLP)"
+   ],
+   [
+    "attention",
+    "JD1, JD4",
+    "yes",
+    "Overview of attention mechanisms (Generative AI)"
+   ],
+   [
+    "bias",
+    "JD2, JD5",
+    "gap",
+    "multi-head attention (Generative AI)"
+   ],
+   [
+    "guardrails",
+    "JD3, JD5",
+    "gap",
+    "RoPE (Generative AI)"
+   ],
+   [
+    "Python",
+    "JD1, JD3",
+    "gap",
+    "Practice with ipython Notebooks (Speech and NLP)"
+   ],
+   [
+    "quantization",
+    "JD4, JD5",
+    "gap",
+    "Clustering and Distributional Semantics (Speech and NLP)"
+   ]
+  ]
+ },
+ "unit_table": {
+  "columns": [
+   "#",
+   "Unit of the draft syllabus",
+   "Kind",
+   "Hours",
+   "Source"
+  ],
+  "rows": [
+   [
+    1,
+    "Introduction to Natural Language Processing",
+    "shared topic (deduplicated)",
+    2,
+    "NLP ×3, Speech and NLP"
+   ],
+   [
+    2,
+    "Semantic Analysis and Vector Space Models",
+    "shared topic (deduplicated)",
+    7,
+    "NLP ×3, Speech and NLP"
+   ],
+   [
+    3,
+    "Text Pre-processing and Text Representation",
+    "shared topic (deduplicated)",
+    5,
+    "NLP ×3, Speech and NLP"
+   ],
+   [
+    4,
+    "Pragmatic and Discourse Analysis",
+    "shared topic (deduplicated)",
+    4,
+    "NLP ×3"
+   ],
+   [
+    5,
+    "Large Language Models (LLM)",
+    "shared topic (deduplicated)",
+    8,
+    "Generative AI, Speech and NLP"
+   ],
+   [
+    6,
+    "Basic Text Processing",
+    "existing unit, demanded by industry",
+    6,
+    "Speech and NLP; JD2, JD4, JD5"
+   ],
+   [
+    7,
+    "RAG and Fine Tuning",
+    "existing unit, demanded by industry",
+    6,
+    "Generative AI; JD1, JD4"
+   ],
+   [
+    8,
+    "Recall and ranking metrics",
+    "new unit from job descriptions",
+    6,
+    "JD1, JD3"
+   ],
+   [
+    9,
+    "Human evaluation",
+    "new unit from job descriptions",
+    6,
+    "JD1, JD3"
+   ],
+   [
+    10,
+    "Prompt engineering",
+    "new unit from job descriptions",
+    6,
+    "JD1, JD3"
+   ],
+   [
+    11,
+    "Bias",
+    "new unit from job descriptions",
+    6,
+    "JD2, JD5"
+   ]
+  ]
+ }
+}

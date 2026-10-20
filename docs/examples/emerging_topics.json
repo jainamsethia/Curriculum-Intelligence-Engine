@@ -9,7 +9,7 @@
  "status": 200,
  "response": {
   "meta": {
-   "engine_version": "0.6.0",
+   "engine_version": "0.7.0",
    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
    "course_versions": 2366,
    "split_hash": "4763325fd5",
@@ -18,7 +18,7 @@
   "programme": "COMP",
   "reference_status": "DRAFT - pending approval by Group 9 (9 Oct 2026). Only 'verified' entries are used in metrics.",
   "gap_precision": 1.0,
-  "note": "gaps are precise but gap recall is low: weakly related units can count as coverage (threshold shared with the prerequisite topic check)",
+  "note": "coverage = a unit at cosine >= the validation-tuned unit-match threshold; 'covered' and 'gap' are both indicative (see results/week7)",
   "topics": [
    {
     "topic": "Large language models and generative AI",
@@ -33,7 +33,7 @@
    },
    {
     "topic": "AI agents",
-    "covered": true,
+    "covered": false,
     "best_similarity": 0.548,
     "closest_units": [
      "AI and Robotics - Introduction to AI",
@@ -44,7 +44,7 @@
    },
    {
     "topic": "Responsible AI and AI safety evaluation",
-    "covered": true,
+    "covered": false,
     "best_similarity": 0.436,
     "closest_units": [
      "AI and Robotics - Introduction to AI",
@@ -55,7 +55,7 @@
    },
    {
     "topic": "Efficient small AI models and edge AI",
-    "covered": true,
+    "covered": false,
     "best_similarity": 0.414,
     "closest_units": [
      "Deep Learning - Optimization and Regularization for Deep Learning",
@@ -66,7 +66,7 @@
    },
    {
     "topic": "AI chips and data-centre hardware",
-    "covered": true,
+    "covered": false,
     "best_similarity": 0.452,
     "closest_units": [
      "Embedded Systems - Processor and memory Organization",

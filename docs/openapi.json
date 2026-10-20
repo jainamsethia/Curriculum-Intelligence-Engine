@@ -3,7 +3,7 @@
  "info": {
   "title": "Curriculum Intelligence Engine API",
   "description": "Course and programme comparison for NMIMS curriculum committees: overlap, redundancy, missing prerequisites, curriculum diff, Bloom levels and emerging-topic gaps. Confidence values come from LLM-annotated reference labels (no human annotators); they are indicative.",
-  "version": "0.6.0"
+  "version": "0.7.0"
  },
  "paths": {
   "/health": {
@@ -244,6 +244,122 @@
        "application/json": {
         "schema": {
          "$ref": "#/components/schemas/EmergingResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/modernize-curriculum": {
+   "post": {
+    "summary": "Modernize Curriculum",
+    "description": "Week 7 (demo step of Group 9): job descriptions + current syllabi -> overlaps between the syllabi, the skills the JDs ask\nfor, which of them are already taught, a traceable draft syllabus, and the hand-offs for Group 11 and Group 4.",
+    "operationId": "modernize_curriculum_modernize_curriculum_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ModernizeRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ModernizeResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/courses": {
+   "get": {
+    "summary": "List Courses",
+    "description": "Course versions whose name contains q (latest first), optionally of one programme; or the given comma-separated ids.",
+    "operationId": "list_courses_courses_get",
+    "parameters": [
+     {
+      "name": "q",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string",
+       "default": "",
+       "title": "Q"
+      }
+     },
+     {
+      "name": "programme",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Programme"
+      }
+     },
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "default": 50,
+       "title": "Limit"
+      }
+     },
+     {
+      "name": "ids",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string",
+       "default": "",
+       "title": "Ids"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/CourseListResponse"
         }
        }
       }
@@ -532,6 +648,26 @@
     ],
     "title": "CourseInfo"
    },
+   "CourseListResponse": {
+    "properties": {
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "courses": {
+      "items": {
+       "$ref": "#/components/schemas/CourseInfo"
+      },
+      "type": "array",
+      "title": "Courses"
+     }
+    },
+    "type": "object",
+    "required": [
+     "meta",
+     "courses"
+    ],
+    "title": "CourseListResponse"
+   },
    "CourseRef": {
     "properties": {
      "id": {
@@ -815,6 +951,28 @@
     ],
     "title": "Health"
    },
+   "JobDescription": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id",
+      "examples": [
+       "JD1"
+      ]
+     },
+     "text": {
+      "type": "string",
+      "minLength": 20,
+      "title": "Text"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "text"
+    ],
+    "title": "JobDescription"
+   },
    "Meta": {
     "properties": {
      "engine_version": {
@@ -847,6 +1005,121 @@
      "evaluation_note"
     ],
     "title": "Meta"
+   },
+   "ModernizeRequest": {
+    "properties": {
+     "jds": {
+      "items": {
+       "$ref": "#/components/schemas/JobDescription"
+      },
+      "type": "array",
+      "maxItems": 10,
+      "minItems": 1,
+      "title": "Jds"
+     },
+     "courses": {
+      "items": {
+       "$ref": "#/components/schemas/CourseRef"
+      },
+      "type": "array",
+      "maxItems": 10,
+      "minItems": 2,
+      "title": "Courses"
+     },
+     "title": {
+      "type": "string",
+      "minLength": 3,
+      "title": "Title",
+      "default": "Natural Language Processing and Large Language Models"
+     },
+     "academic_year": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Academic Year"
+     }
+    },
+    "type": "object",
+    "required": [
+     "jds",
+     "courses"
+    ],
+    "title": "ModernizeRequest",
+    "description": "Job descriptions + the current syllabi to modernise -> overlaps, demanded skills, a traceable draft syllabus, hand-offs."
+   },
+   "ModernizeResponse": {
+    "properties": {
+     "meta": {
+      "$ref": "#/components/schemas/Meta"
+     },
+     "courses": {
+      "items": {
+       "$ref": "#/components/schemas/CourseInfo"
+      },
+      "type": "array",
+      "title": "Courses"
+     },
+     "overlaps": {
+      "items": {
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Overlaps",
+      "description": "Pairwise overlap of the selected syllabi (Week 4 fusion score and confidence)"
+     },
+     "shared_topics": {
+      "items": {
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Shared Topics",
+      "description": "Units taught in two or more of the selected syllabi"
+     },
+     "skill_themes": {
+      "items": {
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Skill Themes",
+      "description": "JD skill themes, the JDs that ask for them, and whether a unit already teaches them"
+     },
+     "new_curriculum": {
+      "type": "object",
+      "title": "New Curriculum",
+      "description": "Draft syllabus; every unit and outcome names its source (course id or JD id)"
+     },
+     "traceable": {
+      "type": "boolean",
+      "title": "Traceable"
+     },
+     "markdown": {
+      "type": "string",
+      "title": "Markdown"
+     },
+     "handoffs": {
+      "type": "object",
+      "title": "Handoffs",
+      "description": "group11_request (Group 11 /process-notice body) and group4_chunks (Group 4 passage rows)"
+     }
+    },
+    "type": "object",
+    "required": [
+     "meta",
+     "courses",
+     "overlaps",
+     "shared_topics",
+     "skill_themes",
+     "new_curriculum",
+     "traceable",
+     "markdown",
+     "handoffs"
+    ],
+    "title": "ModernizeResponse"
    },
    "OutcomesRequest": {
     "properties": {

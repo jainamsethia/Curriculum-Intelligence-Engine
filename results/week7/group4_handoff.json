@@ -1,0 +1,57 @@
+{
+ "note": "answers from Group 9's stand-in for Group 4's offline (extractive) mode over the exported passages",
+ "questions": 5,
+ "answered_from_expected_section": 4,
+ "answers": [
+  {
+   "question": "What are the prerequisites for the new course?",
+   "answer": "The prerequisites for this course are: Data Structures and Algorithms, Python Programming, Applications of Machine Learning, Deep Learning, Advanced Techniques in Machine Learning.",
+   "section": "Prerequisites",
+   "source": "Group 9 draft syllabus: Natural Language Processing and Large Language Models | Prerequisites | page 3",
+   "confidence": 0.851,
+   "_standin": "Group 9 stand-in for Group 4's offline (extractive) mode",
+   "expected_section": "Prerequisites",
+   "from_expected_section": true
+  },
+  {
+   "question": "Does the course have lab work?",
+   "answer": "The course has lab work: Hands-on exercise: Basic Text Processing;",
+   "section": "Lab work",
+   "source": "Group 9 draft syllabus: Natural Language Processing and Large Language Models | Lab work | page 15",
+   "confidence": 0.833,
+   "_standin": "Group 9 stand-in for Group 4's offline (extractive) mode",
+   "expected_section": "Lab work",
+   "from_expected_section": true
+  },
+  {
+   "question": "How many credits does the course carry?",
+   "answer": "The course carries 3 credits, with 2 lecture hours, 2 practical hours and 0 tutorial hours per week.",
+   "section": "Credits and teaching scheme",
+   "source": "Group 9 draft syllabus: Natural Language Processing and Large Language Models | Credits and teaching scheme | page 2",
+   "confidence": 0.907,
+   "_standin": "Group 9 stand-in for Group 4's offline (extractive) mode",
+   "expected_section": "Credits and teaching scheme",
+   "from_expected_section": true
+  },
+  {
+   "question": "Which topics on fine-tuning large language models are covered?",
+   "answer": "Large Language Models (LLM) (8 hours).",
+   "section": "Unit 5: Large Language Models (LLM)",
+   "source": "Group 9 draft syllabus: Natural Language Processing and Large Language Models | Unit 5: Large Language Models (LLM) | page 8",
+   "confidence": 0.833,
+   "_standin": "Group 9 stand-in for Group 4's offline (extractive) mode",
+   "expected_section": "Fine Tuning",
+   "from_expected_section": false
+  },
+  {
+   "question": "How is the course assessed?",
+   "answer": "How the course is assessed and examined: As per the programme's internal continuous assessment and term-end examination norms (not part of the parsed syllabi).",
+   "section": "Assessment and examination",
+   "source": "Group 9 draft syllabus: Natural Language Processing and Large Language Models | Assessment and examination | page 16",
+   "confidence": 0.886,
+   "_standin": "Group 9 stand-in for Group 4's offline (extractive) mode",
+   "expected_section": "Assessment and examination",
+   "from_expected_section": true
+  }
+ ]
+}

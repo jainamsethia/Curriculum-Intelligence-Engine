@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "curriculum-engine"
-version = "0.6.0"
+version = "0.7.0"
 description = "Curriculum Intelligence Engine (Group 9): course and programme comparison for NMIMS syllabi - overlap, redundancy, missing prerequisites, diff, Bloom, emerging topics"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "numpy>=1.26", "scipy>=1.11", "scikit-learn>=1.4", "pymupdf>=1.24", "sentence-transformers>=3.0", "torch>=2.2",
     "fastapi>=0.110", "uvicorn>=0.29", "pydantic>=2.6", "matplotlib>=3.8",
+    "spacy>=3.7", "rank-bm25>=0.2", "python-docx>=1.1", "httpx>=0.27", "streamlit>=1.30",   # Week 7 (+ python -m spacy download en_core_web_sm)
 ]
 
 [project.optional-dependencies]
