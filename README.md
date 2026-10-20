@@ -16,6 +16,7 @@ maps learning outcomes to Bloom's taxonomy, and flags emerging-topic gaps. Every
 | 5 | Evaluation & error analysis | `week-5-redo` | `submissions/week5/` |
 | 1–5 | Final bundle (all five reports from one commit) | `week-5-redo` | `submissions/week5_bundle/` |
 | 6 | Asset engineering: package + API, prerequisite checker v2 | `week-6-redo-fix` | `submissions/week6/` |
+| 7 | Integration & demo: curriculum modernisation from JDs, Group 11 / Group 4 hand-offs, committee UI, responsible-AI analysis | `week-7` | `submissions/week7/` |
 
 The first versions of Weeks 2–4 (MIT OpenCourseWare data, then an early NMIMS parser) are kept for history in `legacy/` and
 `legacy_mit/` (tag `pre-redo`). None of their numbers are reused.
@@ -46,14 +47,28 @@ pip install -e .[dev]
 uvicorn curriculum_engine.api:app --port 8000      # OpenAPI docs: http://localhost:8000/docs
 ```
 Endpoints: `POST /compare-curricula`, `/map-outcomes`, `/find-overlaps`, `/check-prerequisites`, `/detect-redundancy`, `/emerging-topics`,
+`/modernize-curriculum` (Week 7), `GET /courses` (Week 7),
 `GET /health`. Details, confidence definitions and real examples: `docs/API.md`, `docs/examples/`, `docs/openapi.json`.
 The Teams code zip also contains `data/processed/courses.jsonl` (parsed syllabi), so the API runs without the 13 GB archive; that
 file is never pushed to GitHub.
 
+## Committee UI and demo (Week 7)
+```bash
+uvicorn curriculum_engine.api:app --port 8000      # terminal 1
+streamlit run app/committee_ui.py                  # terminal 2 (CE_API_URL defaults to http://localhost:8000)
+```
+The skill extraction needs the spaCy English model once: `python -m spacy download en_core_web_sm` (included in `requirements.txt`).
+The "Modernise curriculum" tab runs the 31 October demo step: five job descriptions (`demo/jds`, synthetic samples) plus the current
+NLP syllabi -> overlaps, demanded skills, a traceable draft syllabus (Word / Markdown / JSON), a notice for Group 11 and passages for
+Group 4. See `docs/INTEGRATION.md`, `docs/RESPONSIBLE_AI.md`, `docs/ARCHITECTURE.md`, `docs/DEMO_SCRIPT.md`.
+
 ## Repository layout
 ```
 curriculum_engine/   parser, data (families, programmes, split), embeddings, overlap, labelling, run
-tools/               build_report.py, check_reports.py, docx2pdf.ps1
+app/                 committee_ui.py (Streamlit UI over the API)
+demo/jds/            synthetic sample job descriptions for the demo
+docs/                API, integration, responsible AI, architecture, demo script
+tools/               build_report.py, check_reports.py, docx2pdf.ps1, make_submission.py, ui_screenshot.py
 reports/templates/   report text with {{placeholders}} for every number
 results/             metrics JSON + figures (dataset/, plan/, week<N>/)
 labels/              LLM-annotated reference labels (ids, labels per pass, consensus, one-line rationale)

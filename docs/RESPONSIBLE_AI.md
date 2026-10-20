@@ -1,0 +1,17 @@
+# Responsible-AI analysis (Week 7)
+
+Numbers for each point are in the Week 7 report and `results/week7/*.json`; this note explains the risks and what we do about them.
+
+| Risk | Where it arises | What we do | Evidence / remaining limit |
+|---|---|---|---|
+| **Privacy of faculty and student data** | syllabus PDFs, job descriptions, peer components | Only course-level text is parsed; no student data is used; the parsed fields contain no faculty names or e-mails (checked in Week 1). The parsed dataset is never pushed to the public repository; it ships only in the Teams code zip. JDs are synthetic samples; real JDs pasted into the UI stay local. | `results/dataset`, `tools/make_submission.py` (refuses to zip a tracked data file) |
+| **Fairness across departments** | programmes with scanned booklets have less parsed data; quality differs by programme | Prerequisite checks are skipped for programmes with too little data instead of producing unreliable flags; results are reported per programme. | `results/week7/fairness.json`: Electrical and IBM are excluded from prerequisite checks; Bloom accuracy differs by programme |
+| **Transparency** | scores and flags shown to a committee | Every flag shows its evidence (matched units, prerequisite text, closest topics); every unit of a generated syllabus names its source course or JD; every API response carries engine version, encoder and data snapshot; confidence values are measured precisions, labelled as LLM-based. | `traceable` flag, `meta` block, `docs/API.md` |
+| **Hallucination** | text that a model writes | The syllabus generator writes no free text: units are copied from existing syllabi or assembled from JD sentences, outcomes are reused or templated, all with sources. The only generated text in the chain comes from Group 11's summariser; our mock is marked `_mock`. Week 4 showed LLM summaries add unsupported words, so none are used. | `modernize.traceable`, Week 4 summary-faithfulness results |
+| **Over-trust and automation bias** | committee members may treat scores as decisions | Outputs are labelled DRAFT; the UI says scores must not be used to cut or merge courses automatically; the draft syllabus flags when its hours exceed the teaching scheme. Known weak spots are stated (prerequisite flag precision below target, coverage decisions about 85% accurate on reference labels). | UI sidebar, `hours_check`, Week 5/6 reports |
+| **Misuse** | using overlap scores to cut staff or courses; letting industry JDs alone dictate the curriculum | The tool proposes, the Board of Studies decides; JD-derived units are marked "new unit from job descriptions" so the committee can weigh industry demand against academic foundations. | `kind` field of every unit |
+| **Evaluation honesty** | labels come from LLMs | All reference labels are LLM-annotated (no human annotators); agreement is reported per labeller pair and not as human kappa; label-free tests run alongside. | `labels/`, `tools/check_reports.py` |
+| **Security of integrations** | calling other groups' services, loading their artefacts | We call Group 11 only over HTTP with a schema check and a timeout; we never load other groups' pickled models into our process; a failed call falls back to the documented mock and says so. | `integrations.send_to_group11` |
+
+Human-in-the-loop: every output of the asset is a recommendation with evidence. Decisions on courses, prerequisites and syllabi
+stay with faculty and the Board of Studies.

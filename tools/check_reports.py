@@ -26,7 +26,7 @@ ONLY_AS = [(r"paraphras", "paraphrase variant not run (time)"), (r"bge-base prer
 FORBIDDEN = [r"human gold", r"human kappa", r"course[- ]policy", r"\bgold (?:set|labels?|standard)\b", r"Fleiss"]
 ALLOWED_DIGITS = re.compile(
     r"95\s?%|^\|\s*\d+\s*\||capabilit(?:y|ies) \d(?:\s?[–-]\s?\d)?|Week\s?\d|Weeks? \d(?:\s?[–-]\s?\d)?|J0\d\d|Groups? \d+(?:\s?/\s?\d+)?|20\d\d(?:[-–/]\d\d)?|\b[KL][1-6]\b|K1[–-]K6|L1[–-]L6|Phi-3|"
-    r"v\d+(?:\.\d+)*|MiniLM-L\d+|bge-\w+-en-v\d\.\d|[A-Za-z]+\d+[A-Za-z]*|\b\d{1,2} (?:Sep|Oct|Nov)\b|\b[0-2]\s?=|\b0/1/2\b|"
+    r"v\d+(?:\.\d+)*|MiniLM-L\d+|bge-\w+-en-v\d\.\d|[A-Za-z]+\d+[A-Za-z]*|\b\d{1,2} (?:Sep|Oct|Nov)[a-z]*\b|\b[0-2]\s?=|\b0/1/2\b|"
     r"\bpass(?:es)? \d(?:[–-]\d)?\b|\bPass \d\b|\b\d(?:st|nd|rd|th)\b|\btop[- ]?\d+\b|\b0 / 1 / 2\b|@\d+|\bCapability \d\b|\bcaps? \d(?:[–-]\d)?\b|"
     r"\b[1-7]\.\s|\(\d\)|±1|2-of-3|\b5 members\b|section \d", re.I)
 
