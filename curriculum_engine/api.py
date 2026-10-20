@@ -17,7 +17,7 @@ app = FastAPI(title="Curriculum Intelligence Engine API", version=__version__,
                           "curriculum diff, Bloom levels and emerging-topic gaps. Confidence values come from LLM-annotated reference "
                           "labels (no human annotators); they are indicative.")
 ENDPOINTS = ["POST /compare-curricula", "POST /map-outcomes", "POST /find-overlaps", "POST /check-prerequisites",
-             "POST /detect-redundancy", "POST /emerging-topics", "GET /health"]
+             "POST /detect-redundancy", "POST /emerging-topics", "POST /modernize-curriculum", "GET /courses", "GET /health"]
 
 
 @lru_cache(maxsize=1)
@@ -89,3 +89,24 @@ def detect_redundancy(req: S.ProgrammeRequest, eng=Depends(get_engine)):
 def emerging_topics(req: S.ProgrammeRequest, eng=Depends(get_engine)):
     known_programme(eng, req.programme)
     return {"meta": eng.meta_block(), "programme": req.programme, **eng.emerging(req.programme)}
+
+
+@app.post("/modernize-curriculum", response_model=S.ModernizeResponse)
+def modernize_curriculum(req: S.ModernizeRequest, eng=Depends(get_engine)):
+    """Week 7 (demo step of Group 9): job descriptions + current syllabi -> overlaps between the syllabi, the skills the JDs ask
+    for, which of them are already taught, a traceable draft syllabus, and the hand-offs for Group 11 and Group 4."""
+    from curriculum_engine import modernize as M
+    cs = [course(eng, c) for c in req.courses]
+    return {"meta": eng.meta_block(), **M.run(eng, {j.id: j.text for j in req.jds}, cs, req.title, req.academic_year)}
+
+
+@app.get("/courses", response_model=S.CourseListResponse)
+def list_courses(q: str = "", programme: str | None = None, limit: int = 50, ids: str = "", eng=Depends(get_engine)):
+    """Course versions whose name contains q (latest first), optionally of one programme; or the given comma-separated ids."""
+    want = {i for i in ids.split(",") if i}
+    if want:
+        hits = [r for r in eng.recs if r["id"] in want]
+    else:
+        hits = [r for r in eng.recs if q.lower() in r["course_name"].lower() and (programme is None or programme in r["programmes"])]
+    hits.sort(key=lambda r: (r["academic_year"], r["id"]), reverse=True)
+    return {"meta": eng.meta_block(), "courses": [eng.meta(r) for r in hits[:max(1, min(limit, 500))]]}

@@ -212,3 +212,34 @@ class Health(BaseModel):
     status: str
     meta: Meta
     endpoints: list[str]
+
+
+# ------------------------------------------------------------------ Week 7
+class JobDescription(BaseModel):
+    id: str = Field(..., examples=["JD1"])
+    text: str = Field(..., min_length=20)
+
+
+class ModernizeRequest(BaseModel):
+    """Job descriptions + the current syllabi to modernise -> overlaps, demanded skills, a traceable draft syllabus, hand-offs."""
+    jds: list[JobDescription] = Field(..., min_length=1, max_length=10)
+    courses: list[CourseRef] = Field(..., min_length=2, max_length=10)
+    title: str = Field("Natural Language Processing and Large Language Models", min_length=3)
+    academic_year: Optional[str] = None
+
+
+class ModernizeResponse(BaseModel):
+    meta: Meta
+    courses: list[CourseInfo]
+    overlaps: list[dict] = Field(..., description="Pairwise overlap of the selected syllabi (Week 4 fusion score and confidence)")
+    shared_topics: list[dict] = Field(..., description="Units taught in two or more of the selected syllabi")
+    skill_themes: list[dict] = Field(..., description="JD skill themes, the JDs that ask for them, and whether a unit already teaches them")
+    new_curriculum: dict = Field(..., description="Draft syllabus; every unit and outcome names its source (course id or JD id)")
+    traceable: bool
+    markdown: str
+    handoffs: dict = Field(..., description="group11_request (Group 11 /process-notice body) and group4_chunks (Group 4 passage rows)")
+
+
+class CourseListResponse(BaseModel):
+    meta: Meta
+    courses: list[CourseInfo]
