@@ -1,0 +1,82 @@
+{
+ "date": "2026-10-20",
+ "python": "3.11.9",
+ "os": "Windows 10.0.26200",
+ "cpu_count": 12,
+ "clean_clone": {
+  "commit": "b8bf8be57e71a5beabadbdcd5b86b8e3cd006db9",
+  "pytest": "36 passed, 7 warnings in 25.31s",
+  "tests_passed": 36,
+  "tests_failed": 0,
+  "run_all_exit_code": 0,
+  "run_all_seconds": 381,
+  "result_files_compared": 62,
+  "changed_files": [],
+  "reproduced": true
+ },
+ "latency": {
+  "engine_start_seconds": 0.4,
+  "repeats": 3,
+  "table": {
+   "columns": [
+    "Endpoint (example request)",
+    "Status",
+    "Median latency (ms)"
+   ],
+   "rows": [
+    [
+     "POST /check-prerequisites (check_prerequisites)",
+     200,
+     10
+    ],
+    [
+     "POST /compare-curricula (compare_courses)",
+     200,
+     14
+    ],
+    [
+     "POST /compare-curricula (compare_programmes)",
+     200,
+     14
+    ],
+    [
+     "POST /detect-redundancy (detect_redundancy)",
+     200,
+     142
+    ],
+    [
+     "POST /emerging-topics (emerging_topics)",
+     200,
+     46
+    ],
+    [
+     "POST /find-overlaps (find_overlaps)",
+     200,
+     458
+    ],
+    [
+     "GET /health (health)",
+     200,
+     5
+    ],
+    [
+     "POST /map-outcomes (map_outcomes)",
+     200,
+     5
+    ],
+    [
+     "POST /modernize-curriculum (31 October demo)",
+     200,
+     255
+    ],
+    [
+     "GET /courses?q=language",
+     200,
+     7
+    ]
+   ]
+  },
+  "slowest_ms": 458,
+  "all_ok": true
+ }
+}
