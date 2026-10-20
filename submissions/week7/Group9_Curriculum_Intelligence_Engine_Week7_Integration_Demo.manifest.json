@@ -1,0 +1,251 @@
+{
+ "week": 7,
+ "tag": "week-7",
+ "commit": "559a29d888b2705776e4edaced4c8e4dea1b3b4d",
+ "values": [
+  {
+   "key": "week6/api_examples:endpoints",
+   "value": "7"
+  },
+  {
+   "key": "week7/summary:endpoints",
+   "value": "9"
+  },
+  {
+   "key": "week7/summary:group11_mode",
+   "value": "mock"
+  },
+  {
+   "key": "week7/summary:group4_passages",
+   "value": "17"
+  },
+  {
+   "key": "week7/emerging_threshold:week3_threshold.accuracy",
+   "value": "0.388"
+  },
+  {
+   "key": "week7/emerging_threshold:unit_match_threshold.accuracy",
+   "value": "0.896"
+  },
+  {
+   "key": "week7/summary:jds",
+   "value": "5"
+  },
+  {
+   "key": "week7/summary:courses",
+   "value": "5"
+  },
+  {
+   "key": "week7/summary:requirement_statements",
+   "value": "35"
+  },
+  {
+   "key": "week7/summary:skill_themes",
+   "value": "70"
+  },
+  {
+   "key": "week7/summary:demanded_themes",
+   "value": "15"
+  },
+  {
+   "key": "week3/thresholds:unit_match:.2f",
+   "value": "0.55"
+  },
+  {
+   "key": "week7/summary:traceable",
+   "value": "True"
+  },
+  {
+   "key": "week7/summary:identical_pairs",
+   "value": "3"
+  },
+  {
+   "key": "week7/summary:pairs",
+   "value": "10"
+  },
+  {
+   "key": "week7/summary:demanded_themes",
+   "value": "15"
+  },
+  {
+   "key": "week7/summary:demanded_covered",
+   "value": "6"
+  },
+  {
+   "key": "week7/summary:demanded_gaps",
+   "value": "9"
+  },
+  {
+   "key": "table:week7/summary:theme_table",
+   "value": "{\"columns\": [\"Skill theme (from JDs)\", \"Asked for by\", \"Already taught?\", \"Closest unit topic (course)\"], \"rows\": [[\"large language models\", \"JD1, JD2, JD3, JD4, JD5\", \"yes\", \"Large Language Models (Generative AI)\"], [\"learning\", \"JD2, JD4, JD5\", \"yes\", \"Machine Learning and NLP (Speech and NLP)\"], [\"tokenization\", \"JD1, JD2, JD4\", \"yes\", \"Basic Text Processing Tokenization (Speech and NLP)\"], [\"fine-tuned models\", \"JD1, JD4\", \"yes\", \"Parameter Efficient Fine Tuning (Generative AI)\"], [\"training transformer models\", \"JD1, JD4\", \"yes\", \"Generative Pretrained Transformer (Generative AI)\"], [\"automatic metrics\", \"JD1, JD3\", \"gap\", \"Information retrieval (NLP)\"], [\"cloud GPUs\", \"JD1, JD5\", \"gap\", \"PCFG (Speech and NLP)\"], [\"human evaluation\", \"JD1, JD3\", \"gap\", \"Evaluating Language Models (Speech and NLP)\"], [\"prompts\", \"JD1, JD3\", \"gap\", \"Feature Engineering (NLP)\"], [\"PyTorch and REST API development\", \"JD3, JD5\", \"gap\", \"Practice with ipython Notebooks (Speech and NLP)\"], [\"attention\", \"JD1, JD4\", \"yes\", \"Overview of attention mechanisms (Generative AI)\"], [\"bias\", \"JD2, JD5\", \"gap\", \"multi-head attention (Generative AI)\"], [\"guardrails\", \"JD3, JD5\", \"gap\", \"RoPE (Generative AI)\"], [\"Python\", \"JD1, JD3\", \"gap\", \"Practice with ipython Notebooks (Speech and NLP)\"], [\"quantization\", \"JD4, JD5\", \"gap\", \"Clustering and Distributional Semantics (Speech and NLP)\"]]}"
+  },
+  {
+   "key": "week7/summary:units",
+   "value": "11"
+  },
+  {
+   "key": "week7/summary:units_shared",
+   "value": "5"
+  },
+  {
+   "key": "week7/summary:units_existing_demanded",
+   "value": "2"
+  },
+  {
+   "key": "week7/summary:units_new",
+   "value": "4"
+  },
+  {
+   "key": "week7/summary:outcomes",
+   "value": "8"
+  },
+  {
+   "key": "week7/summary:total_hours",
+   "value": "62"
+  },
+  {
+   "key": "table:week7/summary:unit_table",
+   "value": "{\"columns\": [\"#\", \"Unit of the draft syllabus\", \"Kind\", \"Hours\", \"Source\"], \"rows\": [[1, \"Introduction to Natural Language Processing\", \"shared topic (deduplicated)\", 2, \"NLP \u00d73, Speech and NLP\"], [2, \"Semantic Analysis and Vector Space Models\", \"shared topic (deduplicated)\", 7, \"NLP \u00d73, Speech and NLP\"], [3, \"Text Pre-processing and Text Representation\", \"shared topic (deduplicated)\", 5, \"NLP \u00d73, Speech and NLP\"], [4, \"Pragmatic and Discourse Analysis\", \"shared topic (deduplicated)\", 4, \"NLP \u00d73\"], [5, \"Large Language Models (LLM)\", \"shared topic (deduplicated)\", 8, \"Generative AI, Speech and NLP\"], [6, \"Basic Text Processing\", \"existing unit, demanded by industry\", 6, \"Speech and NLP; JD2, JD4, JD5\"], [7, \"RAG and Fine Tuning\", \"existing unit, demanded by industry\", 6, \"Generative AI; JD1, JD4\"], [8, \"Recall and ranking metrics\", \"new unit from job descriptions\", 6, \"JD1, JD3\"], [9, \"Human evaluation\", \"new unit from job descriptions\", 6, \"JD1, JD3\"], [10, \"Prompt engineering\", \"new unit from job descriptions\", 6, \"JD1, JD3\"], [11, \"Bias\", \"new unit from job descriptions\", 6, \"JD2, JD5\"]]}"
+  },
+  {
+   "key": "week7/coverage_precision:labelled",
+   "value": "70"
+  },
+  {
+   "key": "week7/coverage_precision:needed_pass3",
+   "value": "2"
+  },
+  {
+   "key": "week7/coverage_precision:uncertain",
+   "value": "0"
+  },
+  {
+   "key": "week7/coverage_precision:all_themes.accuracy",
+   "value": "0.857"
+  },
+  {
+   "key": "week7/coverage_precision:all_themes.gap.precision",
+   "value": "0.896"
+  },
+  {
+   "key": "week7/coverage_precision:all_themes.gap.n",
+   "value": "48"
+  },
+  {
+   "key": "week7/coverage_precision:all_themes.covered.precision",
+   "value": "0.773"
+  },
+  {
+   "key": "week7/coverage_precision:all_themes.covered.n",
+   "value": "22"
+  },
+  {
+   "key": "week7/coverage_precision:demanded_themes.gap.precision",
+   "value": "0.778"
+  },
+  {
+   "key": "week7/coverage_precision:demanded_themes.gap.n",
+   "value": "9"
+  },
+  {
+   "key": "week7/coverage_precision:demanded_themes.covered.precision",
+   "value": "1.000"
+  },
+  {
+   "key": "week7/coverage_precision:demanded_themes.covered.n",
+   "value": "6"
+  },
+  {
+   "key": "week7/contracts:group11_request_schema",
+   "value": "True"
+  },
+  {
+   "key": "week7/contracts:group11_response_schema",
+   "value": "True"
+  },
+  {
+   "key": "week7/group11_handoff:mode",
+   "value": "mock"
+  },
+  {
+   "key": "week7/contracts:group4_rows",
+   "value": "17"
+  },
+  {
+   "key": "week7/contracts:group4_columns",
+   "value": "True"
+  },
+  {
+   "key": "week7/contracts:group4_max_words",
+   "value": "86"
+  },
+  {
+   "key": "week7/group4_handoff:answered_from_expected_section",
+   "value": "4"
+  },
+  {
+   "key": "week7/group4_handoff:questions",
+   "value": "5"
+  },
+  {
+   "key": "table:week7/fairness:table",
+   "value": "{\"columns\": [\"Programme\", \"Parsed course versions\", \"Prerequisite checks\", \"Overlap ROC-AUC\", \"Bloom accuracy\", \"Removal recall\"], \"rows\": [[\"AI\", 258, \"yes\", \"n/a\", \"0.696\", \"1.000\"], [\"CIVIL\", 234, \"yes\", \"1.000\", \"0.842\", \"1.000\"], [\"COMP\", 213, \"yes\", \"0.950\", \"0.692\", \"1.000\"], [\"CSBS\", 248, \"yes\", \"0.990\", \"0.692\", \"0.833\"], [\"CSE-CYBER\", 254, \"yes\", \"1.000\", \"0.722\", \"1.000\"], [\"CSE-DS\", 202, \"yes\", \"0.944\", \"0.778\", \"0.800\"], [\"DS\", 394, \"yes\", \"0.960\", \"0.775\", \"1.000\"], [\"ELECTRICAL\", 8, \"no (too little parsed data)\", \"n/a\", \"n/a\", \"n/a\"], [\"EXTC\", 169, \"yes\", \"0.933\", \"0.743\", \"0.800\"], [\"IT\", 283, \"yes\", \"0.875\", \"0.696\", \"1.000\"], [\"MECHANICAL\", 422, \"yes\", \"0.975\", \"0.857\", \"0.714\"], [\"MECHATRONICS\", 244, \"yes\", \"1.000\", \"0.857\", \"0.889\"]]}"
+  },
+  {
+   "key": "week7/fairness:bloom_accuracy_min.0",
+   "value": "0.692"
+  },
+  {
+   "key": "week7/fairness:bloom_accuracy_min.1",
+   "value": "COMP"
+  },
+  {
+   "key": "week7/fairness:bloom_accuracy_max.0",
+   "value": "0.857"
+  },
+  {
+   "key": "week7/fairness:bloom_accuracy_max.1",
+   "value": "MECHATRONICS"
+  },
+  {
+   "key": "week7/emerging_threshold:week3_threshold.threshold:.2f",
+   "value": "0.40"
+  },
+  {
+   "key": "week7/emerging_threshold:week3_threshold.gap_recall",
+   "value": "0.109"
+  },
+  {
+   "key": "week7/emerging_threshold:labelled_decisions",
+   "value": "67"
+  },
+  {
+   "key": "week7/emerging_threshold:unit_match_threshold.threshold:.2f",
+   "value": "0.55"
+  },
+  {
+   "key": "week7/emerging_threshold:unit_match_threshold.gap_recall",
+   "value": "0.935"
+  },
+  {
+   "key": "week7/emerging_threshold:unit_match_threshold.gap_precision",
+   "value": "0.915"
+  },
+  {
+   "key": "dataset/parse_stats:text_pdf",
+   "value": "531"
+  },
+  {
+   "key": "dataset/parse_stats:pdfs_considered",
+   "value": "2,413"
+  },
+  {
+   "key": "week2/labels:pass2_by.claude_b",
+   "value": "94"
+  },
+  {
+   "key": "week2/labels:items",
+   "value": "200"
+  }
+ ]
+}
